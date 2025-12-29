@@ -1,0 +1,60 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅱ章"},
+        {"bgm", file = "bgm024"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg013e", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "優美", size = "z1", mode = 3, resize = 1, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0001", head = "yum_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000378", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「我觉得没那个必要。总之让草薙前辈也一起去就好了」"
+                }
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嘛，确实是这样没错……」"
+                }
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯——，我其实不太想去那家店啊……」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"bgm", stop = 1, time = 1000},
+        {"excall", file = "02_abend_06_1"},
+        {"text"},
+        linkback = "block_00002"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

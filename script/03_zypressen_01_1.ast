@@ -1,0 +1,4675 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅲ章"},
+        {"bg", file = "ev_eye_c06_01", path = ":ev/ev_eye_c06/", set = "ev_eye_c06"},
+        {"ex", time = 3000, func = "wait"},
+        {"bg", file = "ev_eye_c11_01", path = ":ev/ev_eye_c11/", set = "ev_eye_c11"},
+        {"ex", time = 3000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"bg", file = "black", path = ":bg/"},
+        {"bgm", file = "bgm030"},
+        {"eval", exp = "g.start_zyp=1"},
+        {"text"},
+        text = {
+            ja = {
+                {"当优美和我走到梦浮坂时，发现了许多聚集的人群。"}
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那个团体看起来像是在慢慢地从后面跟着什么东西。"}
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"msgoff"},
+        {"bg", file = "cg_zbg041a", id = 9, lv = 9, speed = 300000, path = ":cg/", x2 = 800, y2 = 0, x = -400, y = 0, ax = 1920, ay = 1126, bx = -960, by = -586, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jka_000021", ch = "jka"}
+            },
+            ja = {
+                {
+                    name = {"女高中生A", "女高中生A"},
+                    "「喂，喂，那不是传闻中的草薙直哉君吗？」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jkb_000023", ch = "jkb"}
+            },
+            ja = {
+                {
+                    name = {"女高中生B", "女高中生B"},
+                    "「啊，真的耶」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jkc_000010", ch = "jkc"}
+            },
+            ja = {
+                {
+                    name = {"女高中生C", "女高中生C"},
+                    "「好厉害，比在电视上看到的还要帅气呢」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001172", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"msgoff"},
+        {"bg", file = "bg041a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "優美", size = "z1", mode = 3, resize = 1, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0008", head = "yum_z1b", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000837", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「怎么了？里奈？」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001173", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「啊，没，没什么……」"
+                }
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0012", head = "yum_z1b", lv = 4, id = 9},
+        {"fgact", ch = "優美", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0017", head = "yum_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000838", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「咦？那不是草薙吗？」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001174", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嗯，是的呢。好像是草薙前辈在上学」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0016", head = "yum_z1b", lv = 4, id = 9},
+        {"fgact", ch = "優美", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000839", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「好，锁定草薙前辈。为了提振士气，去收拾他一顿吧！」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"mwact", act = "いいえ"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001175", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不不不，完全没道理啊」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001176", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「而且，那部作品，《樱之足迹》完成之后，哪还能做那种事啊」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0009", head = "yum_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000840", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「为什么？我觉得那部作品和我们袭击草薙前辈之间并没有任何因",
+                    {"rt2"},
+                    "果关系啊」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001177", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不，你要这么说的话，为什么我们一大早要袭击草薙前辈？从那",
+                    {"rt2"},
+                    "开始因果关系就已经崩坏了吧」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0017", head = "yum_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000841", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「所以我是说，这是为了提振士气啊……」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001178", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「提振士气可不会做那种事」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001179", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嘛，算了，你自己看看吧……草薙前辈的后面……」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"fg", mode = -2},
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jka_000022", ch = "jka"}
+            },
+            ja = {
+                {
+                    name = {"女高中生A", "女高中生A"},
+                    "「哇，哇，真的是和电视上看到的一模一样的人」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jkb_000024", ch = "jkb"}
+            },
+            ja = {
+                {
+                    name = {"女高中生B", "女高中生B"},
+                    "「呀——」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在草薙前辈的身后，有许多女学生排成队跟着他。"}
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0012", head = "yum_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000842", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「怎么回事？那群女生是怎么回事？难道是想杀掉草薙前辈的势力",
+                    {"rt2"},
+                    "吗？」"
+                }
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001180", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不是啦，又不是你，哪会有人想对草薙前辈加害啊。那些都是草",
+                    {"rt2"},
+                    "薙前辈的粉丝」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0013", head = "yum_z1b", lv = 4, id = 9},
+        {"fgact", ch = "優美", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0010", head = "yum_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000843", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「粉丝？咦？上学期的时候也有那么多人吗？」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001181", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不是说草薙健一郎的遗作《樱之足迹》是草薙前辈完成的吗。最",
+                    {"rt2"},
+                    "近电视上也一直在播，现在他可是全日本知名的人物了」"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0008", head = "yum_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000844", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「嗯——。可就算这样，也不用围成那样吧……」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001182", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「毕竟草薙前辈长得帅啊，个子又高，还是世界级艺术家的儿子，",
+                    {"rt2"},
+                    "而且还是完成遗作的天才，这么受欢迎也很正常吧」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0010", head = "yum_z1b", lv = 4, id = 9},
+        {"fgact", ch = "優美", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000845", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「唔——，明明是明石前辈带头指挥，我们美术部一起完成的啊」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001183", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「可是世人并不会这么看啊」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0009", head = "yum_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000846", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「原来如此……」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001184", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嗯，最近还是要看气氛，最好除了社团活动以外不要跟草薙前辈",
+                    {"rt2"},
+                    "说话吧」"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0010", head = "yum_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000847", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"se", id = 1, file = "se_walk_fast"},
+        {"fg", mode = -2},
+        {"text"},
+        text = {
+            ja = {
+                {"优美突然加快了脚步。"}
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001185", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「诶？　优、优美？」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"text"},
+        text = {
+            ja = {
+                {"优美靠近到草薙前辈的背后，突然——"}
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, resize = 1, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0004", head = "yum_z2a", x = -345, lv = 5, id = 5},
+        {"fg", ch = "直哉", size = "z2", mode = 3, resize = 1, path = ":fg/nao/z2/", file = "nao_z2a0100", face = "a0001", head = "nao_z2a", x = 345, lv = 5, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000848", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「直哉——前辈～♪」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"fg", ch = "直哉", size = "z2", mode = 3, path = ":fg/nao/z2/", file = "nao_z2a0100", face = "a0007", head = "nao_z2a", x = 345, lv = 5, id = 6},
+        {"fgact", ch = "直哉", act = "びっくり", lv = 5, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呜哇哇哇？」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"msgoff"},
+        {"fg", ch = "優美", speed = 300, mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0004", head = "yum_z2a", x2 = -345, x = 0, lv = 5, id = 5},
+        {"bg", time = 300, file = "black", path = ":bg/"},
+        {"se", id = 1, file = "se3356"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {"就这样从背后抱住了草薙直哉。"}
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001186", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「优、优美！？」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什、什、什么啊？　怎么了？」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"mwact", act = "rlr"},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000849", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「直哉——前辈～♪　早上好～」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"msgoff"},
+        {"bg", file = "zbg038a", path = ":bg/", ax = 1920, ay = 1126, bx = -960, by = -586, sync = 0},
+        {"extrans", time = 500},
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0004", head = "yum_z2a", x = -345, lv = 5, id = 5},
+        {"fg", ch = "直哉", size = "z2", mode = 3, path = ":fg/nao/z2/", file = "nao_z2a0100", face = "a0006", head = "nao_z2a", x = 345, lv = 5, id = 6},
+        {"fg", ch = "直哉", speed = 500, mode = 3, path = ":fg/nao/z2/", file = "nao_z2a0100", face = "a0006", head = "nao_z2a", x2 = 345, x = 500, lv = 5, id = 6},
+        {"se", file = "se3130", vol = 70, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你、你干嘛，突然抱上来？钱吗？　你是要钱吗？」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0009", head = "yum_z2a", x = -345, lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000850", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「钱、钱什么的……」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"fg", ch = "直哉", size = "z2", mode = 3, path = ":fg/nao/z2/", file = "nao_z2a0100", face = "a0016", head = "nao_z2a", x = 500, lv = 5, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是平时川内野的语气」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2b0110", face = "b0018", head = "yum_z2b", x = -345, lv = 5, id = 5},
+        {"fgact", ch = "優美", act = "うなづく", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000851", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「っ」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0004", head = "yum_z2a", x = -345, lv = 5, id = 5},
+        {"fgact", ch = "優美", act = "びっくり", lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0003", head = "yum_z2a", x = -345, lv = 5, id = 5},
+                {"fgact", ch = "優美", act = "うんうん", time = 200, lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000852", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「啊哈☆　你在说什么呀，钱什么的可不是目的哦～。我可是冲着",
+                    {"rt2"},
+                    "草薙前辈来的啦。因为我最喜欢你了～」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"fg", ch = "直哉", size = "z2", mode = 3, path = ":fg/nao/z2/", file = "nao_z2a0100", face = "a0011", head = "nao_z2a", x = 500, lv = 5, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈？　你说你？」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0016", head = "yum_z2a", x = -345, lv = 5, id = 5},
+        {"fg", ch = "優美", speed = 500, mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0016", head = "yum_z2a", x2 = -345, x = -210, lv = 5, id = 5},
+        {"fgact", ch = "優美", act = "うんうん", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000853", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「没错哟～」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"fg", ch = "直哉", size = "z2", mode = 3, path = ":fg/nao/z2/", file = "nao_z2a0100", face = "a0005", head = "nao_z2a", x = 500, lv = 5, id = 6},
+        {"fgact", ch = "直哉", act = "びっくり", lv = 5, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你、你在说什么啊？　果然是为了钱吗？」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0019", head = "yum_z2a", x = -210, lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "優美", act = "びっくり", lv = 5, id = 5}
+            },
+            vl02 = {
+                {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0011i", head = "yum_z2a", x = -210, lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000854", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「老是说钱、钱的，真过分～。明明昨天还那么激烈……」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jka_000023", ch = "jka"}
+            },
+            ja = {
+                {
+                    name = {"女高中生A", "女高中生A"},
+                    "「什么啊！　这女人！」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"se", id = 1, file = "se_kyupin"},
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2b0100", face = "b0016", head = "yum_z2b", x = -210, lv = 5, id = 5},
+        {"fgact", ch = "優美", act = "びっくり", lv = 5, id = 5},
+        {"fgact", ch = "優美", act = "icon", y = -500, lv = 5, id = 5, icon = "icon11z2", x = 50},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000855", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「如你所见，我是直哉前辈的恋人哦！」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jkb_000025", ch = "jkb"}
+            },
+            ja = {
+                {
+                    name = {"女高中生B", "女高中生B"},
+                    "「诶？　难、难道草薙前辈有女朋友了吗？」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"fg", ch = "直哉", size = "z2", mode = 3, path = ":fg/nao/z2/", file = "nao_z2a0100", face = "a0007", head = "nao_z2a", x = 500, lv = 5, id = 6},
+        {"fgact", ch = "直哉", act = "いいえ", lv = 5, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不、不是的！」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0004", head = "yum_z2a", x = -210, lv = 5, id = 5},
+        {"fgact", ch = "優美", act = "いいえ", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000856", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「才没有不是呢～」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"fg", ch = "直哉", size = "z2", mode = 3, path = ":fg/nao/z2/", file = "nao_z2a0100", face = "a0006", head = "nao_z2a", x = 500, lv = 5, id = 6},
+        {"fgact", ch = "直哉", act = "びっくり", lv = 5, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我才没和川内野交往啊！」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"fg", ch = "直哉", size = "z2", mode = 3, path = ":fg/nao/z2/", file = "nao_z2a0100", face = "a0012", head = "nao_z2a", x = 500, lv = 5, id = 6},
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0017", head = "yum_z2a", x = -210, lv = 5, id = 5},
+        {"fg", ch = "優美", speed = 300, mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0017", head = "yum_z2a", x2 = -210, x = 0, lv = 5, id = 5},
+        {"fgact", ch = "優美", act = "うなづく", lv = 5, id = 5},
+        {"se", file = "se3130", vol = 50, id = 1},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000857", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「盯——」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            ja = {
+                {"优美狠狠地瞪着草薙前辈。"}
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            ja = {
+                {"而且还隔着包，像是在用包里藏着的什么东西顶着他。"}
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那是在威胁他……。"}
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"fg", ch = "直哉", size = "z2", mode = 3, path = ":fg/nao/z2/", file = "nao_z2a0100", face = "a0008", head = "nao_z2a", x = 500, lv = 5, id = 6},
+        {"fgact", ch = "直哉", act = "おじぎ", lv = 5, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊、啊呜……」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0016", head = "yum_z2a", x = 0, lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0004", head = "yum_z2a", x = 0, lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000858", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「你看，你都不反驳了吧？明白的话，你们赶紧给我散了好吗？」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062"
+    },
+    block_00062 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jka_000024", ch = "jka"}
+            },
+            ja = {
+                {
+                    name = {"女高中生A", "女高中生A"},
+                    "「你、你说什么！」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063"
+    },
+    block_00063 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0005", head = "yum_z2a", x = 0, lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "優美", act = "うなづく", lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000859", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「字面意思。我让你们散开……」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064"
+    },
+    block_00064 = {
+        {"text"},
+        text = {
+            ja = {
+                {"优美瞪视着其他学生。"}
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065"
+    },
+    block_00065 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jkb_000026", ch = "jkb"}
+            },
+            ja = {
+                {
+                    name = {"女高中生B", "女高中生B"},
+                    "「呃……」"
+                }
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066"
+    },
+    block_00066 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0004", head = "yum_z2a", x = 0, lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000860", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「明白了吗？」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067"
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jkc_000011", ch = "jkc"}
+            },
+            ja = {
+                {
+                    name = {"女高中生C", "女高中生C"},
+                    "「总、总之我们走吧」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068"
+    },
+    block_00068 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jka_000025", ch = "jka"}
+            },
+            ja = {
+                {
+                    name = {"女高中生A", "女高中生A"},
+                    "「嗯、嗯……」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069"
+    },
+    block_00069 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0110", face = "a0005", head = "yum_z2a", x = 0, lv = 5, id = 5},
+        {"fg", ch = "優美", speed = 500, mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0110", face = "a0005", head = "yum_z2a", x2 = 0, x = -500, lv = 5, id = 5},
+        {"fgact", ch = "優美", act = "うんうん", lv = 5, id = 5},
+        {"se", file = "se9031", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"排成队的其他学生被优美驱散了。"}
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070"
+    },
+    block_00070 = {
+        {"fg", ch = "直哉", size = "z2", mode = 3, path = ":fg/nao/z2/", file = "nao_z2a0100", face = "a0006", head = "nao_z2a", x = 500, lv = 5, id = 6},
+        {"fgact", ch = "直哉", act = "びっくり", lv = 5, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你这家伙！　你想干什么！」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071"
+    },
+    block_00071 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0100", face = "a0010", head = "yum_z2a", x = -500, lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000861", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「终于走了吗……」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072"
+    },
+    block_00072 = {
+        {"se", file = "se0744", id = 1},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg038a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "優美", size = "z1", mode = 3, resize = 1, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0010", head = "yum_z1a", lv = 4, id = 5, sync = 0},
+        {"extrans", time = 500},
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我快步走近优美。"}
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073"
+    },
+    block_00073 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001187", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「优美……」"
+                }
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074"
+    },
+    block_00074 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0002", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000862", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「啊，里奈」"
+                }
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075"
+    },
+    block_00075 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001188", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「为什么要做那种事啊……」"
+                }
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076"
+    },
+    block_00076 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0012", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000863", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「诶？什么啊？」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077"
+    },
+    block_00077 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001189", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078"
+    },
+    block_00078 = {
+        {"fg", mode = -2},
+        {"fg", ch = "直哉", size = "z1", mode = 3, resize = 1, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0001", head = "nao_z1a", lv = 4, id = 6},
+        {"mwact", act = "びっくり"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001190", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「前辈，请离优美远一点！」"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079"
+    },
+    block_00079 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0005", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是我不离开，是这家伙一直抱着我啊！」"
+                }
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080"
+    },
+    block_00080 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001191", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「总之快点！」"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081"
+    },
+    block_00081 = {
+        {"fg", mode = -2},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我把两个人拉开。"}
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082"
+    },
+    block_00082 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0001", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001192", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「优美，喂……」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083"
+    },
+    block_00083 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0011", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000864", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「什、什么，怎么摆出一副可怕的表情？里奈」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084"
+    },
+    block_00084 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你、你们到底怎么回事啊。突然川内野就抱了上来」"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085"
+    },
+    block_00085 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001193", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「当着那么多学生的面说‘喜欢’之类的话」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086"
+    },
+    block_00086 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0012", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0015", head = "yum_z1a", lv = 4, id = 5},
+                {"fgact", ch = "優美", act = "うんうん", time = 200, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000865", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「就是啊。呸呸……。就算是开玩笑，说喜欢草薙前辈什么的，我",
+                    {"rt2"},
+                    "嘴都快烂掉了」"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087"
+    },
+    block_00087 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你、你这家伙，自己乱来还这么失礼」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088"
+    },
+    block_00088 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0017", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000866", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「什么乱来啊，我可是帮你赶跑了那些想要你命的人，你应该感谢",
+                    {"rt2"},
+                    "我」"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089"
+    },
+    block_00089 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你这家伙，还在说那种话啊」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090"
+    },
+    block_00090 = {
+        {"se", id = 1, file = "se_school_chime"},
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0012", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000867", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「啊，铃声响了」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091"
+    },
+    block_00091 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001194", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「盯——……」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092"
+    },
+    block_00092 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0011", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000868", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「为、为什么这么盯着我看啊？」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093"
+    },
+    block_00093 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001195", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「优美……」"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094"
+    },
+    block_00094 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0010", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000869", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「你、生气了吗？」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095"
+    },
+    block_00095 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「好少见啊……。川内野居然这么慌张」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096"
+    },
+    block_00096 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001196", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「呼，前辈你还是有很多不明白的地方呢」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097"
+    },
+    block_00097 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？　我、我吗？　什、什么？」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098"
+    },
+    block_00098 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0009", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000870", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「里奈，比起那个，铃声铃声」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099"
+    },
+    block_00099 = {
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001197", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「知道啦！」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100"
+    },
+    block_00100 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001198", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「真是的……。",
+                    {"exfont", size = "f2"},
+                    "优美有时候……真让人完全搞不清楚到底想怎么样……",
+                    {"exfont"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101"
+    },
+    block_00101 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「想怎么样？」"
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102"
+    },
+    block_00102 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001199", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「这是我们的事！好了好了，优美，走了哦」"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103"
+    },
+    block_00103 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, resize = 1, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0012", head = "yum_z2a", lv = 5, id = 5},
+        {"fgact", ch = "優美", act = "いいえ", lv = 5, id = 5},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000871", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「哇、哇哇，等下……」"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104"
+    },
+    block_00104 = {
+        {"bgm", stop = 1, time = 1000},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", y = -140, x = 310, file = "zbg048g", path = ":bg/", ax = 1920, ay = 1126, bx = -960, by = -586, sync = 0},
+        {"bg", lv = 1, id = 5, rule = "cinema", file = "cinema01", alpha = 255, time = 400, path = ":sys/", vague = 40, sync = 0},
+        {"extrans", rule = 139, vague = 40},
+        {"bgm", file = "bgm004"},
+        {"text"},
+        text = {
+            ja = {
+                {"当我默默上课的时候，优美一直在意着我这边。"}
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105"
+    },
+    block_00105 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我无视她，继续记笔记。"}
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106"
+    },
+    block_00106 = {
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"msgoff"},
+        {"bg", y = -140, x = 310, file = "zbg048g", path = ":bg/", ax = 1920, ay = 1126, bx = -960, by = -586, sync = 0},
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0005", head = "yum_z2a", lv = 5, id = 5, sync = 0},
+        {"bg", lv = 1, id = 5, rule = "cinema", file = "cinema01", alpha = 255, time = 400, path = ":sys/", vague = 40, sync = 0},
+        {"extrans", rule = 139, vague = 40},
+        {"fgact", ch = "優美", act = "びっくり", time = 200, lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "優美", act = "びっくり", time = 200, lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000872", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「呃！　呃呃！！」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107"
+    },
+    block_00107 = {
+        {"text"},
+        text = {
+            ja = {
+                {"优美默默地打着手势。"}
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108"
+    },
+    block_00108 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她到底在做什么呢，虽然没说话，但还是让人分心。"}
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109"
+    },
+    block_00109 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001200", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嗯？」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110"
+    },
+    block_00110 = {
+        {"text"},
+        text = {
+            ja = {
+                {"仔细一看，优美正指着窗外。"}
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111"
+    },
+    block_00111 = {
+        {"text"},
+        text = {
+            ja = {
+                {"（什么啊……）"}
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112"
+    },
+    block_00112 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我也看向窗外，只见草薙学姐正走在操场上。"}
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113"
+    },
+    block_00113 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0017", head = "yum_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000873", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「她在干什么啊」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114"
+    },
+    block_00114 = {
+        {"text"},
+        text = {
+            ja = {
+                {"优美把笔记本卷成像扩音器一样，小声地跟我说。"}
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115"
+    },
+    block_00115 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001201", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「谁知道？」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116"
+    },
+    block_00116 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0008", head = "yum_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000874", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「你不好奇吗？」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117"
+    },
+    block_00117 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001202", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「盯——」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118"
+    },
+    block_00118 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我瞪了优美一眼。"}
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119"
+    },
+    block_00119 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0009", head = "yum_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000875", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「又瞪我。里奈。你到底在气什么呢？」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120"
+    },
+    block_00120 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001203", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「我才不会告诉做多余事情的人」"
+                }
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121"
+    },
+    block_00121 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0010", head = "yum_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000876", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「呜……」"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122"
+    },
+    block_00122 = {
+        {"cgdel", lv = 1, id = 5, rule = "cinema", time = 400},
+        {"msgoff"},
+        {"bg", file = "bg048g", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 500},
+        {"fg", ch = "優美", size = "z1", my = 40, mode = 3, resize = 1, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0012", head = "yum_z1a", lv = 4, id = 5},
+        {"se", file = "se3214", id = 1},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000877", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「老师！不好意思！」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123"
+    },
+    block_00123 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kys_000003", ch = "kys"}
+            },
+            ja = {
+                {
+                    name = {"教师"},
+                    "「诶？什，什么事？」"
+                }
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124"
+    },
+    block_00124 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0016", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "うんうん", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000878", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「里奈的内裤突然被爱液弄湿了，我们要去医务室，我来带她过去！",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125"
+    },
+    block_00125 = {
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001204", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「什，什么啊那是！别闹了优美！」"
+                }
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126"
+    },
+    block_00126 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kys_000004", ch = "kys"}
+            },
+            ja = {
+                {
+                    name = {"教师"},
+                    "「那，那是什么情况啊？」"
+                }
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127"
+    },
+    block_00127 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0006", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0018", head = "yum_z1a", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000879", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「老师！不能问女孩子那种事情！」"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128"
+    },
+    block_00128 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kys_000005", ch = "kys"}
+            },
+            ja = {
+                {
+                    name = {"教师"},
+                    "「哦，哦……」"
+                }
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129"
+    },
+    block_00129 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0016", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000880", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「那就这样！」"
+                }
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130"
+    },
+    block_00130 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001205", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「这样到底是什么啊！？」"
+                }
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131"
+    },
+    block_00131 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, resize = 1, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0016", head = "yum_z2a", lv = 5, id = 5},
+        {"fgact", ch = "優美", act = "うなづく", lv = 5, id = 5},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"优美用力拉着我的手。"}
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132"
+    },
+    block_00132 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001206", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「优，优美」"
+                }
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133"
+    },
+    block_00133 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2a0120", face = "a0002", head = "yum_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000881", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「走吧，里奈」"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134"
+    },
+    block_00134 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001207", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「走，走是去哪？」"
+                }
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135"
+    },
+    block_00135 = {
+        {"bg", time = 500, sync = 0, file = "black", path = ":bg/"},
+        {"se", file = "se1279", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我们一起走出了教室。"}
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136"
+    },
+    block_00136 = {
+        {"bgm", stop = 1, time = 1000},
+        {"msgoff"},
+        {"bg", file = "bg046a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 500},
+        {"fg", ch = "優美", size = "z1", mode = 3, resize = 1, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0008", head = "yum_z1a", lv = 4, id = 5},
+        {"bgm", file = "bgm003"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001208", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那个啦！优美！」"
+                }
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137"
+    },
+    block_00137 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0010", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0008", head = "yum_z1a", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000882", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「对不起。你还在生今早的气吧，里奈」"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138"
+    },
+    block_00138 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001209", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「今早的事？」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139"
+    },
+    block_00139 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0009", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000883", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「我抱住了草薙前辈的事。就算是开玩笑，也没考虑到里奈的心情」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140"
+    },
+    block_00140 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001210", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「……哈啊」"
+                }
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141"
+    },
+    block_00141 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001211", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「没考虑到我的心情……吗」"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142"
+    },
+    block_00142 = {
+        {"text"},
+        text = {
+            ja = {
+                {"完全搞错了。"}
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143"
+    },
+    block_00143 = {
+        {"text"},
+        text = {
+            ja = {
+                {"优美恐怕还没有意识到今早的事会带来什么。"}
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144"
+    },
+    block_00144 = {
+        {"text"},
+        text = {
+            ja = {
+                {"真是太有优美的风格了。"}
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145"
+    },
+    block_00145 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001212", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「优美，最近一段时间，不能再对草薙前辈做那种事了哦」"
+                }
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146"
+    },
+    block_00146 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0012", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000884", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「一段时间？」"
+                }
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147"
+    },
+    block_00147 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001213", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「对，明白了吗？」"
+                }
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148"
+    },
+    block_00148 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0009", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "優美", act = "うなづく", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000885", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「呃，嗯……既然是里奈说的……」"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149"
+    },
+    block_00149 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001214", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「真是的」"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150"
+    },
+    block_00150 = {
+        {"text"},
+        text = {
+            ja = {
+                {"现在的草薙前辈的人气简直和偶像差不多。"}
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151"
+    },
+    block_00151 = {
+        {"text"},
+        text = {
+            ja = {
+                {"优美那样做，肯定会招来反感才对。"}
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152"
+    },
+    block_00152 = {
+        {"text"},
+        text = {
+            ja = {
+                {"真是的，优美从以前开始就一点没变……。"}
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153"
+    },
+    block_00153 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0008", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000886", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「那么，今早的事你已经不生气了吗？」"
+                }
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154"
+    },
+    block_00154 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001215", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是啊。至少今早的事已经不生气了。但是，刚才那是怎么回事！？",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155"
+    },
+    block_00155 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0008", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000887", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「刚才？」"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156"
+    },
+    block_00156 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001216", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「我是说你离开教室时找的那个借口！」"
+                }
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157"
+    },
+    block_00157 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0001", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0016", head = "yum_z1a", lv = 4, id = 5},
+                {"fgact", ch = "優美", act = "うなづく", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000888", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「啊啊，那是我的愿望啦」"
+                }
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158"
+    },
+    block_00158 = {
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001217", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不要在教室里大声喊你的愿望啊！」"
+                }
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159"
+    },
+    block_00159 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0009", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000889", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「对不起……，当时一时想不到带你出去的理由……」"
+                }
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160"
+    },
+    block_00160 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001218", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「想不到也不能随便乱说吧！」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161"
+    },
+    block_00161 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0010", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000890", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「对不起……」"
+                }
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162"
+    },
+    block_00162 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001219", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「真是的……」"
+                }
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163"
+    },
+    block_00163 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0011", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000891", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「难道说，里奈，你其实还很生气吗？」"
+                }
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164"
+    },
+    block_00164 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001220", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不是难道说，正常人遇到那种事都会生气吧？」"
+                }
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165"
+    },
+    block_00165 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0009", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000892", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「早上的那次你原谅我了，不过刚才那次你不会不原谅吧？」"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166"
+    },
+    block_00166 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001221", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「如果我是那种性格的人，才不会跟你搅在一起呢」"
+                }
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167"
+    },
+    block_00167 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0002", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000893", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「你会原谅我吗？」"
+                }
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168"
+    },
+    block_00168 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001222", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不过！不准有下次了」"
+                }
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169"
+    },
+    block_00169 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0004", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000894", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170"
+    },
+    block_00170 = {
+        {"select", label = "label01", text = "select"},
+        {"select", label = "label02", exp = "f.yum=f.yum+1", text = "select"},
+        {"select", name = "select03_01_1", mode = "sys"},
+        {"text"},
+        select = {
+            ja = {"优美一直在忍让。", "如果考虑到优美的心情。"}
+        },
+        linkback = "block_00169",
+        linknext = "block_00171"
+    },
+    block_00171 = {
+        {"text"},
+        text = {
+            ja = {
+                {"优美一直在忍让。"}
+            }
+        },
+        labelcount = 1,
+        linkback = "block_00170",
+        linknext = "block_00172"
+    },
+    block_00172 = {
+        {"excall", label = "join"},
+        {"text"},
+        linkback = "block_00171",
+        linknext = "block_00173"
+    },
+    block_00173 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即便如此，如果考虑到优美的心情，也不能太强硬地说出来。"}
+            }
+        },
+        labelcount = 1,
+        linkback = "block_00172",
+        linknext = "block_00174"
+    },
+    block_00174 = {
+        {"excall", label = "join"},
+        {"text"},
+        linkback = "block_00173",
+        linknext = "block_00175"
+    },
+    block_00175 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "其实优美在教室里一直都很安静。所以优美做出那样的事也是很罕",
+                    {"rt2"},
+                    "见的。"
+                }
+            }
+        },
+        labelcount = 1,
+        linkback = "block_00174",
+        linknext = "block_00176"
+    },
+    block_00176 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在教室里，优美并不会展现像在美术部那样的真实一面。"}
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177"
+    },
+    block_00177 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "所以，很多同学大概都被吓了一跳吧。她到底是为了什么才做到这",
+                    {"rt2"},
+                    "种程度呢……。"
+                }
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178"
+    },
+    block_00178 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0001", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001223", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「呼，说起来该怎么办才好呢……。在这种时间从教室溜出来」"
+                }
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179"
+    },
+    block_00179 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0001", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000895", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「所以，去草薙那边看看吧」"
+                }
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180"
+    },
+    block_00180 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001224", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「去草薙前辈那里吗……，嗯，最近还是除了社团活动，别见面比",
+                    {"rt2"},
+                    "较好吧」"
+                }
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181"
+    },
+    block_00181 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0012", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000896", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「为什么？」"
+                }
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182"
+    },
+    block_00182 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001225", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「现在学长就像个小偶像似的，总觉得不太好意思靠近他呢」"
+                }
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183"
+    },
+    block_00183 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0004", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000897", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「没关系！里奈你也有偶像级的可爱啊！」"
+                }
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184"
+    },
+    block_00184 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001226", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「好好，能这么说的也就你而已啦」"
+                }
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185"
+    },
+    block_00185 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0010", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000898", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「才不是这样呢……」"
+                }
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186"
+    },
+    block_00186 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0001", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001227", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嘛，不过，我还是很好奇学长为什么一个人在操场上走来走去啊",
+                    {"rt2"},
+                    "……」"
+                }
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187"
+    },
+    block_00187 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001228", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那幅壁画已经完成了，他去那儿干什么呢」"
+                }
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188"
+    },
+    block_00188 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0002", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000899", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「总之，还是去本人那儿问问吧。如果真的是因为在意其他同学的",
+                    {"rt2"},
+                    "目光才没法说话的话，上课时间反而是个好机会哦」"
+                }
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189"
+    },
+    block_00189 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001229", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「说得也是，这样也不错……」"
+                }
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190"
+    },
+    block_00190 = {
+        {"fg", ch = "優美", speed = 3000, mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0002", head = "yum_z1a", x2 = 0, x = -1000, lv = 4, id = 5},
+        {"bgm", stop = 1, time = 1000},
+        {"se", file = "se9012", id = 1},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = "083r", wait = 250, file = "black", path = ":bg/", vague = 40},
+        {"bg", file = "bluesky_winter", id = 9, lv = 9, rule = "083r", sync = 1, vague = 40, path = ":cg/"},
+        {"se", stop = 1, time = 500, id = 1},
+        {"bgm", file = "bgm006"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191"
+    },
+    block_00191 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000900", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「你在做什么呢？一学期成绩不及格还要补习的人」"
+                }
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192"
+    },
+    block_00192 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001230", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「逃课可不是好事哦」"
+                }
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193"
+    },
+    block_00193 = {
+        {"cgdel", id = -1},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg057a", path = ":bg/", sync = 0},
+        {"extrans", time = 500},
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0001", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是冰川和川内野啊，没啦。只是想确认点事情」"
+                }
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194"
+    },
+    block_00194 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001231", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「确认？」"
+                }
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195"
+    },
+    block_00195 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0002", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嘛，这是我的事」"
+                }
+            }
+        },
+        linkback = "block_00194",
+        linknext = "block_00196"
+    },
+    block_00196 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001232", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「确实，暑假期间几乎一直被蓝色防水布盖着，直到几天前才被撤",
+                    {"rt2"},
+                    "掉」"
+                }
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197"
+    },
+    block_00197 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001233", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「可能没能好好看清楚」"
+                }
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198"
+    },
+    block_00198 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0015", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「合宿的时候倒是有机会看到」"
+                }
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199"
+    },
+    block_00199 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001234", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那天要打扫泳池、做饭、学习，还有看烟花。根本没法静下心来",
+                    {"rt2"},
+                    "看」"
+                }
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200"
+    },
+    block_00200 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0009", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「结果，刚开学就闹成这样了」"
+                }
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201"
+    },
+    block_00201 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001235", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「确实，连课间休息时间都有人聚在这里看『樱花们的足迹』」"
+                }
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202"
+    },
+    block_00202 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000901", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「原来如此，所以说草薙只是为了来看这个才逃课啊」"
+                }
+            }
+        },
+        linkback = "block_00201",
+        linknext = "block_00203"
+    },
+    block_00203 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0001", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，就是这么回事」"
+                }
+            }
+        },
+        linkback = "block_00202",
+        linknext = "block_00204"
+    },
+    block_00204 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0010", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过说起来，那个校长为什么要等到新学期前才公布这件事。如",
+                    {"rt2"},
+                    "果要叫记者的话，暑假不是更好吗……」"
+                }
+            }
+        },
+        linkback = "block_00203",
+        linknext = "block_00205"
+    },
+    block_00205 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001236", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「谁知道呢？也许他是想让自己的学生比外面的人更早看到吧。如",
+                    {"rt2"},
+                    "果记者们都来了，学生们反而看不到了」"
+                }
+            }
+        },
+        linkback = "block_00204",
+        linknext = "block_00206"
+    },
+    block_00206 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0015", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我可不觉得那种人会有这种性格……」"
+                }
+            }
+        },
+        linkback = "block_00205",
+        linknext = "block_00207"
+    },
+    block_00207 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001237", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是吗？我觉得校长其实挺温柔的哦」"
+                }
+            }
+        },
+        linkback = "block_00206",
+        linknext = "block_00208"
+    },
+    block_00208 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0016", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你认识校长吗？」"
+                }
+            }
+        },
+        linkback = "block_00207",
+        linknext = "block_00209"
+    },
+    block_00209 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001238", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「也不算认识啦，只是经常在屋顶碰见」"
+                }
+            }
+        },
+        linkback = "block_00208",
+        linknext = "block_00210"
+    },
+    block_00210 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0010", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「在屋顶？」"
+                }
+            }
+        },
+        linkback = "block_00209",
+        linknext = "block_00211"
+    },
+    block_00211 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001239", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「从暑假开始就在屋顶为穆尔展画画哦」"
+                }
+            }
+        },
+        linkback = "block_00210",
+        linknext = "block_00212"
+    },
+    block_00212 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0015", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「从暑假就开始了吗？」"
+                }
+            }
+        },
+        linkback = "block_00211",
+        linknext = "block_00213"
+    },
+    block_00213 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001240", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嘛，说是为了穆尔展其实只是表面上的说法。只是因为我想画的",
+                    {"rt2"},
+                    "东西正好在那里……」"
+                }
+            }
+        },
+        linkback = "block_00212",
+        linknext = "block_00214"
+    },
+    block_00214 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001241", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「所以，我们见过几次面了」"
+                }
+            }
+        },
+        linkback = "block_00213",
+        linknext = "block_00215"
+    },
+    block_00215 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001242", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「校长经常在屋顶抽烟」"
+                }
+            }
+        },
+        linkback = "block_00214",
+        linknext = "block_00216"
+    },
+    block_00216 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0002", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嘿，是这样啊」"
+                }
+            }
+        },
+        linkback = "block_00215",
+        linknext = "block_00217"
+    },
+    block_00217 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001243", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「前辈和校长关系也很好吗？」"
+                }
+            }
+        },
+        linkback = "block_00216",
+        linknext = "block_00218"
+    },
+    block_00218 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0016", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么啊？我怎么可能跟校长关系好」"
+                }
+            }
+        },
+        linkback = "block_00217",
+        linknext = "block_00219"
+    },
+    block_00219 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001244", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是吗？总觉得校长好像认识前辈的样子……」"
+                }
+            }
+        },
+        linkback = "block_00218",
+        linknext = "block_00220"
+    },
+    block_00220 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0009", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「为什么会被他认识啊……」"
+                }
+            }
+        },
+        linkback = "block_00219",
+        linknext = "block_00221"
+    },
+    block_00221 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001245", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「这个嘛，我也不太清楚。不过，前辈喜欢插手各种事情，我跟你",
+                    {"rt2"},
+                    "相处这么久很清楚，所以也没什么好奇怪的」"
+                }
+            }
+        },
+        linkback = "block_00220",
+        linknext = "block_00222"
+    },
+    block_00222 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001246", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「说不定，校长和草薙前辈之间其实有什么渊源呢」"
+                }
+            }
+        },
+        linkback = "block_00221",
+        linknext = "block_00223"
+    },
+    block_00223 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0015", head = "nao_z1a", lv = 4, id = 6},
+        {"fgact", ch = "直哉", act = "いいえ", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没有没有，跟那家伙根本不认识」"
+                }
+            }
+        },
+        linkback = "block_00222",
+        linknext = "block_00224"
+    },
+    block_00224 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001247", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是吗……」"
+                }
+            }
+        },
+        linkback = "block_00223",
+        linknext = "block_00225"
+    },
+    block_00225 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000902", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「啊——对了，校长说过，这学期内要把草薙直哉赶出学校哦」"
+                }
+            }
+        },
+        linkback = "block_00224",
+        linknext = "block_00226"
+    },
+    block_00226 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0007", head = "nao_z1a", lv = 4, id = 6},
+        {"fgact", ch = "直哉", act = "びっくり", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？真的吗？」"
+                }
+            }
+        },
+        linkback = "block_00225",
+        linknext = "block_00227"
+    },
+    block_00227 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001248", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「骗你的啦。我可没和校长聊过那么复杂的事情。只是我们经常在",
+                    {"rt2"},
+                    "屋顶写生，所以偶尔会见到校长而已」"
+                }
+            }
+        },
+        linkback = "block_00226",
+        linknext = "block_00228"
+    },
+    block_00228 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0015", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那个校长是个什么样的人啊？」"
+                }
+            }
+        },
+        linkback = "block_00227",
+        linknext = "block_00229"
+    },
+    block_00229 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001249", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「很温柔哦。而且很帅气」"
+                }
+            }
+        },
+        linkback = "block_00228",
+        linknext = "block_00230"
+    },
+    block_00230 = {
+        {"fg", mode = -2},
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0016", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000903", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「很适合抽烟的人呢。偶尔露出的那种带点讽刺的苦笑特别迷人…",
+                    {"rt2"},
+                    "…」"
+                }
+            }
+        },
+        linkback = "block_00229",
+        linknext = "block_00231"
+    },
+    block_00231 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「迷人什么的……」"
+                }
+            }
+        },
+        linkback = "block_00230",
+        linknext = "block_00232"
+    },
+    block_00232 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0004", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "うんうん", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000904", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「又是美女，完全是我的菜」"
+                }
+            }
+        },
+        linkback = "block_00231",
+        linknext = "block_00233"
+    },
+    block_00233 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你用那种眼光看校长的吗……」"
+                }
+            }
+        },
+        linkback = "block_00232",
+        linknext = "block_00234"
+    },
+    block_00234 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0015", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0017", head = "yum_z1a", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000905", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「嘛，草薙小子你肯定不懂那位的性感之处。你呀，还是让那些围",
+                    {"rt2"},
+                    "着你转的小姑娘们为你尖叫着高兴去吧」"
+                }
+            }
+        },
+        linkback = "block_00233",
+        linknext = "block_00235"
+    },
+    block_00235 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，那个啊。谢谢你了，川内野」"
+                }
+            }
+        },
+        linkback = "block_00234",
+        linknext = "block_00236"
+    },
+    block_00236 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0013", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0017", head = "yum_z1a", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000906", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「哈？什、什么谢谢啊？」"
+                }
+            }
+        },
+        linkback = "block_00235",
+        linknext = "block_00237"
+    },
+    block_00237 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「说真的，挺烦的。她们总是跟前跟后地围着，甩都甩不掉，你又",
+                    {"rt2"},
+                    "不能冲她们发火。那种距离感真的很难受」"
+                }
+            }
+        },
+        linkback = "block_00236",
+        linknext = "block_00238"
+    },
+    block_00238 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0006", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000907", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「哈！你小子现在可是你人生唯一的桃花期，别说这种话，乐在其",
+                    {"rt2"},
+                    "中就行了！」"
+                }
+            }
+        },
+        linkback = "block_00237",
+        linknext = "block_00239"
+    },
+    block_00239 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈！可惜了，我从一学期开始就一直很受欢迎！」"
+                }
+            }
+        },
+        linkback = "block_00238",
+        linknext = "block_00240"
+    },
+    block_00240 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0015", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000908", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「我都说了那是暗杀者多少次了」"
+                }
+            }
+        },
+        linkback = "block_00239",
+        linknext = "block_00241"
+    },
+    block_00241 = {
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是那样的！」"
+                }
+            }
+        },
+        linkback = "block_00240",
+        linknext = "block_00242"
+    },
+    block_00242 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0017", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000909", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「哎呀，像你这种榆木脑袋是不会懂女人真正的美好的，所以你还",
+                    {"rt2"},
+                    "是赶紧去随便找附近的女人下手吧」"
+                }
+            }
+        },
+        linkback = "block_00241",
+        linknext = "block_00243"
+    },
+    block_00243 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「虽然我确实不懂女人的好，但我也有选择的权利啊」"
+                }
+            }
+        },
+        linkback = "block_00242",
+        linknext = "block_00244"
+    },
+    block_00244 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0010", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000910", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「人那么多，应该也有你喜欢的女孩吧」"
+                }
+            }
+        },
+        linkback = "block_00243",
+        linknext = "block_00245"
+    },
+    block_00245 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「本来我就不喜欢做那种事的女人」"
+                }
+            }
+        },
+        linkback = "block_00244",
+        linknext = "block_00246"
+    },
+    block_00246 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0006", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "うんうん", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000911", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「明明是处男子，还逞强！」"
+                }
+            }
+        },
+        linkback = "block_00245",
+        linknext = "block_00247"
+    },
+    block_00247 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「正因为是处男子才要逞强啊！」"
+                }
+            }
+        },
+        linkback = "block_00246",
+        linknext = "block_00248"
+    },
+    block_00248 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0015", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000912", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「你在逞什么强啊，难得有鸡鸡，干脆碰到女人就一个个都上了吧」"
+                }
+            }
+        },
+        linkback = "block_00247",
+        linknext = "block_00249"
+    },
+    block_00249 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「要是只因为有鸡鸡就那样做，这国家早就成犯罪国家了」"
+                }
+            }
+        },
+        linkback = "block_00248",
+        linknext = "block_00250"
+    },
+    block_00250 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0001", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000913", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「是这样吗？我又没有鸡鸡不太清楚，但要是有的话我也会想试试",
+                    {"rt2"},
+                    "看哦」"
+                }
+            }
+        },
+        linkback = "block_00249",
+        linknext = "block_00251"
+    },
+    block_00251 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我也想插啊，当然」"
+                }
+            }
+        },
+        linkback = "block_00250",
+        linknext = "block_00252"
+    },
+    block_00252 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0015", head = "yum_z1a", lv = 4, id = 5},
+        {"fgact", ch = "優美", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000914", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「那你就去跟那边的女人插不就好了」"
+                }
+            }
+        },
+        linkback = "block_00251",
+        linknext = "block_00253"
+    },
+    block_00253 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我只抱喜欢的人！我一辈子坚持一夫一妻主义！所以现在还光荣",
+                    {"rt2"},
+                    "地是处男子啊！」"
+                }
+            }
+        },
+        linkback = "block_00252",
+        linknext = "block_00254"
+    },
+    block_00254 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0017", head = "yum_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000915", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「哇，居然把这么中二的话说出口了」"
+                }
+            }
+        },
+        linkback = "block_00253",
+        linknext = "block_00255"
+    },
+    block_00255 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「无所谓啦。中二不中二没关系。再说我是不是处男子也轮不到你",
+                    {"rt2"},
+                    "担心！」"
+                }
+            }
+        },
+        linkback = "block_00254",
+        linknext = "block_00256"
+    },
+    block_00256 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001250", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「啊哈哈……那也是，确实如此」"
+                }
+            }
+        },
+        linkback = "block_00255",
+        linknext = "block_00257"
+    },
+    block_00257 = {
+        {"fg", mode = -2},
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0001", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过说起来，没想到你们和校长竟然认识」"
+                }
+            }
+        },
+        linkback = "block_00256",
+        linknext = "block_00258"
+    },
+    block_00258 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001251", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「说是认识，其实也就是偶尔在屋顶碰见罢了」"
+                }
+            }
+        },
+        linkback = "block_00257",
+        linknext = "block_00259"
+    },
+    block_00259 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001252", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「说起来，在这幅壁画完成之前，他就经常看着教会」"
+                }
+            }
+        },
+        linkback = "block_00258",
+        linknext = "block_00260"
+    },
+    block_00260 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000916", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「确实，我也觉得校长好像总是凝视着教会」"
+                }
+            }
+        },
+        linkback = "block_00259",
+        linknext = "block_00261"
+    },
+    block_00261 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001253", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「这座教会对他来说，或许有什么特别的情感吧」"
+                }
+            }
+        },
+        linkback = "block_00260",
+        linknext = "block_00262"
+    },
+    block_00262 = {
+        {"bgm", stop = 1, time = 2000},
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0010", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「谁知道呢。不过感觉好像这座教会过去确实发生过什么事……」"
+                }
+            }
+        },
+        linkback = "block_00261",
+        linknext = "block_00263"
+    },
+    block_00263 = {
+        {"bg", file = "ev_uni_c24_01", path = ":ev/ev_uni_c24/", set = "ev_uni_c24"},
+        {"bgm", file = "bgm038"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001254", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「这幅壁画的主题是什么呢？」"
+                }
+            }
+        },
+        linkback = "block_00262",
+        linknext = "block_00264"
+    },
+    block_00264 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，这个啊……大概是以千年樱为主题的」"
+                }
+            }
+        },
+        linkback = "block_00263",
+        linknext = "block_00265"
+    },
+    block_00265 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001255", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是这样吗」"
+                }
+            }
+        },
+        linkback = "block_00264",
+        linknext = "block_00266"
+    },
+    block_00266 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，虽然草薙健一郎怎么想的不清楚，但至少明石是以那个为主",
+                    {"rt2"},
+                    "题创作的」"
+                }
+            }
+        },
+        linkback = "block_00265",
+        linknext = "block_00267"
+    },
+    block_00267 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「与其说是主题，不如说明石是想要再现千年樱才画出来的」"
+                }
+            }
+        },
+        linkback = "block_00266",
+        linknext = "block_00268"
+    },
+    block_00268 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001256", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「再现？」"
+                }
+            }
+        },
+        linkback = "block_00267",
+        linknext = "block_00269"
+    },
+    block_00269 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg057a", path = ":bg/", sync = 0},
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0001", head = "nao_z1a", lv = 4, id = 6, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，大概吧，那家伙有那家伙的理由，所以才创作出了仿佛千年",
+                    {"rt2"},
+                    "樱真实存在一般的作品吧」"
+                }
+            }
+        },
+        linkback = "block_00268",
+        linknext = "block_00270"
+    },
+    block_00270 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000917", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「是为了让千年樱成为现实的作品吗……」"
+                }
+            }
+        },
+        linkback = "block_00269",
+        linknext = "block_00271"
+    },
+    block_00271 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0014", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是啊，就是那里。有点在意」"
+                }
+            }
+        },
+        linkback = "block_00270",
+        linknext = "block_00272"
+    },
+    block_00272 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001257", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「在意是指？」"
+                }
+            }
+        },
+        linkback = "block_00271",
+        linknext = "block_00273"
+    },
+    block_00273 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0010", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「因为据说那些注入了灵魂的作品，有时会拥有与真品相同的力量」"
+                }
+            }
+        },
+        linkback = "block_00272",
+        linknext = "block_00274"
+    },
+    block_00274 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001258", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「最后点上眼睛就会动起来的故事有吧」"
+                }
+            }
+        },
+        linkback = "block_00273",
+        linknext = "block_00275"
+    },
+    block_00275 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0001", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「『画龙点睛』」"
+                }
+            }
+        },
+        linkback = "block_00274",
+        linknext = "block_00276"
+    },
+    block_00276 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0010", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「南北朝时期，南朝梁国的画家‘张僧繇’，据传说他不为自己画的",
+                    {"rt2"},
+                    "龙点睛，是因为一旦点上眼睛，龙就会飞走」"
+                }
+            }
+        },
+        linkback = "block_00275",
+        linknext = "block_00277"
+    },
+    block_00277 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0001", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「身边的人一直吵着让他点睛点睛！太吵了，于是他无奈地点上眼",
+                    {"rt2"},
+                    "睛，结果龙真的破开天花板升天了，就是那个传说」"
+                }
+            }
+        },
+        linkback = "block_00276",
+        linknext = "block_00278"
+    },
+    block_00278 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0009", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我觉得，这棵樱花树也有类似的感觉」"
+                }
+            }
+        },
+        linkback = "block_00277",
+        linknext = "block_00279"
+    },
+    block_00279 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0014", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以，总觉得有点不舒服」"
+                }
+            }
+        },
+        linkback = "block_00278",
+        linknext = "block_00280"
+    },
+    block_00280 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001259", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不舒服吗？」"
+                }
+            }
+        },
+        linkback = "block_00279",
+        linknext = "block_00281"
+    },
+    block_00281 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0010", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嘛，如果只是这幅画的话，应该不会发生那种事，不过，如果和",
+                    {"rt2"},
+                    "千年樱有着同样思念共鸣的话……」"
+                }
+            }
+        },
+        linkback = "block_00280",
+        linknext = "block_00282"
+    },
+    block_00282 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001260", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「前辈每次说起千年樱的传说时，总是像真的存在一样在讲呢」"
+                }
+            }
+        },
+        linkback = "block_00281",
+        linknext = "block_00283"
+    },
+    block_00283 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0016", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「千年樱真的存在？别开玩笑了，那种灵异的东西，我最讨厌了」"
+                }
+            }
+        },
+        linkback = "block_00282",
+        linknext = "block_00284"
+    },
+    block_00284 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000918", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「草薙前辈好像特别讨厌千年樱呢」"
+                }
+            }
+        },
+        linkback = "block_00283",
+        linknext = "block_00285"
+    },
+    block_00285 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0009", head = "nao_z1a", lv = 4, id = 6},
+        {"fgact", ch = "直哉", act = "うなづく", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是啊」"
+                }
+            }
+        },
+        linkback = "block_00284",
+        linknext = "block_00286"
+    },
+    block_00286 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0001", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「总之，你们也该差不多回去上课了吧？反正，你们肯定是看到我",
+                    {"rt2"},
+                    "才出来的吧？」"
+                }
+            }
+        },
+        linkback = "block_00285",
+        linknext = "block_00287"
+    },
+    block_00287 = {
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1a0100", face = "a0018", head = "nao_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过，如你所见，并没有什么特别的理由」"
+                }
+            }
+        },
+        linkback = "block_00286",
+        linknext = "block_00288"
+    },
+    block_00288 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001261", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「看起来确实如此。那我们先回去吧，优美」"
+                }
+            }
+        },
+        linkback = "block_00287",
+        linknext = "block_00289"
+    },
+    block_00289 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000919", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00288",
+        linknext = "block_00290"
+    },
+    block_00290 = {
+        {"bgm", stop = 1, time = 1000},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"excall", file = "03_zypressen_01_2"},
+        {"text"},
+        linkback = "block_00289"
+    },
+    label = {
+        top = {block = "block_00000", label = 1},
+        label01 = {block = "block_00171", label = 1},
+        label02 = {block = "block_00173", label = 1},
+        join = {block = "block_00175", label = 1}
+    }
+}

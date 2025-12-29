@@ -1,0 +1,852 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅱ章"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = "083r", wait = 250, file = "black", path = ":bg/", vague = 40},
+        {"bg", rule = "083r", vague = 40, file = "bg066a", path = ":bg/"},
+        {"bgm", file = "bgm009"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在前往玄关大厅的路上停下了脚步。"}
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, resize = 1, path = ":fg/nei/z1/", file = "nei_z1i0000", face = "i0001", head = "nei_z1i", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000001", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那个孩子……刚才也在那里吗。"}
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000002", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            ja = {
+                {"年龄大概五六岁左右吧。"}
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "但她却有着完全不像这个年纪的沉稳。尤其是前几天刚见过主日学",
+                    {"rt2"},
+                    "校的孩子们之后，更是觉得如此。"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她端正地并拢双脚坐着。身旁立着一根拐杖。"}
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她以与年幼外貌不相称的目光望向前方，只是静静地坐在那里。"}
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她目光的前方什么也没有。只是一面墙而已。"}
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"se", file = "se9012", id = 1},
+        {"fg", ch = "寧", size = "z2", mode = 3, resize = 1, path = ":fg/nei/z2/", file = "nei_z2i0000", face = "i0001", head = "nei_z2i", lv = 5, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"我慢慢把手插进口袋，若无其事地走过去，坐在没有靠背的长椅上。"}
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"孩子坐在右端，我坐在左端。"}
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "口袋里有东西轻轻碰到了我的手指。是昨天从鸟谷那里拿到的琥珀",
+                    {"rt2"},
+                    "糖。"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「差不多，探视时间要结束了哦」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"fg", ch = "寧", size = "z2", mode = 3, path = ":fg/nei/z2/", file = "nei_z2i0000", face = "i0006", head = "nei_z2i", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000003", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"text"},
+        text = {
+            ja = {
+                {"孩子瞥了我们一眼，随即又把目光转回了前方。"}
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"fg", ch = "寧", size = "z2", mode = 3, path = ":fg/nei/z2/", file = "nei_z2i0000", face = "i0002", head = "nei_z2i", lv = 5, id = 9},
+        {"fgact", ch = "寧", act = "おじぎ", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000004", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「谢谢您。我没关系」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {"平静而平淡的声音，从孩子口中溢出。"}
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那是一句很成熟的话。"}
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {"听起来也像是拒绝。口袋里的糖果沙沙作响地碰到手指。"}
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这里的康复科，有不少很不错的工作人员吧。前园小姐，还在吗？",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"fg", ch = "寧", size = "z2", mode = 3, path = ":fg/nei/z2/", file = "nei_z2i0000", face = "i0001", head = "nei_z2i", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000005", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            ja = {
+                {"孩子转头看向了这边。投来的视线，仿佛无声一般。"}
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000006", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「前园小姐，在的」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"text"},
+        text = {
+            ja = {
+                {"声音不大也不小。虽然有些平淡，但也并非毫无感情。"}
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {"就是这样的声音。"}
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗。我以前也受过她一点照顾。虽然有点唠叨，但很热心，是",
+                    {"rt2"},
+                    "个好人」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000007", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「……嗯」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你在等人来接你吗？」"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"fgact", ch = "寧", act = "うなづく", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000008", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「是的」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这样啊，希望他们早点来」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000009", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"fgact", ch = "寧", act = "いいえ", size = 5, lv = 5, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"她轻轻地摇了摇头。柔和的声音再次从她小小的嘴里溢出。"}
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"fg", ch = "寧", size = "z2", mode = 3, path = ":fg/nei/z2/", file = "nei_z2i0000", face = "i0005", head = "nei_z2i", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000010", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「什么时候来，我也不知道」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「很忙吗」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"fg", ch = "寧", size = "z2", mode = 3, path = ":fg/nei/z2/", file = "nei_z2i0000", face = "i0001", head = "nei_z2i", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000011", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「……嗯」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这样啊」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「话说……你觉得现在我口袋里装的是什么？」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "是不是跟不上突如其来的问题，孩子歪了歪头。我也不在意，继续",
+                    {"rt2"},
+                    "说下去。"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「也许是好东西，也许是坏东西。也许是零钱。也许是糖果，也许",
+                    {"rt2"},
+                    "是纽扣，也许是月亮」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"fg", ch = "寧", size = "z2", mode = 3, path = ":fg/nei/z2/", file = "nei_z2i0000", face = "i0002", head = "nei_z2i", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000012", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「你说的话真奇怪呢」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嘛，这我承认。那么，你觉得里面装的是什么？」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"fg", ch = "寧", size = "z2", mode = 3, path = ":fg/nei/z2/", file = "nei_z2i0000", face = "i0001", head = "nei_z2i", lv = 5, id = 9},
+        {"fgact", ch = "寧", act = "おじぎ", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000013", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            ja = {
+                {"孩子稍微思考了一下。胆怯的情感浮现在她的眼眸中。"}
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000014", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「……糖」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「答对了」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我把口袋里的所有琥珀糖都拿出来，递给孩子。"}
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这是今天的份。剩下的是明天的份。明天一整天坚持下来了之后，",
+                    {"rt2"},
+                    "不是说马上吃，而是只要完成一次，就尝一颗试试」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「奖励要及时领取才最有效率」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"fg", ch = "寧", size = "z2", mode = 3, path = ":fg/nei/z2/", file = "nei_z2i0000", face = "i0006", head = "nei_z2i", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000015", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁", "？？？"},
+                    "「可以吗？」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，因为你答对了我的问题，那就是你的……啊——呃，你叫什么",
+                    {"rt2"},
+                    "名字？」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"fg", ch = "寧", size = "z2", mode = 3, path = ":fg/nei/z2/", file = "nei_z2i0000", face = "i0001", head = "nei_z2i", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "寧", size = "z2", mode = 3, path = ":fg/nei/z2/", file = "nei_z2i0000", face = "i0002", head = "nei_z2i", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000016", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁"},
+                    "「………",
+                    {"txruby", text = "ねい"},
+                    "宁",
+                    {"txruby"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我是直哉。宁，那颗糖是你应得的奖励，收下吧。虽然我说是明",
+                    {"rt2"},
+                    "天的份，但如果想吃的话，现在全部吃掉也可以」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"fg", ch = "寧", size = "z2", mode = 3, path = ":fg/nei/z2/", file = "nei_z2i0000", face = "i0001", head = "nei_z2i", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000017", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"text"},
+        text = {
+            ja = {
+                {"年幼的少女静静地注视着我。似乎有些犹豫，之后轻轻点了点头。"}
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"fg", ch = "寧", size = "z2", mode = 3, path = ":fg/nei/z2/", file = "nei_z2i0000", face = "i0002", head = "nei_z2i", lv = 5, id = 9},
+        {"fgact", ch = "寧", act = "おじぎ", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_000018", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"宁"},
+                    "「谢谢您」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"fgact", ch = "寧", act = "おじぎ", lv = 5, id = 9},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "年幼的少女打开透明的糖纸，把糖含进嘴里。在她小小的嘴角，悄",
+                    {"rt2"},
+                    "然浮现出一丝淡淡的幸福。"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我松了一口气。这个孩子虽然很可靠，但终究还是个普通的孩子。"}
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"bgm", stop = 1, time = 1000},
+        {"excall", file = "02_abend_13_1"},
+        {"text"},
+        linkback = "block_00060"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

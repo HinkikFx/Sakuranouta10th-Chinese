@@ -1,0 +1,510 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅱ章"},
+        {"bgm", stop = 1, time = 1000},
+        {"fg", mode = -2},
+        {"bg", time = 0, file = "bg017a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23},
+        {"fg", ch = "雫", size = "z1", mode = 3, resize = 1, path = ":fg/shz/z1/", file = "shz_z1d1000", face = "d0003", head = "shz_z1d", x = -345, lv = 4, id = 5},
+        {"fg", ch = "稟", size = "z1", mode = 3, resize = 1, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0002", head = "rin_z1a", x = 345, lv = 4, id = 6},
+        {"bgm", file = "bgm003", time = 10000},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_000897", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「初次见面，雫酱」"
+                }
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"fg", ch = "雫", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1000", face = "a0012", head = "shz_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_szd_000360", ch = "szd"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {"雫一瞬看了禀的脸就停下了脚步。但是――"}
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"fg", ch = "雫", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1000", face = "a0003", head = "shz_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "雫", act = "おじぎ", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_szd_000361", ch = "szd"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「初次见面，御桜禀小姐」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"fg", ch = "稟", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0013", head = "rin_z1a", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "稟", act = "びっくり", lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_000898", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「诶？　你怎么知道我的名字？」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"fg", ch = "雫", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1000", face = "a0002", head = "shz_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_szd_000362", ch = "szd"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「从圭哥哥还有直哉那里听说过……」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"fg", ch = "稟", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0002", head = "rin_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_000899", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「原来如此啊」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {"两人就那样互相凝视着。"}
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"fg", ch = "雫", size = "z1", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1000", face = "a0009", head = "shz_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_szd_000363", ch = "szd"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"se", id = 1, file = "se3356"},
+        {"fg", ch = "雫", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1000", face = "a0009", head = "shz_z1a", x2 = -345, x = -45, lv = 4, id = 5},
+        {"text"},
+        text = {
+            ja = {
+                {"就在以为雫要说些什么的瞬间，雫抱住了禀。"}
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"fg", ch = "稟", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0022", head = "rin_z1a", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "稟", act = "びっくり", lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0013", head = "rin_z1a", x = 345, lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_000900", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「哇？　什，什么？」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"fg", ch = "雫", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1000", face = "a0002", head = "shz_z1a", x = -45, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_szd_000364", ch = "szd"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「和传闻一样，是个很可爱的人呢」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"fg", ch = "稟", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0003", head = "rin_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_000901", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「才没有啦，雫酱你才更可爱啊」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"fg", ch = "雫", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1000", face = "a0003", head = "shz_z1a", x = -45, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_szd_000365", ch = "szd"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「没有那种事」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"fg", ch = "稟", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0001", head = "rin_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_000902", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"fg", ch = "稟", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0003", head = "rin_z1a", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "稟", act = "lr", lv = 4, id = 6},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_000903", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「咦」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"fg", ch = "雫", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1000", face = "a0012", head = "shz_z1a", x = -45, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_szd_000366", ch = "szd"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀也回抱住了雫。"}
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"fg", ch = "稟", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0004", head = "rin_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_000904", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「呃、总觉得，和初次见面时的感觉不太一样呢」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"fg", ch = "雫", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1000", face = "a0004", head = "shz_z1a", x = -45, lv = 4, id = 5},
+        {"fgact", ch = "雫", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_szd_000367", ch = "szd"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「嗯……是啊……」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"bgm", stop = 1, time = 1000},
+        {"fg", ch = "雫", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1000", face = "a0004", head = "shz_z1a", x2 = -45, x = 0, lv = 4, id = 5},
+        {"fg", ch = "稟", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0004", head = "rin_z1a", x2 = 345, x = 570, lv = 4, id = 6},
+        {"fg", ch = "優美", size = "z1", mx = -40, mode = 3, resize = 1, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0018", head = "yum_z1a", x = -570, lv = 4, id = 3},
+        {"bgm", file = "bgm012"},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0100", face = "a0006", head = "yum_z1a", x = -570, lv = 4, id = 3}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000639", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「呜呜呜……那、雫小姐」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"fg", ch = "雫", mode = 3, path = ":fg/shz/z1/", file = "shz_z1b1000", face = "b0012", head = "shz_z1b", x = 0, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_szd_000368", ch = "szd"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「嗯？」"
+                }
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"fg", ch = "優美", mode = 3, path = ":fg/yum/z1/", file = "yum_z1a0120", face = "a0004", head = "yum_z1a", x = -570, lv = 4, id = 3},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000640", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「要不要一起进更衣室啊？」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"fg", ch = "雫", mode = 3, path = ":fg/shz/z1/", file = "shz_z1b1000", face = "b0004", head = "shz_z1b", x = 0, lv = 4, id = 5},
+        {"fgact", ch = "雫", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_szd_000369", ch = "szd"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「嗯，不想去」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"fg", ch = "優美", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0022", head = "yum_z1b", x = -570, lv = 4, id = 3},
+        {"fgact", ch = "優美", act = "icon", lv = 4, id = 3, icon = "icon16z1", x = 0, y = -550},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000641", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「好受打击……」"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_000301", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不是吧，初次见面就说这种话，被拒绝不是很正常吗？」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"fg", ch = "優美", mode = 3, path = ":fg/yum/z1/", file = "yum_z1b0110", face = "b0020", head = "yum_z1b", x = -570, lv = 4, id = 3},
+        {"fgact", ch = "優美", act = "びっくり", lv = 4, id = 3},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_000642", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「我觉得趁着现在的气氛能说出口」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"fg", ch = "雫", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1000", face = "a0003", head = "shz_z1a", x = 0, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_szd_000370", ch = "szd"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「和禀一起的话可以哦？」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"fg", ch = "稟", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0013", head = "rin_z1a", x = 570, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_000905", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「诶？一起进更衣室吗？」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"excall", file = "02_abend_10"},
+        {"text"},
+        linkback = "block_00028"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

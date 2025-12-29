@@ -1,0 +1,2440 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅲ章"},
+        {"bg", file = "ev_eye_c05_01", path = ":ev/ev_eye_c05/", set = "ev_eye_c05"},
+        {"ex", time = 5000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"bg", file = "bluesky_winter", sync = 1, id = 1, lv = 5, path = ":cg/"},
+        {"bgm", file = "bgm030"},
+        {"text"},
+        text = {
+            ja = {
+                {"虽然已经是九月了，却异常炎热。影子很短，乌黑地蹲伏在脚边。"}
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {"一滴汗珠从额头滑落。"}
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002454", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「……说真的啊」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯？」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"msgoff"},
+        {"bg", file = "bg057a", path = ":bg/", sync = 0},
+        {"fg", ch = "真琴", size = "z1", mode = 3, resize = 1, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0008", head = "mak_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"cgdel", id = -1},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002455", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「是不是太偷懒了点？」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我也是，最开始打算早上去看的。结果那里有一群人……」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0009", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002456", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「啊啊，因为昨天在电视上播了，所以人又聚过来了呢」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0010", head = "mak_z1a", lv = 4, id = 9},
+        {"fgact", ch = "真琴", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"鸟谷轻轻叹了口气。"}
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0015", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002457", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「这段时间，好不容易才安静下来……」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗？」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0017", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0012", head = "mak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002458", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「在教室里的时候，其他年级或者别的班的人，也会来看草薙哦？",
+                    {"rt2"},
+                    "　你该不会，没发现吧？」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「完全没注意」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0015", head = "mak_z1d", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002459", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「哈啊……你真的对别人投来的视线一点都不关心啊……」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「基本上无所谓」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            ja = {
+                {"鸟谷仰望着壁画。"}
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0110", face = "a0001", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002460", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「我之前也说过了，对他人漠不关心的男子人，会帮忙做这种东西",
+                    {"rt2"},
+                    "吗？」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我是个热爱艺术的人」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0110", face = "a0005", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002461", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「那你为什么不画画呢」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「热爱，并不等于‘去做’」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0110", face = "a0017", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002462", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「什么啊？ 黄色笑话吗？」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈？ 你在说什么啊？」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0012", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0008", head = "mak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002463", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「欸？‘爱’就是‘做’，不是指那种事‘做’吗？」"
+                }
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是……，按照刚才的话题，正常来说，热爱艺术，并不等于要",
+                    {"rt2"},
+                    "从事艺术活动。就是这个意思吧……」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0009", head = "mak_z1a", lv = 4, id = 9},
+        {"fgact", ch = "真琴", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002464", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「诶！？是、是这样吗？」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「把爱＝性爱，这个想法本身就不对吧」"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0010h", head = "mak_z1d", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0011h", head = "mak_z1d", lv = 4, id = 9},
+                {"fgact", ch = "真琴", act = "うなづく", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002465", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「呜……，我、我搞错了……更正一下。更正一下」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"text"},
+        text = {
+            ja = {
+                {"鸟谷有些害羞地更正了自己的说法。"}
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {"其实也没必要更正，不过这种地方也挺有鸟谷的风格。"}
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "尤其是，因为误会成了色色的事情，有点小混乱。平时那副傲慢的",
+                    {"rt2"},
+                    "样子也不见了，反倒露出了她原本隐藏的真性情。"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0005h", head = "mak_z1d", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002466", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「你、你是不是又在想什么无聊的事！」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不过，敏锐依旧如常。"}
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「比起那个，我倒是觉得意外啊」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0008", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002467", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「意外什么？」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没想到鸟谷竟然还有时间看电视」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0001", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002468", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「我可没看哦，是从同班同学那里听来的」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这也是情报收集的一环吗」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0026", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0002", head = "mak_z1a", lv = 4, id = 9},
+                {"fgact", ch = "真琴", act = "びっくり", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002469", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「也没那么夸张啦，不过知道点什么总没坏处。啊，当然，和班里",
+                    {"rt2"},
+                    "的孩子们聊天也很开心哦？」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那倒是。总觉得你一直都是人群的中心」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0027", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002470", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「草薙也是啊」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我？要说的话，我更像是被排挤的那种吧？」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0026", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0001", head = "mak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002471", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「是呢，明明一副‘我是被排挤的，总是在角落’的表情，可不知不",
+                    {"rt2"},
+                    "觉就有人自然聚过来了……大概就是这种感觉吧」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0110", face = "a0016", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002472", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「不过呢，聚过来的大多都是怪人」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那你不也是怪人之一了吗」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0110", face = "a0002", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002473", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「当然，我和禀酱，还有里奈不算在内哦」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"text"},
+        text = {
+            ja = {
+                {"好像把川内野漏掉了……嘛，那家伙也没办法……"}
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0110", face = "a0008", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002474", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「比起这个，你要不要回教室去了？」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯？啊，再待一会儿吧」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0110", face = "a0010", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002475", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「真是的……」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"msgoff"},
+        {"bg", y = -210, file = "zbg057a", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "真琴", size = "z2", mode = 3, resize = 1, path = ":fg/mak/z2/", file = "mak_z2a0110", face = "a0027", head = "mak_z2a", lv = 5, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002476", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「唉……都是昨天的电视节目的原因，上学路上也好，在教室里也",
+                    {"rt2"},
+                    "好，大家都不太跟我说话……」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"fg", ch = "真琴", size = "z2", mode = 3, path = ":fg/mak/z2/", file = "mak_z2a0110", face = "a0011", head = "mak_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002477", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「所以现在能这样毫无顾虑地和你两个人说话，我其实很开心，还",
+                    {"rt2"},
+                    "想再多聊一会儿……」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"bgm", stop = 1, time = 500},
+        {"msgoff"},
+        {"bg", file = "bg057a", path = ":bg/", sync = 0},
+        {"fg", ch = "真琴", size = "z1", mode = 3, resize = 1, path = ":fg/mak/z1/", file = "mak_z1a0110", face = "a0011", head = "mak_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"bgm", file = "bgm031"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你说什么？在嘀咕什么呢？」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0110", face = "a0026", head = "mak_z1a", lv = 4, id = 9},
+        {"fgact", ch = "真琴", act = "うんうん", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002478", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「没、没什么啦！」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎么可能没什么。鸟谷居然说能和我两个人聊开心，这可是难得",
+                    {"rt2"},
+                    "说了句可爱的台词啊」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0110", face = "a0018h", head = "mak_z1a", lv = 4, id = 9},
+        {"fgact", ch = "真琴", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002479", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「这、这种时候你应该装作没听见才对吧？‘你说什么？’不是应该",
+                    {"rt2"},
+                    "装傻吗？主角不是都这样吗？」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我才不懂什么套路呢。反正只要对我有利的时候，我就会特别灵",
+                    {"rt2"},
+                    "敏。你说什么？再说一遍？」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0005h", head = "mak_z1d", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0011h", head = "mak_z1d", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002480", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「你装傻的方向搞反了啦！没、没什么啦！」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过，能和我两个人单独说话，你很开心吧？」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0018h", head = "mak_z1d", lv = 4, id = 9},
+        {"fgact", ch = "真琴", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002481", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「别、别误会了，我不是那个意思！」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯——，感觉心情真不错啊」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0008h", head = "mak_z1d", lv = 4, id = 9},
+        {"fgact", ch = "真琴", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002482", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「你高兴什么啊！？」"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果能从鸟谷嘴里听到平时绝对不会说的话……」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"msgoff"},
+        {"fg", ch = "真琴", size = "z1", time = 300, mode = 3, path = ":fg/mak/z1/", file = "mak_z1b0100", face = "b0005", head = "mak_z1b", lv = 4, id = 9},
+        {"ex", time = 50, func = "wait"},
+        {"se", file = "se3130", id = 1},
+        {"fg", ch = "真琴", time = 200, sync = 1, my = 40, mode = -1, lv = 4, id = 9},
+        {"fg", ch = "真琴", size = "z2", my = 40, mode = 3, resize = 1, path = ":fg/mak/z2/", file = "mak_z2b0100", face = "b0005", head = "mak_z2b", lv = 5, id = 9},
+        {"se", id = 2, file = "se2192"},
+        {"quake", mode = "mw"},
+        {"quake"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗨呗」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062"
+    },
+    block_00062 = {
+        {"fg", ch = "真琴", size = "z1", my = 40, mode = 3, resize = 1, path = ":fg/mak/z1/", file = "mak_z1b0100", face = "b0016", head = "mak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002483", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「哼、哼、哼，尝尝托马斯锻炼出来的高踢的滋味如何？」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063"
+    },
+    block_00063 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我、我说了，会看到内裤的啊……」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064"
+    },
+    block_00064 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1b0100", face = "b0003", head = "mak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002484", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「没关系啦。我一直都穿着紧身裤的」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065"
+    },
+    block_00065 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你的紧身裤是透明的吗？」"
+                }
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066"
+    },
+    block_00066 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0013", head = "mak_z1d", lv = 4, id = 9},
+        {"fgact", ch = "真琴", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0005h", head = "mak_z1d", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002485", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「笨、笨蛋，你、你在看哪里啊！」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067"
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「因为真的看到了嘛。你根本没穿紧身裤啊。托马斯也在看着呢」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068"
+    },
+    block_00068 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0006h", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002486", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「没人看啦……。我都是在社团活动前才穿紧身裤，没穿的时候也",
+                    {"rt2"},
+                    "不会踢腿的……」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069"
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那你为什么现在踢了？」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070"
+    },
+    block_00070 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0018h", head = "mak_z1a", lv = 4, id = 9},
+        {"fgact", ch = "真琴", act = "うんうん", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0005h", head = "mak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002487", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「我、我怎么知道啦。都是你说太蠢的话了，我才会不自觉踢出来",
+                    {"rt2"},
+                    "的！我平时可不会做这种事」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071"
+    },
+    block_00071 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0006h", head = "mak_z1d", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002488", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「说起来上次都没被你看到，这次你怎么看得那么清楚啊！？」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072"
+    },
+    block_00072 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「因为这次真的看到了嘛。是不是你手下留情了啊？」"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073"
+    },
+    block_00073 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0008h", head = "mak_z1d", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0007h", head = "mak_z1d", lv = 4, id = 9},
+                {"fgact", ch = "真琴", act = "うなづく", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002489", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「才、才没有那种事！！」"
+                }
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074"
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎么说呢，有点微妙的可爱啊。堂堂鸟谷，怎么会脸这么红还这",
+                    {"rt2"},
+                    "么慌张呢」"
+                }
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075"
+    },
+    block_00075 = {
+        {"bgm", stop = 1, time = 100},
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0018h", head = "mak_z1a", lv = 4, id = 9},
+        {"fgact", ch = "真琴", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002490", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「啪嗒」"
+                }
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076"
+    },
+    block_00076 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「咦？」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077"
+    },
+    block_00077 = {
+        {"bgm", file = "bgm007"},
+        {"msgoff"},
+        {"se", file = "se3130", id = 1},
+        {"fg", ch = "真琴", time = 100, sync = 1, my = 40, mode = -1, lv = 4, id = 9},
+        {"bg", id = 6, lv = 6, time = 200, sync = 0, file = "black", path = ":bg/"},
+        {"ex", time = 50, func = "wait"},
+        {"bg", file = "連続斬撃_001", id = 7, lv = 7, time = 100, path = ":cg/battle/", set = "battle"},
+        {"se", id = 1, file = "se_arrow1"},
+        {"quake"},
+        {"ex", time = 50, func = "wait"},
+        {"bg", file = "連続斬撃_002", id = 8, lv = 8, time = 100, path = ":cg/battle/", set = "battle"},
+        {"se", id = 2, file = "se_arrow1"},
+        {"quake"},
+        {"ex", time = 50, func = "wait"},
+        {"bg", file = "連続斬撃_003", id = 9, lv = 9, time = 100, path = ":cg/battle/", set = "battle"},
+        {"se", id = 3, file = "se_arrow1"},
+        {"quake"},
+        {"ex", time = 50, func = "wait"},
+        {"cgdel", id = -1},
+        {"bg", speed = 300, sync = 0, file = "zbg057a", path = ":bg/", x2 = 390, y2 = -180, x = 590, y = -180, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"fg", ch = "真琴", size = "z2", speed = 300, sync = 0, mode = 3, resize = 1, path = ":fg/mak/z2/", file = "mak_z2a0110", face = "a0005h", head = "mak_z2a", x2 = -200, x = 0, lv = 5, id = 9},
+        {"quake"},
+        {"se", file = "se3130", id = 4},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哇！　喂，别、别连续踢啊，会看到内裤的，而且连花纹都能看",
+                    {"rt2"},
+                    "到了！」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078"
+    },
+    block_00078 = {
+        {"fg", ch = "真琴", size = "z2", mode = 3, path = ":fg/mak/z2/", file = "mak_z2d0100", face = "d0007h", head = "mak_z2d", x = 0, lv = 5, id = 9},
+        {"fgact", ch = "真琴", act = "いいえ", loop = 2, time = 130, size = 20, lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z2", mode = 3, path = ":fg/mak/z2/", file = "mak_z2d0100", face = "d0006h", head = "mak_z2d", x = 0, lv = 5, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "真琴", size = "z2", mode = 3, path = ":fg/mak/z2/", file = "mak_z2d0110", face = "d0007h", head = "mak_z2d", x = 0, lv = 5, id = 9},
+                {"fgact", ch = "真琴", act = "うなづく", lv = 5, id = 9}
+            },
+            vl03 = {
+                {"fg", ch = "真琴", size = "z2", mode = 3, path = ":fg/mak/z2/", file = "mak_z2d0110", face = "d0006h", head = "mak_z2d", x = 0, lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002491", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「闭嘴！　闭嘴！说比内裤还丢人的话的是你不好！给我忘了！把",
+                    {"rt2"},
+                    "我现在的表情忘掉！还有刚刚的话收回去！」"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079"
+    },
+    block_00079 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「很可爱没关系吧」"
+                }
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080"
+    },
+    block_00080 = {
+        {"fg", ch = "真琴", size = "z2", mode = 3, path = ":fg/mak/z2/", file = "mak_z2d0100", face = "d0007h", head = "mak_z2d", x = 0, lv = 5, id = 9},
+        {"fgact", ch = "真琴", act = "うんうん", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002492", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「我就是说你多余啊！」"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081"
+    },
+    block_00081 = {
+        {"fg", ch = "真琴", size = "z2", mode = 3, path = ":fg/mak/z2/", file = "mak_z2d0100", face = "d0005h", head = "mak_z2d", x = 0, lv = 5, id = 9},
+        {"se", id = 1, file = "se2192"},
+        {"fgact", ch = "真琴", act = "うなづく", lv = 5, id = 9},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呜啊」"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082"
+    },
+    block_00082 = {
+        {"fg", ch = "真琴", size = "z2", mode = 3, path = ":fg/mak/z2/", file = "mak_z2d0100", face = "d0005h", head = "mak_z2d", x = 0, lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002493", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「来吧，在你忘掉之前，我就攻击你的脑袋……」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083"
+    },
+    block_00083 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「笨蛋。想靠物理攻击来忘记的话，会对脑子造成伤害的」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084"
+    },
+    block_00084 = {
+        {"fg", ch = "真琴", size = "z2", mode = 3, path = ":fg/mak/z2/", file = "mak_z2d0100", face = "d0018h", head = "mak_z2d", x = 0, lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z2", mode = 3, path = ":fg/mak/z2/", file = "mak_z2d0100", face = "d0006h", head = "mak_z2d", x = 0, lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002494", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「我才不管呢！总之我要补刀了！」"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085"
+    },
+    block_00085 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呃！」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086"
+    },
+    block_00086 = {
+        {"bgm", stop = 1, time = 500},
+        {"se", file = "se3130", id = 1},
+        {"fg", ch = "真琴", size = "z2", mode = 3, path = ":fg/mak/z2/", file = "mak_z2a0100", face = "a0012h", head = "mak_z2a", x = 0, lv = 5, id = 9},
+        {"fgact", ch = "真琴", act = "びっくり", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002495", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「啥！？」"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087"
+    },
+    block_00087 = {
+        {"bg", file = "ev_com_b04_01", path = ":ev/ev_com_b04/", set = "ev_com_b04"},
+        {"quake", mode = "mw"},
+        {"bgm", file = "bgm031"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002496", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「呀啊啊啊啊！」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088"
+    },
+    block_00088 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哼哼哼，上次被扫帚攻击的时候，真剣白刃取失败了，这次是脚。",
+                    {"rt2"},
+                    "我能看清楚了」"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089"
+    },
+    block_00089 = {
+        {"bg", file = "ev_com_b04_02", sync = 0, face = 1, time = 400, path = ":ev/ev_com_b04/", set = "ev_com_b04"},
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002497", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「你就正常防御会死啊！为什么要抓住我的脚啊！」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090"
+    },
+    block_00090 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊，这就是所谓的正当理由」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091"
+    },
+    block_00091 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002498", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「什么啊那个！　完全听不懂啦！」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092"
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「战争是需要正当理由的。正因为被攻击了，正当防卫才成立」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093"
+    },
+    block_00093 = {
+        {"bg", file = "ev_com_b04_03", sync = 0, face = 1, time = 400, path = ":ev/ev_com_b04/", set = "ev_com_b04"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002499", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「什、什么正当防卫啊！　无所谓了快放开我啦！」"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094"
+    },
+    block_00094 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你攻击了我多少次，我就要看你多少次的胖次！」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095"
+    },
+    block_00095 = {
+        {"bg", file = "ev_com_b04_02", sync = 0, face = 1, time = 400, path = ":ev/ev_com_b04/", set = "ev_com_b04"},
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002500", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「什么啊！　为什么会变成这样啊！」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096"
+    },
+    block_00096 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「因为我被你攻击了嘛，总得让你做点什么来赔偿……你不是总说",
+                    {"rt2"},
+                    "什么欠债还债的吗？攻击了就得好好赔偿不是吗？」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097"
+    },
+    block_00097 = {
+        {"bg", file = "ev_com_b04_04", sync = 0, face = 1, time = 400, path = ":ev/ev_com_b04/", set = "ev_com_b04"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002501", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「那、那是因为你说奇怪的话……」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098"
+    },
+    block_00098 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「就算我说了奇怪的话，也不能用脚攻击我。要是那句话不当的话，",
+                    {"rt2"},
+                    "也应该用批判性思维（クリティカルシンキング）来纠正才对。不",
+                    {"rt2"},
+                    "是吗！」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099"
+    },
+    block_00099 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002502", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「那、那个……」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100"
+    },
+    block_00100 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "鸟谷一只脚抬着，胖次在我这边完全看得一清二楚，已经无法正常",
+                    {"rt2"},
+                    "思考了。她不是瞪大了眼睛，就是快要哭出来，已经彻底混乱了。"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101"
+    },
+    block_00101 = {
+        {"text"},
+        text = {
+            ja = {
+                {"正常想想，我说的这些，根本就是胡说八道。"}
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102"
+    },
+    block_00102 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她很快就会发现的。在那之前，让我稍微享受一下吧。"}
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103"
+    },
+    block_00103 = {
+        {"bg", file = "ev_com_b04_05", sync = 0, face = 1, time = 400, path = ":ev/ev_com_b04/", set = "ev_com_b04"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002503", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「也许是这样……，但、但是还是很羞耻啦，我知道把脚伸出来是",
+                    {"rt2"},
+                    "不对了，就用别的方式赔偿吧」"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104"
+    },
+    block_00104 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「吵死了，我要你道歉和赔偿（胖次）。除此之外概不接受！」"
+                }
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105"
+    },
+    block_00105 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002504", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「怎、怎么会……」"
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106"
+    },
+    block_00106 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「咦？」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107"
+    },
+    block_00107 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "本以为鸟谷会对我的诡辩进行猛烈反驳，但她却像是认命了一样，",
+                    {"rt2"},
+                    "毫无抵抗地用手捂住了脸。"
+                }
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108"
+    },
+    block_00108 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002505", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「那、那么……你打算让这种情况持续几分钟啊……」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109"
+    },
+    block_00109 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，被你踢了五六下，所以，大概五六分钟吧……」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110"
+    },
+    block_00110 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002506", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「呜呜……为、为什么要让我做这种事啊。我觉得这根本不算什么",
+                    {"rt2"},
+                    "赔偿吧……是在故意刁难我吗？」"
+                }
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111"
+    },
+    block_00111 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，不，不是故意刁难你啦……如果你觉得腿累的话，要不就算",
+                    {"rt2"},
+                    "了？」"
+                }
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112"
+    },
+    block_00112 = {
+        {"bg", file = "ev_com_b04_02", sync = 0, face = 1, time = 400, path = ":ev/ev_com_b04/", set = "ev_com_b04"},
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002507", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「那你为什么还要让我做！」"
+                }
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113"
+    },
+    block_00113 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，那个，其实……」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114"
+    },
+    block_00114 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「因为我想看啊」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115"
+    },
+    block_00115 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002508", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「你说了这种话却一直都没看吧！其实根本不用看也没关系，可是",
+                    {"rt2"},
+                    "现在却、这、这、这样子！！」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116"
+    },
+    block_00116 = {
+        {"bg", file = "ev_com_b04_04", sync = 0, face = 1, time = 400, path = ":ev/ev_com_b04/", set = "ev_com_b04"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002509", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「我还以为你其实根本不在意内裤什么的……」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117"
+    },
+    block_00117 = {
+        {"bg", file = "ev_com_b04_06", sync = 0, face = 1, time = 400, path = ":ev/ev_com_b04/", set = "ev_com_b04"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002510", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「而且啊，所谓的主角光环什么的……一般不是都挺淡定的吗？」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118"
+    },
+    block_00118 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那是什么？　主角光环又是什么意思？」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119"
+    },
+    block_00119 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002511", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「呃、呃……就是，有时候我觉得，草薙你，看起来就像漫画里的",
+                    {"rt2"},
+                    "主角一样……啊哈哈」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120"
+    },
+    block_00120 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没什么啦，我又不是漫画的主人公，随便看鸟谷的胖次都可以啊。",
+                    {"rt2"},
+                    "因为，你那个表情真的很可爱嘛」"
+                }
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121"
+    },
+    block_00121 = {
+        {"bg", file = "ev_com_b04_03", sync = 0, face = 1, time = 400, path = ":ev/ev_com_b04/", set = "ev_com_b04"},
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002512", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「呜哇，什么啊。表情什么的！你果然是在拿我开心吧？　够了啦！",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122"
+    },
+    block_00122 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，不，其实我并没有想要捉弄你的意思……要不，停下来？」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123"
+    },
+    block_00123 = {
+        {"bg", file = "ev_com_b04_06", sync = 0, face = 1, time = 400, path = ":ev/ev_com_b04/", set = "ev_com_b04"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002513", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「……这样的话，恩情就还没还清了」"
+                }
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124"
+    },
+    block_00124 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？」"
+                }
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125"
+    },
+    block_00125 = {
+        {"bg", file = "ev_com_b04_03", sync = 0, face = 1, time = 400, path = ":ev/ev_com_b04/", set = "ev_com_b04"},
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002514", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「没关系的！　我才不喜欢欠人情，我要就这样忍下去！　草薙你",
+                    {"rt2"},
+                    "个笨蛋！」"
+                }
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126"
+    },
+    block_00126 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，呃，那个……」"
+                }
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127"
+    },
+    block_00127 = {
+        {"text"},
+        text = {
+            ja = {
+                {"好像把鸟谷弄得快哭出来了。"}
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128"
+    },
+    block_00128 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「对不起……」"
+                }
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129"
+    },
+    block_00129 = {
+        {"se", file = "se9010", id = 1},
+        {"msgoff"},
+        {"bg", file = "bg057a", path = ":bg/", sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"我把鸟谷的腿放回了原位。"}
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130"
+    },
+    block_00130 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, resize = 1, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0008h", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002515", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「……啊」"
+                }
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131"
+    },
+    block_00131 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「对不起。我并没有想让你伤心……」"
+                }
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132"
+    },
+    block_00132 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我只是，单纯地很想看看胖次而已……」"
+                }
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133"
+    },
+    block_00133 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0009h", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002516", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「单、单纯地？」"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134"
+    },
+    block_00134 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「其实我脑子里那点色情的东西挺严重的。这一点川内野也早就指",
+                    {"rt2"},
+                    "出来了」"
+                }
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135"
+    },
+    block_00135 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0011h", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002517", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「那、那样啊……那你是真的只是想看一看而已啊……」"
+                }
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136"
+    },
+    block_00136 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，我没想让你哭，也没想捉弄你。说实话，看到你比我想象中",
+                    {"rt2"},
+                    "还要难过，真的很抱歉」"
+                }
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137"
+    },
+    block_00137 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0026h", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002518", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「这样的话就好。那就一笔勾销吧」"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138"
+    },
+    block_00138 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0008h", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0011h", head = "mak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002519", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「比起内裤，被指出表情什么的还要更让人害羞……只要你能把那",
+                    {"rt2"},
+                    "个也忘掉就好了……」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139"
+    },
+    block_00139 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那我还记得内裤的颜色！」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140"
+    },
+    block_00140 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0007h", head = "mak_z1d", lv = 4, id = 9},
+        {"fgact", ch = "真琴", act = "うんうん", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002520", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「不用记得！」"
+                }
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141"
+    },
+    block_00141 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那就这样，这事就一笔勾销吧」"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142"
+    },
+    block_00142 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0008h", head = "mak_z1d", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0009h", head = "mak_z1d", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002521", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「是啊。你这么做我就放心了」"
+                }
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143"
+    },
+    block_00143 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0005", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002522", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「话说，仔细想想的话，被踢了几次就要被抓几次脚，这也太奇怪",
+                    {"rt2"},
+                    "了吧」"
+                }
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144"
+    },
+    block_00144 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「说得也是」"
+                }
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145"
+    },
+    block_00145 = {
+        {"text"},
+        text = {
+            ja = {
+                {"渐渐地，鸟谷又恢复成了平时的样子。"}
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146"
+    },
+    block_00146 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0026", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002523", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「真是的，差点就被你忽悠过去了」"
+                }
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147"
+    },
+    block_00147 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过话说回来，穿着内裤就那样踢过来还是你不好哦」"
+                }
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148"
+    },
+    block_00148 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0100", face = "d0006h", head = "mak_z1d", lv = 4, id = 9},
+        {"fgact", ch = "真琴", act = "うんうん", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0110", face = "d0007h", head = "mak_z1d", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_002524", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「所、所以我说了不许再提！禁止啦！」"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149"
+    },
+    block_00149 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「好好」"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150"
+    },
+    block_00150 = {
+        {"bgm", stop = 1, time = 1000},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"ex", time = 500, func = "wait"},
+        {"excall", file = "03_picapica_05_2"},
+        {"text"},
+        linkback = "block_00149"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

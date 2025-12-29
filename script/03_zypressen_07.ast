@@ -1,0 +1,5178 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅲ章"},
+        {"bg", file = "ev_eye_c06_01", path = ":ev/ev_eye_c06/", set = "ev_eye_c06"},
+        {"ex", time = 3000, func = "wait"},
+        {"bg", file = "ev_eye_c09_01", path = ":ev/ev_eye_c09/", set = "ev_eye_c09"},
+        {"ex", time = 3000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"msgoff"},
+        {"bg", file = "bluesky_winter", id = 9, lv = 9, sync = 1, path = ":cg/"},
+        {"bgm", file = "bgm106"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？」"
+                }
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003399", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「你没听见吧」"
+                }
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"cgdel", id = -1},
+        {"msgoff"},
+        {"bg", file = "bg049a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "稟", size = "z1", mode = 3, resize = 1, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0017", head = "rin_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，抱、抱歉……」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0015", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003400", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「我是这么说的」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0004", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003401", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「不用一直盯着我也没关系哦」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？……」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0002", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003402", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「所以，我是说不用一直陪着我画画也没关系」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0003", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003403", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「如果有让你在意的事情，请把时间用在那些事情上」"
+                }
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没、没有什么在意的事情……」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0015", head = "rin_z1a", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "うんうん", time = 300, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003404", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「好啦好啦，我知道了，多少留点自己的时间吧」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「其实，自己的时间，在家里也有的是……」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0009", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003405", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「好了，我真的没事了……」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「禀？」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0002", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003406", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是画画的事啦。画画也学得差不多了，我只是想说已经没问题了」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，啊啊，是这样啊……」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0004", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003407", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯，我已经没事了。所以直哉君可以按照自己的想法去度过时间",
+                    {"rt2"},
+                    "哦」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0002", head = "rin_z1a", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003408", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「屋顶」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0016", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003409", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「最近一直在看屋顶」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那、那个，是在看天空……」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0008", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003410", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「天空吗」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0016", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003411", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是天空的话，那还不如直接在屋顶看不是更好吗？」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0009", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003412", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那里一定比这里能看到更多……」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「确实是这样，不过……」"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0001", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003413", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「话说回来，我差不多也想集中精力一个人画画了」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0008", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003414", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「绘画最终还是要面对自己和作品。不是吗？」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是啊……」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0009", head = "rin_z1a", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003415", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯，那能让我一个人画一会儿吗？」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊……」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「知道了。我去离开一下……」"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0002", head = "rin_z1a", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003416", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我正准备离开美术教室。"}
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            ja = {
+                {"就在这时――"}
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, resize = 1, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0004", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003417", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「我真的很高兴能回到这里」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0002", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003418", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「因为，不光能和直哉君再聊天，还能让直哉君教我画画」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0010", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003419", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「如果当时我们一直分开的话，就没办法像这样让你教我画画了…",
+                    {"rt2"},
+                    "…」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「禀……」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0002", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003420", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「所以，这幅画，我会加油的」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0003", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003421", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「因为这是直哉君教我的画」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0010", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003422", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    {"exfont", size = "f2"},
+                    "「不是那样的……」",
+                    {"exfont"}
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0008", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003423", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是要加油」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0002", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003424", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「请为我加油吧」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0004", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003425", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「既然我说了要加油，至少请你支持我一下吧」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「支持……？」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0009", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003426", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「就是……加油……」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0010", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003427", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「请对我说加油吧……」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，对啊」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「禀，加油」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0002", head = "rin_z2a", lv = 5, id = 9},
+        {"fgact", ch = "稟", act = "うなづく", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003428", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「还有，禀」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0001", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003429", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯？」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「谢谢你回到这座城市……」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0008", head = "rin_z2a", lv = 5, id = 9},
+        {"fgact", ch = "稟", act = "うなづく", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003430", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0010", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003431", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「我也要谢谢你接纳我」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0002", head = "rin_z2a", lv = 5, id = 9},
+        {"fgact", ch = "稟", act = "びっくり", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_003432", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「好，好啦，再磨蹭下去天就要黑了哦。赶紧走吧」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，嗯……」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不知为什么，我被禀催促着离开了美术教室。"}
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"bgm", stop = 1, time = 1000},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = "083r", wait = 250, file = "black", path = ":bg/", vague = 40},
+        {"msgoff"},
+        {"fg", mode = -2},
+        {"bg", file = "bluesky_winter", id = 9, lv = 9, rule = "083r", sync = 1, vague = 40, path = ":cg/"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「今天就你一个人吗？」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"cgdel", id = -1},
+        {"msgoff"},
+        {"bg", file = "bg053a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 500},
+        {"bgm", file = "bgm003"},
+        {"text"},
+        text = {
+            ja = {
+                {"上到屋顶时，冰川正一个人在写生。"}
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062"
+    },
+    block_00062 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, resize = 1, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0001", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001929", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「咦？　说起来，优美好像很早之前说要去教室拿点什么东西，就",
+                    {"rt2"},
+                    "一直没回来呢……」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063"
+    },
+    block_00063 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0013", head = "rna_z1a", lv = 4, id = 9},
+        {"fgact", ch = "里奈", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001930", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「诶！？　难、难道是遇到什么麻烦了吗？」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064"
+    },
+    block_00064 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，她只是普通地在睡觉而已」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065"
+    },
+    block_00065 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0008", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001931", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「睡觉？」"
+                }
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066"
+    },
+    block_00066 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，我去你们班教室看了一眼，川内野趴在桌上睡着了。最近她",
+                    {"rt2"},
+                    "是不是有点累啊？」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067"
+    },
+    block_00067 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0010", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001932", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是这样吗？　要不要去看看情况呢……」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068"
+    },
+    block_00068 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没关系吧？　只是单纯累了才睡着的……」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069"
+    },
+    block_00069 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0008", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001933", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「前辈，你看到优美睡脸了吗？」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070"
+    },
+    block_00070 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，看见了」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071"
+    },
+    block_00071 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0017", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001934", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「偷看女孩子睡脸，可不值得表扬啊」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072"
+    },
+    block_00072 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是，我明白你的意思，但我也是担心她才……」"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073"
+    },
+    block_00073 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0005", head = "rna_z1a", lv = 4, id = 9},
+        {"fgact", ch = "里奈", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001935", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「哼，是吗……」"
+                }
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074"
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {"冰川有些不高兴地挥动着画笔。"}
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075"
+    },
+    block_00075 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「画，进展得怎么样？」"
+                }
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076"
+    },
+    block_00076 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0010", head = "rna_z1a", lv = 4, id = 9},
+        {"fgact", ch = "里奈", act = "うんうん", time = 200, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0001", head = "rna_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001936", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「还可以吧。前辈你呢？」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077"
+    },
+    block_00077 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「凛吗，嗯，也还行吧」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078"
+    },
+    block_00078 = {
+        {"text"},
+        text = {
+            ja = {
+                {"冰川停下画笔看向我。"}
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079"
+    },
+    block_00079 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0005", head = "rna_z1a", lv = 4, id = 9},
+        {"fgact", ch = "里奈", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001937", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不，我是说草薙前辈哦」"
+                }
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080"
+    },
+    block_00080 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我可不画」"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081"
+    },
+    block_00081 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0009", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001938", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「……是吗」"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082"
+    },
+    block_00082 = {
+        {"text"},
+        text = {
+            ja = {
+                {"说完这句话，她又开始动笔了。"}
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083"
+    },
+    block_00083 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084"
+    },
+    block_00084 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你不问理由吗？」"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085"
+    },
+    block_00085 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0002", head = "rna_z1a", lv = 4, id = 9},
+        {"fgact", ch = "里奈", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001939", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086"
+    },
+    block_00086 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这样啊……」"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087"
+    },
+    block_00087 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0015", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001940", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「你应该已经被问过很多次了吧」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088"
+    },
+    block_00088 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是啊」"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089"
+    },
+    block_00089 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0009", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001941", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「画是很诚实的」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090"
+    },
+    block_00090 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0010", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001942", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「有些事就算不问也能明白……」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091"
+    },
+    block_00091 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0011", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001943", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「尤其是我……」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092"
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093"
+    },
+    block_00093 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「尤其是怎么了？」"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094"
+    },
+    block_00094 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0002", head = "rna_z1a", lv = 4, id = 9},
+        {"fgact", ch = "里奈", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001944", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「没有，没什么」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095"
+    },
+    block_00095 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这样啊……」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096"
+    },
+    block_00096 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「话说回来，你有打算挑战穆尔展之类的吗？」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097"
+    },
+    block_00097 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0010", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001945", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「其实并没有。要是说了这个，可能会被鸟谷前辈骂吧……」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098"
+    },
+    block_00098 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0002", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001946", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不过，我的画并不是为了奖项而画的」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099"
+    },
+    block_00099 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「也是呢。我也没听说你投稿过什么比赛」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100"
+    },
+    block_00100 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0003", head = "rna_z1a", lv = 4, id = 9},
+        {"fgact", ch = "里奈", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001947", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101"
+    },
+    block_00101 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「穆尔展另当别论，普通的比赛的话，以你的实力完全没问题吧」"
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102"
+    },
+    block_00102 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0002", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0010", head = "rna_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001948", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「能这么说我很高兴。不过，我对那些并没有什么兴趣」"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103"
+    },
+    block_00103 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这样啊……」"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104"
+    },
+    block_00104 = {
+        {"text"},
+        text = {
+            ja = {
+                {"两人就这样沉默了下来。"}
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105"
+    },
+    block_00105 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我就那样转身准备朝楼梯走去……。"}
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106"
+    },
+    block_00106 = {
+        {"bgm", stop = 1, time = 500},
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0001", head = "rna_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rld_000015", ch = "rld"}
+            },
+            ja = {
+                {
+                    name = {"露莉莴", "？？？"},
+                    "「里奈姐姐——」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107"
+    },
+    block_00107 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「？」"
+                }
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108"
+    },
+    block_00108 = {
+        {"se", file = "se9004", id = 1},
+        {"fg", mode = -2},
+        {"fg", ch = "ルリヲ", size = "z1", mx = 40, mode = 3, resize = 1, path = ":fg/rur/z1/", file = "rur_z1i0000", face = "i0001", head = "rur_z1i", x = -345, lv = 4, id = 5},
+        {"fg", ch = "鈴菜", size = "z1", mx = 40, mode = 3, resize = 1, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0001", head = "suz_z1i", x = 345, lv = 4, id = 6},
+        {"bgm", file = "bgm031"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rld_000016", ch = "rld"}
+            },
+            ja = {
+                {
+                    name = {"露莉莴"},
+                    "「哦——，草薙酱也在呢」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109"
+    },
+    block_00109 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「为什么冰川的妹妹会在这？」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110"
+    },
+    block_00110 = {
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0002", head = "suz_z1i", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000020", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「看来正好赶上了呢」"
+                }
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111"
+    },
+    block_00111 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「正好？你们来干什么？你们两个？」"
+                }
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112"
+    },
+    block_00112 = {
+        {"fg", ch = "ルリヲ", size = "z1", mode = 3, path = ":fg/rur/z1/", file = "rur_z1i0000", face = "i0002", head = "rur_z1i", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rld_000017", ch = "rld"}
+            },
+            ja = {
+                {
+                    name = {"露莉莴"},
+                    "「啊——，刚好路过这里，想着跟草薙酱打个招呼嘛」"
+                }
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113"
+    },
+    block_00113 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「路过？弓张学园明明就在山丘顶上啊……」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114"
+    },
+    block_00114 = {
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0009", head = "suz_z1i", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "鈴菜", act = "うなづく", lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000021", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「那只是开玩笑啦。玩笑到此为止，这次是想把这个给里奈姐姐看",
+                    {"rt2"},
+                    "看，所以才来的」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115"
+    },
+    block_00115 = {
+        {"text"},
+        text = {
+            ja = {
+                {"说着，把手机照片递了过来。"}
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116"
+    },
+    block_00116 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这是……」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117"
+    },
+    block_00117 = {
+        {"text"},
+        text = {
+            ja = {
+                {"照片上是我们认识的那个人的身影。"}
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118"
+    },
+    block_00118 = {
+        {"fg", ch = "ルリヲ", mode = -1, lv = 4, id = 5},
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1b0100", face = "b0008", head = "rna_z1b", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001949", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「只能通过制服和发型辨认，应该是……长山香奈同学吧……」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119"
+    },
+    block_00119 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，虽然有点远看不清，但大概是那家伙没错」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120"
+    },
+    block_00120 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但是，为什么川内野的妹妹会有长山的照片？」"
+                }
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121"
+    },
+    block_00121 = {
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0008", head = "suz_z1i", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000022", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「因为里奈姐姐曾经让我，如果身边发生什么奇怪的事情就通知她",
+                    {"rt2"},
+                    "……」"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122"
+    },
+    block_00122 = {
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0004", head = "suz_z1i", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000023", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「被叮嘱后的几天里什么都没发生，不过刚才这位在我们家门前徘",
+                    {"rt2"},
+                    "徊，所以我就拍下了照片……」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123"
+    },
+    block_00123 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是在川内野家门口吗？」"
+                }
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124"
+    },
+    block_00124 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1b0100", face = "b0015", head = "rna_z1b", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001950", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是之前上学时的传闻被她察觉到了吗。看来长山香奈和优美已经",
+                    {"rt2"},
+                    "被盯上了啊……」"
+                }
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125"
+    },
+    block_00125 = {
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0011", head = "suz_z1i", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000024", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「那个人是谁？其实，刚才在校门口还和她擦肩而过……」"
+                }
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126"
+    },
+    block_00126 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1b0100", face = "b0012", head = "rna_z1b", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1b0100", face = "b0009", head = "rna_z1b", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001951", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「连在校门口也遇见？哇啊……这跟踪得还真是厉害啊」"
+                }
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127"
+    },
+    block_00127 = {
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0001", head = "suz_z1i", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000025", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「跟踪？」"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128"
+    },
+    block_00128 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，看起来她一直在我身边打探消息。这件事说不定也把川内野",
+                    {"rt2"},
+                    "卷进来了……」"
+                }
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129"
+    },
+    block_00129 = {
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0010", head = "suz_z1i", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "鈴菜", act = "うなづく", lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000026", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「原来如此……」"
+                }
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130"
+    },
+    block_00130 = {
+        {"fg", ch = "里奈", mode = 3, path = ":fg/rna/z1/", file = "rna_z1b0100", face = "b0009", head = "rna_z1b", x2 = -345, x = -570, lv = 4, id = 5},
+        {"fg", ch = "ルリヲ", size = "z1", mode = 3, path = ":fg/rur/z1/", file = "rur_z1i0000", face = "i0001", head = "rur_z1i", x = 0, lv = 4, id = 9},
+        {"fg", ch = "ルリヲ", speed = 300, mode = 3, path = ":fg/rur/z1/", file = "rur_z1i0000", face = "i0001", head = "rur_z1i", y2 = "0,-10,0,-10", x = 0, y = 0, lv = 4, id = 9},
+        {"fg", ch = "鈴菜", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0010", head = "suz_z1i", x2 = 345, x = 570, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rld_000018", ch = "rld"}
+            },
+            ja = {
+                {
+                    name = {"露莉莴"},
+                    "「喂——喂——让我也看看嘛」"
+                }
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131"
+    },
+    block_00131 = {
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0011", head = "suz_z1i", x = 570, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000027", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「就算给露莉莴小姐看，你也不会明白的吧……」"
+                }
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132"
+    },
+    block_00132 = {
+        {"text"},
+        text = {
+            ja = {
+                {"冰川的妹妹探头过来看。"}
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133"
+    },
+    block_00133 = {
+        {"fg", ch = "ルリヲ", size = "z1", mode = 3, path = ":fg/rur/z1/", file = "rur_z1i0000", face = "i0002", head = "rur_z1i", x = 0, y = 0, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rld_000019", ch = "rld"}
+            },
+            ja = {
+                {
+                    name = {"露莉莴"},
+                    "「哎——连优美姐姐的妹妹铃菜，偷拍也很厉害呢……」"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134"
+    },
+    block_00134 = {
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0004", head = "suz_z1i", x = 570, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000028", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「你这说法我可不能当没听见哦。这是用姐姐手机上装的长焦镜头",
+                    {"rt2"},
+                    "拍的照片」"
+                }
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135"
+    },
+    block_00135 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？手机上也能装望远镜头吗？」"
+                }
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136"
+    },
+    block_00136 = {
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0002", head = "suz_z1i", x = 570, lv = 4, id = 6},
+        {"fgact", ch = "鈴菜", act = "うなづく", lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000029", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「是的，有这种东西哦。实际上，我姐姐就有好几种镜头，我就是",
+                    {"rt2"},
+                    "用了其中一个。」"
+                }
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137"
+    },
+    block_00137 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那家伙，居然对偷拍这么上心啊。」"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138"
+    },
+    block_00138 = {
+        {"fg", ch = "ルリヲ", size = "z1", mode = 3, path = ":fg/rur/z1/", file = "rur_z1i0000", face = "i0003", head = "rur_z1i", x = 0, y = 0, lv = 4, id = 9},
+        {"fgact", ch = "ルリヲ", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rld_000020", ch = "rld"}
+            },
+            ja = {
+                {
+                    name = {"露莉莴"},
+                    "「啊，原来如此，所以里奈姐姐拍的草薙酱的照片才那么近啊。草",
+                    {"rt2"},
+                    "薙酱看起来根本不会让人拍照，我一直觉得很奇怪呢ー」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139"
+    },
+    block_00139 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我的特写照片？」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140"
+    },
+    block_00140 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1b0100", face = "b0014i", head = "rna_z1b", x = -570, lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", loop = 3, time = 200, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001952", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「哇、哇、哇，什、什么、你、你在说什么啊？露莉莴？可以过来",
+                    {"rt2"},
+                    "一下吗……」"
+                }
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141"
+    },
+    block_00141 = {
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0010", head = "suz_z1i", x = 570, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000030", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「嘛，也没什么不好吧。有那么热衷偷拍的朋友，托她帮忙拍一两",
+                    {"rt2"},
+                    "张照片也很正常吧。」"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142"
+    },
+    block_00142 = {
+        {"fgact", ch = "里奈", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001953", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「什么叫托她！　铃菜你也过来一下……」"
+                }
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143"
+    },
+    block_00143 = {
+        {"fg", ch = "ルリヲ", mode = -1, lv = 4, id = 9},
+        {"fg", ch = "鈴菜", mode = -1, lv = 4, id = 6},
+        {"fg", ch = "里奈", mode = 3, path = ":fg/rna/z1/", file = "rna_z1b0100", face = "b0014i", head = "rna_z1b", x2 = -570, x = 0, lv = 4, id = 5},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「冰川，你有我的照片吗？」"
+                }
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144"
+    },
+    block_00144 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1b0100", face = "b0011i", head = "rna_z1b", x = 0, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001954", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「没、没有啦，只是偶然……偶然而已……」"
+                }
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145"
+    },
+    block_00145 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rld_000021", ch = "rld"}
+            },
+            ja = {
+                {
+                    name = {"露莉莴"},
+                    "「什么偶然啊，你明明很珍惜那些照片嘛ー。露莉莴可是知道的哦。",
+                    {"rt2"},
+                    "里奈姐姐看那些照片的时候，总是一边哈啊哈啊地盯着看呢」"
+                }
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146"
+    },
+    block_00146 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「っ」"
+                }
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147"
+    },
+    block_00147 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000031", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「っ」"
+                }
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148"
+    },
+    block_00148 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1b0100", face = "b0014j", head = "rna_z1b", x = 0, lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001955", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不、不、不是那样」"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149"
+    },
+    block_00149 = {
+        {"fg", mode = -2},
+        {"fg", ch = "ルリヲ", size = "z1", mode = 3, path = ":fg/rur/z1/", file = "rur_z1i0000", face = "i0010", head = "rur_z1i", x = -345, lv = 4, id = 5},
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0009", head = "suz_z1i", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rld_000022", ch = "rld"}
+            },
+            ja = {
+                {
+                    name = {"露莉莴"},
+                    "「你到底在做什么啊？露莉莴一直都觉得很奇怪呢ー」"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150"
+    },
+    block_00150 = {
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0007", head = "suz_z1i", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "鈴菜", act = "びっくり", lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000032", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「呃、呃那个！报、报告也结束了……差不多该回去了吧？」"
+                }
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151"
+    },
+    block_00151 = {
+        {"fg", ch = "ルリヲ", size = "z1", mode = 3, path = ":fg/rur/z1/", file = "rur_z1i0000", face = "i0014", head = "rur_z1i", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "ルリヲ", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rld_000023", ch = "rld"}
+            },
+            ja = {
+                {
+                    name = {"露莉莴"},
+                    "「诶？　为什么？　我们不是才刚来吗」"
+                }
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152"
+    },
+    block_00152 = {
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0006", head = "suz_z1i", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "鈴菜", act = "うんうん", lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000033", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「不用管了，我们回去吧！　露莉莴さんっ」"
+                }
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153"
+    },
+    block_00153 = {
+        {"fg", ch = "鈴菜", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0006", head = "suz_z1i", x2 = 345, x = 0, lv = 4, id = 6},
+        {"text"},
+        delay = {
+            [100] = {
+                {"fg", ch = "鈴菜", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0006", head = "suz_z1i", x2 = 0, x = 210, lv = 4, id = 6},
+                {"fg", ch = "ルリヲ", mode = 3, path = ":fg/rur/z1/", file = "rur_z1i0000", face = "i0014", head = "rur_z1i", x2 = -345, x = -135, lv = 4, id = 5},
+                {"se", file = "se9010", id = 1}
+            }
+        },
+        text = {
+            ja = {
+                {"川内野的妹妹用力拉着冰川的妹妹的手。"}
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154"
+    },
+    block_00154 = {
+        {"fg", ch = "ルリヲ", size = "z1", mode = 3, path = ":fg/rur/z1/", file = "rur_z1i0000", face = "i0007", head = "rur_z1i", x = -135, lv = 4, id = 5},
+        {"fgact", ch = "ルリヲ", act = "びっくり", loop = 2, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rld_000024", ch = "rld"}
+            },
+            ja = {
+                {
+                    name = {"露莉莴"},
+                    "「哇哇哇，怎么了？　怎么了？」"
+                }
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155"
+    },
+    block_00155 = {
+        {"fg", ch = "鈴菜", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0006", head = "suz_z1i", x2 = 210, x = 420, lv = 4, id = 6},
+        {"fg", ch = "ルリヲ", mode = 3, path = ":fg/rur/z1/", file = "rur_z1i0000", face = "i0007", head = "rur_z1i", x2 = -135, x = 75, lv = 4, id = 5},
+        {"se", file = "se9010", id = 1},
+        {"fg", ch = "鈴菜", size = "z1", mode = 3, path = ":fg/suz/z1/", file = "suz_z1i0000", face = "i0005", head = "suz_z1i", x = 420, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000034", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「不用管了，请跟我过来一下！」"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156"
+    },
+    block_00156 = {
+        {"fg", ch = "ルリヲ", size = "z1", mode = 3, path = ":fg/rur/z1/", file = "rur_z1i0000", face = "i0001", head = "rur_z1i", x = 75, lv = 4, id = 5},
+        {"fgact", ch = "ルリヲ", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rld_000025", ch = "rld"}
+            },
+            ja = {
+                {
+                    name = {"露莉莴"},
+                    "「知道啦。那再见啦。草薙酱——再见啦」"
+                }
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157"
+    },
+    block_00157 = {
+        {"se", file = "se9004", id = 1},
+        {"fg", ch = "ルリヲ", mx = 40, mode = -1, lv = 4, id = 5, sync = 0},
+        {"fg", ch = "鈴菜", mx = 40, mode = -1, lv = 4, id = 6, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"铃菜一边带着露莉莴，一边大声提醒着。"}
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158"
+    },
+    block_00158 = {
+        {"mwact", act = "うんうん", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000035_n", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「啊、那个呢。那种事是不可以在男子孩子面前说的！」"
+                }
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159"
+    },
+    block_00159 = {
+        {"mwact", act = "いいえ", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rld_000026_n", ch = "rld"}
+            },
+            ja = {
+                {
+                    name = {"露莉莴"},
+                    "「诶诶？　什么事？」"
+                }
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160"
+    },
+    block_00160 = {
+        {"mwact", act = "うんうん", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_snd_000036_n", ch = "snd"}
+            },
+            ja = {
+                {
+                    name = {"铃菜"},
+                    "「总之，不行的就是不行！」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161"
+    },
+    block_00161 = {
+        {"text"},
+        text = {
+            ja = {
+                {"两人的对话渐渐小声了下去。"}
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162"
+    },
+    block_00162 = {
+        {"bgm", stop = 1, time = 1000},
+        {"text"},
+        text = {
+            ja = {
+                {"然后，我们被留在了屋顶……。"}
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163"
+    },
+    block_00163 = {
+        {"bgm", file = "bgm007"},
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0011i", head = "rna_z1d", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001956", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「呃、呃、那个……」"
+                }
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164"
+    },
+    block_00164 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0013i", head = "rna_z1d", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0014i", head = "rna_z1d", lv = 4, id = 5},
+                {"fgact", ch = "里奈", act = "いいえ", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001957", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「现、现在不是你想的那样！我、我身体虚弱不是吗、所、所以才",
+                    {"rt2"},
+                    "……」"
+                }
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165"
+    },
+    block_00165 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但是，嘛，你刚刚不是也喘着粗气了吗？」"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166"
+    },
+    block_00166 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0007i", head = "rna_z1d", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "うんうん", time = 200, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001958", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「什么叫喘着粗气啊！」"
+                }
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167"
+    },
+    block_00167 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是在烦闷着？那种感觉？」"
+                }
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168"
+    },
+    block_00168 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0019i", head = "rna_z1d", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001959", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「为、为什么要那样解读啊！」"
+                }
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169"
+    },
+    block_00169 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是冰川的妹妹和川内野的妹妹的反应吗？」"
+                }
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170"
+    },
+    block_00170 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0006i", head = "rna_z1d", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001960", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「你、你现在居然相信那种话吗！？」"
+                }
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171"
+    },
+    block_00171 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172"
+    },
+    block_00172 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0007i", head = "rna_z1d", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "いいえ", time = 200, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0005i", head = "rna_z1d", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001961", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「为什么啊！那只是小孩子说的话！夸张的啦」"
+                }
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173"
+    },
+    block_00173 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯。也许吧」"
+                }
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174"
+    },
+    block_00174 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过啊，只是因为那样让我更开心，所以我选择相信那个」"
+                }
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175"
+    },
+    block_00175 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0013i", head = "rna_z1a", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001962", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「哈、哈啊？」"
+                }
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176"
+    },
+    block_00176 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「幻想一下不是很有趣吗？」"
+                }
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177"
+    },
+    block_00177 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0012j", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001963", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「っっっ！？」"
+                }
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178"
+    },
+    block_00178 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0005j", head = "rna_z1a", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001964", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「っ！」"
+                }
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179"
+    },
+    block_00179 = {
+        {"text"},
+        text = {
+            ja = {
+                {"冰川狠狠地瞪了我一眼。"}
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180"
+    },
+    block_00180 = {
+        {"text"},
+        text = {
+            ja = {
+                {"很少见到的表情。"}
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181"
+    },
+    block_00181 = {
+        {"text"},
+        text = {
+            ja = {
+                {"满脸通红，眼里含着泪光。"}
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182"
+    },
+    block_00182 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那个叫冰川的女孩，看起来表情很丰富，其实并不是那样。"}
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183"
+    },
+    block_00183 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这样的表情可不常见。"}
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184"
+    },
+    block_00184 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0006i", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001965", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「妄、妄想什么的，前辈你真变态啊」"
+                }
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185"
+    },
+    block_00185 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「川内野也这么说过吧」"
+                }
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186"
+    },
+    block_00186 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0007i", head = "rna_z1a", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "うんうん", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001966", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那种事请不要肯定啊！」"
+                }
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187"
+    },
+    block_00187 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过，你不是有我的照片吗？ 换衣服之类的？」"
+                }
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188"
+    },
+    block_00188 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0010i", head = "rna_z1a", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001967", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「没、没有那种照片啦。只、只是普通的笑脸照片……」"
+                }
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189"
+    },
+    block_00189 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「笑脸？ 还能拍到我的笑脸啊」"
+                }
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190"
+    },
+    block_00190 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0011i", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001968", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是我从优美那里抢过手机当场拍的……」"
+                }
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191"
+    },
+    block_00191 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是、是这样啊……」"
+                }
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192"
+    },
+    block_00192 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0009i", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001969", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「就是那时候……。那幅壁画完成瞬间的表情……」"
+                }
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193"
+    },
+    block_00193 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是那时候啊……，那时候我有笑吗？」"
+                }
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194"
+    },
+    block_00194 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0001j", head = "rna_z1a", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001970", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嗯，你笑了……」"
+                }
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195"
+    },
+    block_00195 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0017i", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001971", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「一、一応，那是很健康的照片……」"
+                }
+            }
+        },
+        linkback = "block_00194",
+        linknext = "block_00196"
+    },
+    block_00196 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0006i", head = "rna_z1d", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001972", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「所、所以喘气什么的是误会啦！」"
+                }
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197"
+    },
+    block_00197 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「误会到底是什么啊？」"
+                }
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198"
+    },
+    block_00198 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0018i", head = "rna_z1d", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001973", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「前、前辈，您觉得我像是那种一边看着笑容满面的前辈的照片，",
+                    {"rt2"},
+                    "一边做奇怪事情的女生吗？」"
+                }
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199"
+    },
+    block_00199 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我觉得不像，所以如果真是那样的话，我反而会很开心……只是",
+                    {"rt2"},
+                    "这么想而已」"
+                }
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200"
+    },
+    block_00200 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0011j", head = "rna_z1d", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001974", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「っ」"
+                }
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201"
+    },
+    block_00201 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0010i", head = "rna_z1d", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001975", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「前、前辈，原来你还有这种攻击方式啊……我都不知道」"
+                }
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202"
+    },
+    block_00202 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「攻击方式？　那是什么啊？　我只是说我很高兴而已」"
+                }
+            }
+        },
+        linkback = "block_00201",
+        linknext = "block_00203"
+    },
+    block_00203 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0008i", head = "rna_z1d", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001976", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「你很高兴吗？」"
+                }
+            }
+        },
+        linkback = "block_00202",
+        linknext = "block_00204"
+    },
+    block_00204 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「很高兴啊」"
+                }
+            }
+        },
+        linkback = "block_00203",
+        linknext = "block_00205"
+    },
+    block_00205 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0011i", head = "rna_z1d", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001977", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那不就是单纯的变态吗」"
+                }
+            }
+        },
+        linkback = "block_00204",
+        linknext = "block_00206"
+    },
+    block_00206 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我是吗？」"
+                }
+            }
+        },
+        linkback = "block_00205",
+        linknext = "block_00207"
+    },
+    block_00207 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0007i", head = "rna_z1d", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "いいえ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001978", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不是！那样做的是我啦！」"
+                }
+            }
+        },
+        linkback = "block_00206",
+        linknext = "block_00208"
+    },
+    block_00208 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗？像冰川这样可爱的女生要是是变态，那简直就是奖励了」"
+                }
+            }
+        },
+        linkback = "block_00207",
+        linknext = "block_00209"
+    },
+    block_00209 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0013i", head = "rna_z1d", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001979", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「在、在这种时候，你还说我可爱吗？」"
+                }
+            }
+        },
+        linkback = "block_00208",
+        linknext = "block_00210"
+    },
+    block_00210 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「并不是因为川内野一直唠叨我才不说的，你其实很可爱啊」"
+                }
+            }
+        },
+        linkback = "block_00209",
+        linknext = "block_00211"
+    },
+    block_00211 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0010j", head = "rna_z1d", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001980", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「っ」"
+                }
+            }
+        },
+        linkback = "block_00210",
+        linknext = "block_00212"
+    },
+    block_00212 = {
+        {"text"},
+        text = {
+            ja = {
+                {"冰川就那样低下了头。"}
+            }
+        },
+        linkback = "block_00211",
+        linknext = "block_00213"
+    },
+    block_00213 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0011i", head = "rna_z1d", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001981", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「前、前辈你太狡猾了」"
+                }
+            }
+        },
+        linkback = "block_00212",
+        linknext = "block_00214"
+    },
+    block_00214 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哪里狡猾了？」"
+                }
+            }
+        },
+        linkback = "block_00213",
+        linknext = "block_00215"
+    },
+    block_00215 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0009i", head = "rna_z1d", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001982", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「明明平时都一副我怎么样都无所谓的样子！」"
+                }
+            }
+        },
+        linkback = "block_00214",
+        linknext = "block_00216"
+    },
+    block_00216 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗？　我觉得并不是那样啊？」"
+                }
+            }
+        },
+        linkback = "block_00215",
+        linknext = "block_00217"
+    },
+    block_00217 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0006i", head = "rna_z1d", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001983", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「我说想拜你为师，你还拒绝了我！」"
+                }
+            }
+        },
+        linkback = "block_00216",
+        linknext = "block_00218"
+    },
+    block_00218 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「弟子？」"
+                }
+            }
+        },
+        linkback = "block_00217",
+        linknext = "block_00219"
+    },
+    block_00219 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「弟子……？　啊，那当然会拒绝啊」"
+                }
+            }
+        },
+        linkback = "block_00218",
+        linknext = "block_00220"
+    },
+    block_00220 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0005i", head = "rna_z1d", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001984", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「可你不是教过禀前辈吗」"
+                }
+            }
+        },
+        linkback = "block_00219",
+        linknext = "block_00221"
+    },
+    block_00221 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「也没到弟子的程度啦」"
+                }
+            }
+        },
+        linkback = "block_00220",
+        linknext = "block_00222"
+    },
+    block_00222 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0006i", head = "rna_z1d", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001985", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「你可没教过我画画！」"
+                }
+            }
+        },
+        linkback = "block_00221",
+        linknext = "block_00223"
+    },
+    block_00223 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「因为你画画本来就特别厉害啊……」"
+                }
+            }
+        },
+        linkback = "block_00222",
+        linknext = "block_00224"
+    },
+    block_00224 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0007i", head = "rna_z1d", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001986", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「这根本不是理由！」"
+                }
+            }
+        },
+        linkback = "block_00223",
+        linknext = "block_00225"
+    },
+    block_00225 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗？」"
+                }
+            }
+        },
+        linkback = "block_00224",
+        linknext = "block_00226"
+    },
+    block_00226 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1d0100", face = "d0018i", head = "rna_z1d", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001987", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是的哦」"
+                }
+            }
+        },
+        linkback = "block_00225",
+        linknext = "block_00227"
+    },
+    block_00227 = {
+        {"bgm", stop = 1, time = 1000},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那，要不要我以后教你画画？」"
+                }
+            }
+        },
+        linkback = "block_00226",
+        linknext = "block_00228"
+    },
+    block_00228 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0012", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001988", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「诶？」"
+                }
+            }
+        },
+        linkback = "block_00227",
+        linknext = "block_00229"
+    },
+    block_00229 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过……」"
+                }
+            }
+        },
+        linkback = "block_00228",
+        linknext = "block_00230"
+    },
+    block_00230 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我先停顿了一下，然后慢慢开口。"}
+            }
+        },
+        linkback = "block_00229",
+        linknext = "block_00231"
+    },
+    block_00231 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, resize = 1, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0012", head = "rna_z2a", lv = 5, id = 5},
+        {"bgm", file = "bgm029"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「大概，我没法用你希望的方式来教你哦」"
+                }
+            }
+        },
+        linkback = "block_00230",
+        linknext = "block_00232"
+    },
+    block_00232 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0009", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001989", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「我希望的方式？」"
+                }
+            }
+        },
+        linkback = "block_00231",
+        linknext = "block_00233"
+    },
+    block_00233 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你其实已经明白了吧？」"
+                }
+            }
+        },
+        linkback = "block_00232",
+        linknext = "block_00234"
+    },
+    block_00234 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0001", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001990", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「明、明白什么？」"
+                }
+            }
+        },
+        linkback = "block_00233",
+        linknext = "block_00235"
+    },
+    block_00235 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我为什么说没法教你……」"
+                }
+            }
+        },
+        linkback = "block_00234",
+        linknext = "block_00236"
+    },
+    block_00236 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0010", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001991", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00235",
+        linknext = "block_00237"
+    },
+    block_00237 = {
+        {"text"},
+        text = {
+            ja = {
+                {"脸颊微微泛红的冰川，表情稍微平静了些。"}
+            }
+        },
+        linkback = "block_00236",
+        linknext = "block_00238"
+    },
+    block_00238 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不过，她的眼睛依然像是湿润着。"}
+            }
+        },
+        linkback = "block_00237",
+        linknext = "block_00239"
+    },
+    block_00239 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0009", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001992", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00238",
+        linknext = "block_00240"
+    },
+    block_00240 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0008", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001993", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「前辈的画风，变了呢」"
+                }
+            }
+        },
+        linkback = "block_00239",
+        linknext = "block_00241"
+    },
+    block_00241 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0010", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001994", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「被称为最后的作品的那幅《樱日狂想》之后，和我共作的时候，",
+                    {"rt2"},
+                    "画风中途发生了很大变化」"
+                }
+            }
+        },
+        linkback = "block_00240",
+        linknext = "block_00242"
+    },
+    block_00242 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0011", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001995", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「就像惯用手不听使唤一样……那种违和感」"
+                }
+            }
+        },
+        linkback = "block_00241",
+        linknext = "block_00243"
+    },
+    block_00243 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但是，和你合作的那幅不是完成了吗？」"
+                }
+            }
+        },
+        linkback = "block_00242",
+        linknext = "block_00244"
+    },
+    block_00244 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0010", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001996", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是的，所以，只有最后那一晚，前辈的笔好像又回来了，是种很",
+                    {"rt2"},
+                    "不可思议的感觉」"
+                }
+            }
+        },
+        linkback = "block_00243",
+        linknext = "block_00245"
+    },
+    block_00245 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊……也许是吧」"
+                }
+            }
+        },
+        linkback = "block_00244",
+        linknext = "block_00246"
+    },
+    block_00246 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0009", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001997", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那个，为什么只有最后一天，笔又回来了呢？」"
+                }
+            }
+        },
+        linkback = "block_00245",
+        linknext = "block_00247"
+    },
+    block_00247 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「并不是只有最后一天才回来的，而是靠最后的力量才画出来的…",
+                    {"rt2"},
+                    "…。从那以后真的，再也画不出来了」"
+                }
+            }
+        },
+        linkback = "block_00246",
+        linknext = "block_00248"
+    },
+    block_00248 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0012", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001998", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「诶？」"
+                }
+            }
+        },
+        linkback = "block_00247",
+        linknext = "block_00249"
+    },
+    block_00249 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以，我已经不能画画了。不是不想画，而是真的画不了了。我",
+                    {"rt2"},
+                    "从那时起，作为草薙直哉，放弃了创作作品」"
+                }
+            }
+        },
+        linkback = "block_00248",
+        linknext = "block_00250"
+    },
+    block_00250 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0008", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_001999", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那幅作品就是最后一幅了吗？」"
+                }
+            }
+        },
+        linkback = "block_00249",
+        linknext = "block_00251"
+    },
+    block_00251 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，是最后一幅」"
+                }
+            }
+        },
+        linkback = "block_00250",
+        linknext = "block_00252"
+    },
+    block_00252 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「正如你所说。我因为某些原因让自己的惯用手受伤了。然后就再",
+                    {"rt2"},
+                    "也画不出以前那样的画了」"
+                }
+            }
+        },
+        linkback = "block_00251",
+        linknext = "block_00253"
+    },
+    block_00253 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「除了那天晚上……」"
+                }
+            }
+        },
+        linkback = "block_00252",
+        linknext = "block_00254"
+    },
+    block_00254 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0011", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002000", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「前、前辈不画画的理由……难道，这、这个，绝对是不能说出去",
+                    {"rt2"},
+                    "的秘密吧？」"
+                }
+            }
+        },
+        linkback = "block_00253",
+        linknext = "block_00255"
+    },
+    block_00255 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这绝对是个秘密哦」"
+                }
+            }
+        },
+        linkback = "block_00254",
+        linknext = "block_00256"
+    },
+    block_00256 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0008", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002001", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「为什么会这么轻易地告诉我呢？」"
+                }
+            }
+        },
+        linkback = "block_00255",
+        linknext = "block_00257"
+    },
+    block_00257 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你不是说过吗，从画里能感受到一些东西，所以我觉得再藏着也",
+                    {"rt2"},
+                    "没什么意义了」"
+                }
+            }
+        },
+        linkback = "block_00256",
+        linknext = "block_00258"
+    },
+    block_00258 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0009", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002002", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「就算这样，也不应该亲口说出来吧……」"
+                }
+            }
+        },
+        linkback = "block_00257",
+        linknext = "block_00259"
+    },
+    block_00259 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是啦，虽然你可能不太能理解」"
+                }
+            }
+        },
+        linkback = "block_00258",
+        linknext = "block_00260"
+    },
+    block_00260 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「被你那么说，像是狡猾啊、卑鄙啊，其实我也挺难受的」"
+                }
+            }
+        },
+        linkback = "block_00259",
+        linknext = "block_00261"
+    },
+    block_00261 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0013", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002003", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「诶？」"
+                }
+            }
+        },
+        linkback = "block_00260",
+        linknext = "block_00262"
+    },
+    block_00262 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「就算这样，我还是把最后的画笔献给你了啊」"
+                }
+            }
+        },
+        linkback = "block_00261",
+        linknext = "block_00263"
+    },
+    block_00263 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0012", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002004", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「啊，谢谢您……」"
+                }
+            }
+        },
+        linkback = "block_00262",
+        linknext = "block_00264"
+    },
+    block_00264 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0009", head = "rna_z2a", lv = 5, id = 5},
+        {"fgact", ch = "里奈", act = "うなづく", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002005", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不过，我觉得光是这点感谢的话，还是不够……」"
+                }
+            }
+        },
+        linkback = "block_00263",
+        linknext = "block_00265"
+    },
+    block_00265 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0010", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002006", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「而且，为什么要为了我这样的人用上最后的画笔……我甚至不知",
+                    {"rt2"},
+                    "道该怎么回应才好……」"
+                }
+            }
+        },
+        linkback = "block_00264",
+        linknext = "block_00266"
+    },
+    block_00266 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没关系啦。我又不是为了被你感谢才这么做的……」"
+                }
+            }
+        },
+        linkback = "block_00265",
+        linknext = "block_00267"
+    },
+    block_00267 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0008", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002007", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是在做好事吗？」"
+                }
+            }
+        },
+        linkback = "block_00266",
+        linknext = "block_00268"
+    },
+    block_00268 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以说啊，被你用博爱之类的说法一笔带过，我其实有点不高兴」"
+                }
+            }
+        },
+        linkback = "block_00267",
+        linknext = "block_00269"
+    },
+    block_00269 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「也不是所有事都那样的……」"
+                }
+            }
+        },
+        linkback = "block_00268",
+        linknext = "block_00270"
+    },
+    block_00270 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我也会有一点点私心啊」"
+                }
+            }
+        },
+        linkback = "block_00269",
+        linknext = "block_00271"
+    },
+    block_00271 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是为了谁，而是为了这个家伙才去做的时候也是有的……」"
+                }
+            }
+        },
+        linkback = "block_00270",
+        linknext = "block_00272"
+    },
+    block_00272 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0012", head = "rna_z2a", lv = 5, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", size = 5, lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002008", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「诶？」"
+                }
+            }
+        },
+        linkback = "block_00271",
+        linknext = "block_00273"
+    },
+    block_00273 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我把最后的画献给你了。不是为了其他任何人」"
+                }
+            }
+        },
+        linkback = "block_00272",
+        linknext = "block_00274"
+    },
+    block_00274 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0011", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002009", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那是……」"
+                }
+            }
+        },
+        linkback = "block_00273",
+        linknext = "block_00275"
+    },
+    block_00275 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「就是字面意思，为了你，我用了最后的右手」"
+                }
+            }
+        },
+        linkback = "block_00274",
+        linknext = "block_00276"
+    },
+    block_00276 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0009", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002010", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「怎、怎么会……」"
+                }
+            }
+        },
+        linkback = "block_00275",
+        linknext = "block_00277"
+    },
+    block_00277 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过，我并不后悔，反而觉得那样才最合适」"
+                }
+            }
+        },
+        linkback = "block_00276",
+        linknext = "block_00278"
+    },
+    block_00278 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那天晚上的最后一刻，真的很开心啊……。我啊……」"
+                }
+            }
+        },
+        linkback = "block_00277",
+        linknext = "block_00279"
+    },
+    block_00279 = {
+        {"se", file = "se9010", id = 1},
+        {"fg", ch = "里奈", size = "z1", mode = 3, resize = 1, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0021", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002011", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「前、前辈果然太狡猾了！」"
+                }
+            }
+        },
+        linkback = "block_00278",
+        linknext = "block_00280"
+    },
+    block_00280 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哪儿狡猾了啊……」"
+                }
+            }
+        },
+        linkback = "block_00279",
+        linknext = "block_00281"
+    },
+    block_00281 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0020", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002012", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那样，太狡猾了！」"
+                }
+            }
+        },
+        linkback = "block_00280",
+        linknext = "block_00282"
+    },
+    block_00282 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0019", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002013", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那种……那么痛苦的笑容什么的……太狡猾了」"
+                }
+            }
+        },
+        linkback = "block_00281",
+        linknext = "block_00283"
+    },
+    block_00283 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不管我做什么都变成狡猾了吗……」"
+                }
+            }
+        },
+        linkback = "block_00282",
+        linknext = "block_00284"
+    },
+    block_00284 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0020", head = "rna_z1a", lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002014", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「因为……」"
+                }
+            }
+        },
+        linkback = "block_00283",
+        linknext = "block_00285"
+    },
+    block_00285 = {
+        {"text"},
+        text = {
+            ja = {
+                {"冰川就这样沉默了下去。"}
+            }
+        },
+        linkback = "block_00284",
+        linknext = "block_00286"
+    },
+    block_00286 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「总之，画画我随时都可以教你。有需要就跟我说。」"
+                }
+            }
+        },
+        linkback = "block_00285",
+        linknext = "block_00287"
+    },
+    block_00287 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0019", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002015", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「大概，我已经不会再拜托你了……」"
+                }
+            }
+        },
+        linkback = "block_00286",
+        linknext = "block_00288"
+    },
+    block_00288 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这样啊，那样也没关系。」"
+                }
+            }
+        },
+        linkback = "block_00287",
+        linknext = "block_00289"
+    },
+    block_00289 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0009", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002016", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「最后可以问一个问题吗……」"
+                }
+            }
+        },
+        linkback = "block_00288",
+        linknext = "block_00290"
+    },
+    block_00290 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么？」"
+                }
+            }
+        },
+        linkback = "block_00289",
+        linknext = "block_00291"
+    },
+    block_00291 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0010", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002017", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那幅画……，在台风之夜消失的那幅画。那幅画几乎没有被任何",
+                    {"rt2"},
+                    "人看到过」"
+                }
+            }
+        },
+        linkback = "block_00290",
+        linknext = "block_00292"
+    },
+    block_00292 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0008", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002018", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「在那样的作品上，学长您却用尽了自己的最后力量，对吧」"
+                }
+            }
+        },
+        linkback = "block_00291",
+        linknext = "block_00293"
+    },
+    block_00293 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，是啊。结果就是那样。」"
+                }
+            }
+        },
+        linkback = "block_00292",
+        linknext = "block_00294"
+    },
+    block_00294 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1a0100", face = "a0009", head = "rna_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002019", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那是为什么呢？」"
+                }
+            }
+        },
+        linkback = "block_00293",
+        linknext = "block_00295"
+    },
+    block_00295 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg081g", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "里奈", size = "z2", mode = 3, resize = 1, path = ":fg/rna/z2/", file = "rna_z2i0000", face = "i0002", head = "rna_z2i", lv = 5, id = 5, sync = 0},
+        {"bg", file = "reco", id = 9, lv = 9, path = ":sys/", sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「因为我想抹去你身上的死亡气息。」"
+                }
+            }
+        },
+        linkback = "block_00294",
+        linknext = "block_00296"
+    },
+    block_00296 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002020", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「为、为什么……是我呢……」"
+                }
+            }
+        },
+        linkback = "block_00295",
+        linknext = "block_00297"
+    },
+    block_00297 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「大概是被你吸引了吧……」"
+                }
+            }
+        },
+        linkback = "block_00296",
+        linknext = "block_00298"
+    },
+    block_00298 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002021", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「被吸引了？」"
+                }
+            }
+        },
+        linkback = "block_00297",
+        linknext = "block_00299"
+    },
+    block_00299 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，被你的画，还有你的身影……」"
+                }
+            }
+        },
+        linkback = "block_00298",
+        linknext = "block_00300"
+    },
+    block_00300 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002022", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是吗……。不过那个时候的我，已经不存在了……」"
+                }
+            }
+        },
+        linkback = "block_00299",
+        linknext = "block_00301"
+    },
+    block_00301 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002023", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那个被死亡所吸引的我，已经不存在了」"
+                }
+            }
+        },
+        linkback = "block_00300",
+        linknext = "block_00302"
+    },
+    block_00302 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊，我知道啊」"
+                }
+            }
+        },
+        linkback = "block_00301",
+        linknext = "block_00303"
+    },
+    block_00303 = {
+        {"cgdel", id = -1},
+        {"bg", file = "ev_com_d02_01", sync = 0, path = ":ev/ev_com_d02/", set = "ev_com_d02"},
+        {"bg", file = "reco", id = 9, lv = 9, sync = 0, path = ":sys/"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「因为，是我把你变成了我喜欢的女孩子」"
+                }
+            }
+        },
+        linkback = "block_00302",
+        linknext = "block_00304"
+    },
+    block_00304 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「接受死亡，享受它，然后注视着生命」"
+                }
+            }
+        },
+        linkback = "block_00303",
+        linknext = "block_00305"
+    },
+    block_00305 = {
+        {"cgdel", id = -1},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg053a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0001i", head = "rna_z2a", lv = 5, id = 5, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我喜欢现在这样的你」"
+                }
+            }
+        },
+        linkback = "block_00304",
+        linknext = "block_00306"
+    },
+    block_00306 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0012i", head = "rna_z2a", lv = 5, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002024", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「っ」"
+                }
+            }
+        },
+        linkback = "block_00305",
+        linknext = "block_00307"
+    },
+    block_00307 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我爱现在的里奈」"
+                }
+            }
+        },
+        linkback = "block_00306",
+        linknext = "block_00308"
+    },
+    block_00308 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0008i", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002025", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「为、为什么要说那样的话啊」"
+                }
+            }
+        },
+        linkback = "block_00307",
+        linknext = "block_00309"
+    },
+    block_00309 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「谁知道呢。不过，大概，不久之后就会到必须好好对自己的内心",
+                    {"rt2"},
+                    "做个了断的时候了」"
+                }
+            }
+        },
+        linkback = "block_00308",
+        linknext = "block_00310"
+    },
+    block_00310 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「根据那个答案，也许，说不定会死……」"
+                }
+            }
+        },
+        linkback = "block_00309",
+        linknext = "block_00311"
+    },
+    block_00311 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0013", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002026", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「死？　为什么？」"
+                }
+            }
+        },
+        linkback = "block_00310",
+        linknext = "block_00312"
+    },
+    block_00312 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，只是打个比方罢了。不过，无论如何，必须好好面对的时候",
+                    {"rt2"},
+                    "总会到来」"
+                }
+            }
+        },
+        linkback = "block_00311",
+        linknext = "block_00313"
+    },
+    block_00313 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「只是啊，我打算，在我一生当中，只给出一个答案」"
+                }
+            }
+        },
+        linkback = "block_00312",
+        linknext = "block_00314"
+    },
+    block_00314 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0012", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002027", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「在一生当中？　只给一个答案？」"
+                }
+            }
+        },
+        linkback = "block_00313",
+        linknext = "block_00315"
+    },
+    block_00315 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊，我也明白你们为什么会说我是博爱主义什么的。但是，不",
+                    {"rt2"},
+                    "是那样的」"
+                }
+            }
+        },
+        linkback = "block_00314",
+        linknext = "block_00316"
+    },
+    block_00316 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我也是人啊」"
+                }
+            }
+        },
+        linkback = "block_00315",
+        linknext = "block_00317"
+    },
+    block_00317 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我也不是只靠奉献精神活着的」"
+                }
+            }
+        },
+        linkback = "block_00316",
+        linknext = "block_00318"
+    },
+    block_00318 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0009", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002028", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「前辈……」"
+                }
+            }
+        },
+        linkback = "block_00317",
+        linknext = "block_00319"
+    },
+    block_00319 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0021", head = "rna_z2a", lv = 5, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002029", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「前辈！」"
+                }
+            }
+        },
+        linkback = "block_00318",
+        linknext = "block_00320"
+    },
+    block_00320 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯？」"
+                }
+            }
+        },
+        linkback = "block_00319",
+        linknext = "block_00321"
+    },
+    block_00321 = {
+        {"text"},
+        text = {
+            ja = {
+                {"冰川当场哭了起来。"}
+            }
+        },
+        linkback = "block_00320",
+        linknext = "block_00322"
+    },
+    block_00322 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0020", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002030", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「卑鄙！前辈真是最差劲的卑鄙鬼！」"
+                }
+            }
+        },
+        linkback = "block_00321",
+        linknext = "block_00323"
+    },
+    block_00323 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0019", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002031", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「因为，前辈拥有绝对的力量，把我的心紧紧抓住……」"
+                }
+            }
+        },
+        linkback = "block_00322",
+        linknext = "block_00324"
+    },
+    block_00324 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0021", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002032", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「所以，我必须要逃离前辈才行」"
+                }
+            }
+        },
+        linkback = "block_00323",
+        linknext = "block_00325"
+    },
+    block_00325 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0019", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002033", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不然的话……」"
+                }
+            }
+        },
+        linkback = "block_00324",
+        linknext = "block_00326"
+    },
+    block_00326 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那也无所谓。我，只会做出我的决定……」"
+                }
+            }
+        },
+        linkback = "block_00325",
+        linknext = "block_00327"
+    },
+    block_00327 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你也做出你的决定就好」"
+                }
+            }
+        },
+        linkback = "block_00326",
+        linknext = "block_00328"
+    },
+    block_00328 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「恋爱单方面也能成立，但两个人的恋爱是无法单方面成立的」"
+                }
+            }
+        },
+        linkback = "block_00327",
+        linknext = "block_00329"
+    },
+    block_00329 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「即便如此，爱也不会消失」"
+                }
+            }
+        },
+        linkback = "block_00328",
+        linknext = "block_00330"
+    },
+    block_00330 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0020", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002034", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「草薙先生……」"
+                }
+            }
+        },
+        linkback = "block_00329",
+        linknext = "block_00331"
+    },
+    block_00331 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2a0100", face = "a0021", head = "rna_z2a", lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "里奈", act = "うんうん", lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_002035", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「草薙先生你这个大笨蛋——」"
+                }
+            }
+        },
+        linkback = "block_00330",
+        linknext = "block_00332"
+    },
+    block_00332 = {
+        {"text"},
+        text = {
+            ja = {
+                {"被冰川大声怒吼了。"}
+            }
+        },
+        linkback = "block_00331",
+        linknext = "block_00333"
+    },
+    block_00333 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我很清楚那句话的含义。"}
+            }
+        },
+        linkback = "block_00332",
+        linknext = "block_00334"
+    },
+    block_00334 = {
+        {"text"},
+        text = {
+            ja = {
+                {"而且，对于那句话的答案，也必须在不久之后给出。"}
+            }
+        },
+        linkback = "block_00333",
+        linknext = "block_00335"
+    },
+    block_00335 = {
+        {"bgm", stop = 1, time = 2000},
+        {"se", stop = 1, id = -1, time = 2000},
+        {"vostop", stop = 1, time = 2000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 2000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"excall", file = "03_zypressen_08"},
+        {"text"},
+        linkback = "block_00334"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

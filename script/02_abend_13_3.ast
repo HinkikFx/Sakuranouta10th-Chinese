@@ -1,0 +1,2837 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅱ章"},
+        {"bgm", file = "bgm027"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "nightsky_summer", id = 9, lv = 9, path = ":cg/", sync = 0},
+        {"extrans", time = 500},
+        {"se", id = 1, file = "se3402"},
+        {"text"},
+        delay = {
+            [400] = {
+                {"se", id = 2, file = "se3402"}
+            },
+            [1000] = {
+                {"se", id = 3, file = "se3402"}
+            }
+        },
+        text = {
+            ja = {
+                {"明石爬上了脚手架。"}
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这是属于相当高的那种脚手架。"}
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是要装在这个上面吧？我来帮你拿着。」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000441", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「涂料会弄到你身上的。」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没关系。」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000442", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「嗯。」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"se", id = 1, file = "se2405"},
+        {"text"},
+        text = {
+            ja = {
+                {"明石在自己的腰带上装上了什么东西。"}
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那是什么？」"
+                }
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000443", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「从你那里得到了灵感……」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「从我？」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"cgdel", id = -1},
+        {"bg", file = "ev_uni_c24_04", path = ":ev/ev_uni_c24/", set = "ev_uni_c24"},
+        {"text"},
+        text = {
+            ja = {
+                {"明石咧嘴一笑，把刷子上蘸满了漆黑的液体。"}
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"text"},
+        text = {
+            ja = {
+                {"装在大桶里的那东西，粘稠度远非墨水可比。"}
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"text"},
+        text = {
+            ja = {
+                {"刷子还泡在桶里，明石凝视着教堂的墙壁。"}
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"text"},
+        text = {
+            ja = {
+                {"墙上的各处都做了遮蔽处理，就算涂料飞溅也没有关系。"}
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            ja = {
+                {"可以尽情地挥动刷子。不过，这第一笔是绝对不能失败的。"}
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"text"},
+        text = {
+            ja = {
+                {"如果这次失败了，我们就会变成单纯的罪犯。还会毁掉这个教会。"}
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"bg", x = 980, y = 750, zoom = 120, file = "zbg057g", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "明石", size = "z2", zoom = 120, mode = 3, resize = 1, path = ":fg/aka/z2/", file = "aka_z2a0500", face = "a0003", head = "aka_z2a", y = 60, lv = 5, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"明石深吸了一口气。"}
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"bgm", file = "bgm015"},
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z2/", file = "aka_z2a0500", face = "a0004", head = "aka_z2a", y = 60, lv = 5, id = 9, zoom = 120},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "明石", mx = -40, mode = -1, lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000444", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「喝！」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"bg", time = 100, sync = 1, file = "white", path = ":bg/"},
+        {"se", id = 1, file = "se3215_1"},
+        {"quake"},
+        {"bg", file = "sumi02_筆_打ち下ろしタイプ_透明", id = 9, lv = 9, rule = 129, time = 100, zoom = 100, sync = 1, z2 = 120, path = ":cg/"},
+        {"ex", time = 500, func = "wait"},
+        {"text"},
+        text = {
+            ja = {
+                {"一笔落下。"}
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {"像书法一样，黑色的飞溅洒落在画布上。"}
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"text"},
+        text = {
+            ja = {
+                {"气势十足，充满动态感，是极为精彩的一笔。"}
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {"位置、形状、气势全都没有问题。到目前为止都是成功的。"}
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"cgdel", id = -1},
+        {"bg", x = 980, y = 750, zoom = 120, file = "zbg057g", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"extrans", time = 500},
+        {"fg", ch = "明石", size = "z2", zoom = 120, my = 40, mode = 3, path = ":fg/aka/z2/", file = "aka_z2a0500", face = "a0003", head = "aka_z2a", y = 60, lv = 5, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"但接下来才是关键。要让这笔成为完整的一笔，需要相当高的技巧。"}
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"text"},
+        text = {
+            ja = {
+                {"必须用仅仅一条线来表现出树干。"}
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            ja = {
+                {"必须要在一夜之间完成。"}
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"quake", mode = "mw"},
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z2/", file = "aka_z2a0500", face = "a0004", head = "aka_z2a", y = 60, lv = 5, id = 9, zoom = 120},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000445", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「呜啊啊啊啊啊啊！」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"bg", x = 980, y = -240, zoom = 120, speed = 400, file = "zbg057g", path = ":bg/", y2 = 750, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "明石", size = "z2", zoom = 120, mode = 3, path = ":fg/aka/z2/", file = "aka_z2a0500", face = "a0003", head = "aka_z2a", y = 60, lv = 5, id = 9, sync = 0},
+        {"extrans", time = 0},
+        {"se", file = "se3130", id = 1},
+        {"quake"},
+        {"fg", ch = "明石", my = 40, mode = -1, lv = 5, id = 9},
+        {"bg", time = 50, rule = 216, file = "black", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「！？」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {"几乎是从脚手架上一跃而下。"}
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"text"},
+        text = {
+            ja = {
+                {"——本以为如此，但他的滞空时间微妙地有些长。"}
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「橡皮筋？　蹦极？」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {"明石系在腰带上的，是用于蹦极跳的橡皮绳。"}
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000446", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「喝啊！　呀啊啊啊啊啊！」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"bg", time = 100, sync = 1, file = "white", path = ":bg/"},
+        {"se", id = 1, file = "se3215_2"},
+        {"quake"},
+        {"bg", file = "sumi01_筆_アッパータイプ_透明", id = 9, lv = 9, rule = 086, time = 100, zoom = 100, sync = 1, z2 = 120, path = ":cg/"},
+        {"ex", time = 400, func = "wait"},
+        {"cgdel", id = -1},
+        {"bg", zoom = 100, time = 300, file = "ev_uni_c24_04", z2 = 120, path = ":ev/ev_uni_c24/", set = "ev_uni_c24"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「成、成功了吗？」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"bg", zoom = 110, y = -50, time = 100, speed = 300, file = "bg057g", path = ":bg/", z2 = 150, y2 = 50},
+        {"quake"},
+        {"se", file = "se_attack06", id = 1},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000447", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「呜呃！？」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "在一笔划完的瞬间，橡皮绳断裂，完全没考虑脚下的明石被狠狠摔",
+                    {"rt2"},
+                    "在了地上。"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"text"},
+        text = {
+            ja = {
+                {"只是为了画出那一条线而坠落。根本没有什么保护自己的概念。"}
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"se", file = "se9010", id = 1},
+        {"fg", ch = "明石", size = "z1", my = 40, mode = 3, resize = 1, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0005", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0004", head = "aka_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000448", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「呜呜。怎么样！？　草薙！」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，很厉害。不过你没事吧？　摔得很惨啊」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0001", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000449", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「都在预料之中……」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「预料之中？」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0004", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000450", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「为了把线画得最美，这种程度的反作用力是必须的……」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「也就是说，你故意用会断的橡皮绳来蹦极？」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0003", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000451", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「倒也不是故意……不过用这种会断也不奇怪的粗细的橡皮绳。目",
+                    {"rt2"},
+                    "的是让滞空时间变长，过度的弹力反而会妨碍，所以……」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0001", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000452", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「比起那个，我的线怎么样？」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「很厉害……没想到竟然能做到这种程度……」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            ja = {
+                {"简直只能说是无可挑剔的精彩。"}
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "反复更换橡皮筋的粗细进行实验，为了画出最美的线条，也一定无",
+                    {"rt2"},
+                    "数次地反复掉下来。"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "跳下去的时机、橡皮筋的反作用力、挥笔的方式、用力和收力的方",
+                    {"rt2"},
+                    "法。这一切都太完美了。"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这不是一两次就能掌握的东西。"}
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这大概是拼尽全力、几乎渗出鲜血的努力后才掌握的技艺吧。"}
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你是在哪里练习这个的？」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0002", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000453", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「主要是在桥墩那里。最初是在不引人注意的墙上练的，但还是太",
+                    {"rt2"},
+                    "显眼，没办法。反复调整橡皮筋的粗细，终于达到了现在这样的做",
+                    {"rt2"},
+                    "法。快断的时候刚刚好」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「连防护动作都碍事吗」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0003", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000454", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「不，平时的话防护动作还是能做的……。也许是因为正式来所以",
+                    {"rt2"},
+                    "有些紧张吧」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没受伤吗？」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0001", head = "aka_z1a", lv = 4, id = 9},
+        {"fgact", ch = "明石", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000455", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「啊，勉强还行……」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这么说着站起来的明石，正按着自己的肋部。"}
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「肋部被撞得很重吗？」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0004", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000456", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「没问题。只是普通的撞伤……」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"text"},
+        text = {
+            ja = {
+                {"对自己的身体毫不在意，明石只是凝视着自己刚才画下的一笔。"}
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0003", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000457", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「一笔大致就是这样了……接下来就是在各个部分，补充一些细节…",
+                    {"rt2"},
+                    "…」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是啊」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062"
+    },
+    block_00062 = {
+        {"msgoff"},
+        {"se", file = "se3130", id = 1},
+        {"bg", x = -640, y = 90, file = "zbg057g", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "fg_akashi01", id = 6, lv = 6, x = 0, y = 300, speed = 400, path = ":cg/", x2 = 500, ax = 795, ay = 979, bx = 165, by = -439, sync = 0},
+        {"bg", file = "black", id = 7, lv = 7, x = 0, y = 940, speed = 300, ease = "easeout_quint", path = ":bg/", y2 = 0, sync = 0},
+        {"bg", file = "black", id = 8, lv = 8, x = 0, y = -940, speed = 300, ease = "easeout_quint", path = ":bg/", y2 = 0, sync = 0},
+        {"extrans", time = 0},
+        {"ex", time = 300, func = "wait"},
+        {"cgdel", id = -1},
+        {"bg", x = -640, y = 90, file = "zbg057g", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "fg_akashi01", id = 6, lv = 6, x = 0, y = 300, path = ":cg/", ax = 795, ay = 979, bx = 165, by = -439, sync = 0},
+        {"bg", file = "black", id = 7, lv = 7, x = 0, y = 0, speed = 300, ease = "easeout_quint", path = ":bg/", y2 = 940, sync = 0},
+        {"bg", file = "black", id = 8, lv = 8, x = 0, y = 0, speed = 300, ease = "easeout_quint", path = ":bg/", y2 = -940, sync = 0},
+        {"extrans", time = 0},
+        {"ex", time = 300, func = "wait"},
+        {"se", file = "se1615_z1", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "明石拿出一支小号毛笔（虽说是小号，但比普通毛笔要大好几倍），",
+                    {"rt2"},
+                    "开始补充细微的部分。"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063"
+    },
+    block_00063 = {
+        {"text"},
+        text = {
+            ja = {
+                {"转眼间，一笔勾勒出的线条变成了漂亮的树干，又加上了枝杈。"}
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064"
+    },
+    block_00064 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "几乎没有看草薙健一郎的设计图，就几乎完全准确地将图案复现在",
+                    {"rt2"},
+                    "了教会的墙上。"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065"
+    },
+    block_00065 = {
+        {"text"},
+        text = {
+            ja = {
+                {"只能说是非常出色。"}
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066"
+    },
+    block_00066 = {
+        {"cgdel", id = -1},
+        {"bg", file = "bg057g", path = ":bg/", sync = 0},
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0003", head = "aka_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你到底为这一天练习了多久啊」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067"
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000458", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「自从看到那张设计图的那天起，每天都在练习啊……。每天，每",
+                    {"rt2"},
+                    "天，每天，我都在重复这个动作。失败是绝对不被允许的。绝对不",
+                    {"rt2"},
+                    "能失败。因为这是一笔成型啊」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068"
+    },
+    block_00068 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「桥墩的墙壁不会都被你弄黑了吗？」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069"
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000459", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「练习用的是水。要在水干之前完成全部，每次都反复练习了很多",
+                    {"rt2"},
+                    "遍。所以没问题」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070"
+    },
+    block_00070 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「果然啊……只能说太厉害了……。完全没想到你能复现得这么好……」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071"
+    },
+    block_00071 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0001", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000460", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「所以我早说过了……我能把不可能变成可能……」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072"
+    },
+    block_00072 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "虽然说并不是完全没有预料到。要不是这样，最初那一笔就是我来",
+                    {"rt2"},
+                    "画了。"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073"
+    },
+    block_00073 = {
+        {"text"},
+        text = {
+            ja = {
+                {"最了解草薙健一郎笔法的人是我。"}
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074"
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "即便只是临时学的，我也有相当的自信能做到很高的还原度。但还",
+                    {"rt2"},
+                    "是交给了明石。"
+                }
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075"
+    },
+    block_00075 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "明石知道我模仿草薙健一郎的画作意味着什么。即便如此，明石还",
+                    {"rt2"},
+                    "是说，不是让我来做，而是他自己来做。"
+                }
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076"
+    },
+    block_00076 = {
+        {"text"},
+        text = {
+            ja = {
+                {"也就是说，他确信自己比我更能还原草薙健一郎。"}
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077"
+    },
+    block_00077 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那时候，你愿意帮我的时候，也是出于这种原因吧？」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078"
+    },
+    block_00078 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0002", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000461", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「你在说什么啊？」"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079"
+    },
+    block_00079 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你不仅仅是想帮忙，实际上你也单纯地想知道草薙健一郎的用笔",
+                    {"rt2"},
+                    "习惯。你想知道如何临摹草薙健一郎的画法」"
+                }
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080"
+    },
+    block_00080 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0001", head = "aka_z1a", lv = 4, id = 9},
+        {"fgact", ch = "明石", act = "うんうん", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000462", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「咕哈哈……谁知道呢。那种老早以前的事我都忘啦」"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081"
+    },
+    block_00081 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0002", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000463", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「嘛，不过，也许是拿来当作参考了吧。从这个意义上说，那时候",
+                    {"rt2"},
+                    "的事果然也算不上什么人情债，你也不用在意啦」"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082"
+    },
+    block_00082 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「笨蛋啊……」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083"
+    },
+    block_00083 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0003", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000464", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「好了！总之，主干和树枝的部分完成了。接下来就是樱花花瓣的",
+                    {"rt2"},
+                    "制作工序了。作业流程你明白吧！」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084"
+    },
+    block_00084 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，明白了」"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085"
+    },
+    block_00085 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0004", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000465", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「我来熔化。你就按照我的指示，把我熔化好的校内鞋印在画布上！",
+                    {"rt2"},
+                    "明白了吗！」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086"
+    },
+    block_00086 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，别指挥错了啊」"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087"
+    },
+    block_00087 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0001", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000466", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「笨蛋，怎么可能会错。我看这份设计图都看了多少遍了你知道吗？",
+                    {"rt2"},
+                    "都已经背下来了」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088"
+    },
+    block_00088 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「知道了，知道了。那就拜托你了，指挥官」"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089"
+    },
+    block_00089 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0002", head = "aka_z1a", lv = 4, id = 9},
+        {"fgact", ch = "明石", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000467", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「没问题！」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090"
+    },
+    block_00090 = {
+        {"text"},
+        text = {
+            ja = {
+                {"明石拿起了自己加热过的室内鞋。"}
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091"
+    },
+    block_00091 = {
+        {"fg", mode = -2},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呃……」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092"
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在盛夏用工业用取暖器加热过的室内鞋，热度相当惊人。"}
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093"
+    },
+    block_00093 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这样的高温，就算是普通的室内鞋也会被烤化吧。"}
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094"
+    },
+    block_00094 = {
+        {"fgf", frame = "frame_1p", bg = "black", cg = ":cg/fg_akashi01", cgx = 550, cgy = 50, rule = 64, bgpx = ":bg/", cgbx = -960, cgby = -540},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000468", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「最初的坐标，X25，Y15！ 角度320度！",
+                    {"rt2"},
+                    "稍微从侧面流畅地插入！」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095"
+    },
+    block_00095 = {
+        {"fgf", frame = "frame_1p", disp = "消", mode = -1},
+        {"text"},
+        text = {
+            ja = {
+                {"笛卡尔坐标。"}
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096"
+    },
+    block_00096 = {
+        {"text"},
+        text = {
+            ja = {
+                {"墙上用墨斗准确地标记着坐标。"}
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097"
+    },
+    block_00097 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在草薙健一郎的设计图上当然也画有坐标。"}
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098"
+    },
+    block_00098 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "只要改变这些坐标的比例，绘在设计图上的草薙健一郎的作品就能",
+                    {"rt2"},
+                    "作为壁画重现出来。"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099"
+    },
+    block_00099 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这是自古以来在制作巨大佛像等工程中采用的方法。"}
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100"
+    },
+    block_00100 = {
+        {"text"},
+        text = {
+            ja = {
+                {"通过进一步数字化，变成笛卡尔坐标，这样就能用口头来指示。"}
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101"
+    },
+    block_00101 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "坐标应该是用墨斗的线准确标记出来的。这种线用水很容易洗掉。",
+                    {"rt2"},
+                    "等作品完成后，会用水管冲洗干净。"
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102"
+    },
+    block_00102 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "不论是遮蔽处理，还是用墨斗制作坐标，如果不了解这座教堂的结",
+                    {"rt2"},
+                    "构，是不可能在几小时内完成的。"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103"
+    },
+    block_00103 = {
+        {"text"},
+        text = {
+            ja = {
+                {"明石恐怕这些年真的一直只在思考这件作品的事吧。"}
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104"
+    },
+    block_00104 = {
+        {"text"},
+        text = {
+            ja = {
+                {"对他所有的娴熟手法都感到佩服。"}
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105"
+    },
+    block_00105 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0004", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000469", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「喂，下一个，下一个！快点！」"
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106"
+    },
+    block_00106 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊，我知道了！」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107"
+    },
+    block_00107 = {
+        {"text"},
+        text = {
+            ja = {
+                {"夏夜很短暂。"}
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108"
+    },
+    block_00108 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在这短暂的黑暗中，我们必须完成这件事。"}
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109"
+    },
+    block_00109 = {
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"se", file = "se_blood2", id = 1},
+        {"bg", file = "zpaintred", id = 1, lv = 1, rule = 106, speed = 100, x = 200, y = -600, ease = "easein_cubic", path = ":cg/", x2 = "1000,-1500", y2 = "500,500", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintred", id = 9, lv = 9, rule = 106, zoom = 100, alpha = 150, speed = 100, x = 200, y = -600, ease = "easein_cubic", z2 = "200,130", path = ":cg/", x2 = "1000,-1500", y2 = "500,500", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"extrans", time = 50},
+        {"quake"},
+        {"ex", time = 300, func = "wait"},
+        {"cgdel", id = 1, lv = 1, time = 400},
+        {"cgdel", id = 9, lv = 9, time = 400},
+        {"se", file = "se_blood2", id = 1},
+        {"bg", file = "zpaintred", id = 1, lv = 1, rule = "106r", speed = 130, x = -1200, y = 0, ease = "easein_cubic", path = ":cg/", x2 = 200, y2 = -600, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintwhite", id = 2, lv = 2, rule = "106r", speed = 130, x = -1200, y = 0, ease = "easein_cubic", path = ":cg/", x2 = 200, y2 = -600, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintwhite", id = 9, lv = 9, rule = "106r", zoom = 100, alpha = 150, speed = 130, x = -1200, y = 0, ease = "easein_cubic", z2 = 200, path = ":cg/", x2 = 200, y2 = -600, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"extrans", time = 50},
+        {"quake"},
+        {"ex", time = 130, func = "wait"},
+        {"cgdel", id = 1, lv = 1, time = 400},
+        {"cgdel", id = 2, lv = 2, time = 400},
+        {"cgdel", id = 9, lv = 9, time = 400},
+        {"se", file = "se_blood2", id = 1},
+        {"bg", file = "zpaintred", id = 1, lv = 1, rule = 106, speed = 200, x = 1500, y = -200, ease = "easein_cubic", path = ":cg/", x2 = -1200, y2 = 0, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintwhite", id = 2, lv = 2, rule = 106, speed = 200, x = 1500, y = -200, ease = "easein_cubic", path = ":cg/", x2 = -1200, y2 = 0, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintgreen", id = 3, lv = 3, rule = 106, speed = 200, x = 1500, y = -200, ease = "easein_cubic", path = ":cg/", x2 = -1200, y2 = 0, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintgreen", id = 9, lv = 9, rule = 106, zoom = 100, alpha = 150, speed = 200, x = 1500, y = -200, ease = "easein_cubic", z2 = 200, path = ":cg/", x2 = -1200, y2 = 0, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"extrans", time = 50},
+        {"quake"},
+        {"ex", time = 500, func = "wait"},
+        {"cgdel", id = 1, lv = 1, time = 400},
+        {"cgdel", id = 2, lv = 2, time = 400},
+        {"cgdel", id = 3, lv = 3, time = 400},
+        {"cgdel", id = 9, lv = 9, time = 400},
+        {"se", file = "se_blood2", id = 1},
+        {"bg", file = "zpaintred", id = 1, lv = 1, rule = "106l", speed = 100, x = -1700, y = -600, ease = "easein_cubic", path = ":cg/", x2 = 1500, y2 = -200, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintwhite", id = 2, lv = 2, rule = "106l", speed = 100, x = -1700, y = -600, ease = "easein_cubic", path = ":cg/", x2 = 1500, y2 = -200, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintgreen", id = 3, lv = 3, rule = "106l", speed = 100, x = -1700, y = -600, ease = "easein_cubic", path = ":cg/", x2 = 1500, y2 = -200, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintblue", id = 4, lv = 4, rule = "106l", speed = 100, x = -1700, y = -600, ease = "easein_cubic", path = ":cg/", x2 = 1500, y2 = -200, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintblue", id = 9, lv = 9, rule = "106l", zoom = 100, alpha = 150, speed = 100, x = -1700, y = -600, ease = "easein_cubic", z2 = 200, path = ":cg/", x2 = 1500, y2 = -200, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"extrans", time = 50},
+        {"quake"},
+        {"ex", time = 100, func = "wait"},
+        {"cgdel", id = 1, lv = 1, time = 400},
+        {"cgdel", id = 2, lv = 2, time = 400},
+        {"cgdel", id = 3, lv = 3, time = 400},
+        {"cgdel", id = 4, lv = 4, time = 400},
+        {"cgdel", id = 9, lv = 9, time = 400},
+        {"se", file = "se_blood2", id = 1},
+        {"bg", file = "zpaintred", id = 1, lv = 1, rule = 056, speed = 200, x = -100, y = -600, ease = "easein_cubic", path = ":cg/", x2 = "-1700,-1900", y2 = "-600,600", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintwhite", id = 2, lv = 2, rule = 056, speed = 200, x = -100, y = -600, ease = "easein_cubic", path = ":cg/", x2 = "-1700,-1900", y2 = "-600,600", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintgreen", id = 3, lv = 3, rule = 056, speed = 200, x = -100, y = -600, ease = "easein_cubic", path = ":cg/", x2 = "-1700,-1900", y2 = "-600,600", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintblue", id = 4, lv = 4, rule = 056, speed = 200, x = -100, y = -600, ease = "easein_cubic", path = ":cg/", x2 = "-1700,-1900", y2 = "-600,600", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintyellow", id = 5, lv = 5, rule = 056, speed = 200, x = -100, y = -600, ease = "easein_cubic", path = ":cg/", x2 = "-1700,-1900", y2 = "-600,600", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "zpaintyellow", id = 9, lv = 9, rule = 056, zoom = 100, alpha = 150, speed = 200, x = -100, y = -600, ease = "easein_cubic", z2 = 200, path = ":cg/", x2 = "-1700,-1900", y2 = "-600,600", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"extrans", time = 50},
+        {"quake"},
+        {"ex", time = 150, func = "wait"},
+        {"cgdel", id = 1, lv = 1, time = 400},
+        {"cgdel", id = 2, lv = 2, time = 400},
+        {"cgdel", id = 3, lv = 3, time = 400},
+        {"cgdel", id = 4, lv = 4, time = 400},
+        {"cgdel", id = 5, lv = 5, time = 400},
+        {"cgdel", id = 9, lv = 9, time = 400},
+        {"se", file = "se_blood2", id = 1},
+        {"bg", file = "paintred", id = 1, lv = 1, zoom = 100, speed = 200, z2 = 150, path = ":cg/", sync = 0},
+        {"bg", file = "paintwhite", id = 2, lv = 2, zoom = 100, speed = 200, z2 = 150, path = ":cg/", sync = 0},
+        {"bg", file = "paintgreen", id = 3, lv = 3, zoom = 100, speed = 200, z2 = 150, path = ":cg/", sync = 0},
+        {"bg", file = "paintblue", id = 4, lv = 4, zoom = 100, speed = 200, z2 = 150, path = ":cg/", sync = 0},
+        {"bg", file = "paintyellow", id = 5, lv = 5, zoom = 100, speed = 200, z2 = 150, path = ":cg/", sync = 0},
+        {"extrans", time = 50},
+        {"quake"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈、哈、哈、哈……」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110"
+    },
+    block_00110 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000470", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「怎、怎么了？已经不行了吗？」"
+                }
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111"
+    },
+    block_00111 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎么可能！你才是，怎么看起来有点晃晃悠悠的？」"
+                }
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112"
+    },
+    block_00112 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000471", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「怎么可能有那种事！只是因为你晃晃悠悠的才会看起来这样……。",
+                    {"rt2"},
+                    "啊啊，别废话了！赶紧跑！」"
+                }
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113"
+    },
+    block_00113 = {
+        {"cgdel", id = -1},
+        {"bg", file = "bg057g", path = ":bg/", sync = 0},
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0003", head = "aka_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈、哈、哈、哈……可恶」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114"
+    },
+    block_00114 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0004", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000472", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「哈、哈、哈，下一个，X50，Y120！角度220度！要用力，像是",
+                    {"rt2"},
+                    "狠狠砸进去一样！」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115"
+    },
+    block_00115 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈、哈、我知道了」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116"
+    },
+    block_00116 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000473", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「下一个，X40，Y100！角度300度！轻一点，然后马上横向滑动",
+                    {"rt2"},
+                    "几毫米！」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117"
+    },
+    block_00117 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈、哈、哈、哈……」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118"
+    },
+    block_00118 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000474", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「下一个啊」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119"
+    },
+    block_00119 = {
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"bg", file = "znightsky_summer", id = 9, lv = 9, speed = 150000, rule = 139, sync = 1, vague = 40, path = ":cg/", x2 = 960, y2 = 0, x = -960, y = 540, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"text"},
+        text = {
+            ja = {
+                {"盛夏的火炉。"}
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120"
+    },
+    block_00120 = {
+        {"text"},
+        text = {
+            ja = {
+                {"长时间的作业让这一带的温度急剧上升。"}
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121"
+    },
+    block_00121 = {
+        {"text"},
+        text = {
+            ja = {
+                {"明石只是不断地溶解着室内鞋。然后把它们贴上去。"}
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122"
+    },
+    block_00122 = {
+        {"text"},
+        text = {
+            ja = {
+                {"感觉时间也变得黏稠，仿佛要融化了一般。"}
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123"
+    },
+    block_00123 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "现在是什么时候，距离那之后又过了多久？甚至连自己到底在做什",
+                    {"rt2"},
+                    "么都渐渐弄不明白了。"
+                }
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124"
+    },
+    block_00124 = {
+        {"text"},
+        text = {
+            ja = {
+                {"融化的时间静静流淌着。"}
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125"
+    },
+    block_00125 = {
+        {"text"},
+        text = {
+            ja = {
+                {"缓慢地、缓慢地，在炙热的盛夏空气中时间流逝着。"}
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126"
+    },
+    block_00126 = {
+        {"cgdel", id = -1},
+        {"bg", time = 500, file = "bg057g", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈、哈、哈、哈……下一个指示……」"
+                }
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127"
+    },
+    block_00127 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0003", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000475", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128"
+    },
+    block_00128 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「喂！明石，下一个指示！」"
+                }
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129"
+    },
+    block_00129 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000476", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130"
+    },
+    block_00130 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「明石？」"
+                }
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131"
+    },
+    block_00131 = {
+        {"msgoff"},
+        {"se", id = 1, file = "se3356"},
+        {"fg", ch = "明石", my = 40, mode = -1, lv = 4, id = 9},
+        {"ex", time = 0, func = "wait"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", x = 530, y = -970, zoom = 140, file = "zbg057g", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"extrans", time = 200},
+        {"fg", ch = "明石", size = "z2", zoom = 120, my = -40, mode = 3, resize = 1, path = ":fg/aka/z2/", file = "aka_z2a0500", face = "a0003", head = "aka_z2a", y = 100, lv = 5, id = 9},
+        {"quake"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「明石！？」"
+                }
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132"
+    },
+    block_00132 = {
+        {"text"},
+        text = {
+            ja = {
+                {"明石倒在了原地。"}
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133"
+    },
+    block_00133 = {
+        {"text"},
+        text = {
+            ja = {
+                {"只差一步就要朝着暖炉的方向倒去，整个人从脚下彻底崩溃。"}
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134"
+    },
+    block_00134 = {
+        {"se", file = "se3130", id = 1},
+        {"fg", mode = -2, sync = 0},
+        {"bg", x = 500, y = -970, zoom = 145, speed = 200, file = "zbg057g", path = ":bg/", z2 = 140, x2 = 530, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "明石", size = "z2", zoom = 130, speed = 200, mode = 3, path = ":fg/aka/z2/", file = "aka_z2a0500", face = "a0003", head = "aka_z2a", x2 = 0, y2 = 100, z2 = 120, x = -30, y = 150, lv = 5, id = 9, sync = 0},
+        {"extrans", time = 0},
+        {"quake"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「明石！喂！明石！好烫——」"
+                }
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135"
+    },
+    block_00135 = {
+        {"text"},
+        text = {
+            ja = {
+                {"触摸明石。"}
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136"
+    },
+    block_00136 = {
+        {"text"},
+        text = {
+            ja = {
+                {"明石全身异常炽热。"}
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137"
+    },
+    block_00137 = {
+        {"text"},
+        text = {
+            ja = {
+                {"简直就像高烧的病人。"}
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138"
+    },
+    block_00138 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「明石！明石！你没事吧！」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139"
+    },
+    block_00139 = {
+        {"fgact", ch = "明石", act = "いいえ", size = 2, lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000477", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140"
+    },
+    block_00140 = {
+        {"text"},
+        text = {
+            ja = {
+                {"还有呼吸。但什么都没回应。"}
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141"
+    },
+    block_00141 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「对了」"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142"
+    },
+    block_00142 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我想起了雫交给我的保温瓶。"}
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143"
+    },
+    block_00143 = {
+        {"text"},
+        text = {
+            ja = {
+                {"记得雫应该给我装的是冰凉的茶。"}
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144"
+    },
+    block_00144 = {
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我打开了保温瓶。里面果然是冰凉的茶。"}
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145"
+    },
+    block_00145 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「太好了……」"
+                }
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146"
+    },
+    block_00146 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我倒了一些茶在杯盖里，让明石喝下。"}
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147"
+    },
+    block_00147 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z2/", file = "aka_z2a0500", face = "a0007", head = "aka_z2a", x = -30, y = 150, lv = 5, id = 9, zoom = 130},
+        {"fgact", ch = "明石", act = "びっくり", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000478", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「呸、咳啊」"
+                }
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148"
+    },
+    block_00148 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你清醒过来了？」"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149"
+    },
+    block_00149 = {
+        {"fg", ch = "明石", ex03 = "a0097", mode = 3, path = ":fg/aka/z2/", file = "aka_z2a0500", face = "a0009", head = "aka_z2a", x = -30, y = 150, lv = 5, id = 9, zoom = 130},
+        {"fgact", ch = "明石", act = "うんうん", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000479", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「谁会突然给昏迷的人灌茶啊……呛得我茶都进气管了……」"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150"
+    },
+    block_00150 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你发烧得很厉害啊。这不是重度中暑吗？」"
+                }
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151"
+    },
+    block_00151 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg057g", path = ":bg/", sync = 0},
+        {"extrans", time = 300},
+        {"se", file = "se9010", id = 1},
+        {"fg", ch = "明石", size = "z1", my = 40, mode = 3, resize = 1, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0001", head = "aka_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "明石", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0500", face = "a0006", head = "aka_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000480", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「没事的啦……哎呀……咦？」"
+                }
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152"
+    },
+    block_00152 = {
+        {"se", id = 1, file = "se3356"},
+        {"fg", ch = "明石", my = 40, mode = -1, lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"明石试图站起来，但立刻又倒在了原地。"}
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153"
+    },
+    block_00153 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「一点都不没事吧……你啊……」"
+                }
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154"
+    },
+    block_00154 = {
+        {"text"},
+        text = {
+            ja = {
+                {"温度很高。"}
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155"
+    },
+    block_00155 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啧」"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156"
+    },
+    block_00156 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我掏出了手机。"}
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157"
+    },
+    block_00157 = {
+        {"se", file = "se3130", id = 1},
+        {"fg", ch = "明石", size = "z2", my = 40, mode = 3, resize = 1, path = ":fg/aka/z2/", file = "aka_z2a0500", face = "a0004", head = "aka_z2a", lv = 5, id = 9},
+        {"quake"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000481", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「呃」"
+                }
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158"
+    },
+    block_00158 = {
+        {"text"},
+        text = {
+            ja = {
+                {"明石紧紧抓住了我的手。"}
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159"
+    },
+    block_00159 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z2/", file = "aka_z2a0500", face = "a0003", head = "aka_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000482", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「你……打算打电话给谁？」"
+                }
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160"
+    },
+    block_00160 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「叫救护车啊。你这样下去会死的。体温高得离谱」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161"
+    },
+    block_00161 = {
+        {"fg", ch = "明石", mode = 3, path = ":fg/aka/z2/", file = "aka_z2a0500", face = "a0004", head = "aka_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000483", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「别叫……」"
+                }
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162"
+    },
+    block_00162 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊？」"
+                }
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163"
+    },
+    block_00163 = {
+        {"text"},
+        text = {
+            ja = {
+                {"明石摇摇晃晃地想要站起来。"}
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164"
+    },
+    block_00164 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「明石，躺下，真的很危险」"
+                }
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165"
+    },
+    block_00165 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000484", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「闭嘴……你要是敢打电话……，那时候，我就杀了你！」"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166"
+    },
+    block_00166 = {
+        {"se", id = 1, file = "se3356"},
+        {"fg", ch = "明石", my = 40, mode = -1, lv = 5, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"明石就那样倒了下去。"}
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167"
+    },
+    block_00167 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「明石！」"
+                }
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168"
+    },
+    block_00168 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000485", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「没事的。只要让我休息几分钟就没问题了……。那样我就能恢复",
+                    {"rt2"},
+                    "了……」"
+                }
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169"
+    },
+    block_00169 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎么可能恢复啊！」"
+                }
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170"
+    },
+    block_00170 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000486", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「真的没事……放心吧……」"
+                }
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171"
+    },
+    block_00171 = {
+        {"text"},
+        text = {
+            ja = {
+                {"就这样闭上了眼睛。"}
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172"
+    },
+    block_00172 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「可恶」"
+                }
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173"
+    },
+    block_00173 = {
+        {"se", file = "se0744", id = 1},
+        {"cgdel", id = -1},
+        {"bg", time = 250, rule = 280, file = "black", path = ":bg/", vague = 40},
+        {"bg", rule = 280, time = 300, vague = 40, file = "bg054c", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23},
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "总之，先让明石尽量补充水分，然后拖到阴凉的地方。再把湿毛巾",
+                    {"rt2"},
+                    "敷在他头上。"
+                }
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174"
+    },
+    block_00174 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「该怎么办啊……」"
+                }
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175"
+    },
+    block_00175 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我看了看手表。"}
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176"
+    },
+    block_00176 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「快要到午夜了……」"
+                }
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177"
+    },
+    block_00177 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这个季节天亮大概在五点前后。"}
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178"
+    },
+    block_00178 = {
+        {"text"},
+        text = {
+            ja = {
+                {"距离天亮只剩大约五个小时了。"}
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179"
+    },
+    block_00179 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「只能一个人做了吗……」"
+                }
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180"
+    },
+    block_00180 = {
+        {"se", file = "se0744", id = 1},
+        {"cgdel", id = -1},
+        {"bg", time = 250, rule = 280, file = "black", path = ":bg/", vague = 40},
+        {"bg", rule = 280, time = 300, vague = 40, file = "bg057g", path = ":bg/"},
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我拿着室内鞋，对着火炉取暖。"}
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181"
+    },
+    block_00181 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呃」"
+                }
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182"
+    },
+    block_00182 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这是什么啊……」"
+                }
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183"
+    },
+    block_00183 = {
+        {"text"},
+        text = {
+            ja = {
+                {"热得不可思议。"}
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184"
+    },
+    block_00184 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "说是理所当然也没错。就算是劣质品，这温度也能把室内鞋的橡胶",
+                    {"rt2"},
+                    "都融化掉。"
+                }
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185"
+    },
+    block_00185 = {
+        {"text"},
+        text = {
+            ja = {
+                {"温度不会超过100℃了吗？"}
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186"
+    },
+    block_00186 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「比桑拿还要狠吧。这种东西一般人根本撑不过三十分钟……。明",
+                    {"rt2"},
+                    "石那家伙居然能撑到现在……」"
+                }
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187"
+    },
+    block_00187 = {
+        {"text"},
+        text = {
+            ja = {
+                {"确认室内鞋已经充分变热后，开始奔跑。"}
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188"
+    },
+    block_00188 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呃……」"
+                }
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189"
+    },
+    block_00189 = {
+        {"text"},
+        text = {
+            ja = {
+                {"热气让我的头脑变得昏沉。双脚也快要缠在一起了。"}
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190"
+    },
+    block_00190 = {
+        {"text"},
+        text = {
+            ja = {
+                {"勉强坚持住，就这样一直跑到墙边。"}
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191"
+    },
+    block_00191 = {
+        {"text"},
+        text = {
+            ja = {
+                {"把融化的橡胶固定在墙上。"}
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192"
+    },
+    block_00192 = {
+        {"text"},
+        text = {
+            ja = {
+                {"效率虽差，但还不是做不到的程度。"}
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193"
+    },
+    block_00193 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「只能靠自己做到极限……」"
+                }
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194"
+    },
+    block_00194 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我开始奔跑。"}
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195"
+    },
+    block_00195 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我能做到。"}
+            }
+        },
+        linkback = "block_00194",
+        linknext = "block_00196"
+    },
+    block_00196 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不，我必须做到。"}
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197"
+    },
+    block_00197 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即使那看起来是不可能的事情……。"}
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198"
+    },
+    block_00198 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呜喔喔喔喔！」"
+                }
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199"
+    },
+    block_00199 = {
+        {"bgm", stop = 1, time = 1000},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", zoom = 200, x = 500, speed = 300, file = "bg057g", path = ":bg/", z2 = 100, x2 = 0, sync = 0},
+        {"se", file = "se3130", id = 1},
+        {"se", file = "se_blood3", id = 2},
+        {"extrans", time = 0},
+        {"quake"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"ex", time = 1500, func = "wait"},
+        {"text"},
+        text = {
+            ja = {
+                {"・・・・・・・・・・・・・・・・・・。"}
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200"
+    },
+    block_00200 = {
+        {"text"},
+        text = {
+            ja = {
+                {"・・・・・・・・・。"}
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201"
+    },
+    block_00201 = {
+        {"text"},
+        text = {
+            ja = {
+                {"・・・。"}
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202"
+    },
+    block_00202 = {
+        {"excall", file = "02_abend_13_4"},
+        {"text"},
+        linkback = "block_00201"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

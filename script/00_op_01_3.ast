@@ -1,0 +1,3286 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "ＯＰ"},
+        {"bg", file = "ev_com_a01_07", time = 1500, path = ":ev/ev_com_a01/", set = "ev_com_a01"},
+        {"bgm", file = "bgm005"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_ked_000090", ch = "ked"}
+            },
+            ja = {
+                {
+                    name = {"圭"},
+                    "「好，等你的好消息哦！」"
+                }
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「好消息……到底什么才算是对你来说的好消息啊……」"
+                }
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_ked_000091", ch = "ked"}
+            },
+            ja = {
+                {
+                    name = {"圭"},
+                    "「这还用说吗。当然是你答应和我们一起住的消息啊」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「别说那种话啊。被你这么一说」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我还真觉得有点恶心……」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"bg", file = "ev_com_a01_05", sync = 0, face = 1, time = 400, path = ":ev/ev_com_a01/", set = "ev_com_a01"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_ked_000092", ch = "ked"}
+            },
+            ja = {
+                {
+                    name = {"圭"},
+                    "「你说什么！」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000090", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「话说回来，圭，差不多快五点了哦」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"bg", file = "ev_com_a01_04", sync = 0, face = 1, time = 400, path = ":ev/ev_com_a01/", set = "ev_com_a01"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_ked_000093", ch = "ked"}
+            },
+            ja = {
+                {
+                    name = {"圭"},
+                    "「诶诶诶诶！？哇哇哇哇，我、我要去取摩托了！」"
+                }
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你在慌什么啊？你？」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000091", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「因为这里的殡仪馆好像是市营的，五点停车场就要关门了」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那你还是快点比较好……还有五分钟就关门了」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_ked_000094", ch = "ked"}
+            },
+            ja = {
+                {
+                    name = {"圭"},
+                    "「哇啊啊，糟了！」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"bgm", stop = 1, time = 2000},
+        {"se", file = "se0744s", id = 1},
+        {"bg", file = "black", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"这么说着，圭消失在了殡仪馆旁边的停车场。"}
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"bg", file = "ev_com_a05_03", path = ":ev/ev_com_a05/", set = "ev_com_a05"},
+        {"bgm", file = "bgm003"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000092", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「那么，我也该回去了……」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那个，那个……蓝」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"bg", file = "ev_com_a05_02", sync = 0, face = 1, time = 400, path = ":ev/ev_com_a05/", set = "ev_com_a05"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000093", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「嗯？　什么事，草薙」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，没，那个……」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000094", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「什么？　有事就快说吧……」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「谢谢你来参加那家伙的葬礼……」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"bg", file = "ev_com_a05_04", sync = 0, face = 1, time = 400, path = ":ev/ev_com_a05/", set = "ev_com_a05"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000095", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"bg", file = "ev_com_a05_03", sync = 0, face = 1, time = 400, path = ":ev/ev_com_a05/", set = "ev_com_a05"},
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000096", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「噗……那是什么啊？」"
+                }
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什、什么啊，不就像你看到的那样。我是在道谢啊」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"mwact", act = "うんうん", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000097", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「呵呵，呵呵，还真不坦率啊……」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「为什么会这样啊！」"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000098", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「那你为什么要移开视线，像赌气一样说呢……」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呃……」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000099", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「草薙……不，直哉……」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么啊……」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000100", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「你啊，还是老样子啊……」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么啊，那是」"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"bg", file = "ev_uni_c08_01", path = ":ev/ev_uni_c08/", set = "ev_uni_c08"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000101", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「这里的樱花森林，简直就是盛开到极致的感觉呢……」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「别转移话题啊……」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000102", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「樱花无论看多少次，总是以同样的方式盛开，也以同样的方式凋",
+                    {"rt2"},
+                    "谢」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000103", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「明明并不相同……却让人觉得十年前的樱花，和昨天的樱花都一",
+                    {"rt2"},
+                    "样盛开着……」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000104", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「甚至会让人觉得，也许其实就是相同的……」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000105", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「但大概并不是那样。樱花大概在一百年前、一千年前、一万年前",
+                    {"rt2"},
+                    "也是这样盛开的吧……」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000106", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「就算没有人欣赏，也依然和昨晚一样……」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000107", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「从很久以前开始……」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000108", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「所以，我觉得樱花才会让人感到可怕……」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000109", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「你和我……第一次见面的时候也是樱花盛开的时候」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000110", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「就像满开的樱花森林一般……」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯……因为我是四月出生的」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000111", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「那时候我真的很开心哦……明明本来应该是很不甘心的，可是真",
+                    {"rt2"},
+                    "的，真的很开心……」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            ja = {
+                {"其实我很不甘心。"}
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那个意思我并不明白。"}
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不过，多少还是能从她的表情里察觉到那是什么意思。"}
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"text"},
+        text = {
+            ja = {
+                {"为什么会感到不甘心，又为什么会为我高兴呢……。"}
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"bg", file = "zev_uni_c09_01", speed = 240000, path = ":ev/ev_uni_c09/", set = "ev_uni_c09", x2 = 310, y2 = 170, x = -960, y = 540, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000112", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「假象的晴空一片只是胡乱交织的因果交流电灯明亮、明亮、明亮",
+                    {"rt2"},
+                    "地点亮着」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000113", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「Watermelon的电气石声音与语言的交汇点在愈发色彩过剩的世界",
+                    {"rt2"},
+                    "里」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000114", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「七棵樱树追了上来」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000115", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「朝着我追了上来」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000116", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「风景之前没有我在我之前也没有风景」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000117", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「追逐着、赶上了、却消失不见」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000118", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「软绵绵地被包裹，世界渐渐消逝」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000119", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「在柔软的樱之森里，世界奏响以美丽的音色，世界奏响」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果那就是虚无，那么虚无本身也正如如此在某种程度上大家都",
+                    {"rt2"},
+                    "是共通的」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「（就像一切都在我的大家里面一样一切也都在大家各自的心中）」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"bg", file = "ev_uni_c09_01", path = ":ev/ev_uni_c09/", set = "ev_uni_c09"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那首诗，最后引用了宫泽贤治的《春与修罗·序》的一部分作为结",
+                    {"rt2"},
+                    "尾」"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「通称『樱之诗』，据说是把那家伙的作品变得更加晦涩难懂了」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000120", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「直哉你听起来怎么样？这首诗」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062"
+    },
+    block_00062 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没什么……那个人留下的话语的意义，我没有理由去思考……」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063"
+    },
+    block_00063 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「只是，每当听到那首诗，就会想起那家伙的口头禅」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064"
+    },
+    block_00064 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000121", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「口头禅？」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065"
+    },
+    block_00065 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「What is mind ?　No matter.What is matter ?　Never mind.」"
+                }
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066"
+    },
+    block_00066 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000122", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「What is mind ?　……心是什么？　No matter. 不是物质。What is",
+                    {"rt2"},
+                    "matter ?　物质是什么？　Never mind.",
+                    {"rt2"},
+                    "绝不是心。大概是这个意思吧？」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067"
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，不对。正确的说法是——」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068"
+    },
+    block_00068 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「What is mind ?　心是什么啊？」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069"
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「No matter. 无所谓啦」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070"
+    },
+    block_00070 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「What is matter ?　物质是什么啊？」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071"
+    },
+    block_00071 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「Never mind. 别在意啦」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072"
+    },
+    block_00072 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「就是这个意思」"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073"
+    },
+    block_00073 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000123", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「那和刚才的诗有什么关系？」"
+                }
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074"
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「谁知道呢……我也说不清，但就是这么觉得……」"
+                }
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075"
+    },
+    block_00075 = {
+        {"bg", file = "ev_com_a05_03", path = ":ev/ev_com_a05/", set = "ev_com_a05"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000124", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「原来如此，很有草薙的风格啊……」"
+                }
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076"
+    },
+    block_00076 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000125", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「咱俩都被那个人牵着鼻子走呢……」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077"
+    },
+    block_00077 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078"
+    },
+    block_00078 = {
+        {"text"},
+        text = {
+            ja = {
+                {"被牵着鼻子走。"}
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079"
+    },
+    block_00079 = {
+        {"text"},
+        text = {
+            ja = {
+                {"吗……。"}
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080"
+    },
+    block_00080 = {
+        {"text"},
+        text = {
+            ja = {
+                {"就算否认……那也是事实。"}
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081"
+    },
+    block_00081 = {
+        {"text"},
+        text = {
+            ja = {
+                {"也只能这么说了吧……。"}
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082"
+    },
+    block_00082 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「确实，一直被那家伙耍得团团转……」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083"
+    },
+    block_00083 = {
+        {"bg", file = "ev_com_a05_02", sync = 0, face = 1, time = 400, path = ":ev/ev_com_a05/", set = "ev_com_a05"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000126", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「怎么了，突然这么坦率啊」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084"
+    },
+    block_00084 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「虽然和草薙健一郎相处的时间不算太长……」"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085"
+    },
+    block_00085 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但我一直想着下次见到他一定要做的事……」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086"
+    },
+    block_00086 = {
+        {"bg", file = "ev_com_a05_02", sync = 0, face = 1, time = 400, path = ":ev/ev_com_a05/", set = "ev_com_a05"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000127", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「想做的事？」"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087"
+    },
+    block_00087 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，现在也没法实现了……」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088"
+    },
+    block_00088 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000128", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「你想对健一郎做什么啊？直哉？」"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089"
+    },
+    block_00089 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「想揍他一顿。先来一记正拳打脸」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090"
+    },
+    block_00090 = {
+        {"bg", file = "ev_com_a05_03", sync = 0, face = 1, time = 400, path = ":ev/ev_com_a05/", set = "ev_com_a05"},
+        {"mwact", act = "うんうん", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000129", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「啊哈哈哈，是吗，不过以那个人的性格，被打了肯定会立刻反击",
+                    {"rt2"},
+                    "的」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091"
+    },
+    block_00091 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那样的话，我也会照样还手」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092"
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「只要最后，我能比他多打一次就行了……」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093"
+    },
+    block_00093 = {
+        {"text"},
+        text = {
+            ja = {
+                {"握紧拳头。"}
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094"
+    },
+    block_00094 = {
+        {"text"},
+        text = {
+            ja = {
+                {"非常用力。"}
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095"
+    },
+    block_00095 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那样我就满足了」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096"
+    },
+    block_00096 = {
+        {"text"},
+        text = {
+            ja = {
+                {"蓝柔和地微笑着。"}
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097"
+    },
+    block_00097 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000130", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「真想看看那场景啊。健一郎先生和直哉的单挑……」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098"
+    },
+    block_00098 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，那个时候你应该阻止我们吧，作为老师」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099"
+    },
+    block_00099 = {
+        {"mwact", act = "うんうん", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000131", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「啊哈哈哈，说得也是。如果真的在场的话，确实得去阻止啊……」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100"
+    },
+    block_00100 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「虽然说是‘如果’有那个场面……」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101"
+    },
+    block_00101 = {
+        {"bg", file = "ev_com_a05_01", sync = 0, face = 1, time = 400, path = ":ev/ev_com_a05/", set = "ev_com_a05"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000132", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102"
+    },
+    block_00102 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过永远都不会有了」"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103"
+    },
+    block_00103 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000133", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「对，对不起。最后是不是有点伤感了」"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104"
+    },
+    block_00104 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没事，没关系」"
+                }
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105"
+    },
+    block_00105 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「除此之外，我和那家伙之间也没有什么遗憾的了……」"
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106"
+    },
+    block_00106 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我也以我自己的方式，把各种事情都理清楚了……和那家伙的关",
+                    {"rt2"},
+                    "系也是……」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107"
+    },
+    block_00107 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「而且，最讨厌沉闷气氛的就是那家伙了」"
+                }
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108"
+    },
+    block_00108 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「虽然说不上享受，但至少没有让自己的心情变得沉重地送别了那",
+                    {"rt2"},
+                    "家伙……」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109"
+    },
+    block_00109 = {
+        {"bg", file = "ev_com_a05_03", sync = 0, face = 1, time = 400, path = ":ev/ev_com_a05/", set = "ev_com_a05"},
+        {"text"},
+        text = {
+            ja = {
+                {"听到我的话，蓝微微点了点头。"}
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110"
+    },
+    block_00110 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000134", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「是吗……」"
+                }
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111"
+    },
+    block_00111 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000135", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「直哉你也有你的经历呢……」"
+                }
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112"
+    },
+    block_00112 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是啊……」"
+                }
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113"
+    },
+    block_00113 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000136", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「哈哈，那差不多该回去了……」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114"
+    },
+    block_00114 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115"
+    },
+    block_00115 = {
+        {"bg", file = "ev_com_a05_02", sync = 0, face = 1, time = 400, path = ":ev/ev_com_a05/", set = "ev_com_a05"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000137", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「对了，刚才说的事，你要好好考虑一下」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116"
+    },
+    block_00116 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯……是在夏目的宅邸借住的事吧」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117"
+    },
+    block_00117 = {
+        {"bg", file = "ev_com_a05_03", sync = 0, face = 1, time = 400, path = ":ev/ev_com_a05/", set = "ev_com_a05"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_000138", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「等着你的好消息哦」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118"
+    },
+    block_00118 = {
+        {"se", file = "se9004", id = 1},
+        {"bg", file = "zev_uni_c03_02", zoom = 70, speed = 240000, time = 1500, path = ":ev/ev_uni_c03/", set = "ev_uni_c03", x2 = -384, y2 = -216, x = 384, y = 216, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"text"},
+        text = {
+            ja = {
+                {"蓝的身影消失不见，"}
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119"
+    },
+    block_00119 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"风声呼啸。"}
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120"
+    },
+    block_00120 = {
+        {"text"},
+        text = {
+            ja = {
+                {"远处，风声呼啸。"}
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121"
+    },
+    block_00121 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那声音像耳鸣一样低沉地咆哮。"}
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122"
+    },
+    block_00122 = {
+        {"text"},
+        text = {
+            ja = {
+                {"并没有什么美妙的音色在樱花森林下响起。"}
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123"
+    },
+    block_00123 = {
+        {"text"},
+        text = {
+            ja = {
+                {"柔软洁白的花瓣，只是在低沉咆哮的风中无情地被卷散。"}
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124"
+    },
+    block_00124 = {
+        {"text"},
+        text = {
+            ja = {
+                {"理所当然的风景。"}
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125"
+    },
+    block_00125 = {
+        {"bg", file = "ev_uni_c03_02", time = 1500, path = ":ev/ev_uni_c03/", set = "ev_uni_c03"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呼……我也该回去了……」"
+                }
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126"
+    },
+    block_00126 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127"
+    },
+    block_00127 = {
+        {"bgm", stop = 1, time = 10000},
+        {"text"},
+        text = {
+            ja = {
+                {"无人倾听的自言自语。"}
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128"
+    },
+    block_00128 = {
+        {"text"},
+        text = {
+            ja = {
+                {"带着肮脏音色的咆哮，以及随风飞舞的樱花花瓣。"}
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129"
+    },
+    block_00129 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在樱花盛开的日子里，我向死去的父亲做了最后的告别。"}
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130"
+    },
+    block_00130 = {
+        {"msgoff"},
+        {"bg", file = "ev_uni_c03_03", time = 4000, path = ":ev/ev_uni_c03/", set = "ev_uni_c03"},
+        {"bgm", stop = 1, time = 3000},
+        {"se", stop = 1, id = -1, time = 3000},
+        {"vostop", stop = 1, time = 3000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 3000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"ex", time = 1500, func = "wait"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg037b", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 2000},
+        {"bgm", file = "bgm017"},
+        {"text"},
+        text = {
+            ja = {
+                {"本打算直接回家，脚却不知不觉地走向了这个地方。"}
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131"
+    },
+    block_00131 = {
+        {"text"},
+        text = {
+            ja = {
+                {"回过神来，我已经稍微有些喘息地走上了每天都会踏上的石板坡道。"}
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132"
+    },
+    block_00132 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "通往我所就读学园的这条坡道，也像父亲葬礼的会场一样被樱花覆",
+                    {"rt2"},
+                    "盖。"
+                }
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133"
+    },
+    block_00133 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "“",
+                    {"txruby", text = "ゆめのうきさか"},
+                    "梦浮坂",
+                    {"txruby"},
+                    "”"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134"
+    },
+    block_00134 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这条坡道的名字仿佛有着来历，但我并不太清楚它的由来。"}
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135"
+    },
+    block_00135 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不过，我听说这是由许多传说交织而成的名字。"}
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136"
+    },
+    block_00136 = {
+        {"se", file = "se9004", id = 1},
+        {"bg", file = "black", path = ":bg/"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg063f", path = ":bg/", sync = 0},
+        {"extrans", time = 1000},
+        {"text"},
+        text = {
+            ja = {
+                {"这坡道旁边，有一个像神社境内那样的小小的社。"}
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137"
+    },
+    block_00137 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "也就是所谓的",
+                    {"txruby", text = "せっしゃ"},
+                    "摂社",
+                    {"txruby"},
+                    "。"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138"
+    },
+    block_00138 = {
+        {"text"},
+        text = {
+            ja = {
+                {"有一幅画着宝船的画卷被奉纳在那里。"}
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139"
+    },
+    block_00139 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "若是知道这其中含义的人，或许也能稍微想象“梦浮坂”这个名字的",
+                    {"rt2"},
+                    "由来……。"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140"
+    },
+    block_00140 = {
+        {"text"},
+        text = {
+            ja = {
+                {"沿着梦浮坂往上走，校内礼拜堂的尖顶帽子逐渐映入眼帘。"}
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141"
+    },
+    block_00141 = {
+        {"se", file = "se9004", id = 1},
+        {"bg", file = "black", path = ":bg/"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg043b", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 1000},
+        {"text"},
+        text = {
+            ja = {
+                {"通过交错的尖头拱门构成的独特轮廓。"}
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142"
+    },
+    block_00142 = {
+        {"text"},
+        text = {
+            ja = {
+                {"建于樱花繁茂的弓张之丘上的这所学园，被称为弓张学园。"}
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143"
+    },
+    block_00143 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在爬上楼梯尽头的地方，与人擦肩而过。"}
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144"
+    },
+    block_00144 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "伫立在被夕阳照耀、几乎无人经过的坡道之上的那道身影，令人印",
+                    {"rt2"},
+                    "象深刻。"
+                }
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145"
+    },
+    block_00145 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「？」"
+                }
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146"
+    },
+    block_00146 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「刚才那女孩的制服不是弓张学园的……」"
+                }
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147"
+    },
+    block_00147 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是在参观什么的吗……」"
+                }
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148"
+    },
+    block_00148 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "因为正值春假，弓张学园附近几乎没有什么人气。大部分社团活动",
+                    {"rt2"},
+                    "应该也都在上午就结束了吧。"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149"
+    },
+    block_00149 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我迈着稍大的步伐穿过正门，赶往目的地。"}
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150"
+    },
+    block_00150 = {
+        {"se", file = "se9004", id = 1},
+        {"bg", file = "black", path = ":bg/"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg046b", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "战后不久，弓张学园还是天主教系，当时只是一所只设有神学科的",
+                    {"rt2"},
+                    "神学校。"
+                }
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151"
+    },
+    block_00151 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "据说这里曾是虔诚的父亲之子与母亲之子们在神的庇佑下学习的学",
+                    {"rt2"},
+                    "舍。"
+                }
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152"
+    },
+    block_00152 = {
+        {"text"},
+        text = {
+            ja = {
+                {"然而，如今神学科已经废除，已经变成了一所极其普通的学校。"}
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153"
+    },
+    block_00153 = {
+        {"text"},
+        text = {
+            ja = {
+                {"再往前追溯。"}
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154"
+    },
+    block_00154 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在战前很久以前，这所学园所在的土地历史极为悠久。"}
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155"
+    },
+    block_00155 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "学园本身似乎是明治时期由外国人创办的英语塾起家的，不过还能",
+                    {"rt2"},
+                    "进一步追溯其渊源。"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156"
+    },
+    block_00156 = {
+        {"text"},
+        text = {
+            ja = {
+                {"当然，既然是明治以前，自然不可能是近代意义上的学术场所。"}
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157"
+    },
+    block_00157 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即便如此，据说在江户时代，这里就已经有某种学术性的建筑存在。"}
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158"
+    },
+    block_00158 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "虽说是学术性的建筑，但相比江户时代普遍存在的「手习指南所」，",
+                    {"rt2"},
+                    "这里似乎有着更为浓厚的神道系宗教色彩。"
+                }
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159"
+    },
+    block_00159 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "再往前追溯到遥远的过去……据说在镰仓时代初期，这里作为修验",
+                    {"rt2"},
+                    "之地，曾有许多修验者在此修行。"
+                }
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160"
+    },
+    block_00160 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "正因为是如此古老的土地，所以也有如“梦浮坂”那样流传下来的诸",
+                    {"rt2"},
+                    "多传说。"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161"
+    },
+    block_00161 = {
+        {"text"},
+        text = {
+            ja = {
+                {"据说弓张这个名字，某种说法是源自古老的传说。"}
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162"
+    },
+    block_00162 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不过，那也是早已被遗忘的传说。"}
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163"
+    },
+    block_00163 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那并不是众人皆知的传说。"}
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164"
+    },
+    block_00164 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「在梦张之地，有梦浮之坂吗……」"
+                }
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165"
+    },
+    block_00165 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "被樱花包围的古色苍然的建筑里，仿佛自己的",
+                    {"txruby", text = "きょうおん"},
+                    "跫音",
+                    {"txruby"},
+                    "被留了下来。"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166"
+    },
+    block_00166 = {
+        {"bg", file = "black", path = ":bg/"},
+        {"se", id = 1, file = "se2308"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg049b", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 1000},
+        {"text"},
+        text = {
+            ja = {
+                {"我推开有些变得不太顺畅的门，走进了室内。"}
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167"
+    },
+    block_00167 = {
+        {"text"},
+        text = {
+            ja = {
+                {"房间里弥漫着被斜阳烘烤过的，属于画室特有的气息。"}
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168"
+    },
+    block_00168 = {
+        {"text"},
+        text = {
+            ja = {
+                {"位于顶层的画室能够很好地引入自然光，染上和天空一样的颜色。"}
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169"
+    },
+    block_00169 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "我小心翼翼地穿梭在杂乱排列的长桌和长椅之间，走向美术教室的",
+                    {"rt2"},
+                    "最后方。"
+                }
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170"
+    },
+    block_00170 = {
+        {"msgoff"},
+        {"se", file = "se9012", vol = 60, id = 1},
+        {"fg", mode = -2, sync = 0},
+        {"bg", zoom = 100, x = 470, y = -440, speed = 5000, file = "zbg049j", path = ":bg/", z2 = 50, x2 = 0, y2 = 0, ax = 1920, ay = 1126, bx = -960, by = -586, sync = 0},
+        {"extrans", time = 0},
+        {"cgact", stage = "zbg049", act = "びっくり", loop = 3, size = 4, time = 500},
+        {"ex", time = 2500, func = "wait"},
+        {"text"},
+        text = {
+            ja = {
+                {"那里放着美术部员们用的各种器具，我要找的东西也埋藏在其中。"}
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171"
+    },
+    block_00171 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "把用马克笔写着夏目圭专用的画架挪开后，下面出现了一只布满颜",
+                    {"rt2"},
+                    "料斑渍、古旧的画架。"
+                }
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172"
+    },
+    block_00172 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这个画架……。"}
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173"
+    },
+    block_00173 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg036a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"bg", file = "reco", id = 9, lv = 9, path = ":sys/", sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rou_000001", ch = "rou"}
+            },
+            ja = {
+                {
+                    name = {"老人"},
+                    "「从春天开始要举办草薙健一郎老师的回顾展，希望能借展作品，",
+                    {"rt2"},
+                    "还有如果可以的话，也想借用他生前用过的美术用具。」"
+                }
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174"
+    },
+    block_00174 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "父亲生前关系很好的美术馆馆长在葬礼当天，也就是今天，向我提",
+                    {"rt2"},
+                    "出了这个请求。"
+                }
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175"
+    },
+    block_00175 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "他还说，最好回顾展结束后，也能让美术馆作为一个小展区长期保",
+                    {"rt2"},
+                    "管草薙先生的遗物。"
+                }
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176"
+    },
+    block_00176 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "那位看上去很和善的老馆长，像是要挺直已经佝偻的腰板一样，把",
+                    {"rt2"},
+                    "这个提议抛向了我。"
+                }
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177"
+    },
+    block_00177 = {
+        {"cgdel", id = -1},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", zoom = 100, x = 470, y = -440, file = "zbg049j", path = ":bg/", ax = 1920, ay = 1126, bx = -960, by = -586, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "并不是被",
+                    {"txruby", text = "せ"},
+                    "催促",
+                    {"txruby"},
+                    "了。"
+                }
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178"
+    },
+    block_00178 = {
+        {"text"},
+        text = {
+            ja = {
+                {"大概几周后再寄过去也没关系吧……。"}
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179"
+    },
+    block_00179 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这样就可以了吧……」"
+                }
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180"
+    },
+    block_00180 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这是小时候老爸给我的东西。"}
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181"
+    },
+    block_00181 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "是个相当大且结实的画架，小孩子根本用不了，但即便如此，小时",
+                    {"rt2"},
+                    "候我还是踮起脚用过。"
+                }
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182"
+    },
+    block_00182 = {
+        {"text"},
+        text = {
+            ja = {
+                {"和那神秘的石膏夹板一起……。"}
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183"
+    },
+    block_00183 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊……光是回想就来气……」"
+                }
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184"
+    },
+    block_00184 = {
+        {"text"},
+        text = {
+            ja = {
+                {"关于健一郎的记忆基本没一件让人不生气的。"}
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185"
+    },
+    block_00185 = {
+        {"text"},
+        text = {
+            ja = {
+                {"话说回来……。"}
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186"
+    },
+    block_00186 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「现在看，倒也没那么大嘛……」"
+                }
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187"
+    },
+    block_00187 = {
+        {"text"},
+        text = {
+            ja = {
+                {"用起来正合适。"}
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188"
+    },
+    block_00188 = {
+        {"se", id = 1, file = "se1107"},
+        {"quake", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊……」"
+                }
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189"
+    },
+    block_00189 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "把画架拉出来扛在肩上时，堆叠在一起的其他画架一下子全都倒了。",
+                    {"rt2"},
+                    "从窗户射进来的阳光，把飞舞的尘埃映照得清清楚楚。"
+                }
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190"
+    },
+    block_00190 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊哈哈哈……糟了啊……果然该等到美术部的成员在的时候再做的",
+                    {"rt2"},
+                    "啊……」"
+                }
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191"
+    },
+    block_00191 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过话说回来……」"
+                }
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192"
+    },
+    block_00192 = {
+        {"text"},
+        text = {
+            ja = {
+                {"过几天的话，被拜托的事大概都会忘得一干二净。"}
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193"
+    },
+    block_00193 = {
+        {"text"},
+        text = {
+            ja = {
+                {"一旦被拜托了，如果不赶紧做完我就不痛快……。"}
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194"
+    },
+    block_00194 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「覆水难收……」"
+                }
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195"
+    },
+    block_00195 = {
+        {"text"},
+        text = {
+            ja = {
+                {"已经倒塌的画架无法恢复原状……。"}
+            }
+        },
+        linkback = "block_00194",
+        linknext = "block_00196"
+    },
+    block_00196 = {
+        {"text"},
+        text = {
+            ja = {
+                {"「怎么可能会这样啊！」"}
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197"
+    },
+    block_00197 = {
+        {"text"},
+        text = {
+            ja = {
+                {"因为也没有人会吐槽，只能赶紧溜走。"}
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198"
+    },
+    block_00198 = {
+        {"se", file = "se9004", id = 1},
+        {"bg", file = "black", path = ":bg/"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg037i", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 1000},
+        {"text"},
+        text = {
+            ja = {
+                {"……。"}
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199"
+    },
+    block_00199 = {
+        {"text"},
+        text = {
+            ja = {
+                {"风每次拂过肌肤时。"}
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200"
+    },
+    block_00200 = {
+        {"text"},
+        text = {
+            ja = {
+                {"路边的樱花树静静地沙沙作响，洒落着白桃色的花瓣。"}
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201"
+    },
+    block_00201 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「果然很重啊……」"
+                }
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202"
+    },
+    block_00202 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这个画架虽然很结实，但也异常地重。"}
+            }
+        },
+        linkback = "block_00201",
+        linknext = "block_00203"
+    },
+    block_00203 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呼……」"
+                }
+            }
+        },
+        linkback = "block_00202",
+        linknext = "block_00204"
+    },
+    block_00204 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不自觉地停下了脚步。"}
+            }
+        },
+        linkback = "block_00203",
+        linknext = "block_00205"
+    },
+    block_00205 = {
+        {"text"},
+        text = {
+            ja = {
+                {"仿佛飘落的花瓣在阻挡着我的去路一般。"}
+            }
+        },
+        linkback = "block_00204",
+        linknext = "block_00206"
+    },
+    block_00206 = {
+        {"text"},
+        text = {
+            ja = {
+                {"就在那时——。"}
+            }
+        },
+        linkback = "block_00205",
+        linknext = "block_00207"
+    },
+    block_00207 = {
+        {"bgm", stop = 1, time = 500},
+        {"se", id = 1, file = "se2340"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg037j", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", rule = "106r", time = 300, sync = 1},
+        {"bg", time = 100, file = "black", path = ":bg/"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {"「——！」"}
+            }
+        },
+        linkback = "block_00206",
+        linknext = "block_00208"
+    },
+    block_00208 = {
+        {"text"},
+        text = {
+            ja = {
+                {"一阵仿佛穿过身体的疾风，掠过了梦浮坂。"}
+            }
+        },
+        linkback = "block_00207",
+        linknext = "block_00209"
+    },
+    block_00209 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "我出生在这座城市，已经不是几百次，甚至是几千次地爬上过这梦",
+                    {"rt2"},
+                    "浮坂了。"
+                }
+            }
+        },
+        linkback = "block_00208",
+        linknext = "block_00210"
+    },
+    block_00210 = {
+        {"text"},
+        text = {
+            ja = {
+                {"感觉与以往任何时候都不同。"}
+            }
+        },
+        linkback = "block_00209",
+        linknext = "block_00211"
+    },
+    block_00211 = {
+        {"text"},
+        text = {
+            ja = {
+                {"樱花的旋律。"}
+            }
+        },
+        linkback = "block_00210",
+        linknext = "block_00212"
+    },
+    block_00212 = {
+        {"text"},
+        text = {
+            ja = {
+                {"仿佛与什么产生了共鸣，所有的樱花都在骚动着一般——"}
+            }
+        },
+        linkback = "block_00211",
+        linknext = "block_00213"
+    },
+    block_00213 = {
+        {"text"},
+        text = {
+            ja = {
+                {"重叠交错的奇妙音响。"}
+            }
+        },
+        linkback = "block_00212",
+        linknext = "block_00214"
+    },
+    block_00214 = {
+        {"text"},
+        text = {
+            ja = {
+                {"为了避开飞舞的樱花，我用一只手遮住了眼前。"}
+            }
+        },
+        linkback = "block_00213",
+        linknext = "block_00215"
+    },
+    block_00215 = {
+        {"text"},
+        text = {
+            ja = {
+                {"忽然——。"}
+            }
+        },
+        linkback = "block_00214",
+        linknext = "block_00216"
+    },
+    block_00216 = {
+        {"text"},
+        text = {
+            ja = {
+                {"风，停了。"}
+            }
+        },
+        linkback = "block_00215",
+        linknext = "block_00217"
+    },
+    block_00217 = {
+        {"text"},
+        text = {
+            ja = {
+                {"树林的窸窣声消失，刹那间，世界笼罩在寂静之中。"}
+            }
+        },
+        linkback = "block_00216",
+        linknext = "block_00218"
+    },
+    block_00218 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但很快我便察觉到那只是错觉。"}
+            }
+        },
+        linkback = "block_00217",
+        linknext = "block_00219"
+    },
+    block_00219 = {
+        {"text"},
+        text = {
+            ja = {
+                {"凛然的树木窸窣声，远处传来的城市喧嚣——一切都消失不见，"}
+            }
+        },
+        linkback = "block_00218",
+        linknext = "block_00220"
+    },
+    block_00220 = {
+        {"text"},
+        text = {
+            ja = {
+                {"仿佛只为了让眼前飞舞的色彩更加突出。"}
+            }
+        },
+        linkback = "block_00219",
+        linknext = "block_00221"
+    },
+    block_00221 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在声音中的寂静里。"}
+            }
+        },
+        linkback = "block_00220",
+        linknext = "block_00222"
+    },
+    block_00222 = {
+        {"text"},
+        text = {
+            ja = {
+                {"仿佛被引诱一般，我抬起了头。"}
+            }
+        },
+        linkback = "block_00221",
+        linknext = "block_00223"
+    },
+    block_00223 = {
+        {"text"},
+        text = {
+            ja = {
+                {"被混凝土包围的视野，开始扩展。缓缓地，缓缓地。"}
+            }
+        },
+        linkback = "block_00222",
+        linknext = "block_00224"
+    },
+    block_00224 = {
+        {"bg", file = "zev_com_a07_01", speed = 60000, time = 3000, path = ":ev/ev_com_a07/", set = "ev_com_a07", x2 = -160, y2 = -110, x = -290, y = -110, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"bgm", file = "bgm038", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"……。"}
+            }
+        },
+        linkback = "block_00223",
+        linknext = "block_00225"
+    },
+    block_00225 = {
+        {"text"},
+        text = {
+            ja = {
+                {"少女……？"}
+            }
+        },
+        linkback = "block_00224",
+        linknext = "block_00226"
+    },
+    block_00226 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_szd_000001", vol = 10, ch = "szd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "？？？"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00225",
+        linknext = "block_00227"
+    },
+    block_00227 = {
+        {"text"},
+        text = {
+            ja = {
+                {"是谁……？"}
+            }
+        },
+        linkback = "block_00226",
+        linknext = "block_00228"
+    },
+    block_00228 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我们在哪里见过吗……。"}
+            }
+        },
+        linkback = "block_00227",
+        linknext = "block_00229"
+    },
+    block_00229 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "几乎看不到色素的白瓷般的肌肤。即使隔着距离也能看出那双匀称",
+                    {"rt2"},
+                    "的眼睛和鼻子。"
+                }
+            }
+        },
+        linkback = "block_00228",
+        linknext = "block_00230"
+    },
+    block_00230 = {
+        {"text"},
+        text = {
+            ja = {
+                {"还有——像是在压抑感情般，紧紧抿住的嘴唇。"}
+            }
+        },
+        linkback = "block_00229",
+        linknext = "block_00231"
+    },
+    block_00231 = {
+        {"text"},
+        text = {
+            ja = {
+                {"微垂的神情，带着一丝冷淡的印象……。"}
+            }
+        },
+        linkback = "block_00230",
+        linknext = "block_00232"
+    },
+    block_00232 = {
+        {"text"},
+        text = {
+            ja = {
+                {"少女的视线笔直地投向我。"}
+            }
+        },
+        linkback = "block_00231",
+        linknext = "block_00233"
+    },
+    block_00233 = {
+        {"bg", file = "ev_com_a07_01", time = 2000, zoom = 100, speed = 2000, z2 = 103, path = ":ev/ev_com_a07/", set = "ev_com_a07"},
+        {"text"},
+        text = {
+            ja = {
+                {"就在看到那双眼睛的瞬间。"}
+            }
+        },
+        linkback = "block_00232",
+        linknext = "block_00234"
+    },
+    block_00234 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我差点就要叫出她的名字。"}
+            }
+        },
+        linkback = "block_00233",
+        linknext = "block_00235"
+    },
+    block_00235 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是——"}
+            }
+        },
+        linkback = "block_00234",
+        linknext = "block_00236"
+    },
+    block_00236 = {
+        {"se", id = 1, file = "se2340"},
+        {"bg", rule = 088, time = 150, file = "white", path = ":bg/"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {"「――！」"}
+            }
+        },
+        linkback = "block_00235",
+        linknext = "block_00237"
+    },
+    block_00237 = {
+        {"text"},
+        text = {
+            ja = {
+                {"风声。"}
+            }
+        },
+        linkback = "block_00236",
+        linknext = "block_00238"
+    },
+    block_00238 = {
+        {"text"},
+        text = {
+            ja = {
+                {"声音的平衡被打破，视野被樱花染成一片洁白。"}
+            }
+        },
+        linkback = "block_00237",
+        linknext = "block_00239"
+    },
+    block_00239 = {
+        {"text"},
+        text = {
+            ja = {
+                {"被飞舞的风遮住了视线。"}
+            }
+        },
+        linkback = "block_00238",
+        linknext = "block_00240"
+    },
+    block_00240 = {
+        {"text"},
+        text = {
+            ja = {
+                {"然后――。"}
+            }
+        },
+        linkback = "block_00239",
+        linknext = "block_00241"
+    },
+    block_00241 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg037j", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 1500},
+        {"bg", sync = 1, file = "bg037i", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00240",
+        linknext = "block_00242"
+    },
+    block_00242 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「消失了……」"
+                }
+            }
+        },
+        linkback = "block_00241",
+        linknext = "block_00243"
+    },
+    block_00243 = {
+        {"text"},
+        text = {
+            ja = {
+                {"就像是。"}
+            }
+        },
+        linkback = "block_00242",
+        linknext = "block_00244"
+    },
+    block_00244 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在樱花所做的梦中――"}
+            }
+        },
+        linkback = "block_00243",
+        linknext = "block_00245"
+    },
+    block_00245 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    {"txruby", text = "さら"},
+                    "被夺走",
+                    {"txruby"},
+                    "了一般――。"
+                }
+            }
+        },
+        linkback = "block_00244",
+        linknext = "block_00246"
+    },
+    block_00246 = {
+        {"text"},
+        text = {
+            ja = {
+                {"梦张之丘再次恢复了宁静。"}
+            }
+        },
+        linkback = "block_00245",
+        linknext = "block_00247"
+    },
+    block_00247 = {
+        {"bgm", stop = 1, time = 3000},
+        {"se", stop = 1, id = -1, time = 3000},
+        {"vostop", stop = 1, time = 3000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 3000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"excall", file = "00_op_02_1"},
+        {"text"},
+        linkback = "block_00246"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

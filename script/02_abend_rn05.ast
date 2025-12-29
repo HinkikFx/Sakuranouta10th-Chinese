@@ -1,0 +1,130 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅱ章"},
+        {"bg", file = "bg018f", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "雫", size = "z2", mode = 3, resize = 1, path = ":fg/shz/z2/", file = "shz_z2a1000", face = "a0001", head = "shz_z2a", lv = 5, id = 9, sync = 0},
+        {"extrans", time = 0},
+        {"bgm", file = "bgm010"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「当然了」"
+                }
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"fg", mode = -2},
+        {"fg", ch = "真琴", size = "z1", mode = 3, resize = 1, path = ":fg/mak/z1/", file = "mak_z1a0110", face = "a0001", head = "mak_z1a", x = 345, lv = 4, id = 6},
+        {"fg", ch = "雫", size = "z1", mode = 3, resize = 1, path = ":fg/shz/z1/", file = "shz_z1a1000", face = "a0001", head = "shz_z1a", x = -345, lv = 4, id = 5},
+        {"bgm", file = "bgm010"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_001323", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「你们在那儿嘀咕什么呢？」"
+                }
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「鸟谷，也能把雫带上一起去吗？」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"fg", ch = "真琴", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0100", face = "a0006", head = "mak_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_001324", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「哈？　你跟雫小姐说了什么，想让她穿泳装给你看？」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎么会变成那样啊！」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"fg", ch = "真琴", mode = 3, path = ":fg/mak/z1/", file = "mak_z1b0100", face = "b0005", head = "mak_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_001325", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「因为你刚刚在雫小姐耳边低语，我还以为你在说什么奇怪的话诱",
+                    {"rt2"},
+                    "惑她呢」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"fg", ch = "雫", mode = 3, path = ":fg/shz/z1/", file = "shz_z1b1000", face = "b0003", head = "shz_z1b", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_szd_000350", ch = "szd"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「没关系。直哉确实是个鬼畜凌辱黄暴污染男子主，但我并没有意",
+                    {"rt2"},
+                    "志薄弱到会被他左右……」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"excall", file = "02_abend_09"},
+        {"text"},
+        linkback = "block_00006"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

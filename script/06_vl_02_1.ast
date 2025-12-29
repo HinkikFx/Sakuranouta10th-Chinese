@@ -1,0 +1,3629 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅵ章"},
+        {"bg", file = "ev_eye_c14_01", path = ":ev/ev_eye_c14/", set = "ev_eye_c14"},
+        {"ex", time = 5000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"bg", file = "bg053a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23},
+        {"bgm", file = "bgm005"},
+        {"text"},
+        text = {
+            ja = {
+                {"早晨。我像往常一样，在屋顶一个人吃着早餐。"}
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"se", file = "se9023", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"这时，传来了有人踩着坚硬楼梯跑上来的声音。"}
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"fg", ch = "桜子", size = "z1", mx = 40, mode = 3, resize = 1, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0002", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「咦，咲崎君，早上好。怎么了吗？」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"fgact", ch = "桜子", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000097", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「早上好。其实没什么事。只是想在屋顶吸一口早晨的空气，仅此",
+                    {"rt2"},
+                    "而已」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯——感觉你还挺清爽的呢」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0011", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000098", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「老师也会这么说吗？」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「为什么我说了就不行啊」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0002", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0003", head = "sku_z1a", lv = 4, id = 9},
+                {"fgact", ch = "桜子", act = "うなづく", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000099", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「老师的早餐一直都是法棍和咖啡呢。感觉非常清爽又时尚呢」"
+                }
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「法棍和咖啡？」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0002", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000100", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「是的，一直都是这个吧」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不对，是法棍和麦茶哦」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0008", head = "sku_z1a", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000101", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「麦、麦茶？　是吗？　这是啥组合啊？　那个？」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「面包里最便宜的是法棍。麦茶也一样。所以就是这么个组合」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0009", head = "sku_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0002", head = "sku_z1b", lv = 4, id = 9},
+                {"fgact", ch = "桜子", act = "うなづく", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000102", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「原、原来如此……我、我还以为你吃得更洋气一点呢……」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你为什么会这么想啊？我这人哪有一丁点洋气的成分啊」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000103", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「是气氛的问题吗？」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗？　哪有那种气氛啊？」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0005", head = "sku_z1b", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000104", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「有的哦。完全是一副高冷样子」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0010", head = "sku_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000105", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「传闻说，你是传说中的艺术家的私生子，而且还是世界级艺术家",
+                    {"rt2"},
+                    "御桜禀的对手兼恋人……。过去发生了什么事，现在总是一个人孤",
+                    {"rt2"},
+                    "独地在屋顶仰望天空」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈，哈啊？　什么传闻啊？　你们看我是那样的人吗？」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0001", head = "sku_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000106", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「所以昨天我才直接问了草薙健一郎和御桜禀的关系，想知道传闻",
+                    {"rt2"},
+                    "是不是真的」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哎，这样啊……」"
+                }
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "嘛，虽然我并没有公开自己是那家伙的儿子……，但为什么就成了",
+                    {"rt2"},
+                    "私生子的设定了啊。"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"text"},
+        text = {
+            ja = {
+                {"还有和禀是恋人什么的……，跟事实还差得有点远。"}
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            ja = {
+                {"嘛，传闻大概就是这种东西吧……。"}
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0009", head = "sku_z1b", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0002", head = "sku_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000107", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「不过昨天一问，感觉好像没什么关系，所以我还以为老师你是故",
+                    {"rt2"},
+                    "意装成那样让人误会的呢」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，那也太冤枉我了吧」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0011", head = "sku_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000108", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「不过嘛，草薙老师在女学生中人气还挺高的。我就想着你是不是",
+                    {"rt2"},
+                    "明知道这一点，故意装酷呢」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这是冤枉啊。老师不是装酷，只是穷罢了」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0007", head = "sku_z1a", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0010", head = "sku_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000109", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「这样啊，嘛，也不觉得意外啦」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「也就是说，没什么意外性」"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0002", head = "sku_z1a", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000110", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「是的，至少就我几次在这个屋顶和老师聊天的经验来看，我觉得",
+                    {"rt2"},
+                    "大家的传闻反而不太可信」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0001", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0002", head = "sku_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000111", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「我本来对老师也没什么特别的兴趣，其实直到最近我都不知道有",
+                    {"rt2"},
+                    "那种传闻的存在」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0010", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000112", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「因为注意老师的关系，和老师聊了几次天，从那时候开始，其他",
+                    {"rt2"},
+                    "学生才会来问我关于老师的事」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗。我倒没觉得自己有人气啊」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0008", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0007", head = "sku_z1a", lv = 4, id = 9},
+                {"fgact", ch = "桜子", act = "びっくり", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000113", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「啊，那只是因为老师您迟钝啦。只是因为我在这里和老师碰过几",
+                    {"rt2"},
+                    "次面，大家就……啊，不，没什么！」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「光是和我见过面就怎么了？」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0005", head = "sku_z1a", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "うんうん", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0004", head = "sku_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000114", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「吵死了。比起这个，老师会做饭吗？」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「突然话题变得真快啊……嗯，毕竟一个人生活很久了，基本都会",
+                    {"rt2"},
+                    "做」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0001", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000115", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「可是，为什么还是吃法棍和麦茶呢？」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但是你试试这个之后，就会上瘾的啊」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我从口袋里掏出一瓶蛋黄酱。"}
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0011", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000116", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「蛋黄酱？」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，就是把法棍这样掰开……」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我把蛋黄酱涂在法棍上。"}
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「吃吃看吧」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0001", head = "sku_z1a", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000117", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「诶？啊，是这个面包吗？」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是用手掰下来的部分，没沾到嘴，所以没问题」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0008h", head = "sku_z1a", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000118", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「这、这种事，我才不在意呢！」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗？那就好，来尝尝吧」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0001", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000119", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「好，不过这不就是法棍上挤了点蛋黄酱而已吗……」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，就是这种吃法」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, resize = 1, path = ":fg/sku/z2/", file = "sku_z2a0200", face = "a0010", head = "sku_z2a", lv = 5, id = 9},
+        {"fgact", ch = "桜子", act = "うなづく", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000120", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「哈姆……嚼嚼……」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"text"},
+        text = {
+            ja = {
+                {"咲崎同学用小小的嘴巴慢慢咀嚼着。"}
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「来，麦茶」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我抓准时机，把从保温瓶里倒出的麦茶递给咲崎同学，她接了过去。"}
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"fgact", ch = "桜子", act = "うなづく", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0200", face = "a0003", head = "sku_z2a", lv = 5, id = 9},
+                {"fgact", ch = "桜子", act = "うなづく", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000121", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「咕、咕……」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「就是这种感觉」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0200", face = "a0002", head = "sku_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000122", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「嗯，这个真的很好吃呢」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「对吧？简单又方便，味道好，而且最主要是便宜」"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000123", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「哎……是这样啊。和传闻里说的完全不一样呢」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「人言这种东西啊，根本不靠谱。大家都只会随便说说，毕竟事不",
+                    {"rt2"},
+                    "关己嘛」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062"
+    },
+    block_00062 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0200", face = "a0001", head = "sku_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000124", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「事不关己吗……确实如此」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063"
+    },
+    block_00063 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「人啊，一到自己的事就拼命想让别人正确理解，可一到别人的事，",
+                    {"rt2"},
+                    "就很容易觉得自己全都明白了」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064"
+    },
+    block_00064 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0002", head = "sku_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000125", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「既然如此，和我一起度过了这么长时间，稍微告诉我一点老师您",
+                    {"rt2"},
+                    "的事情也可以吧？」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065"
+    },
+    block_00065 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没必要了解老师的事」"
+                }
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066"
+    },
+    block_00066 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0005", head = "sku_z2a", lv = 5, id = 9},
+        {"fgact", ch = "桜子", act = "びっくり", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000126", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「为什么呢？」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067"
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我只是兼职老师，明年还能不能留下都不知道」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068"
+    },
+    block_00068 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0004", head = "sku_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000127", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「这种态度，哪怕是临时老师也有点问题吧？」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069"
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗？我反而不信任那些总想讲自己事的老师」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070"
+    },
+    block_00070 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0002", head = "sku_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000128", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「那反过来说，特别喜欢隐瞒自己的老师就值得信任吗？」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071"
+    },
+    block_00071 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「今天怎么这么爱抬杠啊。那么咲崎你主要想知道我什么？」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072"
+    },
+    block_00072 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2b0200", face = "b0001h", head = "sku_z2b", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2b0200", face = "b0008h", head = "sku_z2b", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000129", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「被、被你这么一问……反而不知道该说什么了……」"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073"
+    },
+    block_00073 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「在屋顶上独自一人，仿佛在天空下，与影子为伴」"
+                }
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074"
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那只是因为和其他老师合不来，所以尽量避开职员室而已」"
+                }
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075"
+    },
+    block_00075 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「之所以看起来有阴影，是因为没钱，吃不到好吃的东西，朋友也",
+                    {"rt2"},
+                    "极少，所以只是单纯地阴沉而已。不是阴影，阴沉才是正确的说法」"
+                }
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076"
+    },
+    block_00076 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「草薙直哉这个人，不多也不少。这种事，咲崎你最清楚不过了吧」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077"
+    },
+    block_00077 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2b0200", face = "b0001", head = "sku_z2b", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2b0200", face = "b0002", head = "sku_z2b", lv = 5, id = 9},
+                {"fgact", ch = "桜子", act = "うなづく", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000130", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「我是最清楚的吗……。是啊」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078"
+    },
+    block_00078 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000131", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「我啊，自从来到这里才第一次注意到这一点」"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079"
+    },
+    block_00079 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0200", face = "a0002", head = "sku_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000132", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「教堂的壁画，从这里看也很漂亮呢」"
+                }
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080"
+    },
+    block_00080 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「教堂的壁画？」"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081"
+    },
+    block_00081 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0010", head = "sku_z2a", lv = 5, id = 9},
+        {"fgact", ch = "桜子", act = "うなづく", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000133", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「嗯，听说好像是草薙健一郎的作品，还说在制作时有很多逸事…",
+                    {"rt2"},
+                    "…」"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082"
+    },
+    block_00082 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是啊……」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083"
+    },
+    block_00083 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0002", head = "sku_z2a", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0001", head = "sku_z2a", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000134", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「我还听说那位御桜禀也参与了制作。草薙老师你不认识吗？」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084"
+    },
+    block_00084 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「谁知道啊。不认识」"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085"
+    },
+    block_00085 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0013", head = "sku_z2a", lv = 5, id = 9},
+        {"fgact", ch = "桜子", act = "おじぎ", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000135", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「真的吗……」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086"
+    },
+    block_00086 = {
+        {"text"},
+        text = {
+            ja = {
+                {"咲崎盯着我看。"}
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087"
+    },
+    block_00087 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什，什么啊……」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088"
+    },
+    block_00088 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000136", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「很少见地动摇了呢，老师」"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089"
+    },
+    block_00089 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「才没有动摇什么的……」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090"
+    },
+    block_00090 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0009", head = "sku_z2a", lv = 5, id = 9},
+        {"fgact", ch = "桜子", act = "おじぎ", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000137", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「为什么要用娘娘腔的说话方式啊……」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091"
+    },
+    block_00091 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，不，没什么……」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092"
+    },
+    block_00092 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0001", head = "sku_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000138", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「那幅画很神奇对吧……」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093"
+    },
+    block_00093 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000139", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「刚入学的时候，最让我吃惊的就是教堂那幅壁画了」"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094"
+    },
+    block_00094 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗……」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095"
+    },
+    block_00095 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0002", head = "sku_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000140", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「而且，进到教堂里面又吓了一跳，外面和里面居然差那么多，感",
+                    {"rt2"},
+                    "觉真是了不起的作品啊……」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096"
+    },
+    block_00096 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那当然啦，毕竟是世界级艺术家的设计」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097"
+    },
+    block_00097 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0003", head = "sku_z2a", lv = 5, id = 9},
+        {"fgact", ch = "桜子", act = "うなづく", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0002", head = "sku_z2a", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000141", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「嗯，这大概也是原因之一吧，但总觉得那幅作品看起来很有趣呢」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098"
+    },
+    block_00098 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「很有趣？」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099"
+    },
+    block_00099 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000142", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「也许是经过精心计算才做出来的，但总觉得制作者看起来很开心",
+                    {"rt2"},
+                    "……那件作品」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100"
+    },
+    block_00100 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「感觉制作者很开心……吗」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101"
+    },
+    block_00101 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0001", head = "sku_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000143", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「这种东西，会通过作品传达出来吗？　还是说这也是经过那种计",
+                    {"rt2"},
+                    "算才做出来的？」"
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102"
+    },
+    block_00102 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「原来如此，你说的话很有意思呢」"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103"
+    },
+    block_00103 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「艺术为什么不用语言……」"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104"
+    },
+    block_00104 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000144", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「艺术不用语言吗？」"
+                }
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105"
+    },
+    block_00105 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，当然会用到诗歌或者文学什么的，也会用到语言。只是，如",
+                    {"rt2"},
+                    "果把它们称作语言的话，总觉得有点不一样吧」"
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106"
+    },
+    block_00106 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0008", head = "sku_z2a", lv = 5, id = 9},
+        {"fgact", ch = "桜子", act = "うなづく", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000145", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「嗯，虽然不是很明白，但如果把诗歌或文学叫做语言，总觉得有",
+                    {"rt2"},
+                    "点不对劲，果然还是叫做言语更贴切」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107"
+    },
+    block_00107 = {
+        {"fg", ch = "桜子", size = "z2", mode = 3, path = ":fg/sku/z2/", file = "sku_z2a0210", face = "a0010", head = "sku_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000146", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「为什么呢，被你这么一说，语言好像就像是死掉的词语一样……」"
+                }
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108"
+    },
+    block_00108 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「就是这么回事」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109"
+    },
+    block_00109 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, resize = 1, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0007", head = "sku_z1a", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000147", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「诶？什么意思？刚才那算是解释吗？」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110"
+    },
+    block_00110 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，没错。是解释，不过不是说明含义，而是指向了意义」"
+                }
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111"
+    },
+    block_00111 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0008", head = "sku_z1a", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000148", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「完全不明白。那是什么啊？」"
+                }
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112"
+    },
+    block_00112 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「试着想象一下吧」"
+                }
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113"
+    },
+    block_00113 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「能听到作者们开心的声音。那种开心的词语本身有意义吗？其实",
+                    {"rt2"},
+                    "不是吧？」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114"
+    },
+    block_00114 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「与其说是那些词语的意义，不如说是那种开心声音的、音色，才",
+                    {"rt2"},
+                    "更有价值吧」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115"
+    },
+    block_00115 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你不也是被那部作品中，比起词语的意义，更是那些愉快交流的",
+                    {"rt2"},
+                    "语言的音色所吸引了吗？」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116"
+    },
+    block_00116 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0007", head = "sku_z1a", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000149", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「啊」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117"
+    },
+    block_00117 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0003", head = "sku_z1a", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0002", head = "sku_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000150", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「啊！好厉害。虽然说不上来，但好像一下子就明白了」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118"
+    },
+    block_00118 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗，那就好」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119"
+    },
+    block_00119 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0003", head = "sku_z1a", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000151", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「不愧是草薙老师，真不愧是美术老师呢」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120"
+    },
+    block_00120 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么？」"
+                }
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121"
+    },
+    block_00121 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0200", face = "a0002", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000152", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「你解释如何面对艺术作品时，真的非常巧妙」"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122"
+    },
+    block_00122 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0010", head = "sku_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0002", head = "sku_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000153", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「原来如此，有时候，语言的价值并不在于意义，而是在于它的音",
+                    {"rt2"},
+                    "色。这听起来很像",
+                    {"txruby", text = "うた"},
+                    "歌",
+                    {"txruby"},
+                    "呢」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123"
+    },
+    block_00123 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「",
+                    {"txruby", text = "うた"},
+                    "歌",
+                    {"txruby"},
+                    "？」"
+                }
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124"
+    },
+    block_00124 = {
+        {"fgact", ch = "桜子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0010", head = "sku_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000154", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「对，",
+                    {"txruby", text = "うた"},
+                    "歌",
+                    {"txruby"},
+                    "。是音乐中的诗。并不只是追逐语言本身的意义。因为被",
+                    {"rt2"},
+                    "旋律承载，所以意义也会变得不同」"
+                }
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125"
+    },
+    block_00125 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0002", head = "sku_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000155", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「因为旋律，",
+                    {"txruby", text = "し"},
+                    "诗",
+                    {"txruby"},
+                    "就会变成",
+                    {"txruby", text = "うた"},
+                    "诗",
+                    {"txruby"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126"
+    },
+    block_00126 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「原来如此，",
+                    {"txruby", text = "し"},
+                    "诗",
+                    {"txruby"},
+                    "会变成",
+                    {"txruby", text = "うた"},
+                    "诗",
+                    {"txruby"},
+                    "啊……这真是非常诗意的说法呢」"
+                }
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127"
+    },
+    block_00127 = {
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "桜子", act = "うなづく", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000156", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「我觉得有趣的是旋律性的东西，就是这个意思吧」"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128"
+    },
+    block_00128 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嘛，大概就是这样」"
+                }
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129"
+    },
+    block_00129 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0003", head = "sku_z1b", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0002", head = "sku_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000157", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「哎，是吗，是吗，嘿嘿～」"
+                }
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130"
+    },
+    block_00130 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她像是感到佩服一样看着我。"}
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131"
+    },
+    block_00131 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什、什么啊……」"
+                }
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132"
+    },
+    block_00132 = {
+        {"fgact", ch = "桜子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000158", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「没，就是那个。因为草薙老师你平时看起来挺呆板的，所以没想",
+                    {"rt2"},
+                    "到你会说出那么诗意又帅气的话」"
+                }
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133"
+    },
+    block_00133 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「笨蛋，艺术本来就是帅气的。正因为帅才叫艺术」"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134"
+    },
+    block_00134 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0001", head = "sku_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000159", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「是这样吗？比起帅气，我总觉得艺术应该是更有厚重感的东西」"
+                }
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135"
+    },
+    block_00135 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那是因为，它已经不再是语言，而变成了言语本身。就像咲崎君",
+                    {"rt2"},
+                    "说的，那只是尸体而已」"
+                }
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136"
+    },
+    block_00136 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「去图书馆就好了，那里有很多死去的词语夹在书本里。如果有时",
+                    {"rt2"},
+                    "间的话，去美术馆也不错。那里也悬挂着许多死去的绘画」"
+                }
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137"
+    },
+    block_00137 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000160", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「您的意思是，过去的文学和艺术作品都是死去的东西吗？」"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138"
+    },
+    block_00138 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是的。如果你觉得那是“厚重的东西”，那已经是死去的东西",
+                    {"rt2"},
+                    "了」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139"
+    },
+    block_00139 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那和语言是一样的」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140"
+    },
+    block_00140 = {
+        {"fgact", ch = "桜子", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000161", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「原来如此……」"
+                }
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141"
+    },
+    block_00141 = {
+        {"fg", mode = -2},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过，艺术是可以无数次复活的」"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142"
+    },
+    block_00142 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果你在面对只不过是标本的美丽蝴蝶时，产生了它仿佛还活着",
+                    {"rt2"},
+                    "的错觉，甚至幻想它振翅飞翔的模样，那么它就不再是尸体了」"
+                }
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143"
+    },
+    block_00143 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「标本在人们心中再次被赋予了‘飞翔’的权利。所以它才让人着迷。",
+                    {"rt2"},
+                    "艺术也是如此」"
+                }
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144"
+    },
+    block_00144 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「将瞬间封存其中的永恒。嘛，虽然说是永恒，作品也有寿命……」"
+                }
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145"
+    },
+    block_00145 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「即便如此，只要那件作品还存在，那一瞬间就被封存在永恒之中」"
+                }
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146"
+    },
+    block_00146 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「有时只有一个，有时有更多值得传达的情感……嘛，这要看那件",
+                    {"rt2"},
+                    "作品本身了」"
+                }
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147"
+    },
+    block_00147 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是越多越好，也不是只有一个才伟大」"
+                }
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148"
+    },
+    block_00148 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过，也有那种只想传达一件事，将瞬间封存为永恒的作品……」"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149"
+    },
+    block_00149 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0007", head = "sku_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000162", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「哎呀……」"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150"
+    },
+    block_00150 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什、什么啊」"
+                }
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151"
+    },
+    block_00151 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0002", head = "sku_z1b", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000163", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「没有啦，只是觉得老师在女生中很受欢迎也是理所当然的……」"
+                }
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152"
+    },
+    block_00152 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啥啊那是？」"
+                }
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153"
+    },
+    block_00153 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0008", head = "sku_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0001", head = "sku_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000164", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「咦？不过，老师平时好像也不会说这种话呢……」"
+                }
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154"
+    },
+    block_00154 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那是当然啦。像这种醉醺醺的话，哪有人会随便说出口啊」"
+                }
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155"
+    },
+    block_00155 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0002", head = "sku_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0003", head = "sku_z1b", lv = 4, id = 9},
+                {"fgact", ch = "桜子", act = "うなづく", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000165", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「原来如此。这样啊，早起果然很值得呢」"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156"
+    },
+    block_00156 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么值得？」"
+                }
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157"
+    },
+    block_00157 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0003", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000166", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「没什么哦——」"
+                }
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158"
+    },
+    block_00158 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「说起来，咲崎你啊。大清早跑到这种地方来，跟老师聊天，难道",
+                    {"rt2"},
+                    "不觉得学生生活可以过得更有意义点吗？」"
+                }
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159"
+    },
+    block_00159 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0001", head = "sku_z1a", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000167", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「啊，对了，老师，时间还来得及吗？」"
+                }
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160"
+    },
+    block_00160 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯？」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161"
+    },
+    block_00161 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0011", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000168", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「老师们不是应该比学生更早到职员室吗？不然会不好吧？」"
+                }
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162"
+    },
+    block_00162 = {
+        {"mwact", act = "びっくり"},
+        {"se", file = "se3130", vol = 50, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，糟了」"
+                }
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163"
+    },
+    block_00163 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0001", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000169", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「还有，老师！」"
+                }
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164"
+    },
+    block_00164 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么事！」"
+                }
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165"
+    },
+    block_00165 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0002", head = "sku_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000170", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「谢谢你♪」"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166"
+    },
+    block_00166 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167"
+    },
+    block_00167 = {
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1a0210", face = "a0003", head = "sku_z1a", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_skr_000171", ch = "skr"}
+            },
+            ja = {
+                {
+                    name = {"樱子"},
+                    "「那么，就这样啦——」"
+                }
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168"
+    },
+    block_00168 = {
+        {"msgoff"},
+        {"fg", ch = "桜子", size = "z1", mode = 3, path = ":fg/sku/z1/", file = "sku_z1b0200", face = "b0002", head = "sku_z1b", lv = 4, id = 9},
+        {"fgact", ch = "桜子", act = "おじぎ", lv = 4, id = 9},
+        {"ex", time = 1200, func = "wait"},
+        {"se", file = "se9004", id = 1},
+        {"fg", ch = "桜子", mx = 40, mode = -1, lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"在说了一句和平时完全不同的感谢后，咲崎君下了楼梯。"}
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169"
+    },
+    block_00169 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170"
+    },
+    block_00170 = {
+        {"text"},
+        text = {
+            ja = {
+                {"到底是哪样的事啊……。"}
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171"
+    },
+    block_00171 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，不好，明明我才是得快点才对！」"
+                }
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172"
+    },
+    block_00172 = {
+        {"msgoff"},
+        {"bg", file = "bluesky_spring", sync = 1, id = 1, lv = 5, path = ":cg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"一大早就对着学生滔滔不绝了啊。"}
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173"
+    },
+    block_00173 = {
+        {"text"},
+        text = {
+            ja = {
+                {"说起来也挺不成熟的。"}
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174"
+    },
+    block_00174 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不过话说回来，差不多也快到春天了。"}
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175"
+    },
+    block_00175 = {
+        {"text"},
+        text = {
+            ja = {
+                {"樱花盛开的季节。"}
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176"
+    },
+    block_00176 = {
+        {"text"},
+        text = {
+            ja = {
+                {"虽然那幅画是夏天画的，但果然一到春天，就会想起樱花。"}
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177"
+    },
+    block_00177 = {
+        {"text"},
+        text = {
+            ja = {
+                {"人就是这样的。"}
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178"
+    },
+    block_00178 = {
+        {"bgm", stop = 1, time = 1000},
+        {"cgdel", id = -1},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"bg", rule = 139, vague = 40, file = "bg049a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23},
+        {"bgm", file = "bgm036"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jta_000001", ch = "jta"}
+            },
+            ja = {
+                {
+                    name = {"学生A"},
+                    "「哇，画画什么的好难啊。那个，能教教我吗？」"
+                }
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179"
+    },
+    block_00179 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, resize = 1, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0001", head = "nat_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000001", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子", "学生C"},
+                    "「啊，诶，嗯……」"
+                }
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180"
+    },
+    block_00180 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181"
+    },
+    block_00181 = {
+        {"fg", mode = -2},
+        {"text"},
+        text = {
+            ja = {
+                {"在作为学生的时候并不明白，但学校似乎有一种神奇的等级划分。"}
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182"
+    },
+    block_00182 = {
+        {"text"},
+        text = {
+            ja = {
+                {"简单来说，就是显眼的学生和不显眼的学生。"}
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183"
+    },
+    block_00183 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "更细致地说，在这其中还有所谓的A等级、B等级、C等级，你们是",
+                    {"rt2"},
+                    "牛肉吗？真想这样吐槽一下的分级方式。"
+                }
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184"
+    },
+    block_00184 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "学生A是非常有活力的学生。说白了，应该属于辣妹系吧？相对地，",
+                    {"rt2"},
+                    "学生C则是文静的少女。"
+                }
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185"
+    },
+    block_00185 = {
+        {"text"},
+        text = {
+            ja = {
+                {"大多数时候，学生A总是说着「教教我」，想让学生C帮忙画画。"}
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186"
+    },
+    block_00186 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但到最后，总是学生C把一切都完成了。"}
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187"
+    },
+    block_00187 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "因为有这种上下关系，教师这个职业就必须和上层的学生，也就是",
+                    {"rt2"},
+                    "所谓A等级的松阪牛学生，搞好关系才行。"
+                }
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188"
+    },
+    block_00188 = {
+        {"text"},
+        text = {
+            ja = {
+                {"大家都说，和他们搞好关系是让课堂顺利进行的秘诀。"}
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189"
+    },
+    block_00189 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「喂，学生A。别让学生C画画」"
+                }
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190"
+    },
+    block_00190 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jta_000002", ch = "jta"}
+            },
+            ja = {
+                {
+                    name = {"学生A"},
+                    "「叫我学生A也太过分了吧。老师不记得我的名字吗？」"
+                }
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191"
+    },
+    block_00191 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「吵死了，别让她画」"
+                }
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192"
+    },
+    block_00192 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jta_000003", ch = "jta"}
+            },
+            ja = {
+                {
+                    name = {"学生A"},
+                    "「我才没让她画呢。只是让她教我而已，啊，对了，教画画这事，",
+                    {"rt2"},
+                    "不就是老师的工作吗？所以您才生气吧」"
+                }
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193"
+    },
+    block_00193 = {
+        {"text"},
+        text = {
+            ja = {
+                {"有些学生哄堂大笑。"}
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194"
+    },
+    block_00194 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊，没有教师资格证的人去教的话，教育委员会可是会出问题",
+                    {"rt2"},
+                    "的」"
+                }
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195"
+    },
+    block_00195 = {
+        {"text"},
+        text = {
+            ja = {
+                {"学生们再次爆笑。"}
+            }
+        },
+        linkback = "block_00194",
+        linknext = "block_00196"
+    },
+    block_00196 = {
+        {"text"},
+        text = {
+            ja = {
+                {"一点也不好笑。"}
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197"
+    },
+    block_00197 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jta_000004", ch = "jta"}
+            },
+            ja = {
+                {
+                    name = {"学生A"},
+                    "「太厉害了，草薙老师的回击简直绝了。超级有趣」"
+                }
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198"
+    },
+    block_00198 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊，因为我有教师资格证嘛」"
+                }
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199"
+    },
+    block_00199 = {
+        {"text"},
+        text = {
+            ja = {
+                {"又是一阵爆笑。"}
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200"
+    },
+    block_00200 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊？我可不是为了让你们高兴才这么说的，别笑得这么夸张，真",
+                    {"rt2"},
+                    "让人不爽」"
+                }
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201"
+    },
+    block_00201 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即便如此，学生们还是在笑。"}
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202"
+    },
+    block_00202 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "为什么这些家伙非要这么努力地笑呢。在那之中，我感到了一些违",
+                    {"rt2"},
+                    "和感，或者说是一种疏远感。"
+                }
+            }
+        },
+        linkback = "block_00201",
+        linknext = "block_00203"
+    },
+    block_00203 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「还有你，也别老是帮别人画作业！」"
+                }
+            }
+        },
+        linkback = "block_00202",
+        linknext = "block_00204"
+    },
+    block_00204 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0009", head = "nat_z1a", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000002", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子", "学生C"},
+                    "「对不起」"
+                }
+            }
+        },
+        linkback = "block_00203",
+        linknext = "block_00205"
+    },
+    block_00205 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00204",
+        linknext = "block_00206"
+    },
+    block_00206 = {
+        {"fg", mode = -2},
+        {"text"},
+        text = {
+            ja = {
+                {"成为老师之后所看到的教室世界，真是奇妙。"}
+            }
+        },
+        linkback = "block_00205",
+        linknext = "block_00207"
+    },
+    block_00207 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "可能是因为学生时代我对别人几乎没有兴趣……不过，也许这也是",
+                    {"rt2"},
+                    "时代变迁的原因吧……。"
+                }
+            }
+        },
+        linkback = "block_00206",
+        linknext = "block_00208"
+    },
+    block_00208 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "骂学生A的时候会引起哄堂大笑，骂学生C的时候，只会得到一句「",
+                    {"rt2"},
+                    "对不起」。"
+                }
+            }
+        },
+        linkback = "block_00207",
+        linknext = "block_00209"
+    },
+    block_00209 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "基本上，在教室里被认为是底层的学生，通常不会找借口，只会先",
+                    {"rt2"},
+                    "道歉。"
+                }
+            }
+        },
+        linkback = "block_00208",
+        linknext = "block_00210"
+    },
+    block_00210 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "我觉得坦率地道歉才是正确的，但在如今这个社会里，连被训斥的",
+                    {"rt2"},
+                    "仪式都得炒热一下气氛……。"
+                }
+            }
+        },
+        linkback = "block_00209",
+        linknext = "block_00211"
+    },
+    block_00211 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "老师似乎也默认了这种做法，实际上，就连我这个对这种事不太感",
+                    {"rt2"},
+                    "冒的人，也不得不这样应对。"
+                }
+            }
+        },
+        linkback = "block_00210",
+        linknext = "block_00212"
+    },
+    block_00212 = {
+        {"text"},
+        text = {
+            ja = {
+                {"唔，确实他们很擅长带动现场的气氛。"}
+            }
+        },
+        linkback = "block_00211",
+        linknext = "block_00213"
+    },
+    block_00213 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「喂」"
+                }
+            }
+        },
+        linkback = "block_00212",
+        linknext = "block_00214"
+    },
+    block_00214 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0007", head = "nat_z1a", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000003", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子", "学生C"},
+                    "「是、是？」"
+                }
+            }
+        },
+        linkback = "block_00213",
+        linknext = "block_00215"
+    },
+    block_00215 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「栗山奈津子」"
+                }
+            }
+        },
+        linkback = "block_00214",
+        linknext = "block_00216"
+    },
+    block_00216 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0001", head = "nat_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000004", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「啊，啊，是」"
+                }
+            }
+        },
+        linkback = "block_00215",
+        linknext = "block_00217"
+    },
+    block_00217 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「栗山，你画画虽然厉害，但别连别人的也帮着画啊。真是的，能",
+                    {"rt2"},
+                    "不能再想想怎么用你的才能……」"
+                }
+            }
+        },
+        linkback = "block_00216",
+        linknext = "block_00218"
+    },
+    block_00218 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0007", head = "nat_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "奈津子", act = "びっくり", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000005", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「诶？　啊，好的！」"
+                }
+            }
+        },
+        linkback = "block_00217",
+        linknext = "block_00219"
+    },
+    block_00219 = {
+        {"fg", mode = -2},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jta_000005", ch = "jta"}
+            },
+            ja = {
+                {
+                    name = {"学生A"},
+                    "「草薙老师！　我的名字你记不住，结果只记住她的，这也太离谱",
+                    {"rt2"},
+                    "了吧？」"
+                }
+            }
+        },
+        linkback = "block_00218",
+        linknext = "block_00220"
+    },
+    block_00220 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「吵死了，你被这么说反而更高兴吧」"
+                }
+            }
+        },
+        linkback = "block_00219",
+        linknext = "block_00221"
+    },
+    block_00221 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_jta_000006", ch = "jta"}
+            },
+            ja = {
+                {
+                    name = {"学生A"},
+                    "「啊，对哦，这么一说，好像也是呢」"
+                }
+            }
+        },
+        linkback = "block_00220",
+        linknext = "block_00222"
+    },
+    block_00222 = {
+        {"text"},
+        text = {
+            ja = {
+                {"教室里再次爆发出一阵哄笑。"}
+            }
+        },
+        linkback = "block_00221",
+        linknext = "block_00223"
+    },
+    block_00223 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "虽然很麻烦，但看来演这种闹剧也是工作的一部分。真是傻透了…",
+                    {"rt2"},
+                    "…。"
+                }
+            }
+        },
+        linkback = "block_00222",
+        linknext = "block_00224"
+    },
+    block_00224 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0001", head = "nat_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"我看向了栗山君。"}
+            }
+        },
+        linkback = "block_00223",
+        linknext = "block_00225"
+    },
+    block_00225 = {
+        {"text"},
+        text = {
+            ja = {
+                {"依然是毫无表情。"}
+            }
+        },
+        linkback = "block_00224",
+        linknext = "block_00226"
+    },
+    block_00226 = {
+        {"fgact", ch = "奈津子", act = "いいえ", loop = -1, size = 2, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000006", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00225",
+        linknext = "block_00227"
+    },
+    block_00227 = {
+        {"text"},
+        text = {
+            ja = {
+                {"话说？　在发抖吗？"}
+            }
+        },
+        linkback = "block_00226",
+        linknext = "block_00228"
+    },
+    block_00228 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这家伙好像在发抖！　怎么回事？"}
+            }
+        },
+        linkback = "block_00227",
+        linknext = "block_00229"
+    },
+    block_00229 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00228",
+        linknext = "block_00230"
+    },
+    block_00230 = {
+        {"fgact", ch = "奈津子", act = "停止", lv = 4, id = 9},
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0007", head = "nat_z1a", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000007", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「哈！？」"
+                }
+            }
+        },
+        linkback = "block_00229",
+        linknext = "block_00231"
+    },
+    block_00231 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0012", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0012", head = "nat_z1a", lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0008", head = "nat_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000008", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「啊、诶、啊呜呜」"
+                }
+            }
+        },
+        linkback = "block_00230",
+        linknext = "block_00232"
+    },
+    block_00232 = {
+        {"text"},
+        text = {
+            ja = {
+                {"栗山同学和我对上视线后，突然低下了头。"}
+            }
+        },
+        linkback = "block_00231",
+        linknext = "block_00233"
+    },
+    block_00233 = {
+        {"text"},
+        text = {
+            ja = {
+                {"真的是，说她内向也好……怎么说呢……。"}
+            }
+        },
+        linkback = "block_00232",
+        linknext = "block_00234"
+    },
+    block_00234 = {
+        {"bgm", stop = 1, time = 1000},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"text"},
+        text = {
+            ja = {
+                {"那天也是断断续续地上了三节课。"}
+            }
+        },
+        linkback = "block_00233",
+        linknext = "block_00235"
+    },
+    block_00235 = {
+        {"text"},
+        text = {
+            ja = {
+                {"因为是兼职，不是连堂的话，就会闲得无聊。"}
+            }
+        },
+        linkback = "block_00234",
+        linknext = "block_00236"
+    },
+    block_00236 = {
+        {"text"},
+        text = {
+            ja = {
+                {"空余时间我就去屋顶或者没什么人的图书馆打个盹，消磨时间。"}
+            }
+        },
+        linkback = "block_00235",
+        linknext = "block_00237"
+    },
+    block_00237 = {
+        {"text"},
+        text = {
+            ja = {
+                {"就这样，最后一节课一结束，我就赶紧回了家。"}
+            }
+        },
+        linkback = "block_00236",
+        linknext = "block_00238"
+    },
+    block_00238 = {
+        {"excall", file = "06_vl_02_2"},
+        {"text"},
+        linkback = "block_00237"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

@@ -1,0 +1,1181 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅴ章"},
+        {"bg", file = "ev_eye_c13_01", path = ":ev/ev_eye_c13/", set = "ev_eye_c13"},
+        {"ex", time = 5000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"msgoff"},
+        {"bg", file = "bluesky_spring", sync = 1, id = 1, lv = 5, path = ":cg/"},
+        {"bgm", file = "bgm013"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「蓝在嗎！？」"
+                }
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我在夏目宅邸的玄关大声喊道。"}
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001602", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「啊，直哉怎么了？」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"se", file = "se9023", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我朝着传来声音的方向跑去。"}
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"cgdel", id = -1},
+        {"se", stop = 1, time = 500, id = 1},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg002a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 500},
+        {"fg", ch = "藍", size = "z1", mode = 3, resize = 1, path = ":fg/aix/z1/", file = "aix_z1e0000", face = "e0012", head = "aix_z1e", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001603", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「怎么了？　这么大声干什么」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「回到公寓的时候……大学来了通知」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1e0000", face = "e0013", head = "aix_z1e", lv = 4, id = 9},
+        {"fgact", ch = "藍", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001604", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「那、那是……」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，是我的第一志愿。蓝的母校」"
+                }
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001605", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「结、结果怎么样？」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「还没看。我想在蓝面前打开」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1e0000", face = "e0012", head = "aix_z1e", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1e0000", face = "e0009", head = "aix_z1e", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001606", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「这、这样吗？　那、那可真让人紧张啊」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，其实还挺有信心的……」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「毕竟那之后一直都是蓝在教我学习」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1e0000", face = "e0002", head = "aix_z1e", lv = 4, id = 9},
+        {"fgact", ch = "藍", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001607", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「嗯，幸好我擅长的科目和你擅长的不一样」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那我打开了」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"fgact", ch = "藍", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001608", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"fg", ch = "藍", mode = -1, lv = 4, id = 9},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我打开了通知书的信封。"}
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯？」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"text"},
+        text = {
+            ja = {
+                {"里面掉出了不少文件。"}
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这是什么啊？　全是文件……最重要的合格通知呢……」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1h0010", face = "h0001", head = "aix_z1h", lv = 4, id = 9},
+        {"fgact", ch = "藍", act = "ジャンプ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001609", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「文件？」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1h0010", face = "h0012", head = "aix_z1h", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001610", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「啊，对了……」"
+                }
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎么了？」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1h0010", face = "h0003", head = "aix_z1h", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001611", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「说到底，会收到这个信封……结果不是已经很明显了吗」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1h0010", face = "h0002", head = "aix_z1h", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001612", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「要是没合格，也没必要用这么大的信封……」"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？　真的？　这就是合格通知？　啊」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"se", file = "se2497", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我发现了一张纸。"}
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {"上面写着合格通知。"}
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真的假的！」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1h0000", face = "h0004", head = "aix_z1h", lv = 4, id = 9},
+        {"fgact", ch = "藍", act = "ジャンプ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001613", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「太好了！　直哉！」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊！」"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"fg", ch = "藍", size = "z2", mode = 3, resize = 1, path = ":fg/aix/z2/", file = "aix_z2h0000", face = "h0004", head = "aix_z2h", lv = 5, id = 9},
+        {"fgact", ch = "藍", act = "うなづく", lv = 5, id = 9},
+        {"se", file = "se3130", id = 1},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {"蓝抱了上来。"}
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是蓝曾经就读的教育学院。虽然专业不同」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"fg", ch = "藍", size = "z2", mode = 3, path = ":fg/aix/z2/", file = "aix_z2h0000", face = "h0003", head = "aix_z2h", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001614", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「是啊。不过从这里去上学可不容易啊」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你在说什么啊。蓝你不也是从这家里去上学的吗？」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"fg", ch = "藍", size = "z2", mode = 3, path = ":fg/aix/z2/", file = "aix_z2h0000", face = "h0002", head = "aix_z2h", lv = 5, id = 9},
+        {"fgact", ch = "藍", act = "うなづく", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "藍", size = "z2", mode = 3, path = ":fg/aix/z2/", file = "aix_z2h0000", face = "h0004", head = "aix_z2h", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001615", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「嗯，是啊。不过说真的，没想到直哉你会以教师为目标」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「也许吧……」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯……大概是这样吧……」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但是啊，我也是，如果不做点什么梦的话就没法向前走」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「既然已经失去了……那就想抓住新的梦想」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"fg", ch = "藍", size = "z2", mode = 3, path = ":fg/aix/z2/", file = "aix_z2h0000", face = "h0003", head = "aix_z2h", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "藍", size = "z2", mode = 3, path = ":fg/aix/z2/", file = "aix_z2h0000", face = "h0002", head = "aix_z2h", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001616", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「别说什么抓住梦想这种话啦。你有了明确的目标，已经踏出了第",
+                    {"rt2"},
+                    "一步，你很厉害啊」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"fg", ch = "藍", size = "z2", mode = 3, path = ":fg/aix/z2/", file = "aix_z2h0000", face = "h0016", head = "aix_z2h", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001617", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「以前那么没干劲的你，居然能学到那个地步，真没想到」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「本来我就是一旦集中精神就能做到的人。只是持续力不太行」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"fg", ch = "藍", size = "z2", mode = 3, path = ":fg/aix/z2/", file = "aix_z2h0000", face = "h0004", head = "aix_z2h", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001618", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「不过，你的专注力真的很厉害」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊，这样我也终于成为大学生了」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, resize = 1, path = ":fg/aix/z1/", file = "aix_z1h0000", face = "h0004", head = "aix_z1h", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「话说，蓝。你还记得那个约定吗？」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1e0000", face = "e0002", head = "aix_z1e", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1e0000", face = "e0012", head = "aix_z1e", lv = 4, id = 9},
+                {"fgact", ch = "藍", act = "びっくり", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001619", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「约定？唔，是啥来着……」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「别装傻了。我们说好等上了大学就正式交往的啊」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1e0000", face = "e0004", head = "aix_z1e", lv = 4, id = 9},
+        {"fgact", ch = "藍", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1e0000", face = "e0002", head = "aix_z1e", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001620", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「我知道啦。不过真的没问题吗？我可是比你大不少哦，很快就会",
+                    {"rt2"},
+                    "变成大妈了」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么大妈啊。那种话啊，等你下面的毛长齐了再说！」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1h0010", face = "h0007", head = "aix_z1h", lv = 4, id = 9},
+        {"fgact", ch = "藍", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "藍", act = "びっくり", lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1h0010", face = "h0008", head = "aix_z1h", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001621", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「呜哇！你居然说出来了！连做的时候都没说过，偏偏这个时候说！",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊，其实我本来想在做的时候说的」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1h0010", face = "h0018", head = "aix_z1h", lv = 4, id = 9},
+        {"fgact", ch = "藍", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001622", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「你这家伙真没分寸」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这种事你最清楚不过了吧，蓝」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1h0010", face = "h0005", head = "aix_z1h", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001623", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「既然你自己知道的话，还是改一改比较好哦」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「说得也是。如果蓝不喜欢的话我会改的」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1h0010", face = "h0015", head = "aix_z1h", lv = 4, id = 9},
+        {"fgact", ch = "藍", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001624", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「真是的，就会说些一副大人的话」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「话说，蓝……关于那个约定」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1e0000", face = "e0002", head = "aix_z1e", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001625", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「那才不是什么约定呢」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001626", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「我会一直陪在你身边。不管以什么形式」"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001627", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「我就是这样发誓的」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001628", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「所以，我会一直陪在你身边」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062"
+    },
+    block_00062 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001629", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「为了不让你永远沉浸在悲伤中……」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063"
+    },
+    block_00063 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我已经……不再悲伤了……」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064"
+    },
+    block_00064 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1e0000", face = "e0003", head = "aix_z1e", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001630", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「直哉……」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065"
+    },
+    block_00065 = {
+        {"fg", ch = "藍", size = "z2", mode = 3, resize = 1, path = ":fg/aix/z2/", file = "aix_z2e0000", face = "e0003", head = "aix_z2e", lv = 5, id = 9},
+        {"fgact", ch = "藍", act = "うなづく", lv = 5, id = 9},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"蓝再次抱住了我。"}
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066"
+    },
+    block_00066 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她的怀抱非常温暖。"}
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067"
+    },
+    block_00067 = {
+        {"fg", ch = "藍", size = "z2", mode = 3, path = ":fg/aix/z2/", file = "aix_z2e0000", face = "e0002", head = "aix_z2e", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001631", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「已经不再悲伤了呢……已经该和悲伤说再见了……」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068"
+    },
+    block_00068 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069"
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001632", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「樱花又要开了哦」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070"
+    },
+    block_00070 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071"
+    },
+    block_00071 = {
+        {"fg", ch = "藍", size = "z2", mode = 3, path = ":fg/aix/z2/", file = "aix_z2e0000", face = "e0004", head = "aix_z2e", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001633", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「今年我们一起去看樱花吧……」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072"
+    },
+    block_00072 = {
+        {"fg", ch = "藍", size = "z2", mode = 3, path = ":fg/aix/z2/", file = "aix_z2e0000", face = "e0002", head = "aix_z2e", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aid_001634", ch = "aid"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「今年的樱花一定很美吧」"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073"
+    },
+    block_00073 = {
+        {"msgoff"},
+        {"fg", mode = -2},
+        {"bg", file = "bluesky_spring", sync = 1, id = 1, lv = 5, path = ":cg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"蓝望向了远方的某处。"}
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074"
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她视线的尽头，只有一朵小小的云漂浮着。"}
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075"
+    },
+    block_00075 = {
+        {"cgdel", id = -1},
+        {"bgm", stop = 1, time = 3000},
+        {"se", stop = 1, id = -1, time = 3000},
+        {"vostop", stop = 1, time = 3000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 3000, file = "white", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 0, func = "wait"},
+        {"bgm", stop = 1, time = 3000},
+        {"se", stop = 1, id = -1, time = 3000},
+        {"vostop", stop = 1, time = 3000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 3000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"タイトル"},
+        {"text"},
+        linkback = "block_00074"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

@@ -1,0 +1,3243 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅲ章"},
+        {"bg", file = "ev_eye_c04_01", path = ":ev/ev_eye_c04/", set = "ev_eye_c04"},
+        {"ex", time = 5000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg024a", path = ":bg/", sync = 0},
+        {"extrans", time = 1000},
+        {"bgm", file = "bgm024"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哦，这里就是禀的公寓吗」"
+                }
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, resize = 1, path = ":fg/rin/z1/", file = "rin_z1a0300", face = "a0003", head = "rin_z1a", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "うんうん", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001190", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「啊哈哈，看上去一点也不像是女孩子一个人住的地方吧」"
+                }
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「安全方面没问题吗？　年轻女孩一个人住总归有点危险吧？」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0300", face = "a0002", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001191", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那没关系啦。这个公寓是亲戚开的。楼下全部都是房东家。所以",
+                    {"rt2"},
+                    "比起公寓，更像是寄宿的感觉吧？」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「原来如此……这样啊」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            ja = {
+                {"也就是说，这种情况下基本不可能发生什么奇怪的事。"}
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不过话虽如此……"}
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {"毕竟是女孩子的房间。多少还是有点犹豫。"}
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0300", face = "a0012", head = "rin_z1a", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001192", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「怎么了吗？」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，不，没什么」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"msgoff"},
+        {"bg", file = "bluesky_winter", id = 9, lv = 9, time = 500, sync = 1, path = ":cg/"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001193", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「来，请进请进」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，打扰了……」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"text"},
+        text = {
+            ja = {
+                {"穿过那扇薄薄的门。"}
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"cgdel", id = -1},
+        {"se", id = 1, file = "gatya"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg025a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"禀的房间简直简陋到让人无法相信是青春期女孩子住的地方。"}
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0300", face = "a0003", head = "rin_z1a", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001194", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「诶嘿嘿，很冷清吧」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊、不是啦，雫的房间也差不多，所以我也没那么吃惊……」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0300", face = "a0009", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001195", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「连茶几都没有呢。要是为客人考虑的话，下次得准备一个……」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，其实我倒是不需要」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀准备好了茶水然后坐下。"}
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0300", face = "a0012", head = "rin_z1a", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001196", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「啊，直哉君你也请坐吧」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"fg", mode = -2},
+        {"bg", file = "ev_com_c02_01", path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「っ」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我看了禀一眼，随即移开了视线。"}
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001197", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「怎么了吗？」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没、没什么……」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "嗯，毕竟我在夏目家生活过，和女生两个人在同一屋檐下也不是稀",
+                    {"rt2"},
+                    "奇的状况……"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不、不过，果然还是有个茶几比较好吧……」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001198", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯，毕竟茶水只能直接放地上。对不起。下次我会准备好的」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊……」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"text"},
+        text = {
+            ja = {
+                {"其实并不是因为这个理由。"}
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            ja = {
+                {"面对面正坐着的这个状况，总觉得有点……。"}
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {"（因为一直只看过她穿校服啊……）"}
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"text"},
+        text = {
+            ja = {
+                {"（不过话说回来……）"}
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「咕咚……」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"msgoff"},
+        {"bg", file = "zev_com_c02_01", zoom = 80, x = 400, y = -320, time = 0, speed = 2000, z2 = 50, path = ":ev/ev_com_c02/", set = "ev_com_c02", x2 = 0, y2 = 0, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"ex", time = 2000, func = "wait"},
+        {"se", file = "se9010", id = 1},
+        {"bg", file = "zev_com_c02_01", zoom = 50, x = 0, y = 0, time = 0, speed = 200, z2 = 80, path = ":ev/ev_com_c02/", set = "ev_com_c02", x2 = 400, y2 = -320, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"mwact", act = "いいえ"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不！不行！」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"bg", file = "ev_com_c02_02", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001199", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「诶？怎、怎么了吗？」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，没、没事，没什么。那个……禀是一个人住啊」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001200", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯，是啊。如你所见」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我在说什么啊？这种事还用说吗。"}
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那个，你和你爸爸呢？」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"bg", file = "ev_com_c02_03", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001201", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「……爸爸吗」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            ja = {
+                {"直到刚才还很开朗的禀，表情一下子黯淡下来。"}
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001202", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「直哉君，至少见过我爸爸的脸吧」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，嗯，是啊……禀的爸爸在弓张那边吧」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001203", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是的，我们分开住」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是、是吗……」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001204", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「明明是我唯一的亲人……我是不是太冷漠了呢。竟然把父亲一个",
+                    {"rt2"},
+                    "人留在那里……」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，也不一定是那样。我父亲也一直都是一个人。倒不如说，在",
+                    {"rt2"},
+                    "他的情况下，更像是把我一个人扔下了。」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001205", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「但是草薙健一郎先生和草薙水菜女士不是很相爱吗。我听说他们",
+                    {"rt2"},
+                    "是在热烈的恋爱之后才走到一起的……」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嘛，那两个人确实是。其实从相识开始就有点奇怪了。」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001206", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是吗……」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001207", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「我到底是爱着父亲呢……还是依然憎恨着他呢……」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀自言自语道，并没有在问谁。"}
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她的表情并不像是在否定“憎恨着”这一事实……。"}
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"bg", file = "ev_com_c02_02", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001208", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「啊，对、对不起。我、我这是在说什么啊？」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，没事啦，反正我也明白禀你心里有很多事……」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001209", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「对不起……」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嘛，没关系吧。那么，开始素描练习吧。」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"bg", file = "ev_com_c02_01", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001210", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「好的」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"text"},
+        text = {
+            ja = {
+                {"虽然有点对不起禀，但刚才那件事让我稍微冷静下来了。"}
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我是这样想的……。"}
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但那里的东西并没有发生变化……。"}
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062"
+    },
+    block_00062 = {
+        {"text"},
+        text = {
+            ja = {
+                {"虽然暂时冷静下来了，可果然还是不知道该把视线放在哪里。"}
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063"
+    },
+    block_00063 = {
+        {"bg", file = "ev_com_c02_04", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呃，那个……你借去的人体图，应该已经大致明白人体结构了吧？",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064"
+    },
+    block_00064 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001211", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯、嗯……怎么说呢？」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065"
+    },
+    block_00065 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「还没弄明白吗？」"
+                }
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066"
+    },
+    block_00066 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001212", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯，作为知识是明白了，可是按照直哉的说法，光有这些还不够",
+                    {"rt2"},
+                    "对吧？」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067"
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「确实如此。知识如果不能实际应用，那就没有意义。毕竟是为了",
+                    {"rt2"},
+                    "画画才要理解人体结构的。」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068"
+    },
+    block_00068 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001213", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「就是这样啊……」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069"
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            ja = {
+                {"一边这么说着，禀打开了人体图。"}
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070"
+    },
+    block_00070 = {
+        {"bg", file = "ev_com_c02_06", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001214", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「一边看着人体图一边摸自己的身体……吗」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071"
+    },
+    block_00071 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀一边确认自己手臂的肌肉，一边翻看着人体解剖图。"}
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072"
+    },
+    block_00072 = {
+        {"text"},
+        text = {
+            ja = {
+                {"（一边看着人体图一边摸自己的身体）"}
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073"
+    },
+    block_00073 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "（在这种情况下，自己的性别完全不是问题。因为无论女性还是男",
+                    {"rt2"},
+                    "子性，基本上人体结构都没有什么区别）"
+                }
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074"
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {"（重要的是“边看边摸”）"}
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075"
+    },
+    block_00075 = {
+        {"text"},
+        text = {
+            ja = {
+                {"（“边看边摸”这一行为，是将触感的影响融入视觉的行为）"}
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076"
+    },
+    block_00076 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "（在人体素描中，并不需要记住骨骼和肌肉的详细名称或种类。那",
+                    {"rt2"},
+                    "是整体师或医生的领域吧）"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077"
+    },
+    block_00077 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "（不过，必须理解这些肌肉是如何支撑骨骼、以及通过怎样的伸缩",
+                    {"rt2"},
+                    "产生动作的）"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078"
+    },
+    block_00078 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "（通过触摸，可以把握肌肉的运动。也就是说，可以在脑海中将解",
+                    {"rt2"},
+                    "剖图上描绘的医学人体结构，作为具有动态的目标物来构建）"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079"
+    },
+    block_00079 = {
+        {"text"},
+        text = {
+            ja = {
+                {"（这是追求高水平基础素描能力时极为重要的）"}
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080"
+    },
+    block_00080 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "（就算只看表面随便动动铅笔，如果不了解眼前所见之物具有什么",
+                    {"rt2"},
+                    "功能、具有什么特性，素描也会变得不可靠）"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081"
+    },
+    block_00081 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "（包括轮廓等在内的整体平衡、用铅笔表现的明暗。这些当然也很",
+                    {"rt2"},
+                    "重要，但将骨骼和肌肉，甚至脂肪的分布，都作为会运动的机器来",
+                    {"rt2"},
+                    "认识，也同样重要）"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082"
+    },
+    block_00082 = {
+        {"text"},
+        text = {
+            ja = {
+                {"以上是我教给禀的内容。"}
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083"
+    },
+    block_00083 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "虽这么说，这一切其实都是草薙健一郎教给我的。小时候就是跟他",
+                    {"rt2"},
+                    "学的方法。"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084"
+    },
+    block_00084 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不过，我认为这是最有效的人体素描方法。"}
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085"
+    },
+    block_00085 = {
+        {"text"},
+        text = {
+            ja = {
+                {"健一郎不仅精通人体，对各种生物的身体结构也了如指掌。"}
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086"
+    },
+    block_00086 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "健一郎以充满奇招的画风闻名，但实际上，他对绘画的态度与其说",
+                    {"rt2"},
+                    "是艺术家，倒更像是匠人。"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087"
+    },
+    block_00087 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「然后，来，我陪你一起摸着确认一下，复习下。首先，从耳后附",
+                    {"rt2"},
+                    "近延伸，最终和锁骨相连的肌肉，这就是",
+                    {"txruby", text = "きょうさにゅうとつきん"},
+                    "胸锁乳突肌",
+                    {"txruby"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088"
+    },
+    block_00088 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "一边对照图鉴，我用手按住自己的肌肉。然后禀也照着按住了自己",
+                    {"rt2"},
+                    "的脖子。"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089"
+    },
+    block_00089 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001215", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是的，就是这里吧」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090"
+    },
+    block_00090 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「接下来……」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091"
+    },
+    block_00091 = {
+        {"text"},
+        text = {
+            ja = {
+                {"就像这样，一边看着人体图，一边自己触摸身体进行确认。"}
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092"
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "通过触摸的感觉去意识到肌肉和骨骼，脑海中的印象会变得更加清",
+                    {"rt2"},
+                    "晰。"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093"
+    },
+    block_00093 = {
+        {"text"},
+        text = {
+            ja = {
+                {"所以，我们就一边摸着自己的身体一边进行确认作业……。"}
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094"
+    },
+    block_00094 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不过话说回来，这也是有极限的。"}
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095"
+    },
+    block_00095 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「大概就是这样了」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096"
+    },
+    block_00096 = {
+        {"bg", file = "ev_com_c02_07", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001216", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「……唔嗯」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097"
+    },
+    block_00097 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎、怎么了」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098"
+    },
+    block_00098 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001217", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「因为啊，你总是讲到一半就停下来了」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099"
+    },
+    block_00099 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「讲到一半？」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100"
+    },
+    block_00100 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001218", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「人体结构是具有连续性的。骨骼和肌肉虽然可以分为各个部位，",
+                    {"rt2"},
+                    "但它们的功能是通过连续性来构成的。直哉君你之前是这么说的」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101"
+    },
+    block_00101 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是这么回事」"
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102"
+    },
+    block_00102 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001219", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「你讲细节的时候很亲切，可是讲到躯干部分就有点不够详细了」"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103"
+    },
+    block_00103 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那、那是因为……」"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104"
+    },
+    block_00104 = {
+        {"text"},
+        text = {
+            ja = {
+                {"虽然胸部的肌肉结构是一样的，但最关键的部分还是不同。"}
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105"
+    },
+    block_00105 = {
+        {"text"},
+        text = {
+            ja = {
+                {"特别是禀的情况……。"}
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106"
+    },
+    block_00106 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那种大小的东西挂在那里，怎么可能像教我一样正常地教她。"}
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107"
+    },
+    block_00107 = {
+        {"bg", file = "ev_com_c02_04", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嘛，直说的话……怎么说呢……」"
+                }
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108"
+    },
+    block_00108 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001220", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「怎么说呢……？」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109"
+    },
+    block_00109 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「胸啦胸！你的胸！」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110"
+    },
+    block_00110 = {
+        {"bg", file = "ev_com_c02_03", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"bgm", stop = 1, time = 1000},
+        {"text"},
+        text = {
+            ja = {
+                {"「……」"}
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111"
+    },
+    block_00111 = {
+        {"bg", file = "ev_com_c02_05", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"text"},
+        text = {
+            ja = {
+                {"禀满脸通红地捂住了胸口。"}
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112"
+    },
+    block_00112 = {
+        {"text"},
+        text = {
+            ja = {
+                {"嘛，也难怪。被人指出这种事当然会觉得害羞。"}
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113"
+    },
+    block_00113 = {
+        {"bgm", file = "bgm031"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001221", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「这、这个是原因？」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114"
+    },
+    block_00114 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊，和我的胸比起来，手感完全不一样吧……」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115"
+    },
+    block_00115 = {
+        {"bg", file = "ev_com_c02_10", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001222", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「但、但是，你不是说过，基本的人体构造，男子女都没差吗！」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116"
+    },
+    block_00116 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那当然。乳房只是有没有乳腺的区别，基本上男子女是一样的」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117"
+    },
+    block_00117 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001223", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「胸部脂肪的分布也是吧？」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118"
+    },
+    block_00118 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，男子女都是在胸大肌的下部积存脂肪」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119"
+    },
+    block_00119 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「比如说，变性人注射女性荷尔蒙的话，胸部也会从和女人一样的",
+                    {"rt2"},
+                    "地方发育起来。嘛，这也是理所当然的事」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120"
+    },
+    block_00120 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001224", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那、那样的话，不就是一样的吗……」"
+                }
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121"
+    },
+    block_00121 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「虽然是这样……」"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122"
+    },
+    block_00122 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001225", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「我想让你告诉我」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123"
+    },
+    block_00123 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不、不是，胸部的话」"
+                }
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124"
+    },
+    block_00124 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001226", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「又、又不是要让なおくん摸我的胸部！　也、也没什么奇怪的事",
+                    {"rt2"},
+                    "情啊」"
+                }
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125"
+    },
+    block_00125 = {
+        {"text"},
+        text = {
+            ja = {
+                {"嘛，其实也没什么奇怪的……。"}
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126"
+    },
+    block_00126 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "实际上，草薙健一郎的话，不论男子女都会动手去教吧。说到底，",
+                    {"rt2"},
+                    "这种教学方法好像本来就是他为了教女生才想出来的……。"
+                }
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127"
+    },
+    block_00127 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001227", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「来吧，开始吧。首先要从哪里摸起？　我没有什么邪念，所以没",
+                    {"rt2"},
+                    "问题的」"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128"
+    },
+    block_00128 = {
+        {"text"},
+        text = {
+            ja = {
+                {"说没有邪念，你可能没有，但我可说不准啊。"}
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129"
+    },
+    block_00129 = {
+        {"text"},
+        text = {
+            ja = {
+                {"话虽如此，也不能说「因为有邪念所以做不到」……。"}
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130"
+    },
+    block_00130 = {
+        {"text"},
+        text = {
+            ja = {
+                {"没办法，只好继续说明下去。"}
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131"
+    },
+    block_00131 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那个……，首先是刚才说过的胸大肌，是在这里，从肩关节这边—",
+                    {"rt2"},
+                    "—」"
+                }
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132"
+    },
+    block_00132 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我一边摸着自己的胸部一边说明人体结构。"}
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133"
+    },
+    block_00133 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀也摸着胸部……与其说是胸部，更像是在抚摸乳房的上方。"}
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134"
+    },
+    block_00134 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001228", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是这里吧？」"
+                }
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135"
+    },
+    block_00135 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「咕咚……」"
+                }
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136"
+    },
+    block_00136 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001229", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「？　不对吗？」"
+                }
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137"
+    },
+    block_00137 = {
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不不！啊，没错！然后接下来是……」"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138"
+    },
+    block_00138 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「大胸肌以下的地方是不是很硬？那就是肋骨。这里大胸肌的末端",
+                    {"rt2"},
+                    "很重要，不过……」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139"
+    },
+    block_00139 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001230", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「大胸肌的末端……那个，那个……」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140"
+    },
+    block_00140 = {
+        {"bg", file = "ev_com_c02_08", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"se", file = "se9010", vol = 70, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"为了确认被胸部遮住的大胸肌，禀把胸部抬了起来。"}
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141"
+    },
+    block_00141 = {
+        {"mwact", act = "おじぎ"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……咕咚」"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142"
+    },
+    block_00142 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀的衣服胸口开得很大。"}
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143"
+    },
+    block_00143 = {
+        {"text"},
+        text = {
+            ja = {
+                {"把胸抬起来后，乳沟更加明显。"}
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144"
+    },
+    block_00144 = {
+        {"text"},
+        text = {
+            ja = {
+                {"光是这样倒还好……。"}
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145"
+    },
+    block_00145 = {
+        {"text"},
+        text = {
+            ja = {
+                {"因为是连衣裙，好像裙摆也微微翘了起来……。"}
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146"
+    },
+    block_00146 = {
+        {"text"},
+        text = {
+            ja = {
+                {"虽然还没到能看到内裤的程度……。"}
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147"
+    },
+    block_00147 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001231", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「好难啊……。这里是肋骨……」"
+                }
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148"
+    },
+    block_00148 = {
+        {"bg", file = "zev_com_c02_08", x = -180, y = -140, time = 500, path = ":ev/ev_com_c02/", set = "ev_com_c02", ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"se", id = 1, file = "se_poyon2"},
+        {"cgact", file = "zev_com_c02_08", act = "うんうん", time = 300, x = -180, y = -140},
+        {"ex", time = 1300, func = "wait"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呃呃」"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149"
+    },
+    block_00149 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "每当禀确认自己的胸部时，乳沟就要从衣领里跳出来似的，连裙摆",
+                    {"rt2"},
+                    "都快要露出内裤了。"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150"
+    },
+    block_00150 = {
+        {"text"},
+        text = {
+            ja = {
+                {"总觉得是那样的感觉。"}
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151"
+    },
+    block_00151 = {
+        {"text"},
+        text = {
+            ja = {
+                {"实际上，胸部也不会真的弹出来，也不会有看到内裤的情况吧……。"}
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152"
+    },
+    block_00152 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153"
+    },
+    block_00153 = {
+        {"text"},
+        text = {
+            ja = {
+                {"是这样吗？"}
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154"
+    },
+    block_00154 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不会觉得要出来了吗？"}
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155"
+    },
+    block_00155 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001232", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「因为有胸部，所以大胸肌不太容易看清，不过我还是觉得能分辨",
+                    {"rt2"},
+                    "出肋骨和大胸肌……」"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156"
+    },
+    block_00156 = {
+        {"text"},
+        text = {
+            ja = {
+                {"让人觉得如此丰满的胸部……。"}
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157"
+    },
+    block_00157 = {
+        {"bg", file = "ev_com_c02_08", time = 500, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001233", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「你觉得怎么样？」"
+                }
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158"
+    },
+    block_00158 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？　什、什么？」"
+                }
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159"
+    },
+    block_00159 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001234", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「诶？　我是说大胸肌的事情……」"
+                }
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160"
+    },
+    block_00160 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，啊，嗯，是啊。大胸肌确实挺难分辨的啊……哈哈哈」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161"
+    },
+    block_00161 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001235", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「不是那个意思，是这附近是连接部吧」"
+                }
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162"
+    },
+    block_00162 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀这么说着，抬起胸部给我看。"}
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163"
+    },
+    block_00163 = {
+        {"mwact", act = "rl"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「っっ」"
+                }
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164"
+    },
+    block_00164 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是、是、是啊……」"
+                }
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165"
+    },
+    block_00165 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001236", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「为什么要移开视线啊……」"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166"
+    },
+    block_00166 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "可恶……裸体素描我都参加过好几次了……，怎么会因为这种程度的",
+                    {"rt2"},
+                    "事就慌乱呢。"
+                }
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167"
+    },
+    block_00167 = {
+        {"text"},
+        text = {
+            ja = {
+                {"像我这样的人，居然会对认真对待的对象起邪念……。"}
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168"
+    },
+    block_00168 = {
+        {"text"},
+        text = {
+            ja = {
+                {"现在要做到无心。进入无我的境界。"}
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169"
+    },
+    block_00169 = {
+        {"text"},
+        text = {
+            ja = {
+                {"就像医生看诊病人一样……，要客观冷静地……只是观察。"}
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170"
+    },
+    block_00170 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我一遍又一遍地对自己说着，同时进行自我暗示。"}
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171"
+    },
+    block_00171 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我没问题的。"}
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172"
+    },
+    block_00172 = {
+        {"text"},
+        text = {
+            ja = {
+                {"绝不会怀有不纯的想法。"}
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173"
+    },
+    block_00173 = {
+        {"text"},
+        text = {
+            ja = {
+                {"面对美要保持诚实！"}
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174"
+    },
+    block_00174 = {
+        {"text"},
+        text = {
+            ja = {
+                {"绝不能犯错，也绝不会犯错！"}
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175"
+    },
+    block_00175 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001237", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那、那个……你怎么了？」"
+                }
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176"
+    },
+    block_00176 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀带着不安的神色看着我。不过，没什么可担心的，禀！"}
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177"
+    },
+    block_00177 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「对，没错。你说得对，那就是胸大肌吧。嘛，要是你愿意的话，",
+                    {"rt2"},
+                    "我也不是不能摸着帮你确认一下？」"
+                }
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178"
+    },
+    block_00178 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001238", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「诶？　那、那个有点……」"
+                }
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179"
+    },
+    block_00179 = {
+        {"mwact", act = "うんうん"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈哈哈哈，开玩笑的。好了，我们继续吧」"
+                }
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180"
+    },
+    block_00180 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀还在托起胸部或者揉搓着。"}
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181"
+    },
+    block_00181 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但是，现在毫无邪念的我，连那种景象都没有问题」"
+                }
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182"
+    },
+    block_00182 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果需要的话，把那件连衣裙的纽扣解开，让一切变得更加直观",
+                    {"rt2"},
+                    "也没问题。现在的我，完全可以毫无问题地脱掉禀的连衣裙，尽情",
+                    {"rt2"},
+                    "触摸她的裸体，并向她讲解身体的构造！」"
+                }
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183"
+    },
+    block_00183 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001239", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那、那个……你在嘀咕些什么啊？」"
+                }
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184"
+    },
+    block_00184 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊？没，没什么，没什么」"
+                }
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185"
+    },
+    block_00185 = {
+        {"bg", file = "ev_com_c02_09", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001240", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「总觉得听到了什么奇怪的话……」"
+                }
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186"
+    },
+    block_00186 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你到底听到什么了？太荒唐了。现在的我可是非常聪明而且冷静",
+                    {"rt2"},
+                    "的」"
+                }
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187"
+    },
+    block_00187 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「再说了，从小就画过无数裸体素描的我，怎么可能会对像你这种",
+                    {"rt2"},
+                    "青梅竹马的身体产生不正当的想法！」"
+                }
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188"
+    },
+    block_00188 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我的视线简直就像医生看病人一样！」"
+                }
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189"
+    },
+    block_00189 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「看到你的身体，我的内心绝不会产生一丝一毫的不纯！」"
+                }
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190"
+    },
+    block_00190 = {
+        {"bg", file = "ev_com_c02_11", sync = 0, face = 1, time = 400, path = ":ev/ev_com_c02/", set = "ev_com_c02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001241", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「哼——，像医生看病人一样吗」"
+                }
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191"
+    },
+    block_00191 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，对」"
+                }
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192"
+    },
+    block_00192 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001242", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那要不要，像直哉君说的那样，把连衣裙的纽扣解开呢？」"
+                }
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193"
+    },
+    block_00193 = {
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「！？」"
+                }
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194"
+    },
+    block_00194 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001243", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是医生的视线对吧？」"
+                }
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195"
+    },
+    block_00195 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「话、话说我刚才发出声音了吗？」"
+                }
+            }
+        },
+        linkback = "block_00194",
+        linknext = "block_00196"
+    },
+    block_00196 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001244", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「很正常地发出了声音。虽然声音很小就是了」"
+                }
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197"
+    },
+    block_00197 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001245", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「比起这个，从小就画裸体写生的直哉君来说，这种事根本不算什",
+                    {"rt2"},
+                    "么吧？」"
+                }
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198"
+    },
+    block_00198 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那、那个……」"
+                }
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199"
+    },
+    block_00199 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001246", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「不用你说我也明白啦。你肯定经常有这种机会吧，况且像我这种",
+                    {"rt2"},
+                    "人……」"
+                }
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200"
+    },
+    block_00200 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那、那个，那只是自言自语，算是给自己打气……」"
+                }
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201"
+    },
+    block_00201 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001247", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「不管怎样，接下来是下半身的讲解」"
+                }
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202"
+    },
+    block_00202 = {
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「下、下半身！？」"
+                }
+            }
+        },
+        linkback = "block_00201",
+        linknext = "block_00203"
+    },
+    block_00203 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001248", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是的，因为下半身穿着裙子，根本没法好好触碰」"
+                }
+            }
+        },
+        linkback = "block_00202",
+        linknext = "block_00204"
+    },
+    block_00204 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「说、说得也是……」"
+                }
+            }
+        },
+        linkback = "block_00203",
+        linknext = "block_00205"
+    },
+    block_00205 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001249", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那我把这个纽扣解开吧。这样更容易理解吧」"
+                }
+            }
+        },
+        linkback = "block_00204",
+        linknext = "block_00206"
+    },
+    block_00206 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「可、可是……」"
+                }
+            }
+        },
+        linkback = "block_00205",
+        linknext = "block_00207"
+    },
+    block_00207 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001250", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「直哉君，看了我的身体也不会产生什么不正当的想法对吧～」"
+                }
+            }
+        },
+        linkback = "block_00206",
+        linknext = "block_00208"
+    },
+    block_00208 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {"呜……。总觉得好像把禀微妙地惹生气了……。"}
+            }
+        },
+        linkback = "block_00207",
+        linknext = "block_00209"
+    },
+    block_00209 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001251", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「对了。直哉君不是还说过可以一边摸我的身体一边教我吗，把我",
+                    {"rt2"},
+                    "的连衣裙纽扣解开吧」"
+                }
+            }
+        },
+        linkback = "block_00208",
+        linknext = "block_00210"
+    },
+    block_00210 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶，要我来解开连衣裙的纽扣？我？来解？」"
+                }
+            }
+        },
+        linkback = "block_00209",
+        linknext = "block_00211"
+    },
+    block_00211 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg025a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 500},
+        {"fg", ch = "稟", size = "z1", my = 40, mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0300", face = "a0017", head = "rin_z1a", lv = 4, id = 9},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"禀站起身，站在我面前。"}
+            }
+        },
+        linkback = "block_00210",
+        linknext = "block_00212"
+    },
+    block_00212 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0300", face = "a0005", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001252", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「好，那么拜托你了」"
+                }
+            }
+        },
+        linkback = "block_00211",
+        linknext = "block_00213"
+    },
+    block_00213 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「拜托你了什么的……」"
+                }
+            }
+        },
+        linkback = "block_00212",
+        linknext = "block_00214"
+    },
+    block_00214 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0300", face = "a0016", head = "rin_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001253", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「你说是医生的心对吧。还是说其实只是玩医生游戏呢？」"
+                }
+            }
+        },
+        linkback = "block_00213",
+        linknext = "block_00215"
+    },
+    block_00215 = {
+        {"text"},
+        text = {
+            ja = {
+                {"呜，被微妙地小瞧了。"}
+            }
+        },
+        linkback = "block_00214",
+        linknext = "block_00216"
+    },
+    block_00216 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她肯定觉得我做不到才这么说的吧。"}
+            }
+        },
+        linkback = "block_00215",
+        linknext = "block_00217"
+    },
+    block_00217 = {
+        {"text"},
+        text = {
+            ja = {
+                {"太天真了，禀。"}
+            }
+        },
+        linkback = "block_00216",
+        linknext = "block_00218"
+    },
+    block_00218 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这种事我可是可以轻松做到的人。"}
+            }
+        },
+        linkback = "block_00217",
+        linknext = "block_00219"
+    },
+    block_00219 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哼……你以为我做不到吗？禀」"
+                }
+            }
+        },
+        linkback = "block_00218",
+        linknext = "block_00220"
+    },
+    block_00220 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0300", face = "a0013", head = "rin_z1a", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001254", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「诶？」"
+                }
+            }
+        },
+        linkback = "block_00219",
+        linknext = "block_00221"
+    },
+    block_00221 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, resize = 1, path = ":fg/rin/z2/", file = "rin_z2a0300", face = "a0013", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「来吧，我现在就给你解开纽扣。来嘛，来嘛」"
+                }
+            }
+        },
+        linkback = "block_00220",
+        linknext = "block_00222"
+    },
+    block_00222 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0300", face = "a0011", head = "rin_z2a", lv = 5, id = 9},
+        {"fgact", ch = "稟", act = "いいえ", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001255", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那、那个啦，其实不用那么摩拳擦掌的，很容易就能解开的哦」"
+                }
+            }
+        },
+        linkback = "block_00221",
+        linknext = "block_00223"
+    },
+    block_00223 = {
+        {"fgact", ch = "稟", act = "うなづく", lv = 5, id = 9},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"说着，禀解开了一个纽扣。"}
+            }
+        },
+        linkback = "block_00222",
+        linknext = "block_00224"
+    },
+    block_00224 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0300", face = "a0009", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001256", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「看吧，就像这样……」"
+                }
+            }
+        },
+        linkback = "block_00223",
+        linknext = "block_00225"
+    },
+    block_00225 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「咕噜……」"
+                }
+            }
+        },
+        linkback = "block_00224",
+        linknext = "block_00226"
+    },
+    block_00226 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不，不， 我可没有任何不正当的想法！"}
+            }
+        },
+        linkback = "block_00225",
+        linknext = "block_00227"
+    },
+    block_00227 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那、那就、快、快点解决吧……」"
+                }
+            }
+        },
+        linkback = "block_00226",
+        linknext = "block_00228"
+    },
+    block_00228 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0300", face = "a0011", head = "rin_z2a", lv = 5, id = 9},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001257", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯、嗯……」"
+                }
+            }
+        },
+        linkback = "block_00227",
+        linknext = "block_00229"
+    },
+    block_00229 = {
+        {"text"},
+        text = {
+            ja = {
+                {"刚才的气势不知去哪了，两个人都变得有些羞涩。"}
+            }
+        },
+        linkback = "block_00228",
+        linknext = "block_00230"
+    },
+    block_00230 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我用颤抖的手解开了纽扣。"}
+            }
+        },
+        linkback = "block_00229",
+        linknext = "block_00231"
+    },
+    block_00231 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0300", face = "a0010", head = "rin_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001258", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00230",
+        linknext = "block_00232"
+    },
+    block_00232 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀的嘴唇在颤抖。"}
+            }
+        },
+        linkback = "block_00231",
+        linknext = "block_00233"
+    },
+    block_00233 = {
+        {"text"},
+        text = {
+            ja = {
+                {"似乎不只是我在发抖。"}
+            }
+        },
+        linkback = "block_00232",
+        linknext = "block_00234"
+    },
+    block_00234 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00233",
+        linknext = "block_00235"
+    },
+    block_00235 = {
+        {"text"},
+        text = {
+            ja = {
+                {"第二颗纽扣也被我解开了。"}
+            }
+        },
+        linkback = "block_00234",
+        linknext = "block_00236"
+    },
+    block_00236 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0300", face = "a0011", head = "rin_z2a", lv = 5, id = 9},
+        {"fgact", ch = "稟", act = "うなづく", time = 500, lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_001259", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯……没关系，就这样……」"
+                }
+            }
+        },
+        linkback = "block_00235",
+        linknext = "block_00237"
+    },
+    block_00237 = {
+        {"text"},
+        text = {
+            ja = {
+                {"接着我又伸向了下一个纽扣——"}
+            }
+        },
+        linkback = "block_00236",
+        linknext = "block_00238"
+    },
+    block_00238 = {
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"excall", file = "03_olympia_02_2"},
+        {"text"},
+        linkback = "block_00237"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

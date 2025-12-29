@@ -1,0 +1,3363 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅲ章"},
+        {"bgm", file = "bgm016"},
+        {"msgoff"},
+        {"bg", file = "bluesky_summer", id = 8, lv = 8, rule = 139, sync = 1, vague = 40, path = ":cg/"},
+        {"ex", time = 500, func = "wait"},
+        {"bg", file = "eveningsky_spring01", id = 9, lv = 9, sync = 1, path = ":cg/"},
+        {"ex", time = 1000, func = "wait"},
+        {"text"},
+        text = {
+            ja = {
+                {"当我们爬上梦浮坂时，太阳已经开始西斜。"}
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {"比起夏天，天黑得快了许多。"}
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"cgdel", id = -1},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg038b", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "稟", size = "z1", mode = 3, resize = 1, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0002", head = "rin_z1a", x = -345, lv = 4, id = 5, sync = 0},
+        {"fg", ch = "吹", size = "z1", mode = 3, resize = 1, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0002", head = "sui_z1a", x = 345, lv = 4, id = 6, sync = 0},
+        {"extrans", time = 500},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002761", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「感觉天黑得越来越早了呢」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是啊。那么我们先从哪里开始逛呢……」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0009", head = "rin_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0012", head = "rin_z1a", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002762", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「如果是在建筑物里，天黑了也能看清楚，可是野外，特别是林子",
+                    {"rt2"},
+                    "里的那些地方，差不多已经快要看不见了。前面不是有神社吗」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是伯奇神社……说的也是……」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0002", head = "rin_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "稟", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002763", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那我们去那里看看吧」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {"按照禀的提议，在天完全黑之前，我们决定前往神社。"}
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"fg", ch = "稟", speed = 1000, mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0002", head = "rin_z1a", x2 = -345, x = -1045, lv = 4, id = 5},
+        {"fg", ch = "吹", speed = 1000, mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0002", head = "sui_z1a", x2 = 345, x = -355, lv = 4, id = 6},
+        {"se", file = "se9004", id = 1},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = "083r", wait = 250, file = "black", path = ":bg/", vague = 40},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg063b", path = ":bg/", sync = 0},
+        {"extrans", rule = "083r", vague = 40},
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0002", head = "rin_z1a", x = -345, lv = 4, id = 5},
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0110", face = "a0012", head = "sui_z1a", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "吹", act = "おじぎ", lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0110", face = "a0008", head = "sui_z1a", x = 345, lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000431", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「神社啊……这里竟然还有这种地方吗……」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0012", head = "rin_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002764", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「吹酱你不知道吗？」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0110", face = "a0011", head = "sui_z1a", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "吹", act = "いいえ", lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0110", face = "a0010", head = "sui_z1a", x = 345, lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000432", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「嗯……好像知道，又好像不知道……」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「总之，先四处看看吧……」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我这么说着，正准备迈出一步时，神社院内出现了一个人影。"}
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"bgm", stop = 1, time = 2000},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……那是」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            ja = {
+                {"只是偶然吗？还是说，这也是某种引导？"}
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不，其实两者都不是，不过两者都算是正确答案吧。"}
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "影子的主人在看了我们一瞬后，就像僵住了一样，一动不动地停在",
+                    {"rt2"},
+                    "了原地。"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"msgoff"},
+        {"fg", time = 500, mode = -2},
+        {"bg", zone = "0x000000", file = "bg063b", path = ":bg/"},
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", time = 1000, mode = 3, resize = 1, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0001", head = "mtt_z1a", lv = 4, id = 9},
+        {"ex", time = 300, func = "wait"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg063b", path = ":bg/", sync = 0},
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0001", head = "mtt_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 1000},
+        {"bgm", file = "bgm026"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002765", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「爸、爸爸」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0004", head = "mtt_z1a", lv = 4, id = 9},
+        {"fgact", ch = "稟父親", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000081", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「禀……」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002766", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀低下了视线。"}
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "禀的父亲就那样停下了脚步，在夕阳西下的森林中，看不清他的表",
+                    {"rt2"},
+                    "情，但总觉得那道身影显得有些寂寞。"
+                }
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            ja = {
+                {"他是在苦笑吗？　轻轻耸了耸肩之后，他就那样准备离开了。"}
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我也只能默默地目送着他的背影。"}
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是……。"}
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"fg", mode = -2},
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0008", head = "sui_z1a", lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000433", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「这个人不是你的熟人吗？　禀？」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"fg", mode = -2},
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0005", head = "mtt_z1a", lv = 4, id = 9},
+        {"fgact", ch = "稟父親", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000082", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「！？」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0001", head = "mtt_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000083", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「这、这是？」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "他带着近乎恐惧的惊讶看向吹，随即又像是在寻求解释般，盯着我",
+                    {"rt2"},
+                    "看。"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是，我没有解释。也没法解释。"}
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0004", head = "mtt_z1a", lv = 4, id = 9},
+        {"fgact", ch = "稟父親", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000084", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「原、原来如此……所谓不可思议的现象就是这样的吗……」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，我没想到会让您露出那样的表情……」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0001", head = "mtt_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000085", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「是吗……」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002767", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那、直哉君我们走吧……」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0004", head = "mtt_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000086", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「不，你们是有事才来的吧？　我马上就离开，你们不用走。」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"fg", mode = -2},
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0008", head = "sui_z1a", lv = 4, id = 6},
+        {"fgact", ch = "吹", act = "おじぎ", lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0012", head = "sui_z1a", lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000434", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「嗯？　禀，这位先生你认识吧」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002768", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「啊，呃，嗯……认、认识的。说是认识……其实是我父亲……」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0110", face = "a0013", head = "sui_z1a", lv = 4, id = 6},
+        {"fgact", ch = "吹", act = "ジャンプ", lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "吹", size = "z2", mode = 3, resize = 1, path = ":fg/sui/z2/", file = "sui_z2a0110", face = "a0004", head = "sui_z2a", lv = 5, id = 6},
+                {"se", file = "se9010", id = 1},
+                {"fgact", ch = "吹", act = "うなづく", lv = 5, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000435", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「哦、哦哦！　是禀的爸爸吗！　初次见面！」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"fg", time = 0, sync = 1, mode = -2},
+        {"fg", ch = "稟父親", size = "z2", ex03 = "a0097", sync = 1, mode = 3, resize = 1, path = ":fg/mtt/z2/", file = "mtt_z2a0000", face = "a0005", head = "mtt_z2a", lv = 5, id = 9},
+        {"se", file = "se9015", id = 1},
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", my = 40, mode = 3, resize = 1, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0005", head = "mtt_z1a", lv = 4, id = 9},
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000087", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「っ」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            ja = {
+                {"吹朝禀的父亲走过去时，禀的父亲下意识地后退了一步。"}
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000436", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「？」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000437", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「怎么了吗？　吹可没有攻击的意思哦？」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0004", head = "mtt_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000088", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「啊，不，抱歉……」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0001", head = "mtt_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002769", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「我爸爸就是这样的啦……吹酱……」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000438", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「这样的父亲？」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002770", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「他是个不懂人心的人……」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000439", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「是这样吗？　禀的父亲？」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0004", head = "mtt_z1a", lv = 4, id = 9},
+        {"fgact", ch = "稟父親", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000089", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「啊，啊啊……是的吧。我就是那样的人……」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000440", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"text"},
+        text = {
+            ja = {
+                {"吹抱着胳膊陷入了沉思。然后，像是想到了什么似的拍了一下手。"}
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0001", head = "mtt_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000441", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「这话很奇怪哦。禀的父亲！」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0003", head = "mtt_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000090", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「哪里奇怪了」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000442", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「一个不懂人心的人，会自己说“我不懂人心”吗？」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0004", head = "mtt_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000091", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「因为不懂才会这么说吧」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000443", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「这也奇怪。如果这么说的话，所谓懂人心又是什么呢？」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"fgact", ch = "稟父親", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000092", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「谁知道。不明白」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000444", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「至少，在我看来，您并没有否定禀说的话，反而像是在为禀辩护。",
+                    {"rt2"},
+                    "这样的人，真的能说是“不懂人心”吗？」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0001", head = "mtt_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000093", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「谁知道呢……至少我不是你会替我辩护的那种人」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000445", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「吹可没有在替你辩护。只是把自己想到的话说出来而已」"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0004", head = "mtt_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000094", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000446", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「我不觉得你是坏人！」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062"
+    },
+    block_00062 = {
+        {"fg", mode = -2},
+        {"bg", y = -290, speed = 300, sync = 0, file = "zbg063b", path = ":bg/", x2 = -600, y2 = -290, x = -800, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"fg", ch = "稟", size = "z2", speed = 300, sync = 0, mode = 3, resize = 1, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0007", head = "rin_z2a", x2 = 200, x = 0, lv = 5, id = 5},
+        {"quake"},
+        {"quake", mode = "mw"},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0006", head = "rin_z2a", x = 0, lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002771", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「不！那个人就是坏人！是会践踏他人内心的人！」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063"
+    },
+    block_00063 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「禀……」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064"
+    },
+    block_00064 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg063b", path = ":bg/", sync = 0},
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0004", head = "mtt_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"fgact", ch = "稟父親", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000095", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「啊，是啊……。不过很抱歉呢。把你们两个卷进了这种僵硬的气",
+                    {"rt2"},
+                    "氛……我这就马上离开……」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065"
+    },
+    block_00065 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这样说着，禀的父亲打算离开伯奇神社。"}
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066"
+    },
+    block_00066 = {
+        {"se", file = "se9004", id = 1},
+        {"fg", ch = "稟父親", speed = 500, mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0004", ex03 = "a0097", head = "mtt_z1a", x2 = 0, x = -570, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002772", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「笨蛋……」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067"
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀小声说道。"}
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068"
+    },
+    block_00068 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002773", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「就这样，又不愿意正面面对我了吗……」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069"
+    },
+    block_00069 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0001", head = "mtt_z1a", x = -570, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000096", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070"
+    },
+    block_00070 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002774", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「明明我说了这么过分的话……你却一句反驳都没有……」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071"
+    },
+    block_00071 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0004", head = "mtt_z1a", x = -570, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000097", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「啊，因为我确实是一个对你很糟糕的父亲啊……」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072"
+    },
+    block_00072 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002775", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「っ」"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073"
+    },
+    block_00073 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀瞪着父亲。"}
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074"
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {"是禀平时温柔的表情无法想象的神情。"}
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075"
+    },
+    block_00075 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即便如此，父亲也没有看禀一眼。"}
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076"
+    },
+    block_00076 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002776", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「真是太过分了……」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077"
+    },
+    block_00077 = {
+        {"text"},
+        text = {
+            ja = {
+                {"泪水从禀的脸颊滑落。"}
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078"
+    },
+    block_00078 = {
+        {"fg", ch = "稟父親", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/mtt/z1/", file = "mtt_z1a0000", face = "a0001", head = "mtt_z1a", x = -570, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000098", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「让你担心了啊……」"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079"
+    },
+    block_00079 = {
+        {"se", file = "se9004", id = 1},
+        {"fg", ch = "稟父親", mx = -40, mode = -1, lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"禀的父亲没有回头，就那样消失在梦浮坂。"}
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080"
+    },
+    block_00080 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002777", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「っ」"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081"
+    },
+    block_00081 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀捂住了自己的嘴。她仿佛在拼命忍住快要溢出的呜咽声……。"}
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082"
+    },
+    block_00082 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, resize = 1, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0019", head = "rin_z1a", x = -345, lv = 4, id = 5},
+        {"fg", ch = "吹", size = "z1", mode = 3, resize = 1, path = ":fg/sui/z1/", file = "sui_z1a0110", face = "a0008", head = "sui_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000447", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「禀……」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083"
+    },
+    block_00083 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「对不起，吹，今天就到这里可以吗？」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084"
+    },
+    block_00084 = {
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0110", face = "a0011", head = "sui_z1a", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "吹", act = "おじぎ", lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000448", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「好的，看起来确实如此……」"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085"
+    },
+    block_00085 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0011", head = "rin_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "稟", act = "いいえ", time = 450, size = 5, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002778", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「对、对不起……」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086"
+    },
+    block_00086 = {
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0009", head = "sui_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0010", head = "sui_z1a", x = 345, lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000449", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「没什么好道歉的。我想，禀也渐渐明白了吧。就像我一样……」"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087"
+    },
+    block_00087 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「吹……」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088"
+    },
+    block_00088 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0010", head = "rin_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002779", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089"
+    },
+    block_00089 = {
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0011", head = "sui_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000450", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「我们究竟在寻找什么……」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090"
+    },
+    block_00090 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0008", head = "rin_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002780", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091"
+    },
+    block_00091 = {
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0001", head = "sui_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000451", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「还有，草薙先生」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092"
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么？」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093"
+    },
+    block_00093 = {
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0009", head = "sui_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000452", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「说到底，已经忘记的遗忘之物，还应该去寻找吗？」"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094"
+    },
+    block_00094 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「谁知道呢。我觉得根本没有所谓的正确答案吧？」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095"
+    },
+    block_00095 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「至少，我是这么认为的」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096"
+    },
+    block_00096 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果面对未来，只能做出一个选择的话，无论结果如何，那唯一",
+                    {"rt2"},
+                    "的结果就会成为唯一正确的未来」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097"
+    },
+    block_00097 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「除此之外的都不可能存在」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098"
+    },
+    block_00098 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「当然，事后可能会懊悔、后悔……，不过，我认为事情大概不是",
+                    {"rt2"},
+                    "那样的」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099"
+    },
+    block_00099 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0009", head = "rin_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002781", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「直君……」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100"
+    },
+    block_00100 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「对已经做出的选择感到后悔也没有用。因为除了那个未来以外，",
+                    {"rt2"},
+                    "别的未来根本不存在」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101"
+    },
+    block_00101 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所谓对错，并不在于选择本身，而只是接受它的态度……」"
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102"
+    },
+    block_00102 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「重要的并不是做出选择，而是接受自己选择的现实。正确地接受",
+                    {"rt2"},
+                    "未来才是关键」"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103"
+    },
+    block_00103 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0010", head = "rin_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002782", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104"
+    },
+    block_00104 = {
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0003", head = "sui_z1a", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "吹", act = "おじぎ", lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000453", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「原来如此，禀你也算是有个可靠的男子朋友呢」"
+                }
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105"
+    },
+    block_00105 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0008", head = "rin_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002783", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「吹酱……」"
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106"
+    },
+    block_00106 = {
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0110", face = "a0002", head = "sui_z1a", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "吹", act = "うなづく", lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000454", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「那么，吹就告辞了。我们下次再见吧」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107"
+    },
+    block_00107 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊……」"
+                }
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108"
+    },
+    block_00108 = {
+        {"fg", ch = "吹", speed = 500, mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0110", face = "a0002", head = "sui_z1a", x2 = 345, x = 570, lv = 4, id = 6},
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0009", head = "rin_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "稟", act = "いいえ", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002784", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「啊，那个，吹酱」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109"
+    },
+    block_00109 = {
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0012", head = "sui_z1a", x = 570, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000455", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「嗯？」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110"
+    },
+    block_00110 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0011", head = "rin_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002785", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「呃，那个……」"
+                }
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111"
+    },
+    block_00111 = {
+        {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0004", head = "sui_z1a", x = 570, lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0002", head = "sui_z1a", x = 570, lv = 4, id = 6}
+            },
+            vl02 = {
+                {"fg", ch = "吹", size = "z1", mode = 3, path = ":fg/sui/z1/", file = "sui_z1a0100", face = "a0003", head = "sui_z1a", x = 570, lv = 4, id = 6},
+                {"fgact", ch = "吹", act = "ジャンプ", lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sud_000456", ch = "sud"}
+            },
+            ja = {
+                {
+                    name = {"吹"},
+                    "「今天非常感谢你。陪我一起找东西，那么，再见！」"
+                }
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112"
+    },
+    block_00112 = {
+        {"se", file = "se9004", id = 1},
+        {"fg", ch = "吹", mx = 40, mode = -1, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {"吹打断了似乎还想说些什么的禀，就这样道别离开了。"}
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113"
+    },
+    block_00113 = {
+        {"fg", ch = "稟", speed = 500, mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0011", head = "rin_z1a", x2 = -345, x = 0, lv = 4, id = 5},
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0009", head = "rin_z1a", x = 0, lv = 4, id = 5},
+        {"text"},
+        text = {
+            ja = {
+                {"于是，这里只剩下了我和禀。"}
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114"
+    },
+    block_00114 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你想起什么了吗？」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115"
+    },
+    block_00115 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0010", head = "rin_z1a", x = 0, lv = 4, id = 5},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002786", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯……有一点吧……」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116"
+    },
+    block_00116 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0009", head = "rin_z1a", x = 0, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002787", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「直哉，你之前问过我是不是憎恨父亲对吧？」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117"
+    },
+    block_00117 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是啊」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118"
+    },
+    block_00118 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0011", head = "rin_z1a", x = 0, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002788", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「直哉你是知道的吧。虽然这很理所当然……」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119"
+    },
+    block_00119 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这个嘛，我到底知道多少……不问问禀你我也不清楚啊」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120"
+    },
+    block_00120 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0008", head = "rin_z1a", x = 0, lv = 4, id = 5},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002789", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是啊。我们好像从来没聊过这种话题呢」"
+                }
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121"
+    },
+    block_00121 = {
+        {"msgoff"},
+        {"bg", file = "zeveningsky_spring01", speed = 300000, sync = 1, id = 1, lv = 5, path = ":cg/", x2 = 0, y2 = -540, x = 0, y = 540, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002790", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「我的妈妈其实生病了……」"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122"
+    },
+    block_00122 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002791", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是一种手脚不能动的病。那时候我还不太明白那是什么病……只",
+                    {"rt2"},
+                    "知道是会渐渐让身体不能动的病……」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123"
+    },
+    block_00123 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002792", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「后来查了一下，好像是一种以运动失调为主要症状的神经疾病…",
+                    {"rt2"},
+                    "…现代医学也无法治愈……」"
+                }
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124"
+    },
+    block_00124 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002793", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「身体的各个部位会一点点动不了了……最后连呼吸都会停止……」"
+                }
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125"
+    },
+    block_00125 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002794", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「所以呢。我想在妈妈还有意识的时候，带她去她想去的地方转转",
+                    {"rt2"},
+                    "……」"
+                }
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126"
+    },
+    block_00126 = {
+        {"cgdel", id = -1},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", blur = 3, file = "bg036a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"bg", file = "reco", id = 9, lv = 9, path = ":sys/", sync = 0},
+        {"extrans", time = 1000},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002795b", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那是呢。在樱花盛开的地方……正好那时樱花开了，我就和妈妈",
+                    {"rt2"},
+                    "一起在弓张那边看了樱花……」"
+                }
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127"
+    },
+    block_00127 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002796", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「刚才呢。直哉你不是说过“樱花盛开的地方”吗？所以我就想起来",
+                    {"rt2"},
+                    "了……」"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128"
+    },
+    block_00128 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002797", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「确实吹昨天去过的地方，正是我以前和妈妈一起去过的地方……」"
+                }
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129"
+    },
+    block_00129 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002798", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「不过，我觉得那只是巧合。因为我那时是沿着樱花盛开的地方走",
+                    {"rt2"},
+                    "的，或许吹也刚好在那里找东西也说不定……」"
+                }
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130"
+    },
+    block_00130 = {
+        {"cgdel", id = -1},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg063b", path = ":bg/", sync = 0},
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0009", head = "rin_z1a", lv = 4, id = 5, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0010", head = "rin_z1a", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002799", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「可是，刚刚和爸爸聊天时，突然想起了很重要的事情……。为什",
+                    {"rt2"},
+                    "么我会把这么重要的事给忘了呢……」"
+                }
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131"
+    },
+    block_00131 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0011", head = "rin_z1a", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0010", head = "rin_z1a", lv = 4, id = 5},
+                {"fgact", ch = "稟", act = "いいえ", lv = 4, id = 5}
+            },
+            vl02 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0008", head = "rin_z1a", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002800", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「我是不是很奇怪啊。很奇怪对吧。这件事你早就注意到了吧直哉？",
+                    {"rt2"},
+                    "所以才问我有没有对“吹”这个名字有印象吧」"
+                }
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132"
+    },
+    block_00132 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊……也许是这样」"
+                }
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133"
+    },
+    block_00133 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0009", head = "rin_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002801", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那你其实早就知道了吧。我妈妈的名字其实叫御桜吹……」"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134"
+    },
+    block_00134 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，不过也不是一开始就知道。朋友的妈妈叫什么名我根本没记",
+                    {"rt2"},
+                    "住，那时候一直叫你“禀的妈妈”」"
+                }
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135"
+    },
+    block_00135 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0011", head = "rin_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002802", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「但是，我知道」"
+                }
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136"
+    },
+    block_00136 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，因为我参加了葬礼。那种时候，才第一次知道朋友父母的名",
+                    {"rt2"},
+                    "字啊……」"
+                }
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137"
+    },
+    block_00137 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0008", head = "rin_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002803", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「你是从什么时候开始想起来的？」"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138"
+    },
+    block_00138 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「从什么时候……我也记不太清了。只是，昨天见到你父亲的时候，",
+                    {"rt2"},
+                    "我才确信了」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139"
+    },
+    block_00139 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0010", head = "rin_z1a", lv = 4, id = 5},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002804", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「果然，你见过我爸爸了呢。直哉君」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140"
+    },
+    block_00140 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141"
+    },
+    block_00141 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0009", head = "rin_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002805", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「总觉得有这种感觉。今天的直哉君有点奇怪……」"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142"
+    },
+    block_00142 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「对不起，没跟你说实话……」"
+                }
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143"
+    },
+    block_00143 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0011", head = "rin_z1a", lv = 4, id = 5},
+        {"fgact", ch = "稟", act = "いいえ", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0010", head = "rin_z1a", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002806", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「没关系。大概，是因为不能说才没说的吧」"
+                }
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144"
+    },
+    block_00144 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是啊。我是那样判断的」"
+                }
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145"
+    },
+    block_00145 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0008", head = "rin_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002807", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「为什么？」"
+                }
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146"
+    },
+    block_00146 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「因为在这次寻找的尽头，只有你自己才能找到答案……。那个答",
+                    {"rt2"},
+                    "案不应该由我来说」"
+                }
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147"
+    },
+    block_00147 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0009", head = "rin_z1a", lv = 4, id = 5},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002808", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「但是，到底是不是应该找出来的东西……直哉君你其实也一直在",
+                    {"rt2"},
+                    "犹豫吧」"
+                }
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148"
+    },
+    block_00148 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，我一直在犹豫。我一直都在迷茫……也许，从那时候开始……」"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149"
+    },
+    block_00149 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0008", head = "rin_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002809", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那时候？」"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150"
+    },
+    block_00150 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你会找到什么样的答案，说实话我也不知道。那会是怎样的结局",
+                    {"rt2"},
+                    "……我也不清楚」"
+                }
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151"
+    },
+    block_00151 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0009", head = "rin_z1a", lv = 4, id = 5},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002810", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152"
+    },
+    block_00152 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，其实答案什么的无所谓。就算不知道答案也没关系」"
+                }
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153"
+    },
+    block_00153 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「只是我，觉得你和你爸爸不能就这样下去」"
+                }
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154"
+    },
+    block_00154 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0010", head = "rin_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002811", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155"
+    },
+    block_00155 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我希望禀你能和你爸爸和好」"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156"
+    },
+    block_00156 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0009", head = "rin_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002812", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「为什么？」"
+                }
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157"
+    },
+    block_00157 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「因为我是你的男子朋友」"
+                }
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158"
+    },
+    block_00158 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0100", face = "a0012", head = "rin_z1a", lv = 4, id = 5},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002813", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「直哉君，是我的……」"
+                }
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159"
+    },
+    block_00159 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你怎么一副很意外的表情？我是在和你交往。不，‘交往’这种说",
+                    {"rt2"},
+                    "法已经太轻了」"
+                }
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160"
+    },
+    block_00160 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1a0110", face = "a0011", head = "rin_z1a", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002814", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「什么意思呢……」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161"
+    },
+    block_00161 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我想要与你共度一生。对我来说，和女孩子交往就是这样的事…",
+                    {"rt2"},
+                    "…」"
+                }
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162"
+    },
+    block_00162 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以，至少我是打算一直和你在一起」"
+                }
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163"
+    },
+    block_00163 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「只要你不对我心生厌恶，不哭着求我‘分手吧’，我就打算和你共",
+                    {"rt2"},
+                    "度一生……」"
+                }
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164"
+    },
+    block_00164 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「现在看来我可能是个有点麻烦的男子人，不过，怎么说呢？草薙",
+                    {"rt2"},
+                    "一族就是很专情啊。也许你算是抽到下下签了吧。禀」"
+                }
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165"
+    },
+    block_00165 = {
+        {"msgoff"},
+        {"se", file = "se9004", id = 1},
+        {"fg", ch = "稟", time = 500, sync = 1, mode = -1, lv = 4, id = 5},
+        {"fg", ch = "稟", size = "z2", time = 500, sync = 1, mode = 3, resize = 1, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0019", head = "rin_z2a", lv = 5, id = 5},
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002815", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「好狡猾啊……」"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166"
+    },
+    block_00166 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「禀……」"
+                }
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167"
+    },
+    block_00167 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0009", head = "rin_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002816", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「直哉君你好狡猾啊……」"
+                }
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168"
+    },
+    block_00168 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0020", head = "rin_z2a", lv = 5, id = 5},
+        {"fgact", ch = "稟", act = "いいえ", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002817", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那样的说法……我，当然会很开心啊……」"
+                }
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169"
+    },
+    block_00169 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，其实我并没有那么有把握……。说实话我还以为你会觉得我",
+                    {"rt2"},
+                    "很烦」"
+                }
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170"
+    },
+    block_00170 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0005", head = "rin_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002818", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「你觉得我像那种女人吗？」"
+                }
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171"
+    },
+    block_00171 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「也不是那个意思……」"
+                }
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172"
+    },
+    block_00172 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0011", head = "rin_z2a", lv = 5, id = 5},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0010", head = "rin_z2a", lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002819", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「麻烦的女人才是我啊……。明明你那么努力想和我断绝关系，可",
+                    {"rt2"},
+                    "我却一直一直忘不了你」"
+                }
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173"
+    },
+    block_00173 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0009", head = "rin_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002820", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「不仅仅是忘不了你，甚至还再次回到了这个弓张」"
+                }
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174"
+    },
+    block_00174 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0011", head = "rin_z2a", lv = 5, id = 5},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0010", head = "rin_z2a", lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002821", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「明明那大概是你抱着善意才想要避开的事情……可我却践踏了你",
+                    {"rt2"},
+                    "的温柔」"
+                }
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175"
+    },
+    block_00175 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0009", head = "rin_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002822", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「只是因为我想见你……」"
+                }
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176"
+    },
+    block_00176 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，不是出于善意。只是我当时在犹豫而已」"
+                }
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177"
+    },
+    block_00177 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我只是对自己没有信心……」"
+                }
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178"
+    },
+    block_00178 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但这次我不会再犹豫了。我会用我自己的力量来守护你，禀」"
+                }
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179"
+    },
+    block_00179 = {
+        {"bgm", stop = 1, time = 2000},
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0010", head = "rin_z2a", lv = 5, id = 5},
+        {"fgact", ch = "稟", act = "おじぎ", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002823", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「直哉君……」"
+                }
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180"
+    },
+    block_00180 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0011", head = "rin_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002824", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「……我憎恨着父亲」"
+                }
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181"
+    },
+    block_00181 = {
+        {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2a0100", face = "a0005", head = "rin_z2a", lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002825", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「把妈妈从我身边夺走的父亲……」"
+                }
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182"
+    },
+    block_00182 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"colortone", style = "sepia"},
+        {"bg", file = "ev_com_c08_01", path = ":ev/ev_com_c08/", set = "ev_com_c08", sync = 0},
+        {"extrans", time = 1000},
+        {"ex", time = 500, func = "wait"},
+        {"msgoff"},
+        {"colortone", style = "reset"},
+        {"bg", file = "ev_com_c08_01", path = ":ev/ev_com_c08/", set = "ev_com_c08", sync = 0},
+        {"extrans", time = 1000},
+        {"bgm", file = "bgm002"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002826", ch = "rnd"}
+            },
+            ja = {
+                {"最后的季节。那是在樱花盛开的时节。"}
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183"
+    },
+    block_00183 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002827", ch = "rnd"}
+            },
+            ja = {
+                {"我和变得瘦小的母亲，总是一起推着轮椅去看樱花盛开的地方。"}
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184"
+    },
+    block_00184 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002828", ch = "rnd"}
+            },
+            ja = {
+                {"因为生病，母亲变得很瘦小，就连年幼的我也能带她外出……"}
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185"
+    },
+    block_00185 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002829", ch = "rnd"}
+            },
+            ja = {
+                {
+                    "妈妈说话已经不太利索了，话虽然很少，但我记得她那时看起来非",
+                    {"rt2"},
+                    "常开心。"
+                }
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186"
+    },
+    block_00186 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002830", ch = "rnd"}
+            },
+            ja = {
+                {"因为她喜欢樱花……"}
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187"
+    },
+    block_00187 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002831", ch = "rnd"}
+            },
+            ja = {
+                {"除了去看樱花，我们还会两个人一起去买东西。"}
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188"
+    },
+    block_00188 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002832", ch = "rnd"}
+            },
+            ja = {
+                {
+                    "因为是轮椅，大部分店家都不怎么欢迎我们，但也有对我们很温柔",
+                    {"rt2"},
+                    "的店。"
+                }
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189"
+    },
+    block_00189 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002833", ch = "rnd"}
+            },
+            ja = {
+                {"我推着无法行动的母亲的轮椅，和她一起度过了那短暂的时光。"}
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190"
+    },
+    block_00190 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002834", ch = "rnd"}
+            },
+            ja = {
+                {"我想着要一直陪伴她，直到最后的那一刻。"}
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191"
+    },
+    block_00191 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002835", ch = "rnd"}
+            },
+            ja = {
+                {"然而……"}
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192"
+    },
+    block_00192 = {
+        {"bg", file = "black", path = ":bg/"},
+        {"bg", file = "ev_uni_c41_01", path = ":ev/ev_uni_c41/", set = "ev_uni_c41"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000099", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「不能再继续一起下去了」"
+                }
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193"
+    },
+    block_00193 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002836", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「为什么！？妈妈已经不能动了啊！」"
+                }
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194"
+    },
+    block_00194 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000100", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「不，这不是那种问题。不能一直在一起。你会变得越来越糟糕」"
+                }
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195"
+    },
+    block_00195 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002837", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「变得一无是处是什么意思？那可是你自己的母亲啊？为什么不能",
+                    {"rt2"},
+                    "和生病的母亲在一起，这到底是什么意思？」"
+                }
+            }
+        },
+        linkback = "block_00194",
+        linknext = "block_00196"
+    },
+    block_00196 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000101", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「不，早就应该下决断了……。继续这样下去也没有任何意义……」"
+                }
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197"
+    },
+    block_00197 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002838", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「没有意义是什么意思？为什么？不，不要把妈妈带走！」"
+                }
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198"
+    },
+    block_00198 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_mtt_000102", ch = "mtt"}
+            },
+            ja = {
+                {
+                    name = {"御樱父亲"},
+                    "「对不起。禀……」"
+                }
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199"
+    },
+    block_00199 = {
+        {"bg", file = "black", path = ":bg/"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002839", ch = "rnd"}
+            },
+            ja = {
+                {"我和妈妈在某一天被突然分开了。"}
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200"
+    },
+    block_00200 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002840", ch = "rnd"}
+            },
+            ja = {
+                {
+                    "原因我不知道。因为什么都没有告诉我……。只是用一句‘不能在一",
+                    {"rt2"},
+                    "起’这样单方面的话语，爸爸就把妈妈从我身边带走了。"
+                }
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201"
+    },
+    block_00201 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002841", ch = "rnd"}
+            },
+            ja = {
+                {"明明妈妈因为生病不能动……。就这样从我身边……。"}
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202"
+    },
+    block_00202 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002842", ch = "rnd"}
+            },
+            ja = {
+                {"之后没过多久，我就被告知了母亲去世的消息。"}
+            }
+        },
+        linkback = "block_00201",
+        linknext = "block_00203"
+    },
+    block_00203 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002843", ch = "rnd"}
+            },
+            ja = {
+                {"我知道妈妈一直有病。"}
+            }
+        },
+        linkback = "block_00202",
+        linknext = "block_00204"
+    },
+    block_00204 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002844", ch = "rnd"}
+            },
+            ja = {
+                {"也知道那是治不好的病……。"}
+            }
+        },
+        linkback = "block_00203",
+        linknext = "block_00205"
+    },
+    block_00205 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002845", ch = "rnd"}
+            },
+            ja = {
+                {"但是，我从没想过和妈妈分开才几天，她就会去世。"}
+            }
+        },
+        linkback = "block_00204",
+        linknext = "block_00206"
+    },
+    block_00206 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002846", ch = "rnd"}
+            },
+            ja = {
+                {
+                    "既然如此，为什么爸爸不让我在最后的时光里和妈妈一起度过呢…",
+                    {"rt2"},
+                    "…。"
+                }
+            }
+        },
+        linkback = "block_00205",
+        linknext = "block_00207"
+    },
+    block_00207 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002847", ch = "rnd"}
+            },
+            ja = {
+                {"我怨恨着父亲。"}
+            }
+        },
+        linkback = "block_00206",
+        linknext = "block_00208"
+    },
+    block_00208 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_002848", ch = "rnd"}
+            },
+            ja = {
+                {"憎恨着亲生父亲。"}
+            }
+        },
+        linkback = "block_00207",
+        linknext = "block_00209"
+    },
+    block_00209 = {
+        {"excall", file = "03_olympia_06_3"},
+        {"text"},
+        linkback = "block_00208"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

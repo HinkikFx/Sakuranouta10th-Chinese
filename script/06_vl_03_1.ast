@@ -1,0 +1,3412 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅵ章"},
+        {"bg", file = "ev_eye_c14_01", path = ":ev/ev_eye_c14/", set = "ev_eye_c14"},
+        {"ex", time = 5000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"msgoff"},
+        {"bg", file = "bluesky_winter", sync = 1, id = 1, lv = 5, path = ":cg/"},
+        {"se", file = "se9036", id = 1, loop = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"被波浪摇晃着。"}
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {"用手接住水滴让它落下试试。"}
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {"水滴被风吹向陆地一侧。"}
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这是从海上向陆地吹来的强风的证据。"}
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是岸风啊……」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"cgdel", id = -1},
+        {"bg", file = "ev_uni_c63_01", path = ":ev/ev_uni_c63/", set = "ev_uni_c63"},
+        {"text"},
+        text = {
+            ja = {
+                {"这个季节的浪况很微妙。"}
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"text"},
+        text = {
+            ja = {
+                {"因为大气不稳定，风就会起来。"}
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {"冲浪这件事，并不是浪越多越好。"}
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            ja = {
+                {"像那种太大一下子就崩塌的浪是没法乘的。"}
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "像今天这种刮风的日子，对像我这样技术不怎么样的人来说会有点",
+                    {"rt2"},
+                    "辛苦。"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"text"},
+        text = {
+            ja = {
+                {"所谓有点辛苦，是指……"}
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"msgoff"},
+        {"se", stop = 1, id = 1, time = 500},
+        {"se", id = 2, file = "se0799_s"},
+        {"bg", file = "zev_uni_c63_01", zoom = 70, y = -180, speed = 2500, time = 0, z2 = 50, path = ":ev/ev_uni_c63/", set = "ev_uni_c63", y2 = 0, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"ex", time = 1200, func = "wait"},
+        {"cgact", file = "zev_uni_c63_01", act = "ジャンプ", time = 500, size = 50, y = -180, zoom = 70},
+        {"ex", time = 500, func = "wait"},
+        {"bg", file = "bluesky_winter", time = 500, id = 1, lv = 5, path = ":cg/"},
+        {"se", id = 3, file = "se_bashaa"},
+        {"quake"},
+        {"quake", mode = "mw"},
+        {"bgm", file = "bgm004"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呃咳，呃咳，呜呜呜呜……」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「要死了，这样会死的啊……」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"text"},
+        text = {
+            ja = {
+                {"就像这样，被风压垮快速崩塌的浪，还没骑上去就会被卷进去。"}
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不过这附近如果是高手的话，还是能勉强应付……。"}
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呜……今天就到这里吧……」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"cgdel", id = -1},
+        {"bg", file = "bg016a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呼……除了最开始起飞的那一次，其他的都一团糟啊……」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "话虽如此，这只是用捡来的板子稍微活动一下筋骨罢了。所以这样",
+                    {"rt2"},
+                    "就差不多了。"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000009", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子", "？？？"},
+                    "「啊……」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯？」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"text"},
+        text = {
+            ja = {
+                {"看到了一张熟悉的脸。"}
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这家伙应该是……。"}
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「栗山君？」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, resize = 1, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0007", head = "nat_z1a", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000010", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「啊，啊，是的」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她一只手握着牵引绳。牵引绳那头，一只身材修长的狗正看着这边。"}
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎么了，在遛狗吗？」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0008", head = "nat_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000011", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「是，是的……」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「住在附近吗？」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0001", head = "nat_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000012", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这孩子反应还是一如既往地淡薄。"}
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那就，这样吧……」"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"fg", mode = -2},
+        {"se", file = "se9004", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"正当我打算离开那个地方时……。"}
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"quake"},
+        {"se", file = "se3130", vol = 70, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呜哇！？」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            ja = {
+                {"被某人突然敲了一下膝盖，我差点摔倒在原地。"}
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「谁，谁干的！」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我回头看去，但是，什么人也没有。接着，下一瞬间。"}
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"quake"},
+        {"se", file = "se3130", vol = 70, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呜哇！？」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0012", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000013", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「不、不行，鳗鱼！」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「鳗、鳗鱼？」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "仔细一看，刚才那只纤细的狗朝我猛地冲过来，用前爪攻击了我的",
+                    {"rt2"},
+                    "膝盖。"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这，这家伙是什么啊？」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0005", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000014", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「它、它在跟你玩啦」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"mwact", act = "うんうん"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"鳗鱼"},
+                    "「呼——嗯。呼——嗯。呼——嗯」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这只叫鳗鱼的狗在玩的同时，不知为何还一边攻击一边发出鼻息声。"}
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这真是一只像受害者一样叫着却又攻击人的谜之狗。"}
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"mwact", act = "うんうん"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"鳗鱼"},
+                    "「嗯——。嗯——。嗯——」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这是什么狗？好像是英国那边的狗吧」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0003", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000015", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「啊，这叫意大利格雷伊猎犬哦」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「意大利的狗吗？」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0002", head = "nat_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000016", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「是的」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这是小狗吗？这个？」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"fgact", ch = "奈津子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000017", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「这已经是成犬了哦」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这样啊？还挺小的狗呢」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0003", head = "nat_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000018", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「在意大利格雷伊猎犬里算大的了」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嘿……」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"mwact", act = "うんうん"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"鳗鱼"},
+                    "「嗯——。嗯——。嗯——」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「它为什么一直叫啊？」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0002", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000019", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「大概是想玩吧」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗，名字叫鳗鱼对吧？这名字真厉害啊」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0003", head = "nat_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000020", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「小时候长得像鳗鱼的脸……」"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"text"},
+        text = {
+            ja = {
+                {"真是个乱七八糟的名字品味。"}
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「好，鳗鱼，过来！」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062"
+    },
+    block_00062 = {
+        {"mwact", act = "いいえ"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"鳗鱼"},
+                    "「阿巴巴巴巴，阿巴巴巴巴巴……」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063"
+    },
+    block_00063 = {
+        {"text"},
+        text = {
+            ja = {
+                {"名叫鳗鱼的狗在我的手臂上撒娇。"}
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064"
+    },
+    block_00064 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "名叫鳗鱼的狗，不像普通的狗那样发出“汪”或“呜呜”的声音，而是",
+                    {"rt2"},
+                    "发出“呜嗯呜嗯”或者“阿巴巴巴巴巴”这种莫名其妙的声音。"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065"
+    },
+    block_00065 = {
+        {"mwact", act = "いいえ"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"鳗鱼"},
+                    "「阿巴，阿巴巴巴巴巴……」"
+                }
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066"
+    },
+    block_00066 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真、真是只不可思议的狗啊」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067"
+    },
+    block_00067 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0003", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0002", head = "nat_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000021", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「是啊。它很爱玩，据说性格非常温和。不过，脑袋里大概只有两",
+                    {"rt2"},
+                    "勺茶匙的内容，所以不是很聪明的狗呢」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068"
+    },
+    block_00068 = {
+        {"mwact", act = "いいえ"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"鳗鱼"},
+                    "「阿巴，阿巴，阿巴巴巴巴巴……，阿巴？」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069"
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在我手上撒娇的这只狗。的确，看起来不怎么聪明……。"}
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070"
+    },
+    block_00070 = {
+        {"fgact", ch = "奈津子", act = "うんうん", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000022", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「草薙老师真厉害啊，原来是冲浪者呢」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071"
+    },
+    block_00071 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是啦。只是漂在水上，偶尔踩到浪而已」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072"
+    },
+    block_00072 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0001", head = "nat_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000023", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「那不就是冲浪者吗？」"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073"
+    },
+    block_00073 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所谓冲浪者，指的是不管什么状况都能勉强驾驭浪的人。我这种",
+                    {"rt2"},
+                    "可不算」"
+                }
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074"
+    },
+    block_00074 = {
+        {"fgact", ch = "奈津子", act = "icon", lv = 4, id = 9, icon = "icon02z1", x = 40, y = -550},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000024", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「驾驭浪？　是什么意思？」"
+                }
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075"
+    },
+    block_00075 = {
+        {"fgact", ch = "奈津子", act = "停止", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是啊」"
+                }
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076"
+    },
+    block_00076 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0003", head = "nat_z1a", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000025", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「老师真厉害呢。明明是美术老师，身高也很高，体育也全能……」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077"
+    },
+    block_00077 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那只是你自己以为啦，其实我基本很不擅长团体运动。只做一些",
+                    {"rt2"},
+                    "个人项目的人」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078"
+    },
+    block_00078 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0001", head = "nat_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000026", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「是这样吗？」"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079"
+    },
+    block_00079 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是啊」"
+                }
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080"
+    },
+    block_00080 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0002", head = "nat_z1a", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000027", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「但是，像这样一大早就在运动……」"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081"
+    },
+    block_00081 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「栗山你有参加什么社团吗？」"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082"
+    },
+    block_00082 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0008", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000028", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「啊，没有，倒也没有特别想参加的……」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083"
+    },
+    block_00083 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这样啊。进社团的话不是更容易交到朋友吗？」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084"
+    },
+    block_00084 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0009", head = "nat_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0008", head = "nat_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000029", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「也许是这样吧。不过，我没有特别想做的事情……」"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085"
+    },
+    block_00085 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这样啊」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086"
+    },
+    block_00086 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0009", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000030", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087"
+    },
+    block_00087 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「要不要试试冲浪？」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088"
+    },
+    block_00088 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0007", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0008", head = "nat_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000031", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「不、不试啦。那、那种事我怎么可能做得到嘛」"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089"
+    },
+    block_00089 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗？确实会被鳍划伤胳膊、被鳍划伤胸口、被鳍划伤头，主要",
+                    {"rt2"},
+                    "是撕裂伤很危险，偶尔还有被吸进消波块里死掉的人，不过还是很",
+                    {"rt2"},
+                    "有趣的哦」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090"
+    },
+    block_00090 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0009", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000032", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「我、我是天生的文科系，做不了那么可怕的事情」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091"
+    },
+    block_00091 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「可怕吗……」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092"
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嘛，也确实挺可怕的。我自己都害怕啊，比如大浪什么的」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093"
+    },
+    block_00093 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0008", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000033", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「那、那就不要劝我这种人去做嘛……」"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094"
+    },
+    block_00094 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过啊，心跳加速其实很重要哦」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095"
+    },
+    block_00095 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0001", head = "nat_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000034", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「心跳加速？」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096"
+    },
+    block_00096 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「对啊，比如栗山你可以试试做一些不会让你害怕、但能让你有些",
+                    {"rt2"},
+                    "小激动的事情，不是挺好吗？」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097"
+    },
+    block_00097 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「就算不是大海，也会有浪啊。也会有让人心跳加速的大浪吧」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098"
+    },
+    block_00098 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「还是说，栗山你本来就讨厌那种会让人心跳加速的事？」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099"
+    },
+    block_00099 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0200", face = "b0001", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000035", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「才、才没有讨厌……」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100"
+    },
+    block_00100 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗？」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101"
+    },
+    block_00101 = {
+        {"fgact", ch = "奈津子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0210", face = "b0008h", head = "nat_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000036", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「就、就是啊……。",
+                    {"exfont", size = "f2"},
+                    "其、其实现在我就已经很心跳了……」",
+                    {"exfont"}
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102"
+    },
+    block_00102 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「为什么现在会心跳啊」"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103"
+    },
+    block_00103 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0210", face = "b0012h", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000037", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「这、这、这种时候，不应该装傻说‘你说什么？’嘛！」"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104"
+    },
+    block_00104 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，我其实挺讨厌拐弯抹角的，而且我都听到了啊」"
+                }
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105"
+    },
+    block_00105 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0210", face = "b0009h", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000038", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「呜、呜呜……、",
+                    {"exfont", size = "f2"},
+                    "明明我已经小声说了……」",
+                    {"exfont"}
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106"
+    },
+    block_00106 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以说啊，栗山同学你的声音本身就很小，就算你小声说话，我",
+                    {"rt2"},
+                    "这边也会留意听，所以还是能听见的啦」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107"
+    },
+    block_00107 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0210", face = "b0001h", head = "nat_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000039", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「是、是这样的吗？」"
+                }
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108"
+    },
+    block_00108 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，要是再大点声的话，小声的时候反而会更像是在小声说话哦」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109"
+    },
+    block_00109 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1b0210", face = "b0009", head = "nat_z1b", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000040", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「说得像小声，结果还是会被听见不是吗……」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110"
+    },
+    block_00110 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「被听见也没什么不好吧。关于这个，倒是可以向家里的狗学学」"
+                }
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111"
+    },
+    block_00111 = {
+        {"mwact", act = "うんうん"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"鳗鱼"},
+                    "「嗯——嗯——嗯——」"
+                }
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112"
+    },
+    block_00112 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "狗狗似乎对没人理它很不满，还是一如既往地嗯——嗯——地用鼻子",
+                    {"rt2"},
+                    "哼哼着。"
+                }
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113"
+    },
+    block_00113 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这家伙倒是和主人不一样，非常会表达自己。想做这个，想做那",
+                    {"rt2"},
+                    "个的」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114"
+    },
+    block_00114 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0002", head = "nat_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000041", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「这孩子本来就是这样的狗狗……」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115"
+    },
+    block_00115 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗？不是说狗会像主人吗？说不定，其实挺像栗山你的哦」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116"
+    },
+    block_00116 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0001", head = "nat_z1a", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000042", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「像我……吗」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117"
+    },
+    block_00117 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，有什么想做的事情，最好还是要把心声说出来哦」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118"
+    },
+    block_00118 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0010", head = "nat_z1a", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000043", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「想做的事情吗……」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119"
+    },
+    block_00119 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「好了，我差不多也该去换衣服了，不然上学要迟到了。今天第一",
+                    {"rt2"},
+                    "节课就有课呢」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120"
+    },
+    block_00120 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0002", head = "nat_z1a", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000044", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「是啊。我也差不多该回去了……」"
+                }
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121"
+    },
+    block_00121 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那就这样吧」"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122"
+    },
+    block_00122 = {
+        {"fg", ch = "奈津子", size = "z1", mode = 3, path = ":fg/nat/z1/", file = "nat_z1a0200", face = "a0003", head = "nat_z1a", lv = 4, id = 9},
+        {"fgact", ch = "奈津子", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_ntd_000045", ch = "ntd"}
+            },
+            ja = {
+                {
+                    name = {"奈津子"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123"
+    },
+    block_00123 = {
+        {"msgoff"},
+        {"bg", file = "bluesky_winter", sync = 1, id = 1, lv = 5, path = ":cg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"我把冲浪板挂在Vespa 150std上。"}
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124"
+    },
+    block_00124 = {
+        {"text"},
+        text = {
+            ja = {
+                {"最近有那种可以让你用自行车或摩托车运送冲浪板的方便挂钩。"}
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125"
+    },
+    block_00125 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过说起来，圭居然能一直骑这种破摩托……」"
+                }
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126"
+    },
+    block_00126 = {
+        {"text"},
+        text = {
+            ja = {
+                {"想要驾驭这家伙，首先得有能自己拆下这家伙引擎的觉悟才行。"}
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127"
+    },
+    block_00127 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "确实，摩托的引擎结构很简单，容易理解。一般来说，拆开也不是",
+                    {"rt2"},
+                    "很难的工作。"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128"
+    },
+    block_00128 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "不过，",
+                    {"txruby", text = "こと"},
+                    "殊",
+                    {"txruby"},
+                    "，这可是1960～1962年制造的古董。就算只是拧个螺丝，",
+                    {"rt2"},
+                    "有时候你以为是螺丝，其实只是用销钉固定的，结构完全让人难以",
+                    {"rt2"},
+                    "理解。"
+                }
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129"
+    },
+    block_00129 = {
+        {"text"},
+        text = {
+            ja = {
+                {"总之，已经做过一次大修，所以状态还算不错，但依然有不少毛病。"}
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130"
+    },
+    block_00130 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真是的，简直就像那家伙一样的摩托啊……」"
+                }
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131"
+    },
+    block_00131 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我发动引擎，带着冲浪板朝家里驶去。"}
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132"
+    },
+    block_00132 = {
+        {"text"},
+        text = {
+            ja = {
+                {"当然，是慢慢开回去。"}
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133"
+    },
+    block_00133 = {
+        {"bgm", stop = 1, time = 1000},
+        {"cgdel", id = -1},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"bg", rule = 139, vague = 40, file = "bg046i", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23},
+        {"bgm", file = "bgm006"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "兼职老师和普通老师不同，很少会和学生的上学时间重合。大多是",
+                    {"rt2"},
+                    "晚一点到学校。"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134"
+    },
+    block_00134 = {
+        {"text"},
+        text = {
+            ja = {
+                {"从我的角度来看，大批学生上学的样子，看起来就像是在过节一样。"}
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135"
+    },
+    block_00135 = {
+        {"text"},
+        text = {
+            ja = {
+                {"感觉要被人群熏晕了……。"}
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136"
+    },
+    block_00136 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我一边看着大量的学生，一边朝着教员室走去。"}
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137"
+    },
+    block_00137 = {
+        {"se", file = "se2766", id = 1},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000034", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未", "？？？"},
+                    "「哇」"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138"
+    },
+    block_00138 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，抱歉，我刚刚在想事情……」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139"
+    },
+    block_00139 = {
+        {"text"},
+        text = {
+            ja = {
+                {"一边胡思乱想地走着，我不小心撞上了学生。"}
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140"
+    },
+    block_00140 = {
+        {"fg", ch = "ノノ未", size = "z1", mode = 3, resize = 1, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0009", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "ノノ未", size = "z1", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0011", head = "non_z1a", lv = 4, id = 9},
+                {"fgact", ch = "ノノ未", act = "びっくり", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000035", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未", "？？？"},
+                    "「啊，不，应该说是我不好，我走路没看前面……」"
+                }
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141"
+    },
+    block_00141 = {
+        {"msgoff"},
+        {"fg", ch = "ノノ未", size = "z1", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0014", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "びっくり", lv = 4, id = 9},
+        {"se", file = "se9031", id = 1},
+        {"ex", time = 300, func = "wait"},
+        {"text"},
+        delay = {
+            [300] = {
+                {"fg", ch = "ノノ未", size = "z1", mode = 3, path = ":fg/non/z1/", file = "non_z1b0200", face = "b0011", head = "non_z1b", lv = 4, id = 9},
+                {"fgact", ch = "ノノ未", act = "いいえ", size = 5, lv = 4, id = 9},
+                {"se", file = "se9010", id = 2}
+            }
+        },
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯？怎么了？」"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142"
+    },
+    block_00142 = {
+        {"text"},
+        text = {
+            ja = {
+                {"突然被撞到的少女不知为何把脸别开了。"}
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143"
+    },
+    block_00143 = {
+        {"fg", ch = "ノノ未", size = "z1", mode = 3, path = ":fg/non/z1/", file = "non_z1b0200", face = "b0015", head = "non_z1b", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000036", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未", "？？？"},
+                    "「啊，没，没什么……我、我的眼镜掉了……」"
+                }
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144"
+    },
+    block_00144 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「眼镜？啊，是眼镜吗，是这个？」"
+                }
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145"
+    },
+    block_00145 = {
+        {"fg", ch = "ノノ未", size = "z1", mode = 3, path = ":fg/non/z1/", file = "non_z1b0200", face = "b0009", head = "non_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000037", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未", "？？？"},
+                    "「啊，是的」"
+                }
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146"
+    },
+    block_00146 = {
+        {"text"},
+        text = {
+            ja = {
+                {"少女踮起脚尖想从我手里拿回眼镜。"}
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147"
+    },
+    block_00147 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我下意识地把手缩了回去。"}
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148"
+    },
+    block_00148 = {
+        {"text"},
+        text = {
+            ja = {
+                {"结果，我和少女的距离一下子拉近了不少。"}
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149"
+    },
+    block_00149 = {
+        {"fg", ch = "ノノ未", size = "z2", mode = 3, resize = 1, path = ":fg/non/z2/", file = "non_z2b0200", face = "b0011", head = "non_z2b", lv = 5, id = 9},
+        {"fgact", ch = "ノノ未", act = "うなづく", lv = 5, id = 9},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯？」"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150"
+    },
+    block_00150 = {
+        {"fg", ch = "ノノ未", size = "z2", mode = 3, path = ":fg/non/z2/", file = "non_z2b0200", face = "b0014", head = "non_z2b", lv = 5, id = 9},
+        {"fgact", ch = "ノノ未", act = "びっくり", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000038", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未", "？？？"},
+                    "「诶？　怎、怎么了吗？」"
+                }
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151"
+    },
+    block_00151 = {
+        {"se", file = "se9031", id = 1},
+        {"fg", ch = "ノノ未", size = "z1", my = 40, mode = 3, resize = 1, path = ":fg/non/z1/", file = "non_z1b0200", face = "b0011", head = "non_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"少女再次把脸转向一边。"}
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152"
+    },
+    block_00152 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「为什么要把脸转过去啊？」"
+                }
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153"
+    },
+    block_00153 = {
+        {"fg", ch = "ノノ未", size = "z1", mode = 3, path = ":fg/non/z1/", file = "non_z1b0200", face = "b0015", head = "non_z1b", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000039", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未", "？？？"},
+                    "「是、是这样吗？　没那回事啦」"
+                }
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154"
+    },
+    block_00154 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗？　总之，喏，眼镜给你」"
+                }
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155"
+    },
+    block_00155 = {
+        {"fg", ch = "ノノ未", size = "z1", mode = 3, path = ":fg/non/z1/", file = "non_z1b0200", face = "b0011", head = "non_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000040", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未", "？？？"},
+                    "「啊，非常感谢！」"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156"
+    },
+    block_00156 = {
+        {"text"},
+        text = {
+            ja = {
+                {"总之，把眼镜放到她的手上。"}
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157"
+    },
+    block_00157 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "b0097", mode = 3, path = ":fg/non/z1/", file = "non_z1b0200", face = "b0011", head = "non_z1b", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "うなづく", lv = 4, id = 9},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"她重新戴上眼镜后，用僵硬的笑容打了声招呼。"}
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158"
+    },
+    block_00158 = {
+        {"fg", ch = "ノノ未", size = "z1", ex01 = "b0099", ex03 = "b0097", mode = 3, path = ":fg/non/z1/", file = "non_z1b0200", face = "b0017", head = "non_z1b", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000041", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未", "？？？"},
+                    "「那、那么！」"
+                }
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159"
+    },
+    block_00159 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「果然……总觉得在哪见过这张脸啊」"
+                }
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160"
+    },
+    block_00160 = {
+        {"fg", ch = "ノノ未", size = "z1", ex01 = "b0099", ex03 = "b0097", mode = 3, path = ":fg/non/z1/", file = "non_z1b0200", face = "b0014", head = "non_z1b", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "ノノ未", size = "z1", ex01 = "b0099", ex03 = "b0097", mode = 3, path = ":fg/non/z1/", file = "non_z1b0200", face = "b0004", head = "non_z1b", lv = 4, id = 9},
+                {"fgact", ch = "ノノ未", act = "うなづく", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000042", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未", "？？？"},
+                    "「诶？　你、你在说什么呢？　那、那是因为我是弓张学园的学生，",
+                    {"rt2"},
+                    "见过我也不奇怪吧」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161"
+    },
+    block_00161 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「也许是这样吧……不！　不对。不是这样的……」"
+                }
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162"
+    },
+    block_00162 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊！　你是！」"
+                }
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163"
+    },
+    block_00163 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "b0097", mode = 3, path = ":fg/non/z1/", file = "non_z1b0200", face = "b0014", head = "non_z1b", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "びっくり", lv = 4, id = 9},
+        {"ex", time = 200, func = "wait"},
+        {"text"},
+        delay = {
+            [200] = {
+                {"fg", ch = "ノノ未", size = "z2", ex03 = "b0097", mx = 40, mode = 3, resize = 1, path = ":fg/non/z2/", file = "non_z2b0200", face = "b0006", head = "non_z2b", lv = 5, id = 9},
+                {"se", file = "se9032", id = 1},
+                {"quake", mode = "mw"}
+            }
+        },
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呜咕」"
+                }
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164"
+    },
+    block_00164 = {
+        {"text"},
+        text = {
+            ja = {
+                {"嘴里好像被什么塞进去了。"}
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165"
+    },
+    block_00165 = {
+        {"fg", ch = "ノノ未", size = "z2", ex01 = "b0099", ex03 = "b0097", mode = 3, path = ":fg/non/z2/", file = "non_z2b0200", face = "b0004", head = "non_z2b", lv = 5, id = 9},
+        {"fgact", ch = "ノノ未", act = "うんうん", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000043", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未", "？？？"},
+                    "「能稍微跟我去一下屋顶吗？」"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166"
+    },
+    block_00166 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呜哇」"
+                }
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167"
+    },
+    block_00167 = {
+        {"se", file = "se9012", id = 1},
+        {"fg", ch = "ノノ未", speed = 1000, mode = 3, path = ":fg/non/z2/", file = "non_z2b0200", face = "b0004", ex01 = "b0099", ex03 = "b0097", head = "non_z2b", x2 = 0, x = -200, lv = 5, id = 9},
+        {"bgm", stop = 1, time = 1000},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = "083r", wait = 250, file = "black", path = ":bg/", vague = 40},
+        {"se", stop = 1, id = 1, time = 500},
+        {"ex", time = 500, func = "wait"},
+        {"se", file = "se9038", id = 2},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg053a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", rule = "083r", vague = 40},
+        {"bgm", file = "bgm031"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你、你干什么啊。突然之间！竟然把手帕塞进别人嘴里！」"
+                }
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168"
+    },
+    block_00168 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, resize = 1, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0005", head = "non_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000044", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未", "？？？"},
+                    "「老师，您刚才是不是打算大声说出我的身份？」"
+                }
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169"
+    },
+    block_00169 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，只是想叫你的名字而已。无所谓啦，你是乃乃未吧。泪川贫",
+                    {"rt2"},
+                    "民区的那个」"
+                }
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170"
+    },
+    block_00170 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0018", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "うんうん", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000045", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「所以才不能在学校里说这个啊」"
+                }
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171"
+    },
+    block_00171 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「为什么？」"
+                }
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172"
+    },
+    block_00172 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0005", head = "non_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000046", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「如您所知，我住在那里还在打工」"
+                }
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173"
+    },
+    block_00173 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，确实是」"
+                }
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174"
+    },
+    block_00174 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0006", head = "non_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000047", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「如果老师知道我打那样的工，我可是会被开除的」"
+                }
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175"
+    },
+    block_00175 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「其实，我也是老师啊……」"
+                }
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176"
+    },
+    block_00176 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0002", head = "non_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000048", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「不过，老师您是不会说出去的吧」"
+                }
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177"
+    },
+    block_00177 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你为什么这么觉得」"
+                }
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178"
+    },
+    block_00178 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0016", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000049", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「不，假如老师真的说了的话，我也会把老师在那个镇上喝得烂醉",
+                    {"rt2"},
+                    "的各种逸事告诉学校……」"
+                }
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179"
+    },
+    block_00179 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，没、没事，我不会说的！怎么可能说嘛！哈哈哈！」"
+                }
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180"
+    },
+    block_00180 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0004", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0003", head = "non_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000050", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「没关系的。我一开始就没觉得老师会说出来。因为老师好像对别",
+                    {"rt2"},
+                    "人不太感兴趣嘛……」"
+                }
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181"
+    },
+    block_00181 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是那样的啊，我好歹也是老师啊」"
+                }
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182"
+    },
+    block_00182 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0017", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000051", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「是吗？　可是我已经上过好多次老师的课了，老师却根本没认出",
+                    {"rt2"},
+                    "只戴了眼镜的我哦」"
+                }
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183"
+    },
+    block_00183 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，那是，那个啦。就是心理学里不是有吗？有显著特征的话，",
+                    {"rt2"},
+                    "注意力就会被吸引过去，反而注意不到其他地方……那个」"
+                }
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184"
+    },
+    block_00184 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0015", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0017", head = "non_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000052", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「我不知道。而且我觉得光是戴个眼镜就认不出来也太奇怪了吧」"
+                }
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185"
+    },
+    block_00185 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是叫锚点链接来着？」"
+                }
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186"
+    },
+    block_00186 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0007", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "うんうん", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000053", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「我不知道啦！随便啦！而且那大概是电脑用语吧」"
+                }
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187"
+    },
+    block_00187 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗？那就不是了啊。到底是什么呢」"
+                }
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188"
+    },
+    block_00188 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0018", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0011", head = "non_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000054", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「那种事怎样都可以！　老师一直都没发现过我，所以我才很安心",
+                    {"rt2"},
+                    "的……」"
+                }
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189"
+    },
+    block_00189 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「戴眼镜真的会改变一个人的印象啊」"
+                }
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190"
+    },
+    block_00190 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0017", head = "non_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000055", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「是不是因为你根本就觉得别人无所谓啊？」"
+                }
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191"
+    },
+    block_00191 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没、没那回事啦……」"
+                }
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192"
+    },
+    block_00192 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0010", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000056", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「真是的，明明我在那家居酒屋打工都超过十年了，老师根本就没",
+                    {"rt2"},
+                    "注意过我吧」"
+                }
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193"
+    },
+    block_00193 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「才不是呢。啊，对了！是锚定效应！大概！」"
+                }
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194"
+    },
+    block_00194 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0006", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "うんうん", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000057", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「人家在认真说话呢！你干嘛非要把话题往奇怪的方向扯啊？」"
+                }
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195"
+    },
+    block_00195 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是，不是那样的……，我是说没注意到的理由啊」"
+                }
+            }
+        },
+        linkback = "block_00194",
+        linknext = "block_00196"
+    },
+    block_00196 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0018", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "うんうん", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000058", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「这不能成为理由！」"
+                }
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197"
+    },
+    block_00197 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，没注意到是我不好……」"
+                }
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198"
+    },
+    block_00198 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0015", head = "non_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000059", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「唉，要是你就这么一直没注意到就好了呢」"
+                }
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199"
+    },
+    block_00199 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过，你不是说从好多年前就开始工作了吗？那是……」"
+                }
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200"
+    },
+    block_00200 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0005", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "うんうん", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000060", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「所以啊，从小的时候就给老师送酒啦！」"
+                }
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201"
+    },
+    block_00201 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真的假的？」"
+                }
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202"
+    },
+    block_00202 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0015", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000061", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「哈，所以我在那一带可是比老师还资深的前辈，片贝先生不是也",
+                    {"rt2"},
+                    "这么说过吗？」"
+                }
+            }
+        },
+        linkback = "block_00201",
+        linknext = "block_00203"
+    },
+    block_00203 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「片贝明明知道你那样，还想跟你交往？那家伙是萝莉控吗」"
+                }
+            }
+        },
+        linkback = "block_00202",
+        linknext = "block_00204"
+    },
+    block_00204 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0005", head = "non_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000062", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「你这样说对乃乃未很失礼哦。现在的我哪里像萝莉控了？看看这",
+                    {"rt2"},
+                    "胸还能这么说吗？」"
+                }
+            }
+        },
+        linkback = "block_00203",
+        linknext = "block_00205"
+    },
+    block_00205 = {
+        {"fg", ch = "ノノ未", size = "z2", ex03 = "a0097", mode = 3, resize = 1, path = ":fg/non/z2/", file = "non_z2a0200", face = "a0005", head = "non_z2a", lv = 5, id = 9},
+        {"fgact", ch = "ノノ未", act = "うんうん", lv = 5, id = 9},
+        {"se", file = "se9031", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"乃乃未君解开了胸前的纽扣，特意强调了一下敞开的胸部。"}
+            }
+        },
+        linkback = "block_00204",
+        linknext = "block_00206"
+    },
+    block_00206 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哇哇，不用那么强调啦。我不是说这个……」"
+                }
+            }
+        },
+        linkback = "block_00205",
+        linknext = "block_00207"
+    },
+    block_00207 = {
+        {"fg", ch = "ノノ未", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/non/z2/", file = "non_z2a0200", face = "a0012", head = "non_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000063", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「咦？老师真的是处男子吗？」"
+                }
+            }
+        },
+        linkback = "block_00206",
+        linknext = "block_00208"
+    },
+    block_00208 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什、什什什么啊」"
+                }
+            }
+        },
+        linkback = "block_00207",
+        linknext = "block_00209"
+    },
+    block_00209 = {
+        {"fg", ch = "ノノ未", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/non/z2/", file = "non_z2a0200", face = "a0008", head = "non_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000064", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「因为啊，光是看了我的胸口，你就已经慌成那样了」"
+                }
+            }
+        },
+        linkback = "block_00208",
+        linknext = "block_00210"
+    },
+    block_00210 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我是老师，你是学生，着急不是理所当然的吗？小命都要丢了啊！",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00209",
+        linknext = "block_00211"
+    },
+    block_00211 = {
+        {"fg", ch = "ノノ未", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/non/z2/", file = "non_z2a0200", face = "a0004", head = "non_z2a", lv = 5, id = 9},
+        {"fgact", ch = "ノノ未", act = "うなづく", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000065", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「这样啊，也可以有这样的想法呢」"
+                }
+            }
+        },
+        linkback = "block_00210",
+        linknext = "block_00212"
+    },
+    block_00212 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这么想才是正常的」"
+                }
+            }
+        },
+        linkback = "block_00211",
+        linknext = "block_00213"
+    },
+    block_00213 = {
+        {"msgoff"},
+        {"fg", mode = -2},
+        {"bg", file = "bluesky_winter", sync = 1, id = 1, lv = 5, path = ":cg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"总之，在泪川贫民区彼此的身份要绝对保密。"}
+            }
+        },
+        linkback = "block_00212",
+        linknext = "block_00214"
+    },
+    block_00214 = {
+        {"text"},
+        text = {
+            ja = {
+                {"今后，在学校里还是老师和学生。"}
+            }
+        },
+        linkback = "block_00213",
+        linknext = "block_00215"
+    },
+    block_00215 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在泪川，就是客人和店员。"}
+            }
+        },
+        linkback = "block_00214",
+        linknext = "block_00216"
+    },
+    block_00216 = {
+        {"text"},
+        text = {
+            ja = {
+                {"就这样，事情就这么定下来了。"}
+            }
+        },
+        linkback = "block_00215",
+        linknext = "block_00217"
+    },
+    block_00217 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "她的全名是",
+                    {"txruby", text = "ひいらぎ"},
+                    "柊",
+                    {"txruby"},
+                    "乃乃未君。"
+                }
+            }
+        },
+        linkback = "block_00216",
+        linknext = "block_00218"
+    },
+    block_00218 = {
+        {"text"},
+        text = {
+            ja = {
+                {"直到现在我都不知道，连我自己都感到吃惊。"}
+            }
+        },
+        linkback = "block_00217",
+        linknext = "block_00219"
+    },
+    block_00219 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真是的……」"
+                }
+            }
+        },
+        linkback = "block_00218",
+        linknext = "block_00220"
+    },
+    block_00220 = {
+        {"cgdel", id = -1},
+        {"se", id = 1, file = "se1895"},
+        {"msgoff"},
+        {"bg", file = "bg053a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, resize = 1, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0002", head = "non_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"mwact", act = "びっくり"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哇！是预备铃啊！」"
+                }
+            }
+        },
+        linkback = "block_00219",
+        linknext = "block_00221"
+    },
+    block_00221 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0001", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000066", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「啊，这样下去要迟到了呢」"
+                }
+            }
+        },
+        linkback = "block_00220",
+        linknext = "block_00222"
+    },
+    block_00222 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你还这么悠哉，快点啊！」"
+                }
+            }
+        },
+        linkback = "block_00221",
+        linknext = "block_00223"
+    },
+    block_00223 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0002", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000067", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「是啊。不过，还是有点遗憾呢。我还想着，能这样聊聊天就好了，",
+                    {"rt2"},
+                    "没想到这么快就结束了」"
+                }
+            }
+        },
+        linkback = "block_00222",
+        linknext = "block_00224"
+    },
+    block_00224 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「聊天这种事以后想聊多少都行吧。老师和学生聊聊天不是很正常",
+                    {"rt2"},
+                    "吗！」"
+                }
+            }
+        },
+        linkback = "block_00223",
+        linknext = "block_00225"
+    },
+    block_00225 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0003", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000068", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「真的吗？我还以为必须像以前一样无视您呢」"
+                }
+            }
+        },
+        linkback = "block_00224",
+        linknext = "block_00226"
+    },
+    block_00226 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「只是要正常保持师生关系而已！总之先赶紧走！」"
+                }
+            }
+        },
+        linkback = "block_00225",
+        linknext = "block_00227"
+    },
+    block_00227 = {
+        {"fg", ch = "ノノ未", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/non/z1/", file = "non_z1a0200", face = "a0004", head = "non_z1a", lv = 4, id = 9},
+        {"fgact", ch = "ノノ未", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nnd_000069", ch = "nnd"}
+            },
+            ja = {
+                {
+                    name = {"乃乃未"},
+                    "「好！」"
+                }
+            }
+        },
+        linkback = "block_00226",
+        linknext = "block_00228"
+    },
+    block_00228 = {
+        {"se", file = "se9023", vol = 70, id = 1},
+        {"fg", mode = -2},
+        {"text"},
+        text = {
+            ja = {
+                {"我们急忙跑下了安全楼梯。"}
+            }
+        },
+        linkback = "block_00227",
+        linknext = "block_00229"
+    },
+    block_00229 = {
+        {"bgm", stop = 1, time = 1000},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"ex", time = 1000, func = "wait"},
+        {"excall", file = "06_vl_03_2"},
+        {"text"},
+        linkback = "block_00228"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

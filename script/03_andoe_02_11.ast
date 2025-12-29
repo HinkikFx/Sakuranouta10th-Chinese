@@ -1,0 +1,4188 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅲ章"},
+        {"msgoff"},
+        {"bg", file = "nightsky_summer", rule = 139, sync = 1, vague = 40, id = 1, lv = 5, path = ":cg/"},
+        {"bgm", file = "bgm010"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "像往常一样吃完饭，烧好澡，正看着书的时候，洗完澡的葛走进了",
+                    {"rt2"},
+                    "客厅。"
+                }
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"cgdel", id = -1},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg023c", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 500},
+        {"fg", ch = "雫", size = "z1", mode = 3, resize = 1, path = ":fg/shz/z1/", file = "shz_z1a1501", face = "a0001", head = "shz_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「洗完澡了吗？」"
+                }
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"fg", ch = "雫", size = "z1", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1501", face = "a0002", head = "shz_z1a", lv = 4, id = 9},
+        {"fgact", ch = "雫", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000352", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那我也去洗澡吧」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"msgoff"},
+        {"se", file = "se9004", id = 1},
+        {"fg", ch = "雫", time = 500, sync = 1, mode = -1, lv = 4, id = 9},
+        {"fg", ch = "雫", size = "z2", time = 500, sync = 1, mode = 3, resize = 1, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0001", head = "shz_z2a", lv = 5, id = 9},
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000353", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「直哉」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎么了？」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000354", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「和健一郎好好谈过了吗？」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0008", head = "shz_z2a", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "雫", act = "おじぎ", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000355", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「对不起，一直把禀的事情瞒着你……」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈？你、你在说什么啊？根本没什么好瞒的吧，也没有什么机会",
+                    {"rt2"},
+                    "可以说啊？」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0009", head = "shz_z2a", lv = 5, id = 9},
+        {"fgact", ch = "雫", act = "うなづく", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000356", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「嗯，是这样没错……不过我确实有想要隐瞒的地方，还有没说出",
+                    {"rt2"},
+                    "口的事情」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那就彼此彼此了。我也从来没跟你说过禀的事情啊」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0008", head = "shz_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000357", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「那才真是没机会说」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「大家都一样啦」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000358", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「直哉你果然，之后就没有再和禀联系过吗？」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊，是啊」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0009", head = "shz_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000359", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「果然，你是不想让禀想起那件事吧？」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，因为那家伙就是因为那个打击才失去了记忆」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0008", head = "shz_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000360", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「人真的会因为打击而失去记忆吗……」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是有吗？这不是经常在漫画和电视剧里用的题材吗」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"fgact", ch = "雫", act = "うなづく", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0009", head = "shz_z2a", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000361", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「嗯，也许是这样……不过」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，算了吧。总之别在意，关于禀的事已经结束了」"
+                }
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0008", head = "shz_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000362", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「已经结束了的事……。这么说太寂寞了」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「话虽如此。实际上，我们也是为了不让她想起过去才断绝来往的」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0009", head = "shz_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000363", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「我明白……，但是这么说还是很寂寞」"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0005", head = "shz_z2a", lv = 5, id = 9},
+        {"fgact", ch = "雫", act = "うなづく", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000364", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「我很喜欢禀」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0008", head = "shz_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000365", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「所以……」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以？」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0011", head = "shz_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000366", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「我的心就像是禀的复制品一样……」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你的心，是你自己的啊……」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0008", head = "shz_z2a", lv = 5, id = 9},
+        {"fgact", ch = "雫", act = "いいえ", size = 5, lv = 5, id = 9},
+        {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0005", head = "shz_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000367", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「不是那个意思。我、我对直哉的事……」"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「关于我的事？」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0012j", head = "shz_z2a", lv = 5, id = 9},
+        {"fgact", ch = "雫", act = "びっくり", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "雫", size = "z2", mode = 3, path = ":fg/shz/z2/", file = "shz_z2a1501", face = "a0011j", head = "shz_z2a", lv = 5, id = 9},
+                {"fgact", ch = "雫", act = "いいえ", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000368", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「呃呃」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            ja = {
+                {"葛的脸涨得通红。"}
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"fg", ch = "雫", size = "z1", mode = 3, resize = 1, path = ":fg/shz/z1/", file = "shz_z1a1501", face = "a0011j", head = "shz_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "雫", size = "z1", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1501", face = "a0008j", head = "shz_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kzd_000369", ch = "kzd"}
+            },
+            ja = {
+                {
+                    name = {"雫", "葛"},
+                    "「没、没什么。晚安！」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，晚安……」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"msgoff"},
+        {"se", file = "se9010", vol = 40, id = 1},
+        {"fg", ch = "雫", size = "z1", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1501", face = "a0011j", head = "shz_z1a", lv = 4, id = 9},
+        {"fg", ch = "雫", speed = 100, mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1501", face = "a0011j", head = "shz_z1a", x2 = "0,10,-10,10,-10", x = 0, lv = 4, id = 9},
+        {"ex", time = 500, func = "wait"},
+        {"fg", ch = "雫", size = "z1", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a1501", face = "a0014j", head = "shz_z1a", x = 0, lv = 4, id = 9},
+        {"ex", time = 300, func = "wait"},
+        {"fg", ch = "雫", mx = 1280, mode = -1, lv = 4, id = 9},
+        {"se", file = "se9003", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"葛像是逃跑一样离开了客厅。"}
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「虽然说了晚安，其实葛并不会去睡觉……」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那么」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我拿出了手机。"}
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我给两个人发了两封内容一样的邮件。"}
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"bg", time = 500, sync = 0, file = "black", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"没有时间了。"}
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"text"},
+        text = {
+            ja = {
+                {"从明天开始就必须要开始作业了。"}
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"msgoff"},
+        {"bgm", stop = 1, time = 1000},
+        {"ex", time = 2000, func = "wait"},
+        {"se", id = 1, file = "se2225"},
+        {"bgm", file = "bgm102"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg031a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 500},
+        {"fg", ch = "真琴", size = "z1", mode = 3, resize = 1, path = ":fg/mak/z1/", file = "mak_z1a0910", face = "a0012", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_003983", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「哎呀，欢迎光临」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「二楼的座位有空吗？」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0910", face = "a0008", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0910", face = "a0017", head = "mak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_003984", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「二楼的座位？　虽然有空位？」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那我就借用了。还有，二楼的座位不要让其他人上来。」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0900", face = "d0013", head = "mak_z1d", lv = 4, id = 9},
+        {"fgact", ch = "真琴", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0900", face = "d0005", head = "mak_z1d", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_003985", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「啊？　你在说什么啊。那样的话生意还怎么做啊。」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"fg", mode = -2},
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, resize = 1, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000044", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「那样的话干脆把整个店包下来吧，费用我会支付。」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「弗里曼」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_003986", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「这是谁？」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是我爸的熟人。」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0005", head = "fri_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000045", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「还有，如果可以的话也希望小姐你能暂时离开。」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_003987", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「诶？　连我也要走？」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000046", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「因为这是和草薙健一郎相关的重要商谈。本来想用租赁会议室之",
+                    {"rt2"},
+                    "类的地方……」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「碰巧没能租到。」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"fg", mode = -2},
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0900", face = "a0015", head = "mak_z1a", lv = 4, id = 9},
+        {"fgact", ch = "真琴", act = "おじぎ", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0900", face = "a0008", head = "mak_z1a", lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0900", face = "a0001", head = "mak_z1a", lv = 4, id = 9}
+            },
+            vl03 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0900", face = "d0005", head = "mak_z1d", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_003988", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「唉，算了，我会跟老板说的。不过不可能一个人都不留，我会在",
+                    {"rt2"},
+                    "后面等着，有什么事叫我就行。」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，那样就没问题。」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0910", face = "a0015", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0900", face = "a0017", head = "mak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_003989", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「真是的，草薙还是一如既往地自作主张啊。让员工都离开这种要",
+                    {"rt2"},
+                    "求，本来是根本不可能答应的。」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，抱歉。」"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0900", face = "a0002", head = "mak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_003990", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「嘛，只要你不是一副要死不活的样子，我这人还是会多少帮你点",
+                    {"rt2"},
+                    "什么的啦」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啥啊，那是什么？」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062"
+    },
+    block_00062 = {
+        {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1d0900", face = "d0016", head = "mak_z1d", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0900", face = "a0026", head = "mak_z1a", lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "真琴", size = "z1", mode = 3, path = ":fg/mak/z1/", file = "mak_z1a0900", face = "a0001", head = "mak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_003991", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「我是说，你这久违地有点精神的眼神嘛。算了，反正这时间客人",
+                    {"rt2"},
+                    "也不多。然后呢？一小时左右可以吗？」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063"
+    },
+    block_00063 = {
+        {"fg", mode = -2},
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000047", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「够了」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064"
+    },
+    block_00064 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mkd_003992", ch = "mkd"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「那就，费用请先付清～」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065"
+    },
+    block_00065 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0002", head = "fri_z1a", lv = 4, id = 9},
+        {"fgact", ch = "フリッドマン", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000048", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「嗯，不过请给我开个收据」"
+                }
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066"
+    },
+    block_00066 = {
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"text"},
+        text = {
+            ja = {
+                {"鸟谷简单整理了一下店里，然后就离开了座位。"}
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067"
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {"说到底，这家伙总是很照顾我的胡闹。"}
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068"
+    },
+    block_00068 = {
+        {"mwact", act = "うんうん", size = 5},
+        {"se", file = "se9010", id = 1},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000694", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「鸟谷走了吗？」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069"
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你还是一如既往地避着鸟谷啊」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070"
+    },
+    block_00070 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000695", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「他老是爱打听这打听那的，很烦人啊。再说了，我和草薙要是一",
+                    {"rt2"},
+                    "起被看到，那就很容易被怀疑了」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071"
+    },
+    block_00071 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「还不是你自己老干些让人怀疑的事」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072"
+    },
+    block_00072 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg031a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "明石", size = "z1", mode = 3, resize = 1, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0001", head = "aka_z1a", x = -345, lv = 4, id = 5, sync = 0},
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0005", head = "fri_z1a", x = 345, lv = 4, id = 6, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000049", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「你们俩要聊闲话等单独的时候聊吧，我想赶快进入正题」"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073"
+    },
+    block_00073 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074"
+    },
+    block_00074 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0006", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0005", head = "aka_z1a", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000696", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「比起这个，为什么要在这里开作战会议啊？其实租个会议室不是",
+                    {"rt2"},
+                    "更好吗？」"
+                }
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075"
+    },
+    block_00075 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是那个啊。这一带的不动产很多都被中村家掌控着。不小心",
+                    {"rt2"},
+                    "的话会吃大亏的。」"
+                }
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076"
+    },
+    block_00076 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「实际上，上次在运输公司吃了大亏，就是那次事件。」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077"
+    },
+    block_00077 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0005", head = "fri_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000050", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「这里的话没有问题吗？」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078"
+    },
+    block_00078 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，这里没有中村家的势力。」"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079"
+    },
+    block_00079 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 345, lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000051", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「那就先相信直哉吧。那么，回到正题……」"
+                }
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080"
+    },
+    block_00080 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0009", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "ジャンプ", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0008", head = "aka_z1a", x = -345, lv = 4, id = 5},
+                {"fgact", ch = "明石", act = "うなづく", time = 300, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000697", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「对！正题！草薙！你能做出草薙健一郎的赝品吗？」"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081"
+    },
+    block_00081 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「谁知道呢？」"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082"
+    },
+    block_00082 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1b0000", face = "b0003", head = "aka_z1b", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0009", head = "aka_z1a", x = -345, lv = 4, id = 5},
+                {"fgact", ch = "明石", act = "うんうん", lv = 4, id = 5}
+            },
+            vl02 = {
+                {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0008", head = "aka_z1a", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000698", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「什么叫谁知道！我的命可都系在这上面了！」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083"
+    },
+    block_00083 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你在说什么啊。被弗里德曼怂恿的可是你啊。」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084"
+    },
+    block_00084 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000052", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「本来只是让他帮忙监视草薙直哉而已。」"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085"
+    },
+    block_00085 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「谁知道呢，你是不是早就看穿会变成这样才这么做的？」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086"
+    },
+    block_00086 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0007", head = "fri_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0008", head = "fri_z1a", x = 345, lv = 4, id = 6},
+                {"fgact", ch = "フリッドマン", act = "いいえ", lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000053", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「你这么想也无所谓……不过那种行为，可不是我提议的。」"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087"
+    },
+    block_00087 = {
+        {"bg", time = 500, file = "black", path = ":bg/"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg023a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1e0000", face = "e0002", head = "aka_z1e", x = -345, lv = 4, id = 5, sync = 0},
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", x = 345, lv = 4, id = 6, sync = 0},
+        {"bg", file = "reco", id = 9, lv = 9, path = ":sys/", sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"这次的中村家骚动。总之，从结果来看，内幕也就是那么回事。"}
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088"
+    },
+    block_00088 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "弗里德曼知道我父亲和中村家的关系。于是他觉得我回国后草薙家",
+                    {"rt2"},
+                    "和中村家之间肯定会有点什么，就拜托我的熟人明石来监视我。"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089"
+    },
+    block_00089 = {
+        {"text"},
+        text = {
+            ja = {
+                {"弗里德曼和明石是怎么认识的我并不清楚。说到底，我也不关心。"}
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090"
+    },
+    block_00090 = {
+        {"text"},
+        text = {
+            ja = {
+                {"如果说，总是在我家附近徘徊的人，应该就是明石或者圭。"}
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091"
+    },
+    block_00091 = {
+        {"text"},
+        text = {
+            ja = {
+                {"圭是夏目的人。如果是这样的话，自然只能拜托明石了。"}
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092"
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "明石本来只需要负责监视，不知为何这次却也想插手进来。难道是",
+                    {"rt2"},
+                    "被弗里德曼说会有一大笔钱进账了吗？"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093"
+    },
+    block_00093 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "虽然真相不得而知，但无论如何，最后的结果就是，明石负责欺骗",
+                    {"rt2"},
+                    "中村家，我负责完成赝品，其他的都由弗里德曼来处理。"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094"
+    },
+    block_00094 = {
+        {"cgdel", id = -1},
+        {"bg", time = 500, file = "black", path = ":bg/"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg031a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", x = 0, lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「中村章一来我们公寓时的那场闹剧，那全部都是弗里德曼写好的",
+                    {"rt2"},
+                    "剧本吧？」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095"
+    },
+    block_00095 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000054", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「我只是把健一郎的名片和誓约书交给了明石，可没叫他从窗户闯",
+                    {"rt2"},
+                    "进去」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096"
+    },
+    block_00096 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那倒也是。会写那种蠢剧本的人可没几个。不过，除了那之外，",
+                    {"rt2"},
+                    "几乎全部都是你自己写的剧本吧？」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097"
+    },
+    block_00097 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000055", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「如果你这么认为，那就是这样吧」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098"
+    },
+    block_00098 = {
+        {"text"},
+        text = {
+            ja = {
+                {"说话方式真让人不舒服啊，这家伙。"}
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099"
+    },
+    block_00099 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「然后呢？你为什么要那么做？是因为以前作为商业伙伴的健一郎，",
+                    {"rt2"},
+                    "出于情分帮他一把吗？」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100"
+    },
+    block_00100 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"fgact", ch = "フリッドマン", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000056", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「啊，是啊。他以前帮过我，这次算是回报他的人情」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101"
+    },
+    block_00101 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我可是听我爸说过，你只会为了钱行动，而且关键时刻还会背叛，",
+                    {"rt2"},
+                    "是个不得了的家伙哦」"
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102"
+    },
+    block_00102 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0002", head = "fri_z1a", x = 0, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0004", head = "fri_z1a", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000057", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「那就是健一郎误会了。我可是非常诚实的人啊」"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103"
+    },
+    block_00103 = {
+        {"text"},
+        text = {
+            ja = {
+                {"还能这么厚颜无耻地说出来啊。"}
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104"
+    },
+    block_00104 = {
+        {"text"},
+        text = {
+            ja = {
+                {"把明石都卷进那么危险的事情里，怎么可能会是诚实的人啊。"}
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105"
+    },
+    block_00105 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0002", head = "fri_z1a", x = 0, lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「然后呢？你插手这件事，是不是说明这次能赚到钱？」"
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106"
+    },
+    block_00106 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0005", head = "fri_z1a", x = 0, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000058", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「只要你能好好地完成令我满意的工作。」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107"
+    },
+    block_00107 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000059", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「我也是个商人。不赚钱的事情我一概不做。所以，我对草薙直哉",
+                    {"rt2"},
+                    "你可是很期待的哦。」"
+                }
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108"
+    },
+    block_00108 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「期待啊。可就算我把赝品完成了，我觉得很快就会被识破吧？」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109"
+    },
+    block_00109 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"fgact", ch = "フリッドマン", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000060", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「嘛，大概是吧。就算能骗过中村章一，也骗不过穆尔财团……至",
+                    {"rt2"},
+                    "于是几个月后还是几年后会被识破，我就不知道了。」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110"
+    },
+    block_00110 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那不是没意义了吗？」"
+                }
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111"
+    },
+    block_00111 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000061", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「大都会艺术博物馆前馆长托马斯·霍维ング曾经这么说过。在任的",
+                    {"rt2"},
+                    "十六年里，送到他面前的作品中有六成都是赝品。」"
+                }
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112"
+    },
+    block_00112 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「顺便说一句，《纽约时报》也说过，美术市场上流通的主流作品",
+                    {"rt2"},
+                    "中有四成是赝品。」"
+                }
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113"
+    },
+    block_00113 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0006", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fg", ch = "明石", speed = 150, mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0006", head = "aka_z1a", y2 = "0,-10", x = -345, y = 0, lv = 4, id = 5},
+        {"fg", ch = "フリッドマン", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x2 = 0, x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0007", head = "aka_z1a", x = -345, y = 0, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000699", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「四成？有那么多都是赝品？」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114"
+    },
+    block_00114 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「其实流通的美术品中，赝品比一般人想象的要多。比如说让-",
+                    {"rt2"},
+                    "巴蒂斯特-",
+                    {"rt2"},
+                    "卡米耶·柯罗的真迹据说有2500件，但仅在美国收藏的数量就据说",
+                    {"rt2"},
+                    "有7800件。」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115"
+    },
+    block_00115 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「19世纪法国画家泰奥多尔·卢梭曾经说过——」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116"
+    },
+    block_00116 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我们都应该明白，人们只会谈论那些很容易被识破的拙劣赝品。",
+                    {"rt2"},
+                    "那些水平高超的赝品，如今仍然挂在墙上。」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117"
+    },
+    block_00117 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0003", head = "aka_z1a", x = -345, y = 0, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0005", head = "aka_z1a", x = -345, y = 0, lv = 4, id = 5},
+                {"fgact", ch = "明石", act = "おじぎ", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000700", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「也就是说，美术界其实是靠赝品支撑起来的……真是可怕啊。」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118"
+    },
+    block_00118 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000062", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「赝品在艺术中，就像孪生的弟弟。虽然大家只关注哥哥，但实际",
+                    {"rt2"},
+                    "上，赝品可以说就是美术史的一部分。」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119"
+    },
+    block_00119 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「可就算这样，穆尔财团的人也能和赝品搅在一起吗？」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120"
+    },
+    block_00120 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0002", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"fgact", ch = "フリッドマン", act = "うなづく", time = 100, size = 5, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0003", head = "fri_z1a", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000063", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「哼，你以为画商这种人，会有什么了不起的伦理观念吗？」"
+                }
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121"
+    },
+    block_00121 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，如果画商真的有那么高尚的伦理观念，现在流通的主流作品",
+                    {"rt2"},
+                    "里也不会有四成是赝品了吧」"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122"
+    },
+    block_00122 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000064", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「就是这么回事。艺术这一切，都是画商和创作者之间的共犯关系。",
+                    {"rt2"},
+                    "不论是真品还是赝品，都是如此」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123"
+    },
+    block_00123 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000065", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「而且，所谓赝品，可不是只要做出来就行了。只要附上一段相应",
+                    {"rt2"},
+                    "的故事，就能卖得更像真的一样」"
+                }
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124"
+    },
+    block_00124 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊，你那一手，我在和中村章一的那件事里见识过了。真没想",
+                    {"rt2"},
+                    "到穆尔财团的人竟然会演那种猴戏」"
+                }
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125"
+    },
+    block_00125 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0010", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0003", head = "fri_z1a", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000066", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「猴戏？我可没在那时候说过一句谎话。说的全都是真话」"
+                }
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126"
+    },
+    block_00126 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没错。一切都表面上变成了明石的胡编乱造」"
+                }
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127"
+    },
+    block_00127 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0002", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0006", head = "aka_z1a", x = -345, y = 0, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0008", head = "aka_z1a", x = -345, y = 0, lv = 4, id = 5}
+            },
+            vl02 = {
+                {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0009", head = "aka_z1a", x = -345, y = 0, lv = 4, id = 5},
+                {"fgact", ch = "明石", act = "びっくり", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000701", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「啥？我？就只有我有问题吗？」"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128"
+    },
+    block_00128 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你没发现吗？基本上，除了把你称作‘世界的瓦塔尔·阿卡西’之外，",
+                    {"rt2"},
+                    "弗里德曼都只是说了非常正经的话」"
+                }
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129"
+    },
+    block_00129 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「甚至还劝中村章一不要在你那可疑的誓约书上签字呢！」"
+                }
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130"
+    },
+    block_00130 = {
+        {"fg", ch = "明石", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0009", head = "aka_z1a", x = -345, y = 0, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "ジャンプ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000702", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「那，那这样的话，要是露馅就只有我去坐牢？」"
+                }
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131"
+    },
+    block_00131 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"fgact", ch = "フリッドマン", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 345, lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000067", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「不，不是那样。不管怎样，只要事情全部暴露，在场的所有人都",
+                    {"rt2"},
+                    "会因诈骗罪被抓。司法可没那么宽容」"
+                }
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132"
+    },
+    block_00132 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0008", head = "aka_z1a", x = -345, y = 0, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000703", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「那就糟了」"
+                }
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133"
+    },
+    block_00133 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以才得好好想办法，别让事情走到那一步」"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134"
+    },
+    block_00134 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000068", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「不，这种事你们不用操心。我会全部处理好的」"
+                }
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135"
+    },
+    block_00135 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0002", head = "aka_z1a", x = -345, y = 0, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "ジャンプ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000704", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「是这样吗？不愧是弗里德曼先生啊」"
+                }
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136"
+    },
+    block_00136 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「就是说让你来暗中活动咯？」"
+                }
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137"
+    },
+    block_00137 = {
+        {"fg", ch = "明石", mode = -1, lv = 4, id = 5},
+        {"fg", ch = "フリッドマン", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", x2 = 345, x = 0, lv = 4, id = 9},
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0003", head = "fri_z1a", x = 0, lv = 4, id = 9},
+        {"fgact", ch = "フリッドマン", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0002", head = "fri_z1a", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000069", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「没错。让艺术家先生创作出好作品，是我们的工作。就是这么回",
+                    {"rt2"},
+                    "事」"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138"
+    },
+    block_00138 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真的吗？说不定你其实有办法把所有伪作的罪名都推到我们身上，",
+                    {"rt2"},
+                    "自己全身而退吧？」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139"
+    },
+    block_00139 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0008", head = "fri_z1a", x = 0, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0005", head = "fri_z1a", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000070", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「我说过很多次了，如果发展成刑事案件，大家都会被一网打尽的」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140"
+    },
+    block_00140 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那你说说，有什么办法？」"
+                }
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141"
+    },
+    block_00141 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000071", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「我可不是白当画商的。至少中村章一收了什么样的画我都清楚」"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142"
+    },
+    block_00142 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么意思？」"
+                }
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143"
+    },
+    block_00143 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000072", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「用画作来洗钱其实并不稀奇」"
+                }
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144"
+    },
+    block_00144 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 0, lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0005", head = "fri_z1b", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000073", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「调查画作的流向，就能追查到资金的流向。而这些资金流可不都",
+                    {"rt2"},
+                    "是干净的。甚至说，黑的还更多吧」"
+                }
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145"
+    },
+    block_00145 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「难道说，弗里德曼，你已经抓到那家伙不法行为的把柄了？」"
+                }
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146"
+    },
+    block_00146 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0002", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000074", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「我随时都在进行风险管理」"
+                }
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147"
+    },
+    block_00147 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「原来如此，也就是说‘七部曲’的六件作品一旦被认定为伪作，就",
+                    {"rt2"},
+                    "已经意味着那家伙的终结了？」"
+                }
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148"
+    },
+    block_00148 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"fgact", ch = "フリッドマン", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000075", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「没错。那六件作品被认定为伪作，是在他因不法行为被抓、不得",
+                    {"rt2"},
+                    "不变卖那些画的时候」"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149"
+    },
+    block_00149 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000076", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「不过，中村章一也就坐几年牢而已。出狱后被报复的可能性还是",
+                    {"rt2"},
+                    "存在的」"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150"
+    },
+    block_00150 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", x = 0, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0008", head = "fri_z1a", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000077", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「这样一来，问题就在你身上了。明石使用了假名和伪装。更进一",
+                    {"rt2"},
+                    "步说，我参与的事情，中村到最后也不会察觉。不过——」"
+                }
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151"
+    },
+    block_00151 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「只有我会被怀疑吧。这次交易最大的受益者是我。嘛，几年后的",
+                    {"rt2"},
+                    "报复我会小心的」"
+                }
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152"
+    },
+    block_00152 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000078", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「到那时候，中村章一也老了。在他失去一切之后，我觉得他也未",
+                    {"rt2"},
+                    "必会对你做什么……」"
+                }
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153"
+    },
+    block_00153 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「希望如此吧」"
+                }
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154"
+    },
+    block_00154 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0003", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fg", ch = "フリッドマン", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x2 = 0, x = 345, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000705", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「大概什么时候会被发现是赝品呢？」"
+                }
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155"
+    },
+    block_00155 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0002", head = "fri_z1b", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000079", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「谁知道呢。也许是几个月后，也许是几年后。说不定永远不会被",
+                    {"rt2"},
+                    "发现的可能性也有」"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156"
+    },
+    block_00156 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000080", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「赝品和真品的区别本来就很模糊。作为真品被美术馆展示的赝品，",
+                    {"rt2"},
+                    "真的能说它是假的吗？」"
+                }
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157"
+    },
+    block_00157 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0006", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "びっくり", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000706", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「那样的话，也有可能永远不被发现？」"
+                }
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158"
+    },
+    block_00158 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"fgact", ch = "フリッドマン", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000081", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「完全有可能」"
+                }
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159"
+    },
+    block_00159 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0005", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000707", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「如果那样的话，我的安全也就有保障，可以放心了……」"
+                }
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160"
+    },
+    block_00160 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「比起那个，赝品完成的期限是多少？」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161"
+    },
+    block_00161 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000082", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「三周之内完成」"
+                }
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162"
+    },
+    block_00162 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0006", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0007", head = "aka_z1a", x = -345, lv = 4, id = 5},
+                {"fgact", ch = "明石", act = "びっくり", lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000708", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「三周？要做那六件大作？」"
+                }
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163"
+    },
+    block_00163 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，这个期限还算稳妥。拖得太久对我们不利，被发现的风险会",
+                    {"rt2"},
+                    "增加」"
+                }
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164"
+    },
+    block_00164 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0003", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000083", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「健一郎的性命也不知道能撑到什么时候。这个期限必须遵守」"
+                }
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165"
+    },
+    block_00165 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「明白了。三周内想办法解决」"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166"
+    },
+    block_00166 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我回应后，弗里德曼苦笑了一下。"}
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167"
+    },
+    block_00167 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0003", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"fgact", ch = "フリッドマン", act = "うなづく", time = 100, size = 5, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0002", head = "fri_z1b", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000084", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「呵呵，回答得真快啊」"
+                }
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168"
+    },
+    block_00168 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「有什么好笑的？」"
+                }
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169"
+    },
+    block_00169 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0002", head = "fri_z1b", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000085", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「这几乎可以说是不可能完成的任务。你却这么轻松地就答应了，",
+                    {"rt2"},
+                    "这才让我觉得好笑」"
+                }
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170"
+    },
+    block_00170 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，也许是这样吧。不过，我并不讨厌这种逆境。只要有可能克",
+                    {"rt2"},
+                    "服危机，我就不会吝惜努力」"
+                }
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171"
+    },
+    block_00171 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「与其说，更讨厌的是把希望寄托在天上，自己什么都不做的那段",
+                    {"rt2"},
+                    "时间」"
+                }
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172"
+    },
+    block_00172 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0002", head = "fri_z1b", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000086", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「原来如此，我听说你已经不画画了，但你果然是草薙健一郎的儿",
+                    {"rt2"},
+                    "子。你们父子确实很像」"
+                }
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173"
+    },
+    block_00173 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我们俩最讨厌被人这么说了」"
+                }
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174"
+    },
+    block_00174 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0003", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000709", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「那么，接下来该怎么办？」"
+                }
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175"
+    },
+    block_00175 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000087", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「我去联系中村。‘不应该和可疑的人做那种交易’、‘也让我们参与",
+                    {"rt2"},
+                    "进来吧’——我会多次劝说他」"
+                }
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176"
+    },
+    block_00176 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「他会答应吗？」"
+                }
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177"
+    },
+    block_00177 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0003", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000088", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「大概不会吧」"
+                }
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178"
+    },
+    block_00178 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那你为什么还要这么做？」"
+                }
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179"
+    },
+    block_00179 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0002", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000089", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「这么一说，他应该会想早点把正式合同办完吧」"
+                }
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180"
+    },
+    block_00180 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0002", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000710", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「确实如此！」"
+                }
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181"
+    },
+    block_00181 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「然后呢？　弗里德曼你自己打算怎么赚钱？」"
+                }
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182"
+    },
+    block_00182 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0010", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0003", head = "fri_z1a", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000090", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「很简单。只要赝品的价值高于健一郎的债务就行了」"
+                }
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183"
+    },
+    block_00183 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1b0000", face = "b0002", head = "aka_z1b", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000711", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「原来如此，就是让赝品的价值超过债务，然后用多出来的钱赚钱",
+                    {"rt2"},
+                    "啊」"
+                }
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184"
+    },
+    block_00184 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你打算怎么决定市场价呢？」"
+                }
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185"
+    },
+    block_00185 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0002", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000091", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「所以才要一直联系他。如果草薙健一郎的七部曲是真的，那将会",
+                    {"rt2"},
+                    "有多大的价值，我会不断灌输给他」"
+                }
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186"
+    },
+    block_00186 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000092", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「我越是拼命地跟他解释，他就越不会信任我，但同时会觉得那套",
+                    {"rt2"},
+                    "传说中的七部曲确实非常有价值」"
+                }
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187"
+    },
+    block_00187 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0003", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0001", head = "aka_z1a", x = -345, lv = 4, id = 5}
+            },
+            vl02 = {
+                {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0003", head = "aka_z1a", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000712", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「原来如此。越是解释，个人越会怀疑。但如果真的那么拼命，那",
+                    {"rt2"},
+                    "东西本身肯定有价值。你就是打算让他这么认为吧」"
+                }
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188"
+    },
+    block_00188 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000093", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「我会先说一个高于预期的价格。明石你在谈判时也开出差不多的",
+                    {"rt2"},
+                    "价格。那样的话，对方就会以为这个行情是正确的」"
+                }
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189"
+    },
+    block_00189 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「确实，如果两个方向都报一样的价格，谁都会觉得那就是公道价",
+                    {"rt2"},
+                    "格了」"
+                }
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190"
+    },
+    block_00190 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000094", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「不过，钱很紧的中村肯定会砍价。到时候明石你适当谈判一阵后",
+                    {"rt2"},
+                    "再让步就行了。如果能砍价，中村就会觉得自己捡了便宜」"
+                }
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191"
+    },
+    block_00191 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0002", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000713", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「原来如此，所以一开始就把让价的部分加上去了啊」"
+                }
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192"
+    },
+    block_00192 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0005", head = "fri_z1a", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000095", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「这样一来，我们就更容易控制价格了。关于价格和经费的预算大",
+                    {"rt2"},
+                    "致如下」"
+                }
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193"
+    },
+    block_00193 = {
+        {"fgact", ch = "フリッドマン", act = "うなづく", lv = 4, id = 9},
+        {"se", file = "se2497", vol = 70, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"说完，弗里德曼拿出了排列着详细数字的表格。"}
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194"
+    },
+    block_00194 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这是所有金额的明细吗？居然细致到这个程度……」"
+                }
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195"
+    },
+    block_00195 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0010", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000096", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「那是当然的」"
+                }
+            }
+        },
+        linkback = "block_00194",
+        linknext = "block_00196"
+    },
+    block_00196 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0006", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000714", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「不过这金额还真是吓人啊……」"
+                }
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197"
+    },
+    block_00197 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊，不过让我在意的是，购买赝品所缺的那部分钱，中村肯定",
+                    {"rt2"},
+                    "是想要现钱到发疯。你打算怎么从中村那里把那部分钱弄出来？」"
+                }
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198"
+    },
+    block_00198 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000097", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「那也已经解决了。只要明石按照我说的去做就没问题」"
+                }
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199"
+    },
+    block_00199 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是这样吗？」"
+                }
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200"
+    },
+    block_00200 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"fgact", ch = "フリッドマン", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000098", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「嗯，没问题」"
+                }
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201"
+    },
+    block_00201 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「只要能拿出能确保葛的身柄的金额就可以了。至于剩下的钱，我",
+                    {"rt2"},
+                    "可以全部交给弗里德曼处理……」"
+                }
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202"
+    },
+    block_00202 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0002", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000715", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「我也没意见」"
+                }
+            }
+        },
+        linkback = "block_00201",
+        linknext = "block_00203"
+    },
+    block_00203 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真的没问题吗？全都信任这家伙」"
+                }
+            }
+        },
+        linkback = "block_00202",
+        linknext = "block_00204"
+    },
+    block_00204 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0001", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0010", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0003", head = "fri_z1a", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000099", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「你在说什么呢，直哉。本来如果不信任我，你打算怎么建立这场",
+                    {"rt2"},
+                    "交易？」"
+                }
+            }
+        },
+        linkback = "block_00203",
+        linknext = "block_00205"
+    },
+    block_00205 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是说全部都不信，只是多出来那部分钱的回收方式不是太不清",
+                    {"rt2"},
+                    "楚了吗？」"
+                }
+            }
+        },
+        linkback = "block_00204",
+        linknext = "block_00206"
+    },
+    block_00206 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0002", head = "fri_z1a", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000100", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「那家伙作为资产有几幅画。虽然大多数都是让人发笑的赝品，但",
+                    {"rt2"},
+                    "其中也有真的」"
+                }
+            }
+        },
+        linkback = "block_00205",
+        linknext = "block_00207"
+    },
+    block_00207 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你打算用画作来回收吗？」"
+                }
+            }
+        },
+        linkback = "block_00206",
+        linknext = "block_00208"
+    },
+    block_00208 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0003", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"fgact", ch = "フリッドマン", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000101", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「嘛，大致就是那样吧」"
+                }
+            }
+        },
+        linkback = "block_00207",
+        linknext = "block_00209"
+    },
+    block_00209 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「用画作回收啊……」"
+                }
+            }
+        },
+        linkback = "block_00208",
+        linknext = "block_00210"
+    },
+    block_00210 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0005", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000102", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「不服吗？」"
+                }
+            }
+        },
+        linkback = "block_00209",
+        linknext = "block_00211"
+    },
+    block_00211 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我没问题，不过如果是用画作回收的话，要在这边换成钱，就需",
+                    {"rt2"},
+                    "要相应的渠道。」"
+                }
+            }
+        },
+        linkback = "block_00210",
+        linknext = "block_00212"
+    },
+    block_00212 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"fgact", ch = "フリッドマン", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000103", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「啊，那条渠道我来准备。」"
+                }
+            }
+        },
+        linkback = "block_00211",
+        linknext = "block_00213"
+    },
+    block_00213 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「应该说，除了让弗里德曼来准备，也没有别的办法了吧？」"
+                }
+            }
+        },
+        linkback = "block_00212",
+        linknext = "block_00214"
+    },
+    block_00214 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0010", head = "fri_z1a", x = 345, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000104", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「也许吧。那你打算怎么办？」"
+                }
+            }
+        },
+        linkback = "block_00213",
+        linknext = "block_00215"
+    },
+    block_00215 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，我没问题……明石你呢？」"
+                }
+            }
+        },
+        linkback = "block_00214",
+        linknext = "block_00216"
+    },
+    block_00216 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0001", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000716", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「没问题哟」"
+                }
+            }
+        },
+        linkback = "block_00215",
+        linknext = "block_00217"
+    },
+    block_00217 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0001", head = "fri_z1b", x = 345, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 345, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000105", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「那不就行了吗。反正也没有别的选择。反过来你能想到什么妙计",
+                    {"rt2"},
+                    "吗？」"
+                }
+            }
+        },
+        linkback = "block_00216",
+        linknext = "block_00218"
+    },
+    block_00218 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，也没有那种事……」"
+                }
+            }
+        },
+        linkback = "block_00217",
+        linknext = "block_00219"
+    },
+    block_00219 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0003", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0002", head = "aka_z1a", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000717", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「嘛，就是这么回事。从一开始就没有选择的余地。」"
+                }
+            }
+        },
+        linkback = "block_00218",
+        linknext = "block_00220"
+    },
+    block_00220 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，确实是这样……」"
+                }
+            }
+        },
+        linkback = "block_00219",
+        linknext = "block_00221"
+    },
+    block_00221 = {
+        {"fg", ch = "明石", size = "z1", mode = 3, path = ":fg/aka/z1/", file = "aka_z1a0000", face = "a0001", head = "aka_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "明石", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_wtd_000718", ch = "wtd"}
+            },
+            ja = {
+                {
+                    name = {"明石"},
+                    "「没问题。这下我就能靠这个发大财了！」"
+                }
+            }
+        },
+        linkback = "block_00220",
+        linknext = "block_00222"
+    },
+    block_00222 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00221",
+        linknext = "block_00223"
+    },
+    block_00223 = {
+        {"fg", ch = "明石", mode = -1, lv = 4, id = 5},
+        {"fg", ch = "フリッドマン", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x2 = 345, x = 0, lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"弗里德曼的计划几乎可以说是完美无缺。"}
+            }
+        },
+        linkback = "block_00222",
+        linknext = "block_00224"
+    },
+    block_00224 = {
+        {"text"},
+        text = {
+            ja = {
+                {"然而，正因为太过完美，反而让人感到一丝违和。"}
+            }
+        },
+        linkback = "block_00223",
+        linknext = "block_00225"
+    },
+    block_00225 = {
+        {"text"},
+        text = {
+            ja = {
+                {"虽然不知道那是什么，但总觉得有些说不通。"}
+            }
+        },
+        linkback = "block_00224",
+        linknext = "block_00226"
+    },
+    block_00226 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", x = 0, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000106", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「那么？",
+                    {"rt2"},
+                    "关于追加契约，需要的东西都有哪些？只要有一份保证葛这个少女",
+                    {"rt2"},
+                    "自由的誓约书就可以了吗？」"
+                }
+            }
+        },
+        linkback = "block_00225",
+        linknext = "block_00227"
+    },
+    block_00227 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，说到那个……其实我也不太明白，不过我爸说无论如何都要",
+                    {"rt2"},
+                    "让人带来一个叫伯奇神乐铃的东西」"
+                }
+            }
+        },
+        linkback = "block_00226",
+        linknext = "block_00228"
+    },
+    block_00228 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0010", head = "fri_z1a", x = 0, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1a0000", face = "a0001", head = "fri_z1a", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000107", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「伯奇神乐铃？ 那是什么，值钱的古董吗？」"
+                }
+            }
+        },
+        linkback = "block_00227",
+        linknext = "block_00229"
+    },
+    block_00229 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「谁知道呢，反正老爸说，这个无论如何都要弄到手。我觉得大概",
+                    {"rt2"},
+                    "不是价值的问题。」"
+                }
+            }
+        },
+        linkback = "block_00228",
+        linknext = "block_00230"
+    },
+    block_00230 = {
+        {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0010", head = "fri_z1b", x = 0, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "フリッドマン", size = "z1", mode = 3, path = ":fg/fri/z1/", file = "fri_z1b0000", face = "b0011", head = "fri_z1b", x = 0, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_frd_000108", ch = "frd"}
+            },
+            ja = {
+                {
+                    name = {"弗里曼"},
+                    "「原来如此，明白了。这个我也会尽力去回收。」"
+                }
+            }
+        },
+        linkback = "block_00229",
+        linknext = "block_00231"
+    },
+    block_00231 = {
+        {"bg", time = 500, sync = 0, file = "black", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"之后还决定了详细的日程安排。"}
+            }
+        },
+        linkback = "block_00230",
+        linknext = "block_00232"
+    },
+    block_00232 = {
+        {"text"},
+        text = {
+            ja = {
+                {"谈判由明石负责。不过，所有的点子都是弗里德曼想出来的。"}
+            }
+        },
+        linkback = "block_00231",
+        linknext = "block_00233"
+    },
+    block_00233 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "即使遇到麻烦，明石也总算能应付过去，每次的对策也都是弗里德",
+                    {"rt2"},
+                    "曼制定的。"
+                }
+            }
+        },
+        linkback = "block_00232",
+        linknext = "block_00234"
+    },
+    block_00234 = {
+        {"text"},
+        text = {
+            ja = {
+                {"整个买卖计划本身非常可靠。"}
+            }
+        },
+        linkback = "block_00233",
+        linknext = "block_00235"
+    },
+    block_00235 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "或许弗里德曼这个男子人，卖赝品已经不是一两次的事了。真是个",
+                    {"rt2"},
+                    "可怕的家伙。"
+                }
+            }
+        },
+        linkback = "block_00234",
+        linknext = "block_00236"
+    },
+    block_00236 = {
+        {"text"},
+        text = {
+            ja = {
+                {"问题在于赝品。"}
+            }
+        },
+        linkback = "block_00235",
+        linknext = "block_00237"
+    },
+    block_00237 = {
+        {"text"},
+        text = {
+            ja = {
+                {"关于这个，明石和弗里德曼也完全没有头绪。"}
+            }
+        },
+        linkback = "block_00236",
+        linknext = "block_00238"
+    },
+    block_00238 = {
+        {"text"},
+        text = {
+            ja = {
+                {"一切都交给了我。"}
+            }
+        },
+        linkback = "block_00237",
+        linknext = "block_00239"
+    },
+    block_00239 = {
+        {"text"},
+        text = {
+            ja = {
+                {"如果我的赝品做得不够好，这个计划根本就无法成立。"}
+            }
+        },
+        linkback = "block_00238",
+        linknext = "block_00240"
+    },
+    block_00240 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即使是专业人士来看，也无法看出是赝品的作品。"}
+            }
+        },
+        linkback = "block_00239",
+        linknext = "block_00241"
+    },
+    block_00241 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这就是弗里德曼的要求。"}
+            }
+        },
+        linkback = "block_00240",
+        linknext = "block_00242"
+    },
+    block_00242 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "当那家伙放手那幅画时，原本负责草薙健一郎生前日程安排的穆尔",
+                    {"rt2"},
+                    "财团会识破那是赝品，不过那也仅仅是因为“他生前没有时间创作那",
+                    {"rt2"},
+                    "样的作品”这个理由。"
+                }
+            }
+        },
+        linkback = "block_00241",
+        linknext = "block_00243"
+    },
+    block_00243 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "从这个意义上说，要判断是不是赝品恐怕得花上相当长的时间。“生",
+                    {"rt2"},
+                    "前没有时间创作那样的作品”，从某种程度上来说几乎成了恶魔证明。"
+                }
+            }
+        },
+        linkback = "block_00242",
+        linknext = "block_00244"
+    },
+    block_00244 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "比如说多年来，他其实一直在削减睡眠时间，或者实际上是在完成",
+                    {"rt2"},
+                    "『横たわる櫻』的同时期就已经完成了那幅画。等等，这样的可能",
+                    {"rt2"},
+                    "性不管多少都能事后找借口解释。"
+                }
+            }
+        },
+        linkback = "block_00243",
+        linknext = "block_00245"
+    },
+    block_00245 = {
+        {"text"},
+        text = {
+            ja = {
+                {"判断是真作还是赝品很有可能会花费很长时间。"}
+            }
+        },
+        linkback = "block_00244",
+        linknext = "block_00246"
+    },
+    block_00246 = {
+        {"text"},
+        text = {
+            ja = {
+                {"如果顺利的话，可能会作为真品流通。"}
+            }
+        },
+        linkback = "block_00245",
+        linknext = "block_00247"
+    },
+    block_00247 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "如果是那样的话，中村章一也能获利，我们也不会再处于危险之中。",
+                    {"rt2"},
+                    "对双方来说，这就是最好的局面。"
+                }
+            }
+        },
+        linkback = "block_00246",
+        linknext = "block_00248"
+    },
+    block_00248 = {
+        {"text"},
+        text = {
+            ja = {
+                {"为了保证这种局面，作品必须达到绝对的完成度。"}
+            }
+        },
+        linkback = "block_00247",
+        linknext = "block_00249"
+    },
+    block_00249 = {
+        {"text"},
+        text = {
+            ja = {
+                {"必须让专业鉴定师也能断言“这是草薙健一郎的作品”。"}
+            }
+        },
+        linkback = "block_00248",
+        linknext = "block_00250"
+    },
+    block_00250 = {
+        {"text"},
+        text = {
+            ja = {
+                {"弗里德曼就是这样强调的。"}
+            }
+        },
+        linkback = "block_00249",
+        linknext = "block_00251"
+    },
+    block_00251 = {
+        {"bgm", stop = 1, time = 1000},
+        {"excall", file = "03_andoe_02_12"},
+        {"text"},
+        linkback = "block_00250"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}
