@@ -1,0 +1,2106 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "APPEND"},
+        {"ex", time = 500, func = "wait"},
+        {"bg", file = "eye_rin", id = 9, lv = 9, path = ":cg/"},
+        {"ex", time = 5000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"cgdel", id = -1},
+        {"se", file = "se9086", id = 1},
+        {"msgoff"},
+        {"bg", file = "bluesky_winter", id = 9, lv = 9, path = ":cg/", sync = 0},
+        {"extrans", time = 1500},
+        {"text"},
+        text = {
+            ja = {
+                {"──照顾的第三天。"}
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"cgdel", id = -1},
+        {"msgoff"},
+        {"bg", file = "bg084a", path = ":bg/", sync = 0},
+        {"extrans", time = 1000},
+        {"text"},
+        text = {
+            ja = {
+                {"我被禀切菜的声音叫醒了。"}
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {"听到厨房里来回走动的脚步声。"}
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "接着，是平底锅里有什么在煎的声音，抽油烟机的声音。然后是甜",
+                    {"rt2"},
+                    "美的黄油香气。"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"se", stop = 1, id = 1, time = 1000},
+        {"se", id = 2, file = "gatya"},
+        {"fg", ch = "稟", size = "z1", mx = 40, mode = 3, resize = 1, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0002", head = "rin_z1e", lv = 4, id = 9, sync = 0},
+        {"extrans"},
+        {"bgm", file = "bgm011"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100074", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「早安，直哉君」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            ja = {
+                {"带着笑容的禀走进了我的房间。"}
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，早安。你怎么知道我醒了？」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0001", head = "rin_z1e", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0002", head = "rin_z1e", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100075", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「我想差不多该醒了……所以就猜了猜」"
+                }
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "到了第三天，禀似乎已经完全掌握了我的作息规律，正好在我醒来",
+                    {"rt2"},
+                    "的时候准备好早餐。"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0003", head = "rin_z1e", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "うなづく", size = 7, time = 500, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100076", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「今天我试着做了法式吐司哦」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哎，还挺少见的啊」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0011", head = "rin_z1e", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0001", head = "rin_z1e", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100077", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「因为一直都是和食，怕你吃腻了，今天也不是在客厅吃，而是在",
+                    {"rt2"},
+                    "这边吃吧？」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，如果可以的话，我想在床上吃？」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0002", head = "rin_z1e", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "うなづく", size = 7, time = 200, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100078", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「明白了，请稍等一下」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"se", file = "se9085", id = 1},
+        {"fg", ch = "稟", mx = 40, mode = -1, lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"禀这么说着，啪嗒啪嗒地发出可爱的脚步声消失了。"}
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呵呵呵……禀真可爱啊」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"text"},
+        text = {
+            ja = {
+                {"目送着禀带着笑容离开后――我的表情变得严肃起来。"}
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那么……，早上的任务开始了……」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"bg", x = 925, y = -372, time = 500, file = "zbg084a", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"text"},
+        text = {
+            ja = {
+                {"像理所当然一样早晨勃起着。"}
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {"然后，说到早晨，当然是起床后的尿意。"}
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"mwact", act = "びっくり", size = 8, time = 150},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯嗯嗯嗯――」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我把阴茎对准了安乐尿器。"}
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"quake", size = 2, mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯……」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"text"},
+        text = {
+            ja = {
+                {"滋噜噜……。"}
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "只用龟头贴住尿瓶的入口，然后开始排尿。这样一来，阴茎很快就",
+                    {"rt2"},
+                    "软下来了……。"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            ja = {
+                {"护理第三天。"}
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"text"},
+        text = {
+            ja = {
+                {"说到底，我也逐渐学会了各种事情。"}
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "只要一开始把安乐尿器的口对准排尿，鸡儿很快就会软下去，乖乖",
+                    {"rt2"},
+                    "地缩进尿瓶里。"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"mwact", act = "うなづく", size = 8, time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呼……」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            ja = {
+                {"滋噜噜噜噜噜噜噜噜噜噜噜噜――……。"}
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "尿真是挺长的啊。因为第一天用安乐尿器的时候很不顺利，所以现",
+                    {"rt2"},
+                    "在老是有很强的残尿感。"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「听说太过忍着的话会得膀胱炎啊……」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"text"},
+        text = {
+            ja = {
+                {"从那以后尿总是排不干净。"}
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真是麻烦啊……」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"se", id = 1, file = "gatya"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg084a", path = ":bg/", sync = 0},
+        {"extrans", time = 500},
+        {"fg", ch = "稟", size = "z1", mx = 40, mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0003", head = "rin_z1e", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100079", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「好了，法式吐司准备好咯！」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀把早餐放在托盘上走进了房间。"}
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"mwact", act = "びっくり", size = 5, time = 150},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，啊啊，谢谢！」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "还没尿完呢禀就回来了……。嘛，刚住院那天几乎一直在用安乐尿",
+                    {"rt2"},
+                    "器，应该没关系吧。"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这本来就是为了这种用途而设计的……。"}
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0002", head = "rin_z1e", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100080", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「可以靠近一点吗？」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，啊啊……」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"msgoff"},
+        {"bg", x = 0, y = -200, file = "zbg084a", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"extrans", time = 500},
+        {"bg", file = "fg_rin02", x = -518, y = 85, zoom = 90, id = 8, lv = 8, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460, my = -40, time = 400},
+        {"se", file = "se9061", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"禀坐到了我的床边。"}
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀洗发水的香味轻轻刺激着我的鼻腔。"}
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"mwact", act = "びっくり", size = 7, time = 150},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呃！？」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"cgdel", id = -1, time = 0},
+        {"bg", file = "fg_rin01", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 0, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460},
+        {"cgact", id = 8, act = "びっくり", size = 7, time = 200, lv = 8},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"cgdel", id = 8, time = 0, lv = 8},
+                {"bg", file = "fg_rin11", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 150, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100081", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「诶？怎、怎么了？突然这么严肃的表情？」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"mwact", act = "いいえ"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，没，没什么……」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            ja = {
+                {"其实并不是没什么。"}
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我的阴茎在安乐尿器里开始变大了……。"}
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "冷静点。冷静啊……你现在得先冷静！晨勃刚才不是已经结束了吗！",
+                    {"rt2"},
+                    "晨勃之所以叫晨勃就是因为一天只有一次……大概。"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "虽然脑子里全是莫名其妙的念头，但和大脑无关，阴茎还是不停地",
+                    {"rt2"},
+                    "变大。"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"cgdel", id = -1, time = 0},
+        {"bg", file = "fg_rin13", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 0, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460},
+        {"cgact", id = 8, act = "うなづく", size = 7, time = 300, lv = 8},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100082", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「直哉君，你还好吗？」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶……什么好吗？」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"cgdel", id = -1, time = 0},
+        {"bg", file = "fg_rin11", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 200, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100083", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「你是不是一直在屏住呼吸啊？」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？呼吸？？」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"text"},
+        text = {
+            ja = {
+                {"因为全神贯注不想让禀察觉到，所以似乎真的屏住了呼吸。"}
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没那回事啦。哈哈哈……哈，哈，哈，哈，哈」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"text"},
+        text = {
+            ja = {
+                {"像是在掩饰一样地呼吸着――"}
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"cgdel", id = 8, time = 0, lv = 8},
+        {"bg", file = "fg_rin13", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 0, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460},
+        {"cgact", id = 8, act = "うなづく", size = 15, time = 500, lv = 8},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100084", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「这次反而，呼吸变得很急促了哦……」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀带着疑惑的表情打量着我的全身。"}
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"cgdel", id = -1, time = 0},
+        {"bg", file = "fg_rin11", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 300, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460},
+        {"text"},
+        text = {
+            ja = {
+                {"根本瞒不过去。她的视线集中在某一个点上。"}
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀静静地……盯着我的被子看。"}
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"cgdel", id = -1},
+        {"bg", time = 300, rule = "008a", file = "black", path = ":bg/"},
+        {"mwact", act = "いいえ"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "（不行啊。禀，别看我这个样子啊啊啊）"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062"
+    },
+    block_00062 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我在心里呐喊着……。"}
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063"
+    },
+    block_00063 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但无情的是，我的小鸡鸡却慢慢地立了起来。"}
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064"
+    },
+    block_00064 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这家伙，根本不管我的意志，真的太离谱了吧。"}
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065"
+    },
+    block_00065 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不断膨胀变大的阴茎，甚至连尿壶的角度都给改变了，不知道为啥。"}
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066"
+    },
+    block_00066 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不只是小鸡鸡勃起了。连带着尿壶，被子都鼓了起来……。"}
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067"
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我用双手遮住自己的脸。"}
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068"
+    },
+    block_00068 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "已经不是单纯勃起的程度了。感觉就像是多长了一条腿一样，被子",
+                    {"rt2"},
+                    "鼓得高高的。"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069"
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100085", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「…………是啊」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070"
+    },
+    block_00070 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", x = 0, y = -200, file = "zbg084a", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "fg_rin08", x = -518, y = 85, zoom = 90, id = 8, lv = 8, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460, sync = 0},
+        {"extrans", time = 500},
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？　什，什么啊？」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071"
+    },
+    block_00071 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "我还以为会被轻蔑……，但禀的反应和我预想的不一样，让我有些",
+                    {"rt2"},
+                    "困惑。"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072"
+    },
+    block_00072 = {
+        {"cgdel", id = -1, time = 0},
+        {"bg", file = "fg_rin11", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 0, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460},
+        {"cgact", id = 8, act = "うなづく", size = 6, time = 500, lv = 8},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100086", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是不是觉得，用尿壶越来越困难了？」"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073"
+    },
+    block_00073 = {
+        {"text"},
+        text = {
+            ja = {
+                {"诶？为什么她会知道这事？？"}
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074"
+    },
+    block_00074 = {
+        {"cgdel", id = -1, time = 0},
+        {"bg", file = "fg_rin01", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 200, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"cgdel", id = 8, time = 0, lv = 8},
+                {"bg", file = "fg_rin10", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 200, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100087", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「因为你从第一天开始就很挣扎……我觉得，随着时间推移可能会",
+                    {"rt2"},
+                    "越来越难吧」"
+                }
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075"
+    },
+    block_00075 = {
+        {"cgdel", id = -1, time = 0},
+        {"bg", file = "fg_rin01", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 200, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是的……正如你说的……」"
+                }
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076"
+    },
+    block_00076 = {
+        {"text"},
+        delay = {
+            [1200] = {
+                {"quake", mode = "mw"}
+            }
+        },
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我也在尽力做到最好了，可是…………嗯咿！？」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077"
+    },
+    block_00077 = {
+        {"text"},
+        text = {
+            ja = {
+                {"剧痛袭击了我。"}
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078"
+    },
+    block_00078 = {
+        {"cgdel", id = -1, time = 0},
+        {"bg", file = "fg_rin07", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 0, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460},
+        {"cgact", id = 8, act = "びっくり", size = 15, time = 150, lv = 8},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100088", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「怎、怎么了？」"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079"
+    },
+    block_00079 = {
+        {"text"},
+        delay = {
+            [1000] = {
+                {"quake", mode = "mw"}
+            }
+        },
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，呃，好痛！这个，要是勃起了的话！比入口还要大的是我啊！",
+                    {"rt2"},
+                    "好痛！！」"
+                }
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080"
+    },
+    block_00080 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "我的小鸡鸡在插进去的地方勃起，被紧紧夹住了。这痛得根本开不",
+                    {"rt2"},
+                    "起玩笑，真的很疼。"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081"
+    },
+    block_00081 = {
+        {"cgdel", id = -1, time = 0},
+        {"bg", file = "fg_rin11", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 0, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460},
+        {"cgact", id = 8, act = "うなづく", size = 10, time = 500, lv = 8},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100089", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「诶？是、是这样吗？」"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082"
+    },
+    block_00082 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，大概尿瓶根本没考虑到勃起吧！」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083"
+    },
+    block_00083 = {
+        {"cgdel", id = -1, time = 0},
+        {"bg", file = "fg_rin08", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 0, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460},
+        {"cgact", id = 8, act = "いいえ", size = 10, time = 150, lv = 8},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"cgdel", id = 8, time = 0, lv = 8},
+                {"bg", file = "fg_rin11", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 200, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100090", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「不，应该只是选错了尺寸吧？插入口勃起了会痛，这种东西应该",
+                    {"rt2"},
+                    "不存在吧」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084"
+    },
+    block_00084 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊、啊，是、是这个原因吗？好痛痛痛――」"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085"
+    },
+    block_00085 = {
+        {"cgdel", id = -1, time = 0},
+        {"bg", file = "fg_rin05", x = -518, y = 85, zoom = 90, id = 8, lv = 8, time = 0, path = ":cg/", ax = 1439, ay = 1000, bx = -479, by = -460},
+        {"cgact", id = 8, act = "びっくり", size = 15, time = 150, lv = 8},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100091", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「等、等一下！！」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086"
+    },
+    block_00086 = {
+        {"cgdel", id = -1},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"text"},
+        text = {
+            ja = {
+                {"总算是把勃起的阴茎从尿瓶里拔出来了。"}
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087"
+    },
+    block_00087 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我还以为会就这样一辈子拔不出来，吓坏了……。"}
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088"
+    },
+    block_00088 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "多亏了禀的帮忙，勉勉强强没有把尿撒得到处都是，总算是拔出来",
+                    {"rt2"},
+                    "了。真的太好了。"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089"
+    },
+    block_00089 = {
+        {"bgm", stop = 1, time = 500},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg084a", path = ":bg/", sync = 0},
+        {"extrans", rule = 139, vague = 40},
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0004", head = "rin_z1e", lv = 4, id = 9},
+        {"bgm", file = "bgm005"},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0011", head = "rin_z1e", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100092", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「直哉君……，为什么不早点和我商量呢？」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090"
+    },
+    block_00090 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，没，毕竟被说了禁止做H的事……」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091"
+    },
+    block_00091 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0004", head = "rin_z1e", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "いいえ", size = 7, time = 150, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0013", head = "rin_z1e", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100093", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「勃起是生理现象。不是H的事情」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092"
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，勃起就是H吧？禀你也总是看着我勃起的小鸡鸡，一脸陶醉",
+                    {"rt2"},
+                    "地说很H吧！」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093"
+    },
+    block_00093 = {
+        {"fg", ch = "稟", size = "z1", ex02 = "e0098", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0005i", head = "rin_z1e", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "いいえ", size = 12, time = 150, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0004i", head = "rin_z1e", lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fgact", ch = "稟", act = "うなづく", size = 6, time = 200, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100094", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那、那回事和这个不一样！你、你是傻吗！直哉君！」"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094"
+    },
+    block_00094 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0011i", head = "rin_z1e", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0010i", head = "rin_z1e", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100095", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「所谓H的事情，就是指会产生那种心情的事。其实，直哉君只是",
+                    {"rt2"},
+                    "作为生理现象勃起，并不算H」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095"
+    },
+    block_00095 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶，怎么感觉有点受打击……我希望禀一直都觉得我的勃起小鸡",
+                    {"rt2"},
+                    "鸡很H啊！」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096"
+    },
+    block_00096 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0005i", head = "rin_z1e", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "ジャンプ", size = 10, time = 150, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0004i", head = "rin_z1e", lv = 4, id = 9},
+                {"fgact", ch = "稟", act = "うなづく", size = 10, time = 150, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100096", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那、那种事当然一直都在想啦！笨蛋直哉君！」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097"
+    },
+    block_00097 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真、真的吗？」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098"
+    },
+    block_00098 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0005i", head = "rin_z1e", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "いいえ", size = 10, time = 150, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0004i", head = "rin_z1e", lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0008i", head = "rin_z1e", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100097", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「不要让我说出来。那、那个……直哉君的勃起小鸡鸡很H。我最喜",
+                    {"rt2"},
+                    "欢那样的勃起小鸡鸡了……」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099"
+    },
+    block_00099 = {
+        {"mwact", act = "びっくり", size = 15, time = 150},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真的？那样的话！」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100"
+    },
+    block_00100 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0006i", head = "rin_z1e", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "ジャンプ", size = 10, time = 150, lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0004i", head = "rin_z1e", lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0005i", head = "rin_z1e", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100098", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「即使那样！那和照顾没有关系。作为照顾时的勃起，我绝不会用",
+                    {"rt2"},
+                    "那种眼光看」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101"
+    },
+    block_00101 = {
+        {"mwact", act = "うんうん", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「为什么啊。其实用那种眼光看也没关系吧」"
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102"
+    },
+    block_00102 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0010", head = "rin_z1e", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0011", head = "rin_z1e", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100099", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「照顾可不是那样的。我已经为此做好了准备」"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103"
+    },
+    block_00103 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「准备？」"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104"
+    },
+    block_00104 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0002", head = "rin_z1e", lv = 4, id = 9},
+        {"fgact", ch = "稟", act = "うなづく", size = 7, time = 150, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100100", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是的，照顾里面，确实有相关的项目。请放心吧」"
+                }
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105"
+    },
+    block_00105 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这样的项目……难道说！　是那个吗？就是那种护理服务，让人",
+                    {"rt2"},
+                    "射精的那种？」"
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106"
+    },
+    block_00106 = {
+        {"fgact", ch = "稟", act = "うなづく", size = 7, time = 150, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100101", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「是的，正是如此」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107"
+    },
+    block_00107 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那就是说，简单点就是手淫咯！」"
+                }
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108"
+    },
+    block_00108 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0011", head = "rin_z1e", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0002", head = "rin_z1e", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100102", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「严格来说并不是，不过你可以那样理解也没关系，直哉君」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109"
+    },
+    block_00109 = {
+        {"mwact", act = "うんうん", size = 5},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「手淫什么的，不就是超级色情的东西吗！」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110"
+    },
+    block_00110 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0011", head = "rin_z1e", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0001", head = "rin_z1e", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100103", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「所以说接下来要做的并不是手淫。仅仅是辅助而已」"
+                }
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111"
+    },
+    block_00111 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「辅助……」"
+                }
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112"
+    },
+    block_00112 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0010", head = "rin_z1e", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0002", head = "rin_z1e", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100104", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「至少我不会有任何色情的氛围，所以直哉君可以安心放松」"
+                }
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113"
+    },
+    block_00113 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哼……，禀做不带色情气氛的手淫吗……」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114"
+    },
+    block_00114 = {
+        {"bg", lv = 1, id = 5, rule = "cinema", file = "cinema01", alpha = 255, time = 400, path = ":sys/", vague = 40},
+        {"text"},
+        text = {
+            ja = {
+                {"那个最喜欢小鸡鸡的禀？"}
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115"
+    },
+    block_00115 = {
+        {"text"},
+        text = {
+            ja = {
+                {"就算禀给我的小鸡鸡撸管，也不会有色情的感觉？"}
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116"
+    },
+    block_00116 = {
+        {"bg", time = 500, sync = 0, file = "black", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"那种事，怎么可能……不，绝对不可能。"}
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117"
+    },
+    block_00117 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀看到我勃起的小鸡鸡，根本不可能忍住。"}
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118"
+    },
+    block_00118 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", x = 530, y = -530, file = "zbg084c", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "直哉", size = "z2", mode = 3, resize = 1, path = ":fg/nao/z2/", file = "nao_z2g4400", face = "g0001", head = "nao_z2g", x = 480, y = -960, lv = 5, id = 9, sync = 0},
+        {"fg", ch = "稟", size = "z2", mode = 3, resize = 1, path = ":fg/rin/z2/", file = "rin_z2e0000", face = "e0008i", head = "rin_z2e", x = -210, lv = 5, id = 10, sync = 0},
+        {"bg", file = "black", id = 8, lv = 8, zoom = 150, x = -1900, y = -300, rotate = 15, path = ":bg/", sync = 0},
+        {"bg", file = "black", id = 9, lv = 9, zoom = 150, x = 1900, y = 300, rotate = 15, path = ":bg/", sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        delay = {
+            [500] = {
+                {"fgact", ch = "稟", act = "いいえ", speed = 300, lv = 5, id = 10}
+            },
+            [2000] = {
+                {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2e0000", face = "e0013i", head = "rin_z2e", x = -210, lv = 5, id = 10},
+                {"fg", ch = "稟", speed = 300, mode = 3, path = ":fg/rin/z2/", file = "rin_z2e0000", face = "e0013i", head = "rin_z2e", x2 = -210, x = 0, lv = 5, id = 10},
+                {"quake"},
+                {"se", file = "se3130", vol = 40, id = 1},
+                {"bg", id = 8, lv = 8, x = -1000, speed = 1000, y = -300, rotate = 15, time = 0, file = "black", path = ":bg/", zoom = 150, x2 = -1900},
+                {"bg", id = 9, lv = 9, x = 1000, speed = 1000, y = 300, rotate = 15, time = 0, file = "black", path = ":bg/", zoom = 150, x2 = 1900}
+            }
+        },
+        text = {
+            ja = {
+                {"手淫做到一半，禀肯定会兴奋得忍不住把我的小鸡鸡舔起来。"}
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119"
+    },
+    block_00119 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "一边舔着龟头，一边用手撸动。连蛋蛋也舔个不停，用手搓弄着龟",
+                    {"rt2"},
+                    "头。"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120"
+    },
+    block_00120 = {
+        {"text"},
+        text = {
+            ja = {
+                {"要是做那种事情，谁都忍受不了。禀一定会把我的小鸡鸡含住的吧。"}
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121"
+    },
+    block_00121 = {
+        {"cgdel", id = -1},
+        {"msgoff"},
+        {"se", file = "se9010", vol = 40, id = 1},
+        {"bg", zoom = 60, file = "zbg084c", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "稟", size = "z2", zoom = 90, mode = 3, path = ":fg/rin/z2/", file = "rin_z2e0000", face = "e0008i", head = "rin_z2e", y = -40, lv = 5, id = 10, sync = 0},
+        {"extrans", rule = 056, time = 80},
+        {"ex", time = 100, func = "wait"},
+        {"cgdel", id = -1},
+        {"bg", rule = 056, time = 80, file = "black", path = ":bg/"},
+        {"se", file = "se9010", vol = 40, id = 1},
+        {"bg", zoom = 70, x = 50, file = "zbg084c", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "稟", size = "z2", zoom = 120, mode = 3, path = ":fg/rin/z2/", file = "rin_z2e0000", face = "e0011i", head = "rin_z2e", y = 64, lv = 5, id = 10, sync = 0},
+        {"extrans", rule = 056, time = 80},
+        {"ex", time = 100, func = "wait"},
+        {"cgdel", id = -1},
+        {"bg", rule = 056, time = 80, file = "black", path = ":bg/"},
+        {"se", file = "se9010", vol = 40, id = 1},
+        {"bg", zoom = 100, x = 150, y = 80, file = "zbg084c", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "稟", size = "z2", zoom = 160, mode = 3, path = ":fg/rin/z2/", file = "rin_z2e0000", face = "e0013i", head = "rin_z2e", y = 220, lv = 5, id = 10, sync = 0},
+        {"extrans", rule = 056, time = 80},
+        {"ex", time = 300, func = "wait"},
+        {"se", file = "se3130", vol = 40, id = 4},
+        {"bg", rule = 056, time = 80, file = "black", path = ":bg/"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "禀会把我的阴茎深深含到喉咙深处……用喉咙的环状部分来摩擦我",
+                    {"rt2"},
+                    "的龟头。"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122"
+    },
+    block_00122 = {
+        {"text"},
+        text = {
+            ja = {
+                {"能用喉咙环刺激龟头的女性应该几乎没有吧。"}
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123"
+    },
+    block_00123 = {
+        {"text"},
+        text = {
+            ja = {
+                {"能够做到这种事的，就是禀。"}
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124"
+    },
+    block_00124 = {
+        {"flash", time = 800, alpha = 150, loop = 1, color = "ffffff"},
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {"我在禀的喉咙深处射精了。"}
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125"
+    },
+    block_00125 = {
+        {"bg", x = 530, y = -530, sync = 0, file = "zbg084c", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"fg", ch = "稟", size = "z2", zoom = 120, sync = 0, mode = 3, path = ":fg/rin/z2/", file = "rin_z2e0000", face = "e0009i", head = "rin_z2e", y = 140, lv = 5, id = 10},
+        {"bg", file = "black", id = 8, lv = 8, x = 0, y = -590, speed = 3000, sync = 0, path = ":bg/", y2 = -500},
+        {"bg", file = "black", id = 7, lv = 7, x = 0, y = 620, speed = 3000, sync = 0, path = ":bg/", y2 = 500},
+        {"text"},
+        delay = {
+            [2000] = {
+                {"fgact", ch = "稟", act = "びっくり", lv = 5, id = 10}
+            },
+            [3000] = {
+                {"fg", ch = "稟", size = "z2", mode = 3, path = ":fg/rin/z2/", file = "rin_z2e0000", face = "e0002i", head = "rin_z2e", y = 140, lv = 5, id = 10, zoom = 120},
+                {"fgact", ch = "稟", act = "いいえ", lv = 5, id = 10}
+            }
+        },
+        text = {
+            ja = {
+                {"禀觉得直接吞下去太浪费了，所以一定会让我在她嘴里射出来。"}
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126"
+    },
+    block_00126 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我的精液在禀的口中积聚着。"}
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127"
+    },
+    block_00127 = {
+        {"text"},
+        text = {
+            ja = {
+                {"可能因为很久没射了，所以颜色应该相当黄浑浊吧。"}
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128"
+    },
+    block_00128 = {
+        {"fgact", ch = "稟", act = "おじぎ", size = 5, lv = 5, id = 10},
+        {"text"},
+        text = {
+            ja = {
+                {"禀会一副很美味的样子把它喝下去……。"}
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129"
+    },
+    block_00129 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀就是这样的女孩子。"}
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130"
+    },
+    block_00130 = {
+        {"cgdel", id = -1},
+        {"bg", rule = "008a", ease = "easein_cubic", time = 500, file = "black", path = ":bg/"},
+        {"bg", file = "bg084a", path = ":bg/", sync = 0},
+        {"fg", ch = "稟", size = "z1", mode = 3, resize = 1, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0011", head = "rin_z1e", lv = 4, id = 10, sync = 0},
+        {"extrans", time = 500, rule = "008b", ease = "easeout_cubic"},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "稟", act = "うなづく", size = 5, time = 150, lv = 4, id = 10}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100105", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「那、那个……你是不是在想很失礼的事情呢？直哉君」"
+                }
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131"
+    },
+    block_00131 = {
+        {"mwact", act = "いいえ", size = 10, time = 150},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？没有没有，才没有那种事呢！」"
+                }
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132"
+    },
+    block_00132 = {
+        {"text"},
+        text = {
+            ja = {
+                {"禀有点生气了。"}
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133"
+    },
+    block_00133 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "果然，在对一个说“能忍耐”的女孩子面前，想象她愉快地喝下我的",
+                    {"rt2"},
+                    "精液，确实很无礼。"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134"
+    },
+    block_00134 = {
+        {"text"},
+        text = {
+            ja = {
+                {"估计脸上都露出来了……。"}
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135"
+    },
+    block_00135 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊，护理什么的也挺让人期待的呢。不是色情的手淫到底是什",
+                    {"rt2"},
+                    "么样的呢。确实，如果这样能让生活变得轻松的话，我会很开心啊」"
+                }
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136"
+    },
+    block_00136 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0000", face = "e0004", head = "rin_z1e", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100106", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137"
+    },
+    block_00137 = {
+        {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0011", head = "rin_z1e", lv = 4, id = 10},
+        {"fgact", ch = "稟", act = "うなづく", size = 5, time = 150, lv = 4, id = 10},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "稟", size = "z1", mode = 3, path = ":fg/rin/z1/", file = "rin_z1e0010", face = "e0010", head = "rin_z1e", lv = 4, id = 10}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rnd_100107", ch = "rnd"}
+            },
+            ja = {
+                {
+                    name = {"禀"},
+                    "「好的，那我去做准备，请稍等片刻……」"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138"
+    },
+    block_00138 = {
+        {"bgm", stop = 1},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"excall", file = "111_the_happy_princess_04"},
+        {"text"},
+        linkback = "block_00137"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

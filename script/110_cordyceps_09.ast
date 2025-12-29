@@ -1,0 +1,4515 @@
+astver = 2.0
+astname = "ast"
+ast = {
+    block_00000 = {
+        {"savetitle", text = "APPEND"},
+        {"bg", time = 500, file = "black", path = ":bg/"},
+        {"se", file = "se9074", id = 8, loop = 1},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900440", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「什么？这个声音？」"
+                }
+            }
+        },
+        linknext = "block_00001"
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003549", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「只是预感而已，没想到真的被那边感应到了……」"
+                }
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002"
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900441", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「感应到了？」"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003"
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003550", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「非常强烈的共鸣……比伯奇还要强烈……这种情感……」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004"
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            ja = {
+                {"里奈站了起来。"}
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005"
+    },
+    block_00005 = {
+        {"se", file = "se9063", id = 1},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"colortone", inter = 7, ssize = 1, sfade = 300, style = "raster"},
+        {"bg", speed = 300000, file = "zbg087a", path = ":bg/", x2 = 960, y2 = -540, x = -960, y = 540, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"extrans", time = 200},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003551", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「你是谁！」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006"
+    },
+    block_00006 = {
+        {"mwact", act = "びっくり"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900442", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「咦？有人在吗？」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007"
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003552", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不是伯奇。当然也不可能是义贞」"
+                }
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008"
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003553", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「这个世界已经变得不同了」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009"
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003554", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「你本来就是这里的居民吗？还是说，你也只是像我们一样的来访",
+                    {"rt2"},
+                    "者？」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010"
+    },
+    block_00010 = {
+        {"text"},
+        text = {
+            ja = {
+                {"里奈朝着茧的外面大声喊道。"}
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011"
+    },
+    block_00011 = {
+        {"text"},
+        text = {
+            ja = {
+                {"然而，外面并没有任何回应。"}
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012"
+    },
+    block_00012 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"colortone", style = "raster", ease = "out"},
+        {"bg", file = "bg087a", path = ":bg/", sync = 0},
+        {"fg", ch = "里奈", size = "z1", mode = 3, resize = 1, path = ":fg/rna/z1/", file = "rna_z1f4500", face = "f0005", head = "rna_z1f", x = -345, lv = 4, id = 5, sync = 0},
+        {"fg", ch = "優美", size = "z1", mode = 3, resize = 1, path = ":fg/yum/z1/", file = "yum_z1f3500", face = "f0008", head = "yum_z1f", x = 345, lv = 4, id = 4, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900443", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「茧外面有人吗？」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013"
+    },
+    block_00013 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1f4500", face = "f0011", head = "rna_z1f", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1f4500", face = "f0010", head = "rna_z1f", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003555", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嗯，站在茧外面。那个人是――」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014"
+    },
+    block_00014 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1f3500", face = "f0007", head = "yum_z1f", x = 345, lv = 4, id = 4},
+        {"fg", ch = "優美", time = 200, mode = 3, path = ":fg/yum/z1/", file = "yum_z1f3500", face = "f0007", head = "yum_z1f", x2 = "345,295", x = 296, lv = 4, id = 4},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900444", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「那个人是谁？」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015"
+    },
+    block_00015 = {
+        {"fg", ch = "里奈", size = "z1", time = 150, mode = 3, path = ":fg/rna/z1/", file = "rna_z1f4510", face = "f0005", head = "rna_z1f", x2 = "-345,-343,-344", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003556", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「优美！我要做点让你吃惊的事情哦！」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016"
+    },
+    block_00016 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1f3500", face = "f0001", head = "yum_z1f", x = 296, lv = 4, id = 4},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "優美", act = "うなづく", size = 10, time = 300, lv = 4, id = 4}
+            },
+            vl02 = {
+                {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1f3500", face = "f0011", head = "yum_z1f", x = 296, lv = 4, id = 4}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900445", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「咦？嗯，其实到现在我已经够惊讶了，还有更让人吃惊的事吗？？",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017"
+    },
+    block_00017 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1f4510", face = "f0011", head = "rna_z1f", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003557", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「绝对不会让你痛的！」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018"
+    },
+    block_00018 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1f2310", face = "f0008", head = "yum_z1f", x = 296, lv = 4, id = 4},
+        {"fg", ch = "優美", time = 200, mode = 3, path = ":fg/yum/z1/", file = "yum_z1f2310", face = "f0008", head = "yum_z1f", x2 = "296,341,339", x = 346, lv = 4, id = 4},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900446", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「不、不会痛？？什、什么？里奈你到底想做什么？？」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019"
+    },
+    block_00019 = {
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "zbg087a", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "里奈", size = "z2", mode = 3, resize = 1, path = ":fg/rna/z2/", file = "rna_z2f4500", face = "f0004", head = "rna_z2f", x = -345, lv = 5, id = 5, sync = 0},
+        {"fg", ch = "優美", size = "z2", mode = 3, resize = 1, path = ":fg/yum/z2/", file = "yum_z2f3510", face = "f0008", head = "yum_z2f", x = 345, lv = 5, id = 4, sync = 0},
+        {"extrans", time = 400},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f4500", face = "f0006", head = "rna_z2f", x = -345, lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003558", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「按照约定，这个要变成我的了！」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020"
+    },
+    block_00020 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f4510", face = "f0005", head = "rna_z2f", x = -345, lv = 5, id = 5},
+        {"fg", ch = "里奈", time = 300, mode = 3, path = ":fg/rna/z2/", file = "rna_z2f4510", face = "f0005", head = "rna_z2f", x2 = -345, x = 0, lv = 5, id = 5},
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2f3500", face = "f0007", head = "yum_z2f", x = 345, lv = 5, id = 4},
+        {"fg", ch = "優美", zoom = 95, time = 300, mode = 3, path = ":fg/yum/z2/", file = "yum_z2f3500", face = "f0007", head = "yum_z2f", x2 = 345, y2 = 0, z2 = 100, x = 345, y = -10, lv = 5, id = 4},
+        {"fgact", ch = "優美", act = "びっくり", size = 30, lv = 5, id = 4},
+        {"quake"},
+        {"quake", mode = "mw"},
+        {"se", file = "se1512", id = 1},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900447", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「欸！？」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021"
+    },
+    block_00021 = {
+        {"se", file = "se9079", id = 1},
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2f3500", face = "f0009", head = "yum_z2f", x = 345, y = -10, lv = 5, id = 4, zoom = 95},
+        {"fg", ch = "優美", time = 1000, mode = 3, path = ":fg/yum/z2/", file = "yum_z2f3500", face = "f0009", head = "yum_z2f", y2 = -10, x = 345, y = 0, lv = 5, id = 4, zoom = 95},
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f4510", face = "f0006", head = "rna_z2f", x = 0, lv = 5, id = 5},
+        {"fg", ch = "里奈", time = 500, mode = 3, path = ":fg/rna/z2/", file = "rna_z2f4510", face = "f0006", head = "rna_z2f", y2 = 0, x = 0, y = 30, lv = 5, id = 5},
+        {"fgact", ch = "里奈", act = "いいえ", size = 1, time = 300, lv = 5, id = 5},
+        {"text"},
+        text = {
+            ja = {
+                {"这么说著，里奈抓住了我的阴茎。――然后，就那样用力握住了。"}
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022"
+    },
+    block_00022 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f4510", face = "f0006", head = "rna_z2f", x = 0, y = 30, lv = 5, id = 5},
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2f2300", face = "f0012", head = "yum_z2f", x = 345, y = 0, lv = 5, id = 4, zoom = 95},
+        {"fgact", ch = "優美", act = "びっくり", size = 3, time = 100, lv = 5, id = 4},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900448", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「为、为什么！？里奈！？你、你这样胡乱用力握著我的小鸡鸡吗？",
+                    {"rt2"},
+                    "？」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023"
+    },
+    block_00023 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f4510", face = "f0004", head = "rna_z2f", x = 0, y = 30, lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"se", file = "se2129", vol = 50, id = 1},
+                {"bg", zoom = 110, y = -30, time = 200, file = "zbg087a", path = ":bg/", z2 = 100, y2 = 0, ax = 1920, ay = 1080, bx = -960, by = -540},
+                {"fg", ch = "里奈", size = "z2", zoom = 115, time = 200, mode = 3, path = ":fg/rna/z2/", file = "rna_z2f4510", face = "f0006", head = "rna_z2f", x2 = 0, y2 = 30, z2 = 100, x = 0, y = 50, lv = 5, id = 5},
+                {"fg", ch = "優美", size = "z2", zoom = 110, time = 200, mode = 3, path = ":fg/yum/z2/", file = "yum_z2f2300", face = "f0012", head = "yum_z2f", x2 = 345, y2 = 0, z2 = 95, x = 400, y = 20, lv = 5, id = 4}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003559", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「这欲望的颜料……是我的」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024"
+    },
+    block_00024 = {
+        {"fgact", ch = "優美", act = "びっくり", lv = 5, id = 4},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900449", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「呀呜！！」"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025"
+    },
+    block_00025 = {
+        {"msgoff"},
+        {"se", file = "se9075", id = 2},
+        {"bg", zoom = 120, y = -30, time = 4000, file = "zbg087a", path = ":bg/", z2 = 110, y2 = -30, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f4510", face = "f0005", head = "rna_z2f", lv = 5, id = 5, sync = 0},
+        {"fg", ch = "里奈", zoom = 125, time = 2500, mode = 3, path = ":fg/rna/z2/", file = "rna_z2f4510", face = "f0005", head = "rna_z2f", x2 = 0, y2 = 50, z2 = 115, x = -50, y = 60, lv = 5, id = 5, sync = 0},
+        {"fgact", ch = "里奈", act = "いいえ", time = 120, size = 1, loop = -1, lv = 5, id = 5, sync = 0},
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2f3500", face = "f0009", head = "yum_z2f", lv = 5, id = 4, sync = 0},
+        {"fg", ch = "優美", zoom = 115, time = 2500, mode = 3, path = ":fg/yum/z2/", file = "yum_z2f3500", face = "f0009", head = "yum_z2f", x2 = 400, y2 = 20, z2 = 110, x = 390, y = 25, lv = 5, id = 4, sync = 0},
+        {"fgact", ch = "優美", act = "いいえ", size = 10, time = 250, loop = -1, lv = 5, id = 4, sync = 0},
+        {"extrans", time = 0},
+        {"ex", time = 1970, func = "wait"},
+        {"bg", file = "white", id = 10, lv = 10, time = 50, path = ":bg/"},
+        {"ex", time = 1, func = "wait"},
+        {"cgdel", id = 10, lv = 10},
+        {"se", file = "se_attack07", id = 3},
+        {"bg", zoom = 90, speed = 300, file = "zbg087a", path = ":bg/", z2 = 120, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0, y = -30},
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f4500", face = "f0006", head = "rna_z2f", lv = 5, id = 5, sync = 0},
+        {"fg", ch = "里奈", zoom = 120, speed = 250, mode = 3, path = ":fg/rna/z2/", file = "rna_z2f4500", face = "f0006", head = "rna_z2f", x2 = -50, y2 = 60, z2 = 125, x = -305, y = 70, lv = 5, id = 5, sync = 0},
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2f3500", face = "f0012", head = "yum_z2f", lv = 5, id = 4, sync = 0},
+        {"fg", ch = "優美", zoom = 100, speed = 200, mode = 3, path = ":fg/yum/z2/", file = "yum_z2f3500", face = "f0012", head = "yum_z2f", x2 = 390, y2 = 25, z2 = 115, x = 484, y = -20, lv = 5, id = 4, sync = 0},
+        {"fgact", ch = "優美", act = "びっくり", size = 10, speed = 100, lv = 5, id = 4, sync = 0},
+        {"quake"},
+        {"extrans", time = 0},
+        {"text"},
+        text = {
+            ja = {
+                {"里奈用蛮力将我的阴茎拔了出来。"}
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026"
+    },
+    block_00026 = {
+        {"se", file = "se9076", id = 7, time = 1000},
+        {"cgact", act = "いいえ", loop = -1, size = 2, time = 80},
+        {"cgact", act = "びっくり", loop = -1, size = 3, time = 50},
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2f3510", face = "f0012", head = "yum_z2f", x = 484, y = -20, lv = 5, id = 4},
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f4500", face = "f0004", head = "rna_z2f", x = -305, y = 70, lv = 5, id = 5, zoom = 120},
+        {"fgact", ch = "優美", act = "いいえ", size = 3, time = 65, loop = -1, lv = 5, id = 4},
+        {"fgact", ch = "優美", act = "びっくり", size = 2, time = 55, loop = -1, lv = 5, id = 4},
+        {"fgact", ch = "里奈", act = "いいえ", size = 1, time = 95, loop = -1, lv = 5, id = 5},
+        {"fgact", ch = "里奈", act = "びっくり", size = 2, time = 40, loop = -1, lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900450", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「呃！？」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027"
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {"如同树木被连根拔起般的巨大声响在茧中回荡。"}
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028"
+    },
+    block_00028 = {
+        {"text"},
+        text = {
+            ja = {
+                {"茧发出快要破裂般的声音震动著。"}
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029"
+    },
+    block_00029 = {
+        {"bg", file = "black", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"我紧闭双眼，咬紧牙关。"}
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030"
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这就是里奈所说的「死」的含义吗。"}
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031"
+    },
+    block_00031 = {
+        {"text"},
+        text = {
+            ja = {
+                {"接下来，我将亲身体验死亡的痛苦。我已经下定了那个决心――"}
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032"
+    },
+    block_00032 = {
+        {"se", id = 7, stop = 1, time = 2000},
+        {"se", id = 8, stop = 1, time = 2000},
+        {"cgact", id = 2, act = "stopact"},
+        {"text"},
+        text = {
+            ja = {
+                {"声音消失了。"}
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033"
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            ja = {
+                {"茧的震动也消失了。"}
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034"
+    },
+    block_00034 = {
+        {"text"},
+        text = {
+            ja = {
+                {"寂静包裹着我们。"}
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035"
+    },
+    block_00035 = {
+        {"text"},
+        text = {
+            ja = {
+                {"本该被约定的痛苦，始终没有袭向我。"}
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036"
+    },
+    block_00036 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900451", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「这是……」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037"
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我战战兢兢地睁开了眼。"}
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038"
+    },
+    block_00038 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", speed = 400000, file = "zbg087a", path = ":bg/", x2 = 960, y2 = -540, x = -960, y = -540, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "black4", id = 9, lv = 9, path = ":cg/", sync = 0},
+        {"extrans", time = 1000},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900452", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「诶？　那是什么？」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039"
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            ja = {
+                {"里奈手里拿的不是我的阴茎，而是笔。"}
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040"
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003560", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「水面醒来――乘浪之船的――」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041"
+    },
+    block_00041 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003561", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「声音真美啊！！」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042"
+    },
+    block_00042 = {
+        {"se", file = "se9077", id = 1},
+        {"cgdel", id = -1},
+        {"bg", rule = 105, time = 100, file = "white", path = ":bg/"},
+        {"bg", rule = 105, time = 100, file = "black", path = ":bg/"},
+        {"bg", rule = 105, time = 100, file = "white", path = ":bg/"},
+        {"quake", mode = "mw"},
+        {"bgm", file = "bgm025"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "里奈一边吟诵着什么，一边大幅挥动着笔。就在那一瞬间，响起了",
+                    {"rt2"},
+                    "金属刮削般的声音。"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043"
+    },
+    block_00043 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003562", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「好厉害……已经成型了！」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044"
+    },
+    block_00044 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900453", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「成型？」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045"
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003563", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「看吧」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046"
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900454", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「诶？这是什么……」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047"
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            ja = {
+                {"从里奈的笔尖伸出了一条锁链。"}
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048"
+    },
+    block_00048 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那条锁链打破了茧，连接到了外面。"}
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049"
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            ja = {
+                {"似乎缠在了外面的什么东西上，发出了叮当的铁链声。"}
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050"
+    },
+    block_00050 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003564", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「一直都能感觉到你的视线。你为什么会在这个世界里？」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051"
+    },
+    block_00051 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900455", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「诶？在外面的人？是里奈的熟人吗？」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052"
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003565", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不知道。只是莫名觉得，好像认识一样……。总之，优美，我们",
+                    {"rt2"},
+                    "出去吧！」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053"
+    },
+    block_00053 = {
+        {"text"},
+        text = {
+            ja = {
+                {"里奈这么喊着，从被锁链打破的茧里走了出去。"}
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054"
+    },
+    block_00054 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900456", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「等、等等啦，里奈。你、你要去哪儿？」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055"
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我也急忙从茧里跑了出来。"}
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056"
+    },
+    block_00056 = {
+        {"bg", file = "black", path = ":bg/"},
+        {"msgoff"},
+        {"bg", y = -500, zoom = 130, speed = 200000, file = "zbg013l", path = ":bg/", z2 = 100, x2 = 620, y2 = -580, x = -530, ax = 1920, ay = 1126, bx = -960, by = -586, sync = 0},
+        {"extrans", time = 1000},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003566", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「没有人……不过……」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057"
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900457", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「里奈伸出的锁链还在延续着……」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058"
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            ja = {
+                {"里奈甩出的锁链，从车站前的环岛一直延伸到商店街的拱廊方向。"}
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059"
+    },
+    block_00059 = {
+        {"msgoff"},
+        {"bg", file = "bg013l", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "里奈", size = "z1", mode = 3, resize = 1, path = ":fg/rna/z1/", file = "rna_z1f0500", face = "f0011", head = "rna_z1f", x = -345, lv = 4, id = 5, sync = 0},
+        {"fg", ch = "優美", size = "z1", mode = 3, resize = 1, path = ":fg/yum/z1/", file = "yum_z1f0500", face = "f0007", head = "yum_z1f", x = 345, lv = 4, id = 4, sync = 0},
+        {"extrans"},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1f0500", face = "f0011", head = "yum_z1f", x = 345, lv = 4, id = 4}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900458", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「顺着这条锁链走，应该就能找到那个人了吧？」"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060"
+    },
+    block_00060 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1f0500", face = "f0005", head = "rna_z1f", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003567", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嗯，我会去的！」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061"
+    },
+    block_00061 = {
+        {"se", file = "se0744s", id = 1},
+        {"fg", ch = "里奈", mx = -40, mode = -1, lv = 4, id = 5},
+        {"text"},
+        text = {
+            ja = {
+                {"这么说着，里奈跑了起来。"}
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062"
+    },
+    block_00062 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", y = -275, file = "zbg013l", path = ":bg/", ax = 1920, ay = 1126, bx = -960, by = -586, sync = 0},
+        {"fg", ch = "里奈", size = "z2", mx = 40, mode = 3, resize = 1, path = ":fg/rna/z2/", file = "rna_z2f0510", face = "f0001", head = "rna_z2f", x = -345, lv = 5, id = 5, sync = 0},
+        {"extrans", time = 300},
+        {"se", file = "se9065", id = 1},
+        {"fg", ch = "優美", size = "z2", mx = 40, mode = 3, resize = 1, path = ":fg/yum/z2/", file = "yum_z2f0500", face = "f0008", head = "yum_z2f", x = 345, lv = 5, id = 4},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900459", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「诶？去是可以啦？但又要全裸去吗？」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063"
+    },
+    block_00063 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f0510", face = "f0011", head = "rna_z2f", x = -345, lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f0510", face = "f0001", head = "rna_z2f", x = -345, lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003568", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是啊，怎么了，现在才说什么，我一直都是全裸的吧？」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064"
+    },
+    block_00064 = {
+        {"fgact", ch = "優美", act = "うなづく", size = 10, time = 150, lv = 5, id = 4},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2f0500", face = "f0011", head = "yum_z2f", x = 345, lv = 5, id = 4}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900460", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「可、可是啊。这条锁的尽头，说不定有我们认识的人吧？」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065"
+    },
+    block_00065 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f0510", face = "f0004", head = "rna_z2f", x = -345, lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f0510", face = "f0005", head = "rna_z2f", x = -345, lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003569", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「也许吧。不过，我想确认一下这条锁到底连着哪里」"
+                }
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066"
+    },
+    block_00066 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2f0500", face = "f0009", head = "yum_z2f", x = 345, lv = 5, id = 4},
+        {"fgact", ch = "優美", act = "いいえ", size = 10, time = 200, lv = 5, id = 4},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2f0500", face = "f0008", head = "yum_z2f", x = 345, lv = 5, id = 4}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900461", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「呜——全裸什么的，现在再说也……不过啊，不过，这次是真正意",
+                    {"rt2"},
+                    "义上的全裸哦」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067"
+    },
+    block_00067 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f0510", face = "f0011", head = "rna_z2f", x = -345, lv = 5, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003570", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「真正意义上的全裸？什么意思？」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068"
+    },
+    block_00068 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2f0500", face = "f0005", head = "yum_z2f", x = 345, lv = 5, id = 4},
+        {"fgact", ch = "優美", act = "びっくり", size = 13, time = 150, lv = 5, id = 4},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2f0500", face = "f0008", head = "yum_z2f", x = 345, lv = 5, id = 4}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900462", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「里奈和我都没有小鸡鸡嘛。这就是普通的两个全裸女高中生啊！」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069"
+    },
+    block_00069 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f0510", face = "f0003", head = "rna_z2f", x = -345, lv = 5, id = 5},
+        {"fgact", ch = "里奈", act = "うんうん", size = 10, time = 150, lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f0510", face = "f0002", head = "rna_z2f", x = -345, lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003571", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「哈哈哈，是吗。你现在才说我才注意到。确实，这次我们两个才",
+                    {"rt2"},
+                    "是真的意义上的全裸呢」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070"
+    },
+    block_00070 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2f0500", face = "f0005", head = "yum_z2f", x = 345, lv = 5, id = 4},
+        {"fgact", ch = "優美", act = "うなづく", size = 10, time = 150, lv = 5, id = 4},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900463", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「但还是要去吧！为了确认这条锁的尽头有什么」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071"
+    },
+    block_00071 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f0510", face = "f0002", head = "rna_z2f", x = -345, lv = 5, id = 5},
+        {"fgact", ch = "里奈", act = "うなづく", lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f0510", face = "f0001", head = "rna_z2f", x = -345, lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003572", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嗯，优美你也会陪我一起去吗？」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072"
+    },
+    block_00072 = {
+        {"fg", ch = "優美", size = "z2", mode = 3, path = ":fg/yum/z2/", file = "yum_z2f0500", face = "f0005", head = "yum_z2f", x = 345, lv = 5, id = 4},
+        {"fg", ch = "優美", time = 150, mode = 3, path = ":fg/yum/z2/", file = "yum_z2f0500", face = "f0005", head = "yum_z2f", x2 = "345,295", x = 297, lv = 5, id = 4},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900464", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「那当然了！我才不会让里奈一个人去呢！」"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073"
+    },
+    block_00073 = {
+        {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f0510", face = "f0004", head = "rna_z2f", x = -345, lv = 5, id = 5},
+        {"fgact", ch = "里奈", act = "うなづく", size = 10, time = 150, lv = 5, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z2", mode = 3, path = ":fg/rna/z2/", file = "rna_z2f0510", face = "f0002", head = "rna_z2f", x = -345, lv = 5, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003573", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嗯，谢谢你。来吧，走吧！优美！」"
+                }
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074"
+    },
+    block_00074 = {
+        {"fg", ch = "里奈", mx = -40, mode = -1, lv = 5, id = 5},
+        {"fg", ch = "優美", mx = -40, mode = -1, lv = 5, id = 4},
+        {"se", file = "se0744s", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我们跑了起来。"}
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075"
+    },
+    block_00075 = {
+        {"text"},
+        text = {
+            ja = {
+                {"赤脚踢踏着柏油路的感觉，伴随着一种独特的痛感。"}
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076"
+    },
+    block_00076 = {
+        {"se", file = "se0744", id = 1},
+        {"bg", file = "bg014l", path = ":bg/"},
+        {"ex", time = 1000, func = "wait"},
+        {"bg", file = "bg015l", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23},
+        {"ex", time = 1000, func = "wait"},
+        {"bg", file = "bg037l", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23},
+        {"ex", time = 1000, func = "wait"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "我们不停地奔跑。穿过樱之原商店街，穿过市区，然后，继续攀登",
+                    {"rt2"},
+                    "梦浮坂。"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077"
+    },
+    block_00077 = {
+        {"fg", ch = "里奈", size = "z1", mx = 40, mode = 3, resize = 1, path = ":fg/rna/z1/", file = "rna_z1f0500", face = "f0009", head = "rna_z1f", x = -345, lv = 4, id = 5, sync = 0},
+        {"fg", ch = "優美", size = "z1", mx = 40, mode = 3, resize = 1, path = ":fg/yum/z1/", file = "yum_z1f0500", face = "f0009", head = "yum_z1f", x = 345, lv = 4, id = 4, sync = 0},
+        {"extrans", time = 500},
+        {"fgact", ch = "里奈", act = "うんうん", size = 10, time = 400, lv = 4, id = 5},
+        {"se", stop = 1, id = 1},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1f0500", face = "f0011", head = "rna_z1f", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003574", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「哈啊，哈啊，还真是、够累的……没想到这条锁竟然这么长……」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078"
+    },
+    block_00078 = {
+        {"fgact", ch = "優美", act = "うなづく", size = 10, time = 400, lv = 4, id = 4},
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1f0500", face = "f0008", head = "yum_z1f", x = 345, lv = 4, id = 4},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900465", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「明明是在梦里，却这么辛苦。为什么呢？」"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079"
+    },
+    block_00079 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1f0500", face = "f0010", head = "rna_z1f", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1f0500", face = "f0011", head = "rna_z1f", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003575", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「大概，在前方的人并不是梦中的人物吧。应该是来自现实的人吧」"
+                }
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080"
+    },
+    block_00080 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1f0500", face = "f0001", head = "rna_z1f", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003576", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「所以，受到影响，我们才能感受到接近现实世界的感官体验」"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081"
+    },
+    block_00081 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1f0500", face = "f0011", head = "yum_z1f", x = 345, lv = 4, id = 4},
+        {"fgact", ch = "優美", act = "うなづく", size = 12, time = 250, lv = 4, id = 4},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900466", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「前面有我们认识的人吗？」"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082"
+    },
+    block_00082 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1f0500", face = "f0004", head = "rna_z1f", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "里奈", act = "うなづく", size = 10, time = 200, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1f0500", face = "f0011", head = "rna_z1f", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003577", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「应该有吧，因为这条锁就是那个人创造出来的……」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083"
+    },
+    block_00083 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1f0500", face = "f0007", head = "yum_z1f", x = 345, lv = 4, id = 4},
+        {"fgact", ch = "優美", act = "びっくり", size = 13, time = 200, lv = 4, id = 4},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1f0500", face = "f0008", head = "yum_z1f", x = 345, lv = 4, id = 4}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900467", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「那个人创造的？不是里奈的笔生出来的吗？」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084"
+    },
+    block_00084 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1f0500", face = "f0002", head = "rna_z1f", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003578", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「我的笔并不是具现化之笔哦。只是把某个人的思念化为形态，从",
+                    {"rt2"},
+                    "某种意义上来说，也算是普通的笔」"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085"
+    },
+    block_00085 = {
+        {"fg", ch = "優美", size = "z1", mode = 3, path = ":fg/yum/z1/", file = "yum_z1f0500", face = "f0009", head = "yum_z1f", x = 345, lv = 4, id = 4},
+        {"fgact", ch = "優美", act = "うなづく", size = 16, time = 400, lv = 4, id = 4},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900468", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「普通的笔可不会从女孩子的阴茎里诞生呢」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086"
+    },
+    block_00086 = {
+        {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1f0500", face = "f0011", head = "rna_z1f", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "里奈", size = "z1", mode = 3, path = ":fg/rna/z1/", file = "rna_z1f0500", face = "f0001", head = "rna_z1f", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003579", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「我说的是某种意义啦。看，马上就能看见锁的尽头了」"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087"
+    },
+    block_00087 = {
+        {"se", file = "se9064", id = 1},
+        {"bgm", stop = 1, time = 1000},
+        {"fg", ch = "里奈", mx = -40, mode = -1, lv = 4, id = 5},
+        {"fg", ch = "優美", mx = -40, mode = -1, lv = 4, id = 4},
+        {"text"},
+        text = {
+            ja = {
+                {"我们喘着气，继续攀登着梦浮坂。"}
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088"
+    },
+    block_00088 = {
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = "083r", wait = 250, file = "black", path = ":bg/", vague = 40},
+        {"bg", file = "zev_unq_c02_03", speed = 400000, zoom = 80, path = ":ev/ev_unq_c02/", set = "ev_unq_c02", x2 = -576, y2 = 324, x = 576, y = -324, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"se", file = "se9104", loop = 1, id = 2},
+        {"text"},
+        text = {
+            ja = {
+                {"从梦浮坂进入了樱之森。"}
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089"
+    },
+    block_00089 = {
+        {"text"},
+        text = {
+            ja = {
+                {"樱花如同疯了一般纷纷飘落。"}
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090"
+    },
+    block_00090 = {
+        {"text"},
+        text = {
+            ja = {
+                {"如同吹雪一般，将我们包裹其中。"}
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091"
+    },
+    block_00091 = {
+        {"text"},
+        text = {
+            ja = {
+                {"仿佛要阻挡我们的去路一般――。"}
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092"
+    },
+    block_00092 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003580", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「优美！一定要好好握着我的手！这阵樱花吹雪，说不定会把我们",
+                    {"rt2"},
+                    "卷走！」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093"
+    },
+    block_00093 = {
+        {"mwact", act = "びっくり", size = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900469", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「会把人卷走的风？？」"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094"
+    },
+    block_00094 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003581", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「大概吧，这阵风，是从别的世界吹来的」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095"
+    },
+    block_00095 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900470", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「别的世界？这里本身已经够奇怪了，还有更不一样的世界？」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096"
+    },
+    block_00096 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003582", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「更加可怕的地方。也许就算只有灵魂，一旦进去就再也出不来了",
+                    {"rt2"},
+                    "……」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097"
+    },
+    block_00097 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003583", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「天空的尽头，仿佛坠入无限的天空」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098"
+    },
+    block_00098 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900471", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「那是什么，好可怕」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099"
+    },
+    block_00099 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003584", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「所以，别迷失了，要紧紧抓住我的手，绝对不要放开！」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100"
+    },
+    block_00100 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900472", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「知道了！」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101"
+    },
+    block_00101 = {
+        {"bgm", file = "bgm105", time = 20000},
+        {"se", file = "se9064", id = 8},
+        {"se", stop = 1, id = 2, time = 6000},
+        {"msgoff"},
+        {"cgdel", id = -1},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "black", id = 0, lv = 0, path = ":bg/", sync = 0},
+        {"bg", file = "yashiro_fire_blur", zoom = 50, speed = 3000, alpha = 50, id = 1, lv = 1, path = ":cg/", z2 = 40, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "sakuraki_right3", zoom = 100, speed = 20000, id = 2, lv = 2, path = ":cg/", z2 = 50, x2 = 0, y2 = 0, x = 600, y = 0, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "sakuraki_left3", zoom = 100, speed = 20000, id = 3, lv = 3, path = ":cg/", z2 = 50, x2 = 0, y2 = 0, x = -700, y = 0, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "sakuraki_right2", zoom = 100, speed = 20000, id = 4, lv = 4, path = ":cg/", z2 = 50, x2 = 0, y2 = 0, x = 800, y = 0, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "sakuraki_left2", zoom = 100, speed = 20000, id = 5, lv = 5, path = ":cg/", z2 = 50, x2 = 0, y2 = 0, x = -600, y = 0, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "sakuraki_right1", zoom = 100, speed = 20000, id = 6, lv = 6, path = ":cg/", z2 = 50, x2 = 0, y2 = 0, x = 400, y = 0, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "sakuraki_left1", zoom = 100, speed = 20000, id = 7, lv = 7, path = ":cg/", z2 = 50, x2 = 0, y2 = 0, x = -500, y = 0, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"extrans", time = 500},
+        {"cgact", file = ":cg/sakuraki_right3", id = 2, lv = 2, act = "うんうん", size = 5, time = 300, loop = -1, x = 600, y = 0, zoom = 100},
+        {"cgact", file = ":cg/sakuraki_left3", id = 3, lv = 3, act = "うんうん", size = 5, time = 300, loop = -1, x = -700, y = 0, zoom = 100},
+        {"cgact", file = ":cg/sakuraki_right2", id = 4, lv = 4, act = "うんうん", size = 5, time = 300, loop = -1, x = 800, y = 0, zoom = 100},
+        {"cgact", file = ":cg/sakuraki_left2", id = 5, lv = 5, act = "うんうん", size = 5, time = 300, loop = -1, x = -600, y = 0, zoom = 100},
+        {"cgact", file = ":cg/sakuraki_right1", id = 6, lv = 6, act = "うんうん", size = 5, time = 300, loop = -1, x = 400, y = 0, zoom = 100},
+        {"cgact", file = ":cg/sakuraki_left1", id = 7, lv = 7, act = "うんうん", size = 5, time = 300, loop = -1, sync = 1, x = -500, y = 0, zoom = 100},
+        {"cgdel", id = -1},
+        {"bg", file = "white", path = ":bg/"},
+        {"bg", file = "yashiro_fire_blur", zoom = 50, id = 5, lv = 5, speed = 1000, path = ":cg/", ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"bg", file = "sakura_all", zoom = 50, id = 6, lv = 6, speed = 1000, path = ":cg/", z2 = 48, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"ex", time = 0, func = "wait"},
+        {"cgdel", id = -1},
+        {"bg", time = 500, file = "bg063l", path = ":bg/"},
+        {"text"},
+        delay = {
+            [100] = {
+                {"bg", file = "bg063l", zoom = 100, id = 7, lv = 7, path = ":bg/"}
+            }
+        },
+        text = {
+            ja = {
+                {"这里是伯奇神社。"}
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102"
+    },
+    block_00102 = {
+        {"text"},
+        text = {
+            ja = {
+                {"某种意义上，回到了最初的地点。"}
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103"
+    },
+    block_00103 = {
+        {"text"},
+        text = {
+            ja = {
+                {"然而和最初见到的伯奇神社完全不同。难以置信的花瓣堆积着。"}
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104"
+    },
+    block_00104 = {
+        {"text"},
+        text = {
+            ja = {
+                {"仿佛被大雪覆盖的土地――能看到锁链的尽头。"}
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105"
+    },
+    block_00105 = {
+        {"bgm", file = "bgm105"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003585", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「哈、哈、哈……在燃烧吗？」"
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106"
+    },
+    block_00106 = {
+        {"text"},
+        text = {
+            ja = {
+                {"蓝色的火焰，如同柱子一般直立向空。"}
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107"
+    },
+    block_00107 = {
+        {"text"},
+        text = {
+            ja = {
+                {"如果这条锁链缠在了人身上的话——。"}
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108"
+    },
+    block_00108 = {
+        {"msgoff"},
+        {"bg", file = "zbg063k_deblur", id = 6, lv = 6, speed = 120000, path = ":cg/", x2 = -50, y2 = -310, x = -50, y = -540, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"bg", file = "zbg063d_deblur", id = 7, lv = 7, speed = 120000, path = ":cg/", x2 = -50, y2 = -310, x = -50, y = -540, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"bg", file = "zbg063i_deblur", id = 8, lv = 8, speed = 120000, path = ":cg/", x2 = -50, y2 = -310, x = -50, y = -540, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"bg", file = "cg_zbg063l", id = 9, lv = 9, speed = 120000, sync = 1, path = ":cg/", x2 = -50, y2 = -310, x = -50, y = -540, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900473", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「那是人燃烧时的火焰吗？」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109"
+    },
+    block_00109 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003586", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不知道。不过……没有看到人影」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110"
+    },
+    block_00110 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900474", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「会不会是温度太高，身体一下子就蒸发掉了？」"
+                }
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111"
+    },
+    block_00111 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003587", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「如果是那样的话，应该会有更大范围被火焰包裹。我们也不可能",
+                    {"rt2"},
+                    "在这么近的地方站着不动」"
+                }
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112"
+    },
+    block_00112 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900475", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「那会是什么？」"
+                }
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113"
+    },
+    block_00113 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003588", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「我说过，那条锁链不是我做的吧」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114"
+    },
+    block_00114 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003589", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是我的画笔试图描绘出的，那个人心象风景的具现化」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115"
+    },
+    block_00115 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003590", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「所以，那个人和锁链是无法分开的」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116"
+    },
+    block_00116 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003591", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「因为那就是那个人的心本身啊」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117"
+    },
+    block_00117 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900476", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「锁链就是那个人的心本身吗？」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118"
+    },
+    block_00118 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003592", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「没错，是那个人一直封闭的执念。为了隐藏那份执着，用来束缚",
+                    {"rt2"},
+                    "内心的锁链所具现化出来的东西……」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119"
+    },
+    block_00119 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003593", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那是由非常强烈的思念所诞生的锁链……」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120"
+    },
+    block_00120 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003594", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「但是，在那锁链的尽头，已经什么都没有了」"
+                }
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121"
+    },
+    block_00121 = {
+        {"cgdel", id = 9, lv = 9, time = 2000},
+        {"text"},
+        delay = {
+            [2000] = {
+                {"cgdel", id = 8, lv = 8, time = 2000}
+            },
+            [5000] = {
+                {"cgdel", id = 7, lv = 7, time = 2000}
+            }
+        },
+        text = {
+            ja = {
+                {
+                    "蓝色的火焰逐渐变小。真的把一切都烧尽了吗，火焰中仿佛什么都",
+                    {"rt2"},
+                    "没有。可是――。"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122"
+    },
+    block_00122 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003595", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那是――」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123"
+    },
+    block_00123 = {
+        {"text"},
+        text = {
+            ja = {
+                {"火焰变小后，锁链的尽头显现出什么东西。那是――。"}
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124"
+    },
+    block_00124 = {
+        {"cgdel", id = -1},
+        {"bg", file = "ev_unq_c05_01", path = ":ev/ev_unq_c05/", set = "ev_unq_c05"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003596", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「被分成两半的心脏？」"
+                }
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125"
+    },
+    block_00125 = {
+        {"text"},
+        text = {
+            ja = {
+                {"心脏。正如里奈所说，的确看上去像是一颗心脏。"}
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126"
+    },
+    block_00126 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即使在火焰中依然残留的心脏。仿佛它是――。"}
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127"
+    },
+    block_00127 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900477", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「连火焰都无法融化的心脏……」"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128"
+    },
+    block_00128 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900478", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「好像很久以前听过这样的童话故事……」"
+                }
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129"
+    },
+    block_00129 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003597", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那不是火焰哦。是连熔炉都无法融化的心脏」"
+                }
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130"
+    },
+    block_00130 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003598", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「在极其寒冷的日子里，那颗铅制的心脏发出了仿佛世界裂开一般",
+                    {"rt2"},
+                    "的声音，裂成了两半」"
+                }
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131"
+    },
+    block_00131 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003599", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「但是，即使在熔炉中，那颗心脏也没有融化」"
+                }
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132"
+    },
+    block_00132 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003600", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「与燕子一起被埋葬在垃圾场的，铅制的心脏」"
+                }
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133"
+    },
+    block_00133 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003601", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「幸福王子的故事……」"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134"
+    },
+    block_00134 = {
+        {"se", file = "se9004", id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"里奈走进仍在暗暗燃烧的蓝色火焰中。"}
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135"
+    },
+    block_00135 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900479", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「等等！里奈，不行！光着脚在那种地方会烫伤的！」"
+                }
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136"
+    },
+    block_00136 = {
+        {"se", file = "se3130", id = 1},
+        {"quake"},
+        {"text"},
+        text = {
+            ja = {
+                {"我冲了出去，抓住了她的手臂。"}
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137"
+    },
+    block_00137 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "因为冲得太猛，我也踩到了蓝色的火焰。不过，包围着我们的火焰",
+                    {"rt2"},
+                    "既不热也不冷。"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138"
+    },
+    block_00138 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003602", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「这颗心脏是谁的？是失去一切的幸福王子的心脏吗？」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139"
+    },
+    block_00139 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003603", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「用美丽宝石装饰的幸福王子雕像，为了拯救贫穷的人们，把镶嵌",
+                    {"rt2"},
+                    "在身上的宝石全部送了出去。因为变得破旧，最后被送进了熔炉里",
+                    {"rt2"},
+                    "融化了」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140"
+    },
+    block_00140 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003604", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「可是，王子的铅心脏却在烈焰中没有融化，依然留下来了」"
+                }
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141"
+    },
+    block_00141 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003605", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「这颗心脏，是为了救助他人，失去一切的人类的心……」"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142"
+    },
+    block_00142 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003606", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「为什么，那个人只留下了这份心意就消失了呢？」"
+                }
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143"
+    },
+    block_00143 = {
+        {"se", file = "se9071", id = 1},
+        {"bgm", stop = 1},
+        {"bg", time = 300, file = "white", path = ":bg/"},
+        {"bg", time = 300, rule = "106r", file = "black", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"刚才还要猛烈的风刮了起来。"}
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144"
+    },
+    block_00144 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这次我真的以为自己会被风卷走——但里奈紧紧握住了我的手。"}
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145"
+    },
+    block_00145 = {
+        {"se", stop = 1, time = 2000, id = 1},
+        {"msgoff"},
+        {"bg", file = "zev_unq_c02_04", rule = "008b", time = 1000, zoom = 50, speed = 100000, id = 8, lv = 8, sync = 0, path = ":ev/ev_unq_c02/", z2 = 75, set = "ev_unq_c02", ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"bg", file = "zev_unq_c02_04", rule = "008b", time = 1000, zoom = 50, speed = 100000, blur = 10, id = 9, lv = 9, sync = 0, path = ":ev/ev_unq_c02/", z2 = 75, set = "ev_unq_c02", ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"bgm", file = "bgm106"},
+        {"ex", time = 0, func = "wait"},
+        {"cgdel", id = 9, lv = 9, time = 1000},
+        {"ex", time = 800, func = "wait"},
+        {"text"},
+        text = {
+            ja = {
+                {"樱花飞舞。"}
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146"
+    },
+    block_00146 = {
+        {"text"},
+        text = {
+            ja = {
+                {"飞向天空，飞向高空。"}
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147"
+    },
+    block_00147 = {
+        {"text"},
+        text = {
+            ja = {
+                {"仿佛要将一切都卷走一般……樱花飞舞而起。"}
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148"
+    },
+    block_00148 = {
+        {"text"},
+        text = {
+            ja = {
+                {"视野被樱花填满。"}
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149"
+    },
+    block_00149 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即便如此，里奈依然望着风的去向。"}
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150"
+    },
+    block_00150 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003607", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「啊――」"
+                }
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151"
+    },
+    block_00151 = {
+        {"text"},
+        text = {
+            ja = {
+                {"被分成两半的心脏在空中飞舞。"}
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152"
+    },
+    block_00152 = {
+        {"text"},
+        text = {
+            ja = {
+                {"仿佛被召唤上天一般，逐渐升空。"}
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153"
+    },
+    block_00153 = {
+        {"mwact", act = "びっくり", size = 10, time = 150},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003608", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「等等！你是谁啊！」"
+                }
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154"
+    },
+    block_00154 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003609", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「你，真的就是我认识的那个人吗！」"
+                }
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155"
+    },
+    block_00155 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003610", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「幸福王子是你吗！」"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156"
+    },
+    block_00156 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003611", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「请告诉我！为什么你要做到这种地步，一直努力去拯救别人！！」"
+                }
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157"
+    },
+    block_00157 = {
+        {"se", file = "se9071", id = 1},
+        {"cgdel", id = -1},
+        {"bg", file = "white", id = 6, lv = 6, rule = 105, path = ":bg/", sync = 0},
+        {"bg", file = "sakura1", id = 7, lv = 7, zoom = 200, speed = 4000, path = ":cg/", z2 = 50, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "sakura2", id = 8, lv = 8, zoom = 200, speed = 4000, path = ":cg/", z2 = 70, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "sakura3", id = 9, lv = 9, zoom = 200, speed = 4000, path = ":cg/", z2 = 50, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "sakura4", id = 10, lv = 10, zoom = 200, speed = 4000, path = ":cg/", z2 = 80, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"bg", file = "sakura5", id = 11, lv = 11, zoom = 200, speed = 4000, path = ":cg/", z2 = 50, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"extrans", time = 300, rule = 105},
+        {"cgdel", id = 7, time = 3000, lv = 7},
+        {"cgdel", id = 8, time = 3000, lv = 8},
+        {"cgdel", id = 9, time = 3000, lv = 9},
+        {"cgdel", id = 10, time = 3000, lv = 10},
+        {"cgdel", id = 11, time = 3000, lv = 11},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「――」"
+                }
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158"
+    },
+    block_00158 = {
+        {"se", stop = 1, time = 5000, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"当所有的风都把樱花带走之后――。"}
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159"
+    },
+    block_00159 = {
+        {"cgdel", id = -1},
+        {"bg", file = "ev_unq_c07_01_bg", zoom = 50, speed = 200000, id = 9, lv = 9, path = ":cg/", z2 = 80, x2 = -100, y2 = 100, x = 0, y = 0, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"text"},
+        text = {
+            ja = {
+                {"我们眼前展开的是繁星闪烁的夜空。"}
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160"
+    },
+    block_00160 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003614", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「消失了……」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161"
+    },
+    block_00161 = {
+        {"text"},
+        text = {
+            ja = {
+                {"心脏高高飞向天空，消失在黑暗中。"}
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162"
+    },
+    block_00162 = {
+        {"text"},
+        text = {
+            ja = {
+                {"最后只留下满天的繁星――。"}
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163"
+    },
+    block_00163 = {
+        {"text"},
+        text = {
+            ja = {
+                {"星星和往常一样――。"}
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164"
+    },
+    block_00164 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不对，不一样――。"}
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165"
+    },
+    block_00165 = {
+        {"cgdel", id = -1},
+        {"bg", file = "ev_unq_c07_01", zoom = 100, time = 400, z2 = 105, path = ":ev/ev_unq_c07/", set = "ev_unq_c07"},
+        {"quake", size = 5, mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900480", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「啊！那个！里奈！快看那个！」"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166"
+    },
+    block_00166 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我指向天空。"}
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167"
+    },
+    block_00167 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "那突然发出了光。在满天的星辰中，格外地湛蓝，仿佛燃烧的火焰",
+                    {"rt2"},
+                    "一般的光芒诞生了。"
+                }
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168"
+    },
+    block_00168 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那道光，比任何一颗星星都要巨大。"}
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169"
+    },
+    block_00169 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003615", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那是……星星吗？」"
+                }
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170"
+    },
+    block_00170 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003616", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「会那样发光的星星……我没听说过……」"
+                }
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171"
+    },
+    block_00171 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900481", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「大概，那就是刚才的蓝色火焰吧」"
+                }
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172"
+    },
+    block_00172 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003617", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「蓝色火焰？」"
+                }
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173"
+    },
+    block_00173 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900482", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「如果那个心脏的主人制造出了蓝色火焰的话。大概，或者说肯定，",
+                    {"rt2"},
+                    "那颗闪耀的星星的名字就是提科吧」"
+                }
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174"
+    },
+    block_00174 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003618", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「提科？」"
+                }
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175"
+    },
+    block_00175 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900483", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「SN 1572应该就在那个附近吧」"
+                }
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176"
+    },
+    block_00176 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003619", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「是那样的星星吗？」"
+                }
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177"
+    },
+    block_00177 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900484", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「嗯，是出现在仙后座，比天狼星还要亮十倍的星星……」"
+                }
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178"
+    },
+    block_00178 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900485", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「它就是宫泽贤治的作品《夜鹰之星》的原型哦」"
+                }
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179"
+    },
+    block_00179 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003620", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「啊，《夜鹰之星》吗……确实，如果那个故事里的星星真的存在",
+                    {"rt2"},
+                    "的话，可能就是这种感觉吧……」"
+                }
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180"
+    },
+    block_00180 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900486", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「实际上，蒂科之星并不是星星的光芒哦」"
+                }
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181"
+    },
+    block_00181 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900487", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「那是超新星爆发。是星星最后燃烧时的火焰的光亮」"
+                }
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182"
+    },
+    block_00182 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900488", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「所以，我们已经无法再看到它了……」"
+                }
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183"
+    },
+    block_00183 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003621", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「蒂科之星……那是存在于现实世界的星星吗？」"
+                }
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184"
+    },
+    block_00184 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900489", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「嗯，它曾经照亮了中世纪欧洲的夜空」"
+                }
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185"
+    },
+    block_00185 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900490", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「只有短短两年时间……」"
+                }
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186"
+    },
+    block_00186 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900491", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「即使如此，只有那两年，它比夜空中所有天体都更加耀眼……」"
+                }
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187"
+    },
+    block_00187 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900492", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「真的就像燃烧一般，闪耀着光芒」"
+                }
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188"
+    },
+    block_00188 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003622", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「原来如此啊」"
+                }
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189"
+    },
+    block_00189 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900493", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「这样看蒂科之星的时候，我觉得能理解宫泽贤治为何会把它和夜",
+                    {"rt2"},
+                    "鹰之星的形象重叠起来了」"
+                }
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190"
+    },
+    block_00190 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900494", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「自焚幻想吗……原来如此」"
+                }
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191"
+    },
+    block_00191 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900495", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「宫泽贤治的自焚幻想，是奉献精神的极致……」"
+                }
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192"
+    },
+    block_00192 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900496", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「闪耀着的、罪孽深重的、奉献之星啊……」"
+                }
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193"
+    },
+    block_00193 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900497", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「那个时候……。里奈跟我讲夜鹰的故事时，如果我也能说出这些",
+                    {"rt2"},
+                    "就好了……」"
+                }
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194"
+    },
+    block_00194 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003623", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不，哪怕是现在也很新颖哦。我完全不知道这些呢」"
+                }
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195"
+    },
+    block_00195 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003624", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那颗心脏是不是变成了提科的星星了呢？」"
+                }
+            }
+        },
+        linkback = "block_00194",
+        linknext = "block_00196"
+    },
+    block_00196 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900498", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「这个嘛，我也不太清楚。不过，这样想的话，感觉就挺合适的吧？",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197"
+    },
+    block_00197 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003625", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嗯……我懂了。大概，优美说得对」"
+                }
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198"
+    },
+    block_00198 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003626", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「被我的画笔触及的灵魂，拥有着极其强烈的意志，强行压抑着自",
+                    {"rt2"},
+                    "己」"
+                }
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199"
+    },
+    block_00199 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003627", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「要一直压抑自己的愿望活下去，应该会非常痛苦吧」"
+                }
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200"
+    },
+    block_00200 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003628", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「要将那样的心情束缚住的锁链融化，恐怕需要极大的火焰」"
+                }
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201"
+    },
+    block_00201 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003629", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不，其实，就算是像夜鹰那样的蓝色火焰，也无法斩断那条锁链」"
+                }
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202"
+    },
+    block_00202 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003630", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「所以，那个人，舍弃了自己的心脏」"
+                }
+            }
+        },
+        linkback = "block_00201",
+        linknext = "block_00203"
+    },
+    block_00203 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003631", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「铅制的心脏，是坚定不移的心的象征」"
+                }
+            }
+        },
+        linkback = "block_00202",
+        linknext = "block_00204"
+    },
+    block_00204 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003632", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「连那样坚定的决心也剥离，那个人就这样踏上了天空的旅途……」"
+                }
+            }
+        },
+        linkback = "block_00203",
+        linknext = "block_00205"
+    },
+    block_00205 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003633", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「如果是这样的话……那个人就是――」"
+                }
+            }
+        },
+        linkback = "block_00204",
+        linknext = "block_00206"
+    },
+    block_00206 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003634", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「果然……」"
+                }
+            }
+        },
+        linkback = "block_00205",
+        linknext = "block_00207"
+    },
+    block_00207 = {
+        {"text"},
+        text = {
+            ja = {
+                {"里奈低下了头。看起来像是紧紧闭着嘴一样。"}
+            }
+        },
+        linkback = "block_00206",
+        linknext = "block_00208"
+    },
+    block_00208 = {
+        {"text"},
+        text = {
+            ja = {
+                {"下一瞬间，她再次仰望天空，大声喊了出来。"}
+            }
+        },
+        linkback = "block_00207",
+        linknext = "block_00209"
+    },
+    block_00209 = {
+        {"bg", file = "zev_unq_c07_01", zoom = 80, speed = 100000, path = ":ev/ev_unq_c07/", set = "ev_unq_c07", x2 = 0, y2 = 180, x = 0, y = 324, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003635", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「我！其实不是很喜欢你！因为你太正直、太强大，而且太傲慢了",
+                    {"rt2"},
+                    "……」"
+                }
+            }
+        },
+        linkback = "block_00208",
+        linknext = "block_00210"
+    },
+    block_00210 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003636", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「只靠自己的力量，就认为一切都能实现。即使那是一条多么艰难",
+                    {"rt2"},
+                    "的道路……」"
+                }
+            }
+        },
+        linkback = "block_00209",
+        linknext = "block_00211"
+    },
+    block_00211 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003637", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「你会压抑自己，坚持到底……」"
+                }
+            }
+        },
+        linkback = "block_00210",
+        linknext = "block_00212"
+    },
+    block_00212 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003638", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「所以……我讨厌你……」"
+                }
+            }
+        },
+        linkback = "block_00211",
+        linknext = "block_00213"
+    },
+    block_00213 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003639", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「因为你太美丽了……让我深刻感受到自己的丑陋」"
+                }
+            }
+        },
+        linkback = "block_00212",
+        linknext = "block_00214"
+    },
+    block_00214 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003640", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「让我意识到自己的软弱……」"
+                }
+            }
+        },
+        linkback = "block_00213",
+        linknext = "block_00215"
+    },
+    block_00215 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003641", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「可是……即便如此，果然还是――」"
+                }
+            }
+        },
+        linkback = "block_00214",
+        linknext = "block_00216"
+    },
+    block_00216 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003642", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「对于你――」"
+                }
+            }
+        },
+        linkback = "block_00215",
+        linknext = "block_00217"
+    },
+    block_00217 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003643", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「――我还是希望你能幸福」"
+                }
+            }
+        },
+        linkback = "block_00216",
+        linknext = "block_00218"
+    },
+    block_00218 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003644", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「既然你一直这样忍耐着生活……希望在前方能够得到幸福」"
+                }
+            }
+        },
+        linkback = "block_00217",
+        linknext = "block_00219"
+    },
+    block_00219 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003645", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「把你曾经杀死的心情留在这里，然后继续前行吧」"
+                }
+            }
+        },
+        linkback = "block_00218",
+        linknext = "block_00220"
+    },
+    block_00220 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003646", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「你跨越了我无法想象的痛苦之路……，终于来到了这里……」"
+                }
+            }
+        },
+        linkback = "block_00219",
+        linknext = "block_00221"
+    },
+    block_00221 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003647", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那是一条漫长而又险峻的路」"
+                }
+            }
+        },
+        linkback = "block_00220",
+        linknext = "block_00222"
+    },
+    block_00222 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003648", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「如果在那条道路的尽头，我们能触碰到你的灵魂……」"
+                }
+            }
+        },
+        linkback = "block_00221",
+        linknext = "block_00223"
+    },
+    block_00223 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003649", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「果然，对于你――」"
+                }
+            }
+        },
+        linkback = "block_00222",
+        linknext = "block_00224"
+    },
+    block_00224 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003650", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「在那片天空的尽头，希望你能获得幸福……」"
+                }
+            }
+        },
+        linkback = "block_00223",
+        linknext = "block_00225"
+    },
+    block_00225 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003651", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「我也是一样，被灵魂束缚在画作中的存在，所以才会祈愿」"
+                }
+            }
+        },
+        linkback = "block_00224",
+        linknext = "block_00226"
+    },
+    block_00226 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003652", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「你的幸福――」"
+                }
+            }
+        },
+        linkback = "block_00225",
+        linknext = "block_00227"
+    },
+    block_00227 = {
+        {"bg", file = "ev_unq_c07_01", path = ":ev/ev_unq_c07/", set = "ev_unq_c07"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900499", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「那颗心脏的主人是画家吗？」"
+                }
+            }
+        },
+        linkback = "block_00226",
+        linknext = "block_00228"
+    },
+    block_00228 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003653", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「谁知道呢？」"
+                }
+            }
+        },
+        linkback = "block_00227",
+        linknext = "block_00229"
+    },
+    block_00229 = {
+        {"text"},
+        text = {
+            ja = {
+                {"里奈装作若无其事，掩饰起刚才那副认真的表情。"}
+            }
+        },
+        linkback = "block_00228",
+        linknext = "block_00230"
+    },
+    block_00230 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003654", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「其实，我也不太清楚。只是有点那样的感觉罢了」"
+                }
+            }
+        },
+        linkback = "block_00229",
+        linknext = "block_00231"
+    },
+    block_00231 = {
+        {"text"},
+        text = {
+            ja = {
+                {"或许她其实是知道的吧。"}
+            }
+        },
+        linkback = "block_00230",
+        linknext = "block_00232"
+    },
+    block_00232 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那颗心脏的主人……。"}
+            }
+        },
+        linkback = "block_00231",
+        linknext = "block_00233"
+    },
+    block_00233 = {
+        {"bgm", stop = 1, time = 500},
+        {"se", file = "se9090", vol = 10, id = 6},
+        {"bg", time = 300, rule = 088, file = "black", path = ":bg/"},
+        {"se", file = "se9088", id = 1},
+        {"se", file = "se9014", vol = 10, id = 2},
+        {"bg", file = "neco01", id = 6, lv = 6, rule = 124, time = 100, sync = 1, path = ":cg/"},
+        {"se", file = "se9014", vol = 10, id = 3},
+        {"bg", file = "neco02", id = 7, lv = 7, rule = 124, time = 100, sync = 1, path = ":cg/"},
+        {"se", file = "se9014", vol = 10, id = 4},
+        {"bg", file = "neco03", id = 8, lv = 8, rule = 124, time = 100, sync = 1, path = ":cg/"},
+        {"se", file = "se9014", vol = 10, id = 5},
+        {"bg", file = "neco04", id = 9, lv = 9, rule = 124, time = 100, sync = 1, path = ":cg/"},
+        {"ex", time = 300, func = "wait"},
+        {"se", file = "se9090", vol = 10, id = 7},
+        {"bg", time = 300, rule = 088, file = "black", path = ":bg/"},
+        {"ex", time = 1000, func = "wait"},
+        {"text"},
+        text = {
+            ja = {
+                {"远处传来了猫的叫声。"}
+            }
+        },
+        linkback = "block_00232",
+        linknext = "block_00234"
+    },
+    block_00234 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我们回头望去，眼前只有森林的黑暗。"}
+            }
+        },
+        linkback = "block_00233",
+        linknext = "block_00235"
+    },
+    block_00235 = {
+        {"text"},
+        text = {
+            ja = {
+                {"仿佛黑暗连猫的叫声都吞没了，只剩下寂静。"}
+            }
+        },
+        linkback = "block_00234",
+        linknext = "block_00236"
+    },
+    block_00236 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003655", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「优美，快看！」"
+                }
+            }
+        },
+        linkback = "block_00235",
+        linknext = "block_00237"
+    },
+    block_00237 = {
+        {"text"},
+        text = {
+            ja = {
+                {"里奈指向了天空。"}
+            }
+        },
+        linkback = "block_00236",
+        linknext = "block_00238"
+    },
+    block_00238 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003656", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「差不多快天亮了……」"
+                }
+            }
+        },
+        linkback = "block_00237",
+        linknext = "block_00239"
+    },
+    block_00239 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900500", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「啊……」"
+                }
+            }
+        },
+        linkback = "block_00238",
+        linknext = "block_00240"
+    },
+    block_00240 = {
+        {"cgdel", id = -1},
+        {"bg", file = "ev_unq_c07_02", time = 2000, path = ":ev/ev_unq_c07/", set = "ev_unq_c07"},
+        {"bgm", file = "bgm021", time = 5000},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900501", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「天亮了会怎么样？不会就这样迎来早晨，然后有学生来上学吧？」"
+                }
+            }
+        },
+        linkback = "block_00239",
+        linknext = "block_00241"
+    },
+    block_00241 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "不知怎么的，感觉脚渐渐开始疼了。就像在现实世界里光脚站在泥",
+                    {"rt2"},
+                    "土上的感觉――。"
+                }
+            }
+        },
+        linkback = "block_00240",
+        linknext = "block_00242"
+    },
+    block_00242 = {
+        {"bgm", file = "bgm021"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003657", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「如果就这样和现实世界连在一起的话会很有趣。不过，事情不会",
+                    {"rt2"},
+                    "那样发展」"
+                }
+            }
+        },
+        linkback = "block_00241",
+        linknext = "block_00243"
+    },
+    block_00243 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003658", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「天亮了，梦就会醒。仅此而已――」"
+                }
+            }
+        },
+        linkback = "block_00242",
+        linknext = "block_00244"
+    },
+    block_00244 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900502", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「梦会醒？这果然是梦吗？」"
+                }
+            }
+        },
+        linkback = "block_00243",
+        linknext = "block_00245"
+    },
+    block_00245 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003659", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「如果会醒，那不就是梦吗？没有不会醒的梦啊」"
+                }
+            }
+        },
+        linkback = "block_00244",
+        linknext = "block_00246"
+    },
+    block_00246 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003660", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「如果不会醒，无论多么奇怪的世界，那也只能是现实了……」"
+                }
+            }
+        },
+        linkback = "block_00245",
+        linknext = "block_00247"
+    },
+    block_00247 = {
+        {"text"},
+        text = {
+            ja = {
+                {"里奈背对着朝阳，再次望向黑暗中闪烁的提科之星。"}
+            }
+        },
+        linkback = "block_00246",
+        linknext = "block_00248"
+    },
+    block_00248 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003661", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「所以，我们会从这里消失――」"
+                }
+            }
+        },
+        linkback = "block_00247",
+        linknext = "block_00249"
+    },
+    block_00249 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003662", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「我们也不是这个世界的居民……」"
+                }
+            }
+        },
+        linkback = "block_00248",
+        linknext = "block_00250"
+    },
+    block_00250 = {
+        {"bg", file = "zev_unq_c07_02", zoom = 80, x = -60, y = -320, time = 1000, sync = 1, path = ":ev/ev_unq_c07/", set = "ev_unq_c07", ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"ex", time = 500, func = "wait"},
+        {"bg", file = "zev_unq_c07_03", zoom = 80, x = -60, y = -320, time = 2000, sync = 1, path = ":ev/ev_unq_c07/", set = "ev_unq_c07", ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"bg", file = "zev_unq_c07_03", zoom = 80, speed = 500000, path = ":ev/ev_unq_c07/", set = "ev_unq_c07", x2 = -60, y2 = -320, x = -60, y = 324, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"text"},
+        text = {
+            ja = {
+                {"里奈抓住了我的手臂。"}
+            }
+        },
+        linkback = "block_00249",
+        linknext = "block_00251"
+    },
+    block_00251 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900503", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「诶？里、里奈？」"
+                }
+            }
+        },
+        linkback = "block_00250",
+        linknext = "block_00252"
+    },
+    block_00252 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003663", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「即使梦醒了，优美还会喜欢我吗？」"
+                }
+            }
+        },
+        linkback = "block_00251",
+        linknext = "block_00253"
+    },
+    block_00253 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900504", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「诶？你在说什么啊。这不是理所当然的吗」"
+                }
+            }
+        },
+        linkback = "block_00252",
+        linknext = "block_00254"
+    },
+    block_00254 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003664", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「这样啊，我好开心啊。我真是活在幸福的命运里呢……」"
+                }
+            }
+        },
+        linkback = "block_00253",
+        linknext = "block_00255"
+    },
+    block_00255 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900505", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「你在说什么啊。我只是一直喜欢着里奈而已。」"
+                }
+            }
+        },
+        linkback = "block_00254",
+        linknext = "block_00256"
+    },
+    block_00256 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003665", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不，那也是奇迹般的事情哦。大概吧。」"
+                }
+            }
+        },
+        linkback = "block_00255",
+        linknext = "block_00257"
+    },
+    block_00257 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003666", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「所以啊。我在这个世界也会画同样的画。」"
+                }
+            }
+        },
+        linkback = "block_00256",
+        linknext = "block_00258"
+    },
+    block_00258 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900506", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「同样的画？」"
+                }
+            }
+        },
+        linkback = "block_00257",
+        linknext = "block_00259"
+    },
+    block_00259 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003667", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「嗯，在无限的命运之中，无限地持续绘画的画作。果然在这个世",
+                    {"rt2"},
+                    "界我也会把它呈现出来。」"
+                }
+            }
+        },
+        linkback = "block_00258",
+        linknext = "block_00260"
+    },
+    block_00260 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003668", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「用这支笔……」"
+                }
+            }
+        },
+        linkback = "block_00259",
+        linknext = "block_00261"
+    },
+    block_00261 = {
+        {"text"},
+        text = {
+            ja = {
+                {"里奈的手里，依然握着那支笔。"}
+            }
+        },
+        linkback = "block_00260",
+        linknext = "block_00262"
+    },
+    block_00262 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那是曾经属于我的一部分的笔。"}
+            }
+        },
+        linkback = "block_00261",
+        linknext = "block_00263"
+    },
+    block_00263 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900507", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「说起来，那支笔其实就是我的小鸡鸡吧」"
+                }
+            }
+        },
+        linkback = "block_00262",
+        linknext = "block_00264"
+    },
+    block_00264 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003669", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「对哦，就是用优美的小鸡鸡来画画。超级色情的画。啊哈哈哈哈」"
+                }
+            }
+        },
+        linkback = "block_00263",
+        linknext = "block_00265"
+    },
+    block_00265 = {
+        {"text"},
+        text = {
+            ja = {
+                {"突然，里奈笑了起来。"}
+            }
+        },
+        linkback = "block_00264",
+        linknext = "block_00266"
+    },
+    block_00266 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900508", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「为什么笑啊。啊哈哈哈哈」"
+                }
+            }
+        },
+        linkback = "block_00265",
+        linknext = "block_00267"
+    },
+    block_00267 = {
+        {"text"},
+        text = {
+            ja = {
+                {"感觉我也有点变得奇怪了。"}
+            }
+        },
+        linkback = "block_00266",
+        linknext = "block_00268"
+    },
+    block_00268 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003670", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「当然要笑啦。用小鸡鸡画画的人可没有啊」"
+                }
+            }
+        },
+        linkback = "block_00267",
+        linknext = "block_00269"
+    },
+    block_00269 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900509", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「说不定有人哦」"
+                }
+            }
+        },
+        linkback = "block_00268",
+        linknext = "block_00270"
+    },
+    block_00270 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003671", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「不，没有哦。能用这种画笔作画的画家，无论哪个世界，都只有",
+                    {"rt2"},
+                    "我一个」"
+                }
+            }
+        },
+        linkback = "block_00269",
+        linknext = "block_00271"
+    },
+    block_00271 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003673", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「那幅画的名字是――」"
+                }
+            }
+        },
+        linkback = "block_00270",
+        linknext = "block_00272"
+    },
+    block_00272 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003674", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「――两只蝉的尸骸与缠绕在一起的两株冬虫夏草――」"
+                }
+            }
+        },
+        linkback = "block_00271",
+        linknext = "block_00273"
+    },
+    block_00273 = {
+        {"bg", file = "ev_etc_01_79", zoom = 103, id = 9, lv = 9, alpha = 20, time = 500, path = ":cg/", z2 = 100},
+        {"text"},
+        delay = {
+            [50] = {
+                {"cgdel", id = 9, time = 1000, lv = 9}
+            }
+        },
+        text = {
+            ja = {
+                {"画作在脑海中闪过，然后――消失了。"}
+            }
+        },
+        linkback = "block_00272",
+        linknext = "block_00274"
+    },
+    block_00274 = {
+        {"bg", file = "ev_unq_c07_03", time = 1000, path = ":ev/ev_unq_c07/", set = "ev_unq_c07"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rna_003675", ch = "rna"}
+            },
+            ja = {
+                {
+                    name = {"里奈"},
+                    "「优美……我爱你」"
+                }
+            }
+        },
+        linkback = "block_00273",
+        linknext = "block_00275"
+    },
+    block_00275 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_yum_900510", ch = "yum"}
+            },
+            ja = {
+                {
+                    name = {"优美"},
+                    "「我也是」"
+                }
+            }
+        },
+        linkback = "block_00274",
+        linknext = "block_00276"
+    },
+    block_00276 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在破晓的天空下，我们唇齿相依――。"}
+            }
+        },
+        linkback = "block_00275",
+        linknext = "block_00277"
+    },
+    block_00277 = {
+        {"bg", file = "black", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"远处，仿佛风在低语那句话。"}
+            }
+        },
+        linkback = "block_00276",
+        linknext = "block_00278"
+    },
+    block_00278 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是，已经没有什么需要挽回的了。"}
+            }
+        },
+        linkback = "block_00277",
+        linknext = "block_00279"
+    },
+    block_00279 = {
+        {"text"},
+        text = {
+            ja = {
+                {"梦，是风的延续。"}
+            }
+        },
+        linkback = "block_00278",
+        linknext = "block_00280"
+    },
+    block_00280 = {
+        {"text"},
+        text = {
+            ja = {
+                {"风从古道吹来。"}
+            }
+        },
+        linkback = "block_00279",
+        linknext = "block_00281"
+    },
+    block_00281 = {
+        {"text"},
+        text = {
+            ja = {
+                {"一切都是必然。"}
+            }
+        },
+        linkback = "block_00280",
+        linknext = "block_00282"
+    },
+    block_00282 = {
+        {"text"},
+        text = {
+            ja = {
+                {"只有一次的必然。"}
+            }
+        },
+        linkback = "block_00281",
+        linknext = "block_00283"
+    },
+    block_00283 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "从那样甜美的梦境中，　　　　　　　　　　　　　　　　　　　",
+                    {"rt2"},
+                    "　　　　　　　　　我――　　　　　　　　　　　　　　　　　　",
+                    {"rt2"},
+                    "　　　　　　　　　　　　　　　醒来了。"
+                }
+            }
+        },
+        linkback = "block_00282",
+        linknext = "block_00284"
+    },
+    block_00284 = {
+        {"msgoff"},
+        {"ex", time = 1000, func = "wait"},
+        {"bg", file = "cordyceps_fin1", id = 7, lv = 7, time = 5000, path = ":cg/"},
+        {"ex", time = 3000, func = "wait"},
+        {"bg", file = "fin0", id = 8, lv = 8, time = 3000, path = ":cg/"},
+        {"ex", time = 1000, func = "wait"},
+        {"bg", file = "cordyceps_fin2", id = 9, lv = 9, time = 4000, path = ":cg/"},
+        {"ex", time = 3000, func = "wait"},
+        {"bgm", stop = 1, time = 4000},
+        {"se", stop = 1, id = -1, time = 4000},
+        {"vostop", stop = 1, time = 4000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 4000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"cgdel", id = -1},
+        {"タイトル"},
+        {"text"},
+        linkback = "block_00283"
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}
